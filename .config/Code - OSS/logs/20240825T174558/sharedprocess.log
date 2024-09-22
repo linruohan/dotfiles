@@ -1,0 +1,123 @@
+2024-08-25 17:46:00.000 [info] Started initializing default profile extensions in extensions installation folder. file:///home/xiaohan/.vscode-oss/extensions
+2024-08-25 17:46:00.030 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///home/xiaohan/.vscode-oss/extensions Unable to create file 'vscode-userdata:/home/xiaohan/.vscode-oss/extensions/extensions.json' that already exists when overwrite flag is not set
+2024-08-25 17:46:00.030 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/xiaohan/.vscode-oss/extensions
+2024-08-25 17:46:36.924 [info] Getting Manifest... ms-python.black-formatter
+2024-08-25 17:46:36.925 [info] Getting Manifest... emroussel.atom-icons
+2024-08-25 17:46:36.926 [info] Getting Manifest... rangav.vscode-thunder-client
+2024-08-25 17:46:36.926 [info] Getting Manifest... atishay-jain.all-autocomplete
+2024-08-25 17:46:36.927 [info] Getting Manifest... formulahendry.code-runner
+2024-08-25 17:46:36.928 [info] Getting Manifest... emroussel.atomize-atom-one-dark-theme
+2024-08-25 17:46:36.928 [info] Getting Manifest... julianiaquinandi.nvim-ui-modifier
+2024-08-25 17:46:36.929 [info] Getting Manifest... ms-python.python
+2024-08-25 17:46:36.929 [info] Getting Manifest... johnsoncodehk.vscode-typescript-vue-plugin
+2024-08-25 17:46:36.930 [info] Getting Manifest... sleistner.vscode-fileutils
+2024-08-25 17:46:36.930 [info] Getting Manifest... asvetliakov.vscode-neovim
+2024-08-25 17:46:36.930 [info] Getting Manifest... golang.go
+2024-08-25 17:46:38.062 [info] Installing extension: ms-python.python {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: formulahendry.code-runner {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: ms-python.black-formatter {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: johnsoncodehk.vscode-typescript-vue-plugin {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: sleistner.vscode-fileutils {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: julianiaquinandi.nvim-ui-modifier {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: golang.go {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: atishay-jain.all-autocomplete {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: asvetliakov.vscode-neovim {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: emroussel.atom-icons {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: emroussel.atomize-atom-one-dark-theme {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing extension: rangav.vscode-thunder-client {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json","path":"/home/xiaohan/.config/Code - OSS/User/profiles/-73f21877/extensions.json","scheme":"vscode-userdata"},"context":{"skipWalkthrough":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.92.1","date":"2024-08-09T07:48:41.621Z"}}
+2024-08-25 17:46:38.063 [info] Installing the extension without checking dependencies and pack ms-python.python
+2024-08-25 17:46:38.063 [info] Installing the extension without checking dependencies and pack formulahendry.code-runner
+2024-08-25 17:46:38.063 [info] Installing the extension without checking dependencies and pack ms-python.black-formatter
+2024-08-25 17:46:38.064 [info] Installing the extension without checking dependencies and pack johnsoncodehk.vscode-typescript-vue-plugin
+2024-08-25 17:46:38.064 [info] Installing the extension without checking dependencies and pack sleistner.vscode-fileutils
+2024-08-25 17:46:38.064 [info] Installing the extension without checking dependencies and pack julianiaquinandi.nvim-ui-modifier
+2024-08-25 17:46:38.064 [info] Installing the extension without checking dependencies and pack golang.go
+2024-08-25 17:46:38.064 [info] Installing the extension without checking dependencies and pack atishay-jain.all-autocomplete
+2024-08-25 17:46:38.064 [info] Installing the extension without checking dependencies and pack asvetliakov.vscode-neovim
+2024-08-25 17:46:38.064 [info] Installing the extension without checking dependencies and pack emroussel.atom-icons
+2024-08-25 17:46:38.064 [info] Installing the extension without checking dependencies and pack emroussel.atomize-atom-one-dark-theme
+2024-08-25 17:46:38.064 [info] Installing the extension without checking dependencies and pack rangav.vscode-thunder-client
+2024-08-25 17:46:42.275 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:42.275 [info] Extension signature verification is not done: emroussel.atom-icons
+2024-08-25 17:46:42.312 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/emroussel.atom-icons-1.2.0-universal: emroussel.atom-icons
+2024-08-25 17:46:42.315 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/emroussel.atom-icons-1.2.0-universal
+2024-08-25 17:46:42.543 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:42.544 [info] Extension signature verification is not done: sleistner.vscode-fileutils
+2024-08-25 17:46:42.558 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/sleistner.vscode-fileutils-3.10.3-universal: sleistner.vscode-fileutils
+2024-08-25 17:46:42.562 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/sleistner.vscode-fileutils-3.10.3-universal
+2024-08-25 17:46:42.607 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:42.607 [info] Extension signature verification is not done: golang.go
+2024-08-25 17:46:42.640 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/golang.go-0.42.0-universal: golang.go
+2024-08-25 17:46:42.644 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/golang.go-0.42.0-universal
+2024-08-25 17:46:42.826 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:42.826 [info] Extension signature verification is not done: julianiaquinandi.nvim-ui-modifier
+2024-08-25 17:46:42.891 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:42.892 [info] Extension signature verification is not done: johnsoncodehk.vscode-typescript-vue-plugin
+2024-08-25 17:46:42.896 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/julianiaquinandi.nvim-ui-modifier-0.1.5-universal: julianiaquinandi.nvim-ui-modifier
+2024-08-25 17:46:42.903 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/julianiaquinandi.nvim-ui-modifier-0.1.5-universal
+2024-08-25 17:46:42.940 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/johnsoncodehk.vscode-typescript-vue-plugin-0.34.11-universal: johnsoncodehk.vscode-typescript-vue-plugin
+2024-08-25 17:46:42.943 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/johnsoncodehk.vscode-typescript-vue-plugin-0.34.11-universal
+2024-08-25 17:46:43.115 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:43.115 [info] Extension signature verification is not done: atishay-jain.all-autocomplete
+2024-08-25 17:46:43.123 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/atishay-jain.all-autocomplete-0.0.26-universal: atishay-jain.all-autocomplete
+2024-08-25 17:46:43.125 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/atishay-jain.all-autocomplete-0.0.26-universal
+2024-08-25 17:46:43.167 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:43.167 [info] Extension signature verification is not done: emroussel.atomize-atom-one-dark-theme
+2024-08-25 17:46:43.184 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/emroussel.atomize-atom-one-dark-theme-2.0.2-universal: emroussel.atomize-atom-one-dark-theme
+2024-08-25 17:46:43.188 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/emroussel.atomize-atom-one-dark-theme-2.0.2-universal
+2024-08-25 17:46:43.396 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:43.397 [info] Extension signature verification is not done: rangav.vscode-thunder-client
+2024-08-25 17:46:43.467 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/rangav.vscode-thunder-client-2.24.12-universal: rangav.vscode-thunder-client
+2024-08-25 17:46:43.469 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/rangav.vscode-thunder-client-2.24.12-universal
+2024-08-25 17:46:53.953 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:53.954 [info] Extension signature verification is not done: ms-python.black-formatter
+2024-08-25 17:46:54.038 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/ms-python.black-formatter-2024.2.0-universal: ms-python.black-formatter
+2024-08-25 17:46:54.041 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/ms-python.black-formatter-2024.2.0-universal
+2024-08-25 17:46:54.424 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:54.425 [info] Extension signature verification is not done: formulahendry.code-runner
+2024-08-25 17:46:54.485 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/formulahendry.code-runner-0.12.2-universal: formulahendry.code-runner
+2024-08-25 17:46:54.488 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/formulahendry.code-runner-0.12.2-universal
+2024-08-25 17:46:54.985 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:46:54.986 [info] Extension signature verification is not done: asvetliakov.vscode-neovim
+2024-08-25 17:46:55.060 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.8-universal: asvetliakov.vscode-neovim
+2024-08-25 17:46:55.065 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.8-universal
+2024-08-25 17:49:33.503 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-fork.js
+2024-08-25 17:49:33.503 [info] Extension signature verification is not done: ms-python.python
+2024-08-25 17:49:33.984 [info] Extracted extension to file:///home/xiaohan/.vscode-oss/extensions/ms-python.python-2024.12.3-universal: ms-python.python
+2024-08-25 17:49:33.994 [info] Renamed to /home/xiaohan/.vscode-oss/extensions/ms-python.python-2024.12.3-universal
+2024-08-25 17:49:34.009 [info] Extension installed successfully: emroussel.atom-icons vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.009 [info] Extension installed successfully: sleistner.vscode-fileutils vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.009 [info] Extension installed successfully: golang.go vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.009 [info] Extension installed successfully: julianiaquinandi.nvim-ui-modifier vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.010 [info] Extension installed successfully: johnsoncodehk.vscode-typescript-vue-plugin vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.010 [info] Extension installed successfully: atishay-jain.all-autocomplete vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.010 [info] Extension installed successfully: emroussel.atomize-atom-one-dark-theme vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.010 [info] Extension installed successfully: rangav.vscode-thunder-client vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.010 [info] Extension installed successfully: ms-python.black-formatter vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.010 [info] Extension installed successfully: formulahendry.code-runner vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.010 [info] Extension installed successfully: asvetliakov.vscode-neovim vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json
+2024-08-25 17:49:34.010 [info] Extension installed successfully: ms-python.python vscode-userdata:/home/xiaohan/.config/Code%20-%20OSS/User/profiles/-73f21877/extensions.json

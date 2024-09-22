@@ -1,0 +1,12 @@
+2024/09/22-05:02:12.799 2288 Reusing MANIFEST /home/xiaohan/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/22-05:02:12.799 2288 Recovering log #7
+2024/09/22-05:02:12.810 2288 Reusing old log /home/xiaohan/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000007.log 
+2024/09/22-05:02:12.811 2288 Delete type=2 #5
+2024/09/22-05:02:12.811 2288 Delete type=2 #8
+2024/09/22-05:02:14.575 2303 Level-0 table #12: started
+2024/09/22-05:02:14.593 2303 Level-0 table #12: 876385 bytes OK
+2024/09/22-05:02:14.596 2303 Delete type=0 #7
+2024/09/22-05:02:14.600 2303 Compacting 1@1 + 1@2 files
+2024/09/22-05:02:14.615 2303 Generated table #13@1: 7528 keys, 1283296 bytes
+2024/09/22-05:02:14.615 2303 Compacted 1@1 + 1@2 files => 1283296 bytes
+2024/09/22-05:02:14.618 2303 compacted to: files[ 0 0 1 0 0 0 0 ]

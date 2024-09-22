@@ -1,0 +1,13 @@
+2024-08-25 17:45:59.853 [info] Started local extension host with pid 80046.
+2024-08-25 17:45:59.889 [info] Started initializing default profile extensions in extensions installation folder. file:///home/xiaohan/.vscode-oss/extensions
+2024-08-25 17:45:59.987 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/xiaohan/.vscode-oss/extensions
+2024-08-25 17:46:02.759 [info] [perf] Render performance baseline is 28ms
+2024-08-25 17:46:32.341 [info] Importing Profile (vscode): Disabled extension... rangav.vscode-thunder-client
+2024-08-25 17:46:32.342 [info] Importing Profile (vscode): Started installing extensions.
+2024-08-25 17:49:34.050 [info] Importing Profile (vscode): Finished installing extensions.
+2024-08-25 17:49:34.096 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, contribIssueReporter, terminalShellIntegration'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2024-08-25 17:49:34.107 [error] [ms-python.python]: issue/reporter is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribIssueReporter"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-python.python
+2024-08-25 17:49:34.107 [error] [ms-python.python]: editor/content is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-python.python
+2024-08-25 17:49:34.129 [error] [ms-python.python]: issue/reporter is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribIssueReporter"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-python.python
+2024-08-25 17:49:34.129 [error] [ms-python.python]: editor/content is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-python.python
+2024-08-25 17:49:34.262 [info] Started local extension host with pid 90953.

@@ -1,0 +1,101 @@
+{
+    "workbench.iconTheme": "atom-icons",
+    "workbench.colorTheme": "Atomize",
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.profiles.windows": {
+        "Git-Bash": {
+            "path": "D:\\software\\Git\\bin\\bash.exe",
+            "args": []
+        }
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "files.encoding": "gbk"
+    },
+    "[cpp]": {
+        "files.encoding": "gbk",
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "editor.guides.bracketPairs": true,
+    "breadcrumbs.enabled": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.defaultProfile.windows": "Git-Bash",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.showFoldingControls": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.autoReveal": false,
+    "git.autorefresh": false,
+    "zenMode.restore": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.idea": true,
+        "**/*.pyc": true
+    },
+    "editor.fontSize": 18,
+    "window.menuBarVisibility": "toggle",
+    "search.followSymlinks": false,
+    "git.enabled": true,
+    "terminal.integrated.gpuAcceleration": "off",
+    "git.allowForcePush": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "python.languageServer": "Pylance",
+    "debug.console.fontSize": 10,
+    "git.autofetch": true,
+    "editor.maxTokenizationLineLength": 2000000,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.openRepositoryInParentFolders": "always",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.cursorBlinking": "blink",
+    "editor.folding": true,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.occurrencesHighlight": false,
+    "editor.roundedSelection": false,
+    "editor.selectionHighlight": true,
+    "editor.scrollBeyondLastLine": false,
+    "explorer.decorations.colors": false,
+    "explorer.openEditors.visible": 0,
+    "workbench.editor.showIcons": false,
+    "workbench.startupEditor": "none",
+    "workbench.tree.renderIndentGuides": "none",
+    "editor.matchBrackets": "never",
+    "subtleBrackets.style": {
+        "borderWidth": "1px",
+        "borderColor": "#528BFF"
+    },
+    "git.enableStatusBarSync": false,
+    "files.autoSaveDelay": 0,
+    "window.zoomLevel": 1,
+    "files.autoSave": "afterDelay",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "razor": "html",
+        "plaintext": "pug"
+    },
+    "[go]": {
+        "editor.snippetSuggestions": "top",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        }
+    },
+    "gopls": {
+        "usePlaceholders": true,
+        "completeUnimported": true,
+        "deepCompletion": true,
+    },
+    "editor.snippetSuggestions": "top",
+    "editor.quickSuggestionsDelay": 0,
+    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\xiaohan\\AppData\\Local\\nvim",
+    "vscode-neovim.neovimExecutablePaths.win32": "D:\\software\\nvim\\bin\\nvim.exe",
+    "terminal.integrated.copyOnSelection": true
+}

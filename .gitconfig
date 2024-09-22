@@ -1,0 +1,39 @@
+[user]
+	name = linruohan
+	email = mjt1220@126.com
+[oh-my-zsh]
+	hide-dirty = 0
+	hide-status = 0
+[credential "https://gitee.com"]
+	provider = generic
+[core]
+	pager = delta
+[delta]
+	navigate = true 
+	light = false   
+	side-by-side = false
+	line-numbers = true
+[interactive]
+	diffFilter = delta --color-only --features=interactive
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
+[oh-my-zsh]
+	hide-dirty = 1
+	hide-dirty = 0
+[gui]
+	encoding = utf-8
+[http]
+	sslVerify = false
+	sslBackend = openssl
+[init]
+	defaultBranch = master
+[gui]  
+    encoding = utf-8  
+[i18n]  
+    commitencoding = utf-8  
+[svn]  
+    pathnameencoding = utf-8  
+[core]
+	quotepath = false
