@@ -15,6 +15,7 @@ go/
 !.local/share/bin/
 !.local/bin/
 .local/
+.config/dunst/icons/
 .mozilla/
 Music/
 .npm/
@@ -30,3 +31,4 @@ Videos/
 .vscode-oss/
 .xsession-errors*
 .zcompdump*
+wall.set
