@@ -70,7 +70,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting )
+plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
 
 #source $ZSH/oh-my-zsh.sh
 
@@ -103,7 +103,8 @@ export PATH=$PATH:$HOME/.local/bin
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 export LANG=zh_CN.UTF-8
-
+export LANGUAGE=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vim'
@@ -133,6 +134,17 @@ export XIM_PROGRAM=fcitx
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 # wayland input chinese alias
 #alias kitty="WAYLAND_DISPLAY=kitty kitty"
+
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
 
 # adding flags
 alias df='df -h'     # human-readable sizes
@@ -249,13 +261,14 @@ alias j='jobs -l'
 
 # 3. custom tools
 alias vi=nvim
-alias v=lvim
+alias v=nvim
 alias ra='ranger'
 alias lg='lazygit'
 
 # 4. git commands
 alias gr='git rm -rf'
-alias gp='git push origin master'
+# alias gp='git push origin master'
+alias gp='git push'
 alias ga='git add'
 alias gs='git status'
 alias gll='git pull'
@@ -352,12 +365,12 @@ export XMONAD_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/xmonad"
 
 ### CHANGE TITLE OF TERMINALS
 case ${TERM} in
-    xterm* | rxvt* | Eterm* | aterm | kterm | gnome* | alacritty | st | konsole*)
-        PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
-        ;;
-    screen*)
-        PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
-        ;;
+xterm* | rxvt* | Eterm* | aterm | kterm | gnome* | alacritty | st | konsole*)
+    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
+    ;;
+screen*)
+    PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
+    ;;
 esac
 
 pxon() {
@@ -379,12 +392,12 @@ pxoff() {
 
 }
 q_mintty_set_bgimg() {
-    if [ "$#" -eq 0 ] ; then
+    if [ "$#" -eq 0 ]; then
         echo "require image file name !"
-    elif [ "$1" = "/dev/null" ] ; then
+    elif [ "$1" = "/dev/null" ]; then
         printf "\e]11;\e\\"
-    elif [ -f "$1" ] ; then
-        FILE="$(realpath -s """$1""" 2> /dev/null)"
+    elif [ -f "$1" ]; then
+        FILE="$(realpath -s """$1""" 2>/dev/null)"
         BRIGHT="${2:-100}"
         printf "\e]11;%s\e\\" "_${FILE},${BRIGHT}"
     else
@@ -394,7 +407,21 @@ q_mintty_set_bgimg() {
 #src="/d/pics/ai"
 #q_mintty_set_bgimg "$src/$(ls -1 $src | shuf -n 1)" 50
 source ~/.config/omz/omz.zsh
+# rust
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig:"
+alias cargo="RUSTFLAGS='-Z threads=16' cargo +nightly"
+alias cr="cargo run"
+alias cc="cargo check"
+alias cb="cargo build"
+export PATH=$PATH:~/.cargo/bin:/c/software/Python3/Lib/site-packages/opencc/clib/bin
 pgrep -a -f fcitx5 || fcitx5 &
+
+
+# windows dir
+alias co="cd /d/codehub"
+alias do="cd /d/download"
+alias bp='bypy usyncup'
+alias bll='bypy syncdown'
+
