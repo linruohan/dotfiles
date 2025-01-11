@@ -1,7 +1,7 @@
 general.live_config_reload = true
 
 [terminal.shell]
-program="c:/software/Git/bin/bash.exe"
+program="c:/software/Git/usr/bin/zsh.exe"
 args=["--login","-i"]
 
 [colors]
