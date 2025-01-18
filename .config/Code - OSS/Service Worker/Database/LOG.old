@@ -1,2 +1,18 @@
+<<<<<<< HEAD
 2024/08/25-17:46:00.293 1367c Creating DB /home/xiaohan/.config/Code - OSS/Service Worker/Database since it was missing.
 2024/08/25-17:46:00.298 1367c Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Service Worker/Database/MANIFEST-000001
+||||||| parent of 0cf5ed3 (add)
+2024/08/25-17:46:00.293 1367c Creating DB /home/xiaohan/.config/Code - OSS/Service Worker/Database since it was missing.
+2024/08/25-17:46:00.298 1367c Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Service Worker/Database/MANIFEST-000001
+=======
+<<<<<<< HEAD
+2025/01/18-18:12:22.818 2d59 Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Service Worker/Database/MANIFEST-000001
+2025/01/18-18:12:22.820 2d59 Recovering log #3
+2025/01/18-18:12:22.820 2d59 Reusing old log /home/xiaohan/.config/Code - OSS/Service Worker/Database/000003.log 
+||||||| parent of cb55bc7 (add)
+2025/01/18-18:12:22.818 2d59 Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Service Worker/Database/MANIFEST-000001
+2025/01/18-18:12:22.820 2d59 Recovering log #3
+2025/01/18-18:12:22.820 2d59 Reusing old log /home/xiaohan/.config/Code - OSS/Service Worker/Database/000003.log 
+=======
+>>>>>>> cb55bc7 (add)
+>>>>>>> 0cf5ed3 (add)

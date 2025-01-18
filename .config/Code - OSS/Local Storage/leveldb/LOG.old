@@ -1,2 +1,18 @@
+<<<<<<< HEAD
 2024/08/25-17:45:58.937 13693 Creating DB /home/xiaohan/.config/Code - OSS/Local Storage/leveldb since it was missing.
 2024/08/25-17:45:58.960 13693 Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Local Storage/leveldb/MANIFEST-000001
+||||||| parent of 0cf5ed3 (add)
+2024/08/25-17:45:58.937 13693 Creating DB /home/xiaohan/.config/Code - OSS/Local Storage/leveldb since it was missing.
+2024/08/25-17:45:58.960 13693 Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Local Storage/leveldb/MANIFEST-000001
+=======
+<<<<<<< HEAD
+2025/01/18-18:12:22.818 2d58 Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Local Storage/leveldb/MANIFEST-000001
+2025/01/18-18:12:22.820 2d58 Recovering log #3
+2025/01/18-18:12:22.820 2d58 Reusing old log /home/xiaohan/.config/Code - OSS/Local Storage/leveldb/000003.log 
+||||||| parent of cb55bc7 (add)
+2025/01/18-18:12:22.818 2d58 Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Local Storage/leveldb/MANIFEST-000001
+2025/01/18-18:12:22.820 2d58 Recovering log #3
+2025/01/18-18:12:22.820 2d58 Reusing old log /home/xiaohan/.config/Code - OSS/Local Storage/leveldb/000003.log 
+=======
+>>>>>>> cb55bc7 (add)
+>>>>>>> 0cf5ed3 (add)

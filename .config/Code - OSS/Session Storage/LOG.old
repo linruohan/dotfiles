@@ -1,2 +1,21 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 2024/08/25-17:53:02.494 1367c Creating DB /home/xiaohan/.config/Code - OSS/Session Storage since it was missing.
 2024/08/25-17:53:02.504 1367c Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Session Storage/MANIFEST-000001
+||||||| parent of 0cf5ed3 (add)
+2024/08/25-17:53:02.494 1367c Creating DB /home/xiaohan/.config/Code - OSS/Session Storage since it was missing.
+2024/08/25-17:53:02.504 1367c Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Session Storage/MANIFEST-000001
+=======
+2025/01/18-18:06:53.276 1483 Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Session Storage/MANIFEST-000001
+2025/01/18-18:06:53.276 1483 Recovering log #3
+2025/01/18-18:06:53.277 1483 Reusing old log /home/xiaohan/.config/Code - OSS/Session Storage/000003.log 
+>>>>>>> 0cf5ed3 (add)
+||||||| parent of 9b9af09 (add)
+2025/01/18-18:06:53.276 1483 Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Session Storage/MANIFEST-000001
+2025/01/18-18:06:53.276 1483 Recovering log #3
+2025/01/18-18:06:53.277 1483 Reusing old log /home/xiaohan/.config/Code - OSS/Session Storage/000003.log 
+=======
+2025/01/18-18:13:52.207 2d58 Reusing MANIFEST /home/xiaohan/.config/Code - OSS/Session Storage/MANIFEST-000001
+2025/01/18-18:13:52.207 2d58 Recovering log #3
+2025/01/18-18:13:52.207 2d58 Reusing old log /home/xiaohan/.config/Code - OSS/Session Storage/000003.log 
+>>>>>>> 9b9af09 (add)
