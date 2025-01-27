@@ -1,4 +1,5 @@
 FileManager=nautilus
 TerminalEmulator=alacritty
-WebBrowser=google-chrome
+WebBrowser=firefox
+TerminalEmulatorDismissed=true
 
