@@ -22,6 +22,7 @@ local servers = {
   "bashls",
   "marksman",
   "clangd",
+  "ruff",
 }
 
 for _, lsp in ipairs(servers) do

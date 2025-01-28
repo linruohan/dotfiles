@@ -15,14 +15,24 @@ map("n","<leader>q",":q!<cr>")
 map("n","=","n")
 map("n","-"," N")
 map("n","<C-s>",":w<cr>")
-map("n","<S-l>",":BufferLineCycleNext<CR>")
-map("n","<S-h>",":BufferLineCyclePrev<CR>")
 map("i","jj","ESC")
 map("i", "jk", "<ESC>")
 map("v",">",">gv")
 map("n", "<leader>fm", function()
   require("conform").format()
 end, { desc = "File Format with conform" })
+
+-- switch tab files : shift+l :next ; shift+h :prev; leader+x: close;
+map("n", "<S-l>", function()
+  require("nvchad.tabufline").next()
+end, { desc = "buffer goto next" })
+map("n", "<S-h>", function()
+  require("nvchad.tabufline").prev()
+end, { desc = "buffer goto prev" })
+-- map("n", "<leader>x", function()
+  -- require("nvchad.tabufline").close_buffer()
+end, { desc = "buffer close" })
+
 
 map("i", "jk", "<ESC>", { desc = "escape insert mode" })
 
