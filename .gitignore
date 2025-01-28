@@ -1,10 +1,19 @@
 .bash_*
 .cache/
-.cargo/git/
+.cargo/
+!.cargo/config.toml
 .cargo/registry/
-.config/dunst/icons/
+.config/dunst/
 .config/go/
 .config/google-chrome/
+.config/ibus/
+.config/Code - OSS/
+.config/sublime-text/Backup/
+.config/obs-studio/logs/
+.config/obsidian/
+.config/pulse/
+.config/clash/
+.fehbg
 !.config/google-chrome/Default
 Desktop/
 Documents/
@@ -23,7 +32,7 @@ Pictures/
 plugged/
 Public/
 __pycache__/
-.ssh/*
+.ssh/
 Templates/
 .themes/
 tmp/
@@ -33,3 +42,4 @@ Videos/
 wall.set
 .xsession-errors*
 .zcompdump*
+.config/Code*/
