@@ -2,4 +2,13 @@
 TerminalApplication=kitty
 
 [Icons]
-Theme=Tela-circle-black
+Theme=Will be overwritten by themeswitch
+
+[Colors:View]
+BackgroundNormal=#00000000
+
+[KDE]
+widgetStyle=kvantum
+
+[UiSettings]
+ColorScheme=*
