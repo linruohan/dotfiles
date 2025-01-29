@@ -156,11 +156,11 @@ prompt_bzr() {
   (( $+commands[bzr] )) || return
 
   # Test if bzr repository in directory hierarchy
-  local dir="$PWD"
-  while [[ ! -d "$dir/.bzr" ]]; do
-    [[ "$dir" = "/" ]] && return
-    dir="${dir:h}"
-  done
+  # local dir="$PWD"
+  # while [[ ! -d "$dir/.bzr" ]]; do
+  #   [[ "$dir" = "/" ]] && return
+  #   dir="${dir:h}"
+  # done
 
   local bzr_status status_mod status_all revision
   if bzr_status=$(command bzr status 2>&1); then
