@@ -31,7 +31,7 @@ map("n", "<S-h>", function()
 end, { desc = "buffer goto prev" })
 -- map("n", "<leader>x", function()
   -- require("nvchad.tabufline").close_buffer()
-end, { desc = "buffer close" })
+-- end, { desc = "buffer close" })
 
 
 map("i", "jk", "<ESC>", { desc = "escape insert mode" })
