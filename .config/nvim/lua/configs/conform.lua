@@ -2,7 +2,7 @@ local options = {
   lsp_fallback = true,
   formatters_by_ft = {
     lua = { "stylua" },
-svelte = { "svelte_fmt" }, -- custom
+    svelte = { "svelte_fmt" }, -- custom
 
     -- javascript = { "prettier" },
     css = { "prettier" },
@@ -17,7 +17,7 @@ svelte = { "svelte_fmt" }, -- custom
     objcpp = { "clang_format" },
     cuda = { "clang_format" },
     proto = { "clang_format" },
-           -- webdev
+    -- webdev
     javascript = { "biome" },
     javascriptreact = { "biome" },
     typescript = { "biome" },
@@ -27,6 +27,7 @@ svelte = { "svelte_fmt" }, -- custom
     html = { "biome" },
     json = { "biome" },
     jsonc = { "biome" },
+    rust = { "rust-analyzer" },
 
     markdown = { "deno_fmt" },
     sh = { "shfmt" },

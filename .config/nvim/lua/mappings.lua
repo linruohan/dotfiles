@@ -32,8 +32,8 @@ end, { desc = "buffer goto prev" })
 -- map("n", "<leader>x", function()
   -- require("nvchad.tabufline").close_buffer()
 -- end, { desc = "buffer close" })
-
-
+map("n", "<C-f>", "<cmd>Telescope live_grep<CR>", { desc = "telescope live grep" })
+map("n", "<C-p>", "<cmd>Telescope find_files<cr>", { desc = "telescope find files" })
 map("i", "jk", "<ESC>", { desc = "escape insert mode" })
 
 -- Mappings for M.shade

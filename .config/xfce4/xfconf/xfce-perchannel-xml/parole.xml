@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="parole" version="1.0">
   <property name="subtitles" type="empty">
     <property name="font" type="string" value="Sans Bold 20"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/xiaohan"/>
+    <property name="last-used-media" type="string" value="/run/media/xiaohan/4A9809FF9809EA71/Users/Administrator/Music/CloudMusic"/>
   </property>
   <property name="window" type="empty">
-    <property name="maximized" type="bool" value="false"/>
+    <property name="maximized" type="bool" value="true"/>
+    <property name="width" type="int" value="1280"/>
+    <property name="height" type="int" value="1398"/>
   </property>
   <property name="audio" type="empty">
-    <property name="volume" type="int" value="50"/>
+    <property name="volume" type="int" value="70"/>
   </property>
 </channel>
