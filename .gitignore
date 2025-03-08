@@ -1,6 +1,7 @@
 .bash_*
 .cache/
 .cargo/
+.rustup/
 !.cargo/config.toml
 .cargo/registry/
 .config/dunst/
