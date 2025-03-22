@@ -46,3 +46,7 @@ wall.set
 .xsession-errors*
 .zcompdump*
 .config/Code*/
+.cargo/.global-cache
+.config/dconf/user
+.config/ibus/bus/20b5115b09364569b8d3c65aa77cd376-unix-1
+.config/ibus/bus/20b5115b09364569b8d3c65aa77cd376-unix-wayland-1
