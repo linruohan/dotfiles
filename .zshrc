@@ -94,7 +94,7 @@ alias mkdir='mkdir -pv'
 alias ..='cd ../../'
 alias ...='cd ../../..'
 alias l='lsd -d .* --color=auto'
-alias ll='lsd -laF --color=auto'
+alias ll='sudo lsd -laF --color=auto'
 alias ls='lsd --color=auto'
 alias f='shfmt -d -i 4 -ci -w -bn -sr'
 # Changing "ls" to "exa"
