@@ -1,5 +1,14 @@
-vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
-vim.g.mapleader = " "
+require "core.globals"
+require "core.env"
+require "options"
+
+if vim.version().minor >= 11 then
+  vim.tbl_add_reverse_lookup = function(tbl)
+    for k, v in pairs(tbl) do
+      tbl[v] = k
+    end
+  end
+end
 
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
@@ -9,32 +18,31 @@ if not vim.loop.fs_stat(lazypath) then
   vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
 end
 
-vim.opt.rtp:prepend(lazypath)
+vim.opt.runtimepath:prepend(lazypath)
 
-local lazy_config = require "configs.lazy"
+-- NOTE: lazy.nvim options
+local lazy_config = require "core.lazy"
 
--- load plugins
+-- NOTE: Load plugins
 require("lazy").setup({
   {
     "NvChad/NvChad",
     lazy = false,
     branch = "v2.5",
     import = "nvchad.plugins",
-    config = function()
-      require "options"
-    end,
   },
 
   { import = "plugins" },
 }, lazy_config)
 
--- load theme
-dofile(vim.g.base46_cache .. "defaults")
-dofile(vim.g.base46_cache .. "statusline")
+-- Load the highlights
+for _, v in ipairs(vim.fn.readdir(vim.g.base46_cache)) do
+  dofile(vim.g.base46_cache .. v)
+end
 
 require "nvchad.autocmds"
-
-vim.schedule(function()
-  require "mappings"
-end)
-require 'myinit'
+require "core.commands"
+require "core.autocommands"
+require "core.filetypes"
+require "core.utils"
+require "mappings"
