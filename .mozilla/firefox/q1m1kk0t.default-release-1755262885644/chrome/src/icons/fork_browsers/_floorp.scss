@@ -1,0 +1,96 @@
+// Page Action button. Not always visible
+#ssbPageAction-image {
+  list-style-image: url("../icons/pwa-install.svg");
+  &[open-ssb="true"] {
+    // Page Action button. If page has been already installed or can be install PWA
+    list-style-image: url("../icons/pwa-launch.svg");
+  }
+}
+
+@include Option("userChrome.icon.panel") {
+  #rebootappmenu {
+    list-style-image: url("../icons/refresh-cw.svg");
+  }
+
+  #openprofiledir {
+    list-style-image: var(--uc-folder-icon);
+  }
+
+  // Panel UI top button
+  #appMenu-ssb-button {
+    list-style-image: url("../icons/pwa-manage.svg");
+  }
+
+  // Panel UI subView button  for install ssb
+  #appMenu-install-or-open-ssb-current-page-button {
+    list-style-image: url("../icons/pwa-install.svg");
+    &[open-ssb="true"] {
+      // Panel UI subView button  for open ssb window
+      list-style-image: url("../icons/pwa-launch.svg");
+    }
+  }
+}
+@include Option("userChrome.icon.menu") {
+  #toggle_sharemode {
+    --menuitem-image: url("chrome://branding/content/about-logo-private.png");
+  }
+
+  #usercssloader-menu {
+    --menuitem-image: url("../icons/developer.svg");
+  }
+  #usercssloader-menupopup > menu[data-l10n-id="css-menu"] {
+    --menuitem-image: url("../icons/document-css.svg");
+  }
+  #usercssloader-submenupopup > menuitem {
+    &[data-l10n-id="rebuild-css"] {
+      --menuitem-image: url("chrome://global/skin/icons/reload.svg");
+    }
+
+    &[data-l10n-id="make-browsercss-file"] {
+      --menuitem-image: url("chrome://global/skin/icons/edit.svg");
+    }
+    &[data-l10n-id="open-css-folder"] {
+      --menuitem-image: var(--uc-folder-icon);
+    }
+    &[data-l10n-id="edit-userChromeCss-editor"] {
+      --menuitem-image: url("chrome://browser/skin/window.svg");
+    }
+    &[data-l10n-id="edit-userContentCss-editor"] {
+      --menuitem-image: url("chrome://global/skin/icons/page-portrait.svg");
+    }
+  }
+
+  #context_toggleToPrivateContainer,
+  #open_in_private_container {
+    --menuitem-image: url("../icons/private-favicon.svg");
+  }
+
+
+  #toggle_statusBar {
+    --menuitem-image: url("../icons/pulse-square.svg");
+  }
+
+  // Sidebar
+  #muteMenu {
+    --menuitem-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg");
+    stroke: transparent !important;
+  }
+  #unloadWebpanelMenu {
+    --menuitem-image: var(--uc-tab-unload-icon);
+  }
+  #changeUAWebpanelMenu {
+    --menuitem-image: url("../icons/command-responsivemode.svg");
+    fill-opacity: 0;
+  }
+  #deleteWebpanelMenu {
+    --menuitem-image: url("chrome://global/skin/icons/delete.svg");
+  }
+
+  // PWA Context Menu
+  #run-ssb-contextmenu {
+    --menuitem-image: url("../icons/pwa-launch.svg");
+  }
+  #uninstall-ssb-contextmenu {
+    --menuitem-image: url("../icons/pwa-remove.svg");
+  }
+}

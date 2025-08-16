@@ -1,0 +1,106 @@
+on:
+  push:
+    tags:
+      - "v*" # push events to matching v*, i.e. v1.0, v20.15.10
+
+jobs:
+  sync-branches:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Merge master -> photon-style
+        uses: devmasx/merge-branch@1.4.0
+        with:
+          type: now
+          from_branch: master
+          target_branch: photon-style
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Merge master -> proton-style
+        uses: devmasx/merge-branch@1.4.0
+        with:
+          type: now
+          from_branch: master
+          target_branch: proton-style
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  upload-files:
+    runs-on: ubuntu-latest
+    needs: sync-branches
+    strategy:
+      matrix:
+        include:
+          - mode: "STANDARD"
+            name: "Lepton"
+            branch: "master"
+          - mode: "STANDARD"
+            name: "Lepton-Photon-Style"
+            branch: "photon-style"
+          - mode: "STANDARD"
+            name: "Lepton-Proton-Style"
+            branch: "proton-style"
+          - mode: "ESR"
+            name: "ESR-Lepton"
+            branch: "master"
+          - mode: "ESR"
+            name: "ESR-Lepton-Photon-Style"
+            branch: "photon-style"
+          - mode: "ESR"
+            name: "ESR-Lepton-Proton-Style"
+            branch: "proton-style"
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ matrix.branch }}
+
+      - name: Info file Creation
+        run: |
+          rm -f LEPTON
+
+          # or BRANCH=$(git rev-parse --abbrev-ref HEAD)
+          # or TAGVER=$(git describe --tags --abbrev=0)
+          BRANCH=${{ matrix.branch }}
+          TAGVER=${GITHUB_REF#refs/*/}
+
+          echo -e "[Info]\nVer=${TAGVER}\nBranch=${BRANCH}" > LEPTON
+
+      - name: Processing for STANDARD
+        if: matrix.mode == 'STANDARD'
+        run: |
+          rm css/leptonChromeESR.css
+          rm css/leptonContentESR.css
+
+      - name: Processing for ESR
+        if: matrix.mode == 'ESR'
+        run: |
+          sed -i "s/\.css/ESR\.css/g" userChrome.css
+          sed -i "s/\.css/ESR\.css/g" userContent.css
+          rm css/leptonChrome.css
+          rm css/leptonContent.css
+
+      - name: Release Structure
+        run: |
+          # Remove unnecessary files
+          rm -rf ./.git ./.github ./__tests__ ./docs ./src
+          rm -rf ./.gitattributes ./.gitignore ./.prettierignore ./.prettierrc.json
+          rm -rf ./package.json ./yarn.lock ./waterfox.sh
+          rm -rf ./CODE_OF_CONDUCT.md ./CONTRIBUTING.md ./README.org
+
+          # Move to ./chrome/
+          mkdir -v chrome
+
+          shopt -s extglob
+          mv -v !(chrome|CREDITS|LICENSE|user.js|install.sh|install.ps1) chrome/
+
+          # Zip files
+          zip -rv ${{ matrix.name }}.zip chrome CREDITS LICENSE user.js install.sh install.ps1
+
+      - uses: softprops/action-gh-release@v1 # actions/create-release, actions/upload-release-asset is deprecated
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            ${{ matrix.name }}.zip

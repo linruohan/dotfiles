@@ -1,0 +1,16 @@
+[1]
+Active Tab Index=0
+Tab Count=1
+Tab Data 0=\x00\x00\x00\x02\x00\x00\x00\x00Sfile:///home/xiaohan/.mozilla/firefox/q1m1kk0t.default-release-1755262885644/chrome\x00\x00\x00\x00\x01\x00\x00\x00]file:///home/xiaohan/.mozilla/firefox/q1m1kk0t.default-release-1755262885644/chrome/__tests__\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x1b\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x01\x00\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+ClassName=DolphinMainWindow
+MenuBar=Disabled
+ObjectName=Dolphin#1
+
+[WindowProperties1][Toolbar mainToolBar]
+IconSize=16
+ToolButtonStyle=IconOnly

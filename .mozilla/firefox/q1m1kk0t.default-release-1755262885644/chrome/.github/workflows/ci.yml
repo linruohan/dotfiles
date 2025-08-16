@@ -1,0 +1,33 @@
+name: CI
+
+# This action works with pull requests and pushes
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - dev
+      - photon-style
+      - proton-style
+    paths:
+      - userChrome.css
+      - userContent.css
+      - css/**
+      - src/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: ./.github/actions/node-setup
+
+      - name: Build
+        run: yarn build
+
+      - name: Test
+        run: yarn test

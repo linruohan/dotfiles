@@ -1,0 +1,69 @@
+/*= organizeButtonPopup ======================================================*/
+#newbookmark {
+  --menuitem-image: url("chrome://browser/skin/bookmark.svg");
+}
+#newfolder {
+  --menuitem-image: var(--uc-folder-icon);
+}
+#newseparator {
+  --menuitem-image: url("../icons/vertical-line.svg");
+}
+
+#orgUndo {
+  --menuitem-image: url("../icons/undo.svg");
+}
+#orgRedo {
+  @include Option("userChrome.icon.menu.full") {
+    --menuitem-image: url("../icons/redo.svg");
+  }
+}
+
+#orgCut {
+  --menuitem-image: url("../icons/edit-cut.svg");
+}
+#orgCopy {
+  --menuitem-image: url("../icons/edit-copy.svg");
+}
+#orgPaste {
+  --menuitem-image: url("../icons/edit-paste.svg");
+}
+#orgDelete {
+  --menuitem-image: url("chrome://global/skin/icons/delete.svg");
+}
+
+#orgSelectAll {
+  --menuitem-image: url("../icons/select-all-on.svg");
+}
+
+#orgClose {
+  --menuitem-image: url("chrome://global/skin/icons/close.svg");
+}
+
+/*= viewMenuPopup ============================================================*/
+#viewColumns {
+  --menuitem-image: url("chrome://global/skin/icons/columnpicker.svg");
+}
+#viewSort {
+  --menuitem-image: url("../icons/text-sort-ascending.svg");
+}
+
+/*= maintenanceButtonPopup ===================================================*/
+#backupBookmarks {
+  --menuitem-image: url("../icons/datastore.svg");
+}
+#fileRestoreMenu {
+  @include Option("userChrome.icon.menu.full") {
+    --menuitem-image: url("../icons/datarestore.svg");
+  }
+}
+
+#fileImport {
+  --menuitem-image: url("../icons/toolbarButton-download.svg");
+}
+#fileExport {
+  --menuitem-image: url("../icons/toolbarButton-upload.svg");
+}
+
+#browserImport {
+  --menuitem-image: url("chrome://browser/skin/import.svg");
+}

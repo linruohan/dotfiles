@@ -1,0 +1,35 @@
+/** Import Lepton stylesheet (Content) ****************************************/
+@import url("css/leptonContent.css");
+
+
+@-moz-document url(about:home), url(about:blank), url(about:newtab), url(about:privatebrowsing) {
+    .top-site-button .title, .context-menu-button {
+        color: #fff !important ;
+        text-shadow: 2px 2px 2px #222 !important ;
+    }
+
+    .logo-and-wordmark {
+        display: none !important;
+    }
+
+    .search-wrapper {
+        display: none !important;
+    }
+
+    body {
+        --newtab-topsites-outer-card-hover:rgba(255, 255, 255, 0.4) !important;
+        --newtab-element-hover-color: rgba(255, 255, 255, 0.3) !important;
+    }
+
+    body::before {
+        content: "" ;
+        z-index: -1 ;
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        background:radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), no-repeat url("./4.jpg") center ;
+        background-size: cover ;
+        width: 100vw ;
+        height: 100vh ;
+    }
+}

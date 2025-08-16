@@ -1,0 +1,43 @@
+@use "mode";
+// -moz-toolbar-prefers-color-scheme is removed at v95, #250
+
+@mixin Dark() {
+  @if mode.isESR() {
+    @media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+      @content;
+    }
+  } @else {
+    @media (prefers-color-scheme: dark) {
+      @content;
+    }
+  }
+}
+@mixin Light() {
+  @if mode.isESR() {
+    @media (-moz-toolbar-prefers-color-scheme: light), (prefers-color-scheme: light) {
+      @content;
+    }
+  } @else {
+    @media (prefers-color-scheme: light) {
+      @content;
+    }
+  }
+}
+
+@mixin Contrast() {
+  @media (prefers-contrast) {
+    @content;
+  }
+}
+
+@mixin NotContrast() {
+  @media not all and (prefers-contrast) {
+    @content;
+  }
+}
+
+@mixin Animate() {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}

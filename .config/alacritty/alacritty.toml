@@ -141,7 +141,7 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
 [window]
 decorations = "Full"
-opacity = 1
+opacity = 0.35
 [window.dimensions]
 columns = 800
 lines = 250

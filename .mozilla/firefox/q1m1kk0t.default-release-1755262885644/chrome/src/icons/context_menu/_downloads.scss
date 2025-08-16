@@ -1,0 +1,48 @@
+/*= downloadsContextMenu =====================================================*/
+.downloadPauseMenuItem {
+  --menuitem-image: url("chrome://global/skin/media/pause-fill.svg");
+}
+.downloadResumeMenuItem {
+  --menuitem-image: url("chrome://global/skin/media/play-fill.svg");
+}
+.downloadUnblockMenuItem {
+  --menuitem-image: url("../icons/checkmark-circle.svg");
+}
+.downloadUseSystemDefaultMenuItem {
+  --menuitem-image: url("../icons/toolbarButton-upload.svg");
+}
+.downloadAlwaysUseSystemDefaultMenuItem {
+  /* checkbox */
+  --menuitem-image: url("../icons/folder-globe.svg");
+}
+.downloadAlwaysOpenSimilarFilesMenuItem {
+  /* checkbox */
+  --menuitem-image: url("../icons/fluid.svg");
+}
+.downloadShowMenuItem {
+  --menuitem-image: var(--uc-folder-icon);
+}
+
+#downloadsContextMenu > menuitem {
+  &.downloadOpenReferrerMenuItem,
+  &[command="downloadsCmd_openReferrer"] {
+    --menuitem-image: url("../icons/link-square.svg");
+  }
+  &.downloadCopyLocationMenuItem,
+  &[command="downloadsCmd_copyLocation"] {
+    --menuitem-image: url("../icons/link.svg");
+  }
+}
+
+.downloadDeleteFileMenuItem {
+  --menuitem-image: url("chrome://global/skin/icons/delete.svg");
+}
+.downloadRemoveFromHistoryMenuItem {
+  --menuitem-image: url("../icons/eraser.svg");
+}
+#downloadsContextMenu > menuitem {
+  &[command="downloadsCmd_clearList"],
+  &[command="downloadsCmd_clearDownloads"] {
+    --menuitem-image: url("../icons/broom.svg");
+  }
+}
