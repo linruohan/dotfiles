@@ -5,11 +5,28 @@
     // - "system": Use the theme that corresponds to the system's appearance
     // - "light": Use the theme indicated by the "light" field
     // - "dark": Use the theme indicated by the "dark" field
+    "edit_predictions": {
+        "disabled_globs": [
+            "**/.git/**",
+            "**/node_modules/**",
+            "**/vendor/**",
+            "**/target/**"
+        ],
+        "mode": "eager",
+        "copilot": {
+            "proxy": null,
+            "proxy_no_verify": null
+        },
+        "enabled_in_text_threads": false
+    },
+    // 性能优化
+    "lsp_highlight_debounce": 100,
+    "hide_mouse": "on_typing",
     "icon_theme": "VSCode Great Icons Theme",
     "theme": {
         "mode": "system",
-        "light": "Tokyo Night",
-        "dark": "Tokyo Night"
+        "light": "One Light",
+        "dark": "Catppuccin Latte"
     },
     // The name of a base set of key bindings to use.
     // This setting can take four values, each named after another
@@ -24,8 +41,8 @@
     "base_keymap": "Atom",
     // Features that can be globally enabled or disabled
     "features": {
-        // Which inline completion provider to use.
-        "inline_completion_provider": "copilot" //  none/supermaven
+        // Which inline completion provider to use.//  none/supermaven
+        "edit_prediction_provider": "copilot"
     },
     // The name of a font to use for rendering text in the editor
     "buffer_font_family": "FantasqueSansM Nerd Font", // "Zed Plex Mono",
@@ -38,7 +55,7 @@
         // "calt": false
     },
     // The default font size for text in the editor
-    "buffer_font_size": 21,
+    "buffer_font_size": 19,
     // The weight of the editor font in standard CSS units from 100 to 900.
     "buffer_font_weight": 400,
     // Set the buffer's line height.
@@ -54,7 +71,7 @@
     "buffer_line_height": "comfortable",
     // The name of a font to use for rendering text in the UI
     // You can set this to ".SystemUIFont" to use the system font
-    "ui_font_family": "LXGW WenKai GB", //"Zed Plex Sans",
+    "ui_font_family": "霞鹜文楷 GB 屏幕阅读版", //"Zed Plex Sans",
     // Set the UI's font fallbacks, this will be merged with the platform's
     // default font fallbacks.
     "ui_font_fallbacks": null,
@@ -66,20 +83,18 @@
     // The weight of the UI font in standard CSS units from 100 to 900.
     "ui_font_weight": 400,
     // The default font size for text in the UI
-    "ui_font_size": 15,
+    "ui_font_size": 18,
     // How much to fade out unused code.
     "unnecessary_code_fade": 0.3,
     // Active pane styling settings.
     "active_pane_modifiers": {
-        // The factor to grow the active pane by. Defaults to 1.0
-        // which gives the same size as all other panes.
-        "magnification": 1.0,
         // Inset border size of the active pane, in pixels.
         "border_size": 0.0,
         // Opacity of the inactive panes. 0 means transparent, 1 means opaque.
         // Values are clamped to the [0.0, 1.0] range.
         "inactive_opacity": 1.0
     },
+    "bottom_dock_layout": "full",
     // The direction that you want to split panes horizontally. Defaults to "up"
     "pane_split_direction_horizontal": "up",
     // The direction that you want to split panes horizontally. Defaults to "left"
@@ -121,7 +136,7 @@
     // When set to false, Zed will use the built-in keyboard-first pickers.
     "use_system_path_prompts": true,
     // Whether the cursor blinks in the editor.
-    "cursor_blink": true,
+    "cursor_blink": false,
     // Cursor shape for the default editor.
     //  1. A vertical bar
     //     "bar"
@@ -153,7 +168,7 @@
     "show_completion_documentation": true,
     // The debounce delay before re-querying the language server for completion
     // documentation when not included in original completion list.
-    "completion_documentation_secondary_query_debounce": 300,
+    // "completion_documentation_secondary_query_debounce": 300,
     // Show method signatures in the editor, when inside parentheses.
     "auto_signature_help": false,
     /// Whether to show the signature help after completion or a bracket pair inserted.
@@ -200,10 +215,10 @@
     "always_treat_brackets_as_autoclosed": false,
     // Controls whether inline completions are shown immediately (true)
     // or manually by triggering `editor::ShowInlineCompletion` (false).
-    "show_inline_completions": true,
+    // "show_inline_completions": true,
     // Controls whether inline completions are shown in a given language scope.
     // Example: ["string", "comment"]
-    "inline_completions_disabled_in": [],
+    // "inline_completions_disabled_in": [],
     // Whether to show tabs and spaces in the editor.
     // This setting can take three values:
     //
@@ -238,18 +253,6 @@
     },
     // Scrollbar related settings
     "scrollbar": {
-        // When to show the scrollbar in the editor.
-        // This setting can take four values:
-        //
-        // 1. Show the scrollbar if there's important information or
-        //    follow the system's configured behavior (default):
-        //   "auto"
-        // 2. Match the system's configured behavior:
-        //    "system"
-        // 3. Always show the scrollbar:
-        //    "always"
-        // 4. Never show the scrollbar:
-        //    "never"
         "show": "auto",
         // Whether to show cursor positions in the scrollbar.
         "cursors": true,
@@ -260,7 +263,15 @@
         // Whether to show selected symbol occurrences in the scrollbar.
         "selected_symbol": true,
         // Whether to show diagnostic indicators in the scrollbar.
-        "diagnostics": "all"
+        "diagnostics": "warning",
+        "axes": {
+            "horizontal": false
+        }
+    },
+    "minimap": {
+        "show": "auto",
+        "thumb": "hover",
+        "thumb_border": "full"
     },
     // Enable middle-click paste on Linux.
     "middle_click_paste": true,
@@ -277,7 +288,6 @@
         // Whether to show line numbers in the gutter.
         "line_numbers": true,
         // Whether to show code action buttons in the gutter.
-        "code_actions": true,
         // Whether to show runnables buttons in the gutter.
         "runnables": true,
         // Whether to show fold buttons in the gutter.
@@ -317,7 +327,6 @@
     "experimental.theme_overrides": {
         "syntax": {
             "comment": {
-                "font_family": "Inter",
                 "font_style": "italic",
                 "font_weight": 400
             }
@@ -344,7 +353,7 @@
     // Inlay hint related settings
     "inlay_hints": {
         // Global switch to toggle hints on and off, switched off by default.
-        "enabled": false,
+        "enabled": true,
         // Toggle certain types of hints on and off, all switched on by default.
         "show_type_hints": true,
         "show_parameter_hints": true,
@@ -470,8 +479,8 @@
             ///    "always"
             /// 5. Never show the scrollbar:
             ///    "never"
-            "show": null,
-            "coloring": "indent_aware"
+            "show": null
+            // "coloring": "indent_aware"
         }
     },
     // 协作面板
@@ -504,30 +513,7 @@
         // Default width of the notification panel.
         "default_width": 380
     },
-    "assistant": {
-        // Version of this setting.
-        "version": "2",
-        // Whether the assistant is enabled.
-        "enabled": true,
-        // Whether to show inline hints showing the keybindings to use the inline assistant and the
-        // assistant panel.
-        "show_hints": true,
-        // Whether to show the assistant panel button in the status bar.
-        "button": true,
-        // Where to dock the assistant panel. Can be 'left', 'right' or 'bottom'.
-        "dock": "right",
-        // Default width when the assistant is docked to the left or right.
-        "default_width": 640,
-        // Default height when the assistant is docked to the bottom.
-        "default_height": 320,
-        // The default model to use when creating new chats.
-        "default_model": {
-            // The provider to use.
-            "provider": "zed.dev",
-            // The model to use.
-            "model": "claude-3-5-sonnet"
-        }
-    },
+
     // "assistant": {
     //   // Version of this setting.
     //   "default_model": {
@@ -550,11 +536,6 @@
         "docs": {
             // Whether `/docs` is enabled.
             "enabled": false
-        },
-        // Settings for the `/project` slash command.
-        "project": {
-            // Whether `/project` is enabled.
-            "enabled": false
         }
     },
     // Whether the screen sharing icon is shown in the os status bar.
@@ -568,21 +549,9 @@
     //
     // This is typically customized on a per-language basis.
     "language_servers": ["..."],
-    // When to automatically save edited buffers. This setting can
-    // take four values.
-    //
-    // 1. Never automatically save:
-    //     "autosave": "off",
-    // 2. Save when changing focus away from the Zed window:
-    //     "autosave": "on_window_change",
-    // 3. Save when changing focus away from a specific buffer:
-    //     "autosave": "on_focus_change",
-    // 4. Save when idle for a certain amount of time:
-    //     "autosave": { "after_delay": {"milliseconds": 500} },
     "autosave": "on_window_change",
     // Settings related to the editor's tab bar.
     "tab_bar": {
-        // Whether or not to show the tab bar in the editor
         "show": true,
         // Whether or not to show the navigation history buttons.
         "show_nav_history_buttons": false
@@ -595,12 +564,6 @@
         "close_position": "right",
         // Whether to show the file icon for a tab.
         "file_icons": false,
-        // What to do after closing the current tab.
-        //
-        // 1. Activate the tab that was open previously (default)
-        //     "History"
-        // 2. Activate the neighbour tab (prefers the right one, if present)
-        //     "Neighbour"
         "activate_on_close": "history"
     },
     // Settings related to preview tabs.
@@ -640,7 +603,7 @@
     // before saving it.
     "remove_trailing_whitespace_on_save": true,
     // Whether to start a new line with a comment when a previous line is a comment as well.
-    "extend_comment_on_newline": true,
+    "extend_comment_on_newline": false,
     // Whether or not to ensure there's a single newline at the end of a buffer
     // when saving it.
     "ensure_final_newline_on_save": true,
@@ -704,6 +667,7 @@
     // Add files or globs of files that will be excluded by Zed entirely:
     // they will be skipped during FS scan(s), file tree and file search
     // will lack the corresponding file entries.
+
     "file_scan_exclusions": [
         "**/.git",
         "**/.svn",
@@ -716,36 +680,14 @@
         "**/vendor",
         "**/.tmp*"
     ],
-    "search.exclude": {
-        "**/*.snap": true,
-        "**/.git": true,
-        "**/.github": false,
-        "**/.nuxt": true,
-        "**/.output": true,
-        "**/.pnpm": true,
-        "**/.vscode": true,
-        "**/.yarn": true,
-        "**/node_modules": true,
-        "**/out/**": true,
-        "**/package-lock.json": true,
-        "**/pnpm-lock.yaml": true,
-        "**/temp": true,
-        "**/yarn.lock": true,
-        "**/CHANGELOG*": true,
-        "**/LICENSE*": true
-    },
+
     // Git gutter behavior configuration.
     "git": {
-        // Control whether the git gutter is shown. May take 2 values:
-        // 1. Show the gutter
-        //      "git_gutter": "tracked_files"
-        // 2. Hide the gutter
-        //      "git_gutter": "hide"
         "git_gutter": "tracked_files",
         // Control whether the git blame information is shown inline,
         // in the currently focused line.
         "inline_blame": {
-            "enabled": true,
+            "enabled": true
             // Sets a delay after which the inline blame information is shown.
             // Delay is restarted with every cursor movement.
             // "delay_ms": 600
@@ -755,18 +697,7 @@
             //
             // The minimum column number to show the inline blame information at
             // "min_column": 0
-            "position": "right"
-        },
-        "enabled": true,
-        "autoFetch": true,
-        "autoFetchInterval": 300,
-        "autoFetchOnFocus": true,
-        "autoFetchOnWindowChange": true,
-        "autoFetchOnBuild": true,
-        "git_status": true,
-        "autoFetchOnBuildEvents": ["build", "run", "debug"],
-        "autoFetchOnBuildEventsDelay": 1500,
-        "autoFetchOnBuildDelay": 1500
+        }
     },
     // Configuration for how direnv configuration should be loaded. May take 2 values:
     // 1. Load direnv configuration using `direnv export json` directly.
@@ -774,10 +705,7 @@
     // 2. Load direnv configuration through the shell hook, works for POSIX shells and fish.
     //      "load_direnv": "shell_hook"
     "load_direnv": "direct",
-    "inline_completions": {
-        // A list of globs representing files that inline completions should be disabled for.
-        "disabled_globs": [".env"]
-    },
+
     // Settings specific to journaling
     "journal": {
         // The path of the directory where journal entries are stored
@@ -806,7 +734,6 @@
         //     }
         "font_family": "FantasqueSansM Nerd Font",
         "shell": {
-            "program": "C:\\software\\scoop\\apps\\git\\current\\bin\\bash.exe"
         },
         // Where to dock terminals panel. Can be `left`, `right`, `bottom`.
         "dock": "bottom",
@@ -909,7 +836,6 @@
         },
         "toolbar": {
             // Whether to display the terminal title in its toolbar.
-            "title": true
         }
         // Set the terminal's font size. If this option is not included,
         // the terminal will default to matching the buffer's font size.
@@ -970,28 +896,52 @@
     // If you don't want any of these extensions, add this field to your settings
     // and change the value to `false`.
     "auto_install_extensions": {
-        "html": true
+        "html": true,
+        "rust": true,
+        "python": true,
+        "dockerfile": false
     },
     // Different settings for specific languages.
     "languages": {
-        // "Shell Script": {
-        //     "formatter": "shfmt",
-        //     "format_on_save": {
-        //         "external": {
-        //             "command": "shfmt",
-        //             "arguments": ["-d", "-i", "4", "-ci", "-bn", "-sr"]
-        //         }
-        //     }
-        // },
-        "Python": {
-            "tab_size": 4,
-            "formatter": "language_server",
-            "format_on_save": {
+        "Shell Script": {
+            "format_on_save": "on",
+            "formatter": {
                 "external": {
-                    "command": "black",
-                    "arguments": ["-"]
+                    "command": "shfmt",
+                    // Change `--indent 2` to match your preferred tab_size
+                    // "arguments": ["--filename", "{buffer_path}", "--indent", "2"]
+                    "arguments": [
+                        "--filename",
+                        "{buffer_path}",
+                        // "-d",
+                        "-i",
+                        "4",
+                        "-ci",
+                        "-bn",
+                        "-sr"
+                    ]
                 }
             }
+        },
+        "Python": {
+            "tab_size": 4,
+            "language_servers": ["ruff", "pylsp", "!pyright"],
+            "format_on_save": "on",
+            "formatter": [
+                {
+                    "language_server": {
+                        "name": "ruff"
+                    }
+                },
+                {
+                    "code_actions": {
+                        // Fix all auto-fixable lint violations
+                        "source.fixAll.ruff": true,
+                        // Organize imports
+                        "source.organizeImports.ruff": true
+                    }
+                }
+            ]
         },
         "C++": {
             "format_on_save": "off",
@@ -1006,9 +956,7 @@
         "Rust": {
             "tab_size": 4
         },
-        "Zig": {
-            "tab_size": 4
-        },
+
         "TSX": {
             "language_servers": ["!typescript-language-server", "vtsls", "..."],
             "prettier": {
@@ -1025,64 +973,34 @@
                 "source.fixAll.eslint": true
             }
         },
-        "Astro": {
-            "language_servers": ["astro-language-server", "..."],
-            "prettier": {
-                "allowed": true,
-                "plugins": ["prettier-plugin-astro"]
-            }
-        },
-        "Blade": {
-            "prettier": {
-                "allowed": true
-            }
-        },
         "C": {
             "format_on_save": "off",
             "use_on_type_format": false
         },
+
         "CSS": {
             "prettier": {
                 "allowed": true
             }
         },
-        "Dart": {
-            "tab_size": 2
-        },
+
         "Diff": {
             "remove_trailing_whitespace_on_save": false,
             "ensure_final_newline_on_save": false
         },
-        "Elixir": {
-            "language_servers": ["elixir-ls", "!next-ls", "!lexical", "..."]
-        },
-        "Erlang": {
-            "language_servers": ["erlang-ls", "!elp", "..."]
-        },
+
         "Go": {
             "code_actions_on_format": {
                 "source.organizeImports": true
             }
         },
-        "GraphQL": {
-            "prettier": {
-                "allowed": true
-            }
-        },
-        "HEEX": {
-            "language_servers": ["elixir-ls", "!next-ls", "!lexical", "..."]
-        },
+
         "HTML": {
             "prettier": {
                 "allowed": true
             }
         },
-        "Java": {
-            "prettier": {
-                "allowed": true,
-                "plugins": ["prettier-plugin-java"]
-            }
-        },
+
         "JavaScript": {
             "language_servers": ["!typescript-language-server", "vtsls", "..."],
             "prettier": {
@@ -1115,17 +1033,7 @@
                 "allowed": true
             }
         },
-        "PHP": {
-            "language_servers": ["phpactor", "!intelephense", "..."],
-            "prettier": {
-                "allowed": true,
-                "plugins": ["@prettier/plugin-php"],
-                "parser": "php"
-            }
-        },
-        "Ruby": {
-            "language_servers": ["solargraph", "!ruby-lsp", "!rubocop", "..."]
-        },
+
         "SCSS": {
             "prettier": {
                 "allowed": true
@@ -1137,21 +1045,7 @@
                 "plugins": ["prettier-plugin-sql"]
             }
         },
-        "Starlark": {
-            "language_servers": ["starpls", "!buck2-lsp", "..."]
-        },
-        "Svelte": {
-            "language_servers": ["svelte-language-server", "..."],
-            "prettier": {
-                "allowed": true,
-                "plugins": ["prettier-plugin-svelte"]
-            }
-        },
-        "Twig": {
-            "prettier": {
-                "allowed": true
-            }
-        },
+
         "TypeScript": {
             "language_servers": ["!typescript-language-server", "vtsls", "..."],
             "prettier": {
@@ -1169,7 +1063,7 @@
             }
         },
         "Vue.js": {
-            "language_servers": ["vue-language-server"],
+            "language_servers": ["vue-language-server", "..."],
             "prettier": {
                 "allowed": true
             }
@@ -1185,10 +1079,10 @@
                 "allowed": true
             }
         }
-    }, // Different settings for specific language models.
+    },
+    // Different settings for specific language models.
     "language_models": {
         "anthropic": {
-            "version": "1",
             "api_url": "https://api.anthropic.com"
         },
         "google": {
@@ -1198,7 +1092,6 @@
             "api_url": "http://localhost:11434"
         },
         "openai": {
-            "version": "1",
             "api_url": "https://api.openai.com/v1"
         }
     },
@@ -1224,15 +1117,75 @@
     },
     // LSP Specific settings.
     "lsp": {
-        // Specify the LSP name as a key here.
-        // "rust-analyzer": {
-        //     // These initialization options are merged into Zed's defaults
-        //     "initialization_options": {
-        //         "check": {
-        //             "command": "clippy" // rust-analyzer.check.command (default: "check")
-        //         }
-        //     }
-        // }
+        "ruff": {
+            "initialization_options": {
+                "settings": {
+                    "configurationPreference": "filesystemFirst",
+                    "exclude": ["**/tests/**"],
+                    "configuration": {
+                        "lint": {
+                            "unfixable": ["F401"],
+                            "extend-select": ["TID251"],
+                            "flake8-tidy-imports": {
+                                "banned-api": {
+                                    "typing.TypedDict": {
+                                        "msg": "Use `typing_extensions.TypedDict` instead"
+                                    }
+                                }
+                            }
+                        },
+                        "format": {
+                            "quote-style": "double",
+                            "indent-style": "space",
+                            "skip-magic-trailing-comma": true,
+                            "line-ending": "auto",
+                            "docstring-code-format": true,
+                            "docstring-code-line-length": "dynamic"
+                        },
+                        "ignore": [
+                            // #### modules
+                            // # "ANN", # flake8-annotations
+                            // # "COM", # flake8-commas
+                            // # "C90", # mccabe complexity
+                            // # "DJ",  # django
+                            // # "EXE", # flake8-executable
+                            // # "T10", # debugger
+                            // # "TID", # flake8-tidy-imports
+                            // #### specific rules
+                            // # "D100",   # ignore missing docs
+                            // # "D101",
+                            // # "D102",
+                            // # "D103",
+                            // # "D104",
+                            // # "D105",
+                            // # "D106",
+                            // # "D107",
+                            // # "D200",
+                            // # "D205",
+                            // # "D212",
+                            // # "D400",
+                            // # "D401",
+                            // # "D415",
+                            // # "E402",   # false positives for local imports
+                            // # "E501",   # line too long
+                            // # "TRY003", # external messages in exceptions are too verbose
+                            // # "TD002",
+                            // # "TD003",
+                            // # "FIX002", # too verbose descriptions of todos
+                        ]
+                    },
+                    "organizeImports": true,
+                    "fixAll": true,
+                    "showSyntaxErrors": true,
+                    "logLevel": "debug",
+                    // Ruff server settings goes here
+                    "lineLength": 120,
+                    "lint": {
+                        "extendSelect": ["I"]
+                    }
+                }
+            }
+        },
         "rust-analyzer": {
             "initialization_options": {
                 "completion": {
@@ -1278,6 +1231,9 @@
                 "rust": {
                     "analyzerTargetDir": true
                 },
+                "check": {
+                    "command": "clippy"
+                },
                 "inlayHints": {
                     "maxLength": null,
                     "lifetimeElisionHints": {
@@ -1288,10 +1244,7 @@
                         "enable": "always"
                     }
                 },
-                "checkOnSave": {
-                    // rust-analyzer.check.command (default: "check")
-                    // "command": "clippy"
-                }
+                "checkOnSave": false
             }
         },
         "eslint": {
@@ -1304,7 +1257,6 @@
     },
     // Jupyter settings
     "jupyter": {
-        "enabled": true
         // Specify the language name as the key and the kernel name as the value.
         // "kernel_selections": {
         //    "python": "conda-base"
@@ -1315,7 +1267,6 @@
     "vim": {
         "toggle_relative_line_numbers": false,
         "use_system_clipboard": "always",
-        "use_multiline_find": false,
         "use_smartcase_find": false,
         "custom_digraphs": {}
     },
@@ -1343,10 +1294,7 @@
         // "theme": "Andromeda"
     },
     // Task-related settings.
-    "task": {
-        // Whether to show task status indicator in the status bar. Default: true
-        "show_status_indicator": true
-    },
+
     // Whether to show full labels in line indicator or short ones
     //
     // Values:
@@ -1401,15 +1349,5 @@
         // }
     ],
     // Configures context servers for use in the Assistant.
-    "context_servers": {},
-    "preferences": {
-        "includeInlayParameterNameHints": "all",
-        "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
-        "includeInlayFunctionParameterTypeHints": true,
-        "includeInlayVariableTypeHints": true,
-        "includeInlayVariableTypeHintsWhenTypeMatchesName": true,
-        "includeInlayPropertyDeclarationTypeHints": true,
-        "includeInlayFunctionLikeReturnTypeHints": true,
-        "includeInlayEnumMemberValueHints": true
-    }
+    "context_servers": {}
 }
