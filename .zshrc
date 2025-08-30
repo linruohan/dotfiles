@@ -317,3 +317,4 @@ clone() {
     git clone ssh://git@ssh.github.com:443/$1
 }
 alias zed="WAYLAND_DISPLAY='' zeditor"
+alias devsidecar="/opt/DevSidecar-2.0.0-x64/@docmirrordev-sidecar-gui &> /dev/null &"

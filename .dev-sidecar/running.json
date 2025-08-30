@@ -900,6 +900,7 @@
 		"enabled": true
 	},
 	"app": {
+		"closeStrategy": 2,
 		"mode": "default",
 		"autoStart": {
 			"enabled": false
@@ -922,7 +923,6 @@
 		"dock": {
 			"hideWhenWinClose": false
 		},
-		"closeStrategy": 0,
 		"showShutdownTip": true,
 		"logFileSavePath": "/home/xiaohan/.dev-sidecar/logs",
 		"keepLogFileCount": 15,

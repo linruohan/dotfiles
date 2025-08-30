@@ -76,3 +76,55 @@ sudo: a password is required
   cmd: 'sudo cp /home/xiaohan/.dev-sidecar/dev-sidecar.ca.crt /usr/local/share/ca-certificates'
 } 
 <===
+[2025-08-30T20:11:41.758] [INFO] core - [util.log-or-console.js] 日志系统已初始化完成，现开始将历史控制台信息记录到日志文件中：
+[2025-08-30T20:11:41.759] [INFO] core - [2025-08-30 20:11:41.736] console - 配置文件不存在: /home/xiaohan/.dev-sidecar/config.json
+[2025-08-30T20:11:41.759] [INFO] core - [2025-08-30 20:11:41.737] console - 配置文件不存在: /home/xiaohan/.dev-sidecar/remote_config_personal.json5
+[2025-08-30T20:11:41.759] [INFO] core - [2025-08-30 20:11:41.743] console - 读取配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:11:41.759] [INFO] core - [2025-08-30 20:11:41.746] console - 加载及合并远程配置完成
+[2025-08-30T20:11:41.759] [INFO] core - 设置日志配置完成，进程ID: 27968，categories：[core,gui]，config: {"appenders":{"std":{"type":"stdout"},"core":{"type":"file","pattern":"yyyy-MM-dd","compress":true,"keepFileExt":true,"backups":15,"maxLogSize":1073741824,"filename":"/home/xiaohan/.dev-sidecar/logs/core.log"},"gui":{"type":"file","pattern":"yyyy-MM-dd","compress":true,"keepFileExt":true,"backups":15,"maxLogSize":1073741824,"filename":"/home/xiaohan/.dev-sidecar/logs/gui.log"}},"categories":{"default":{"appenders":["std"],"level":"info"},"core":{"appenders":["core","std"],"level":"info"},"gui":{"appenders":["gui","std"],"level":"info"}}}
+[2025-08-30T20:11:41.773] [INFO] core - 配置文件不存在: /home/xiaohan/.dev-sidecar/config.json
+[2025-08-30T20:11:41.773] [INFO] core - 配置文件不存在: /home/xiaohan/.dev-sidecar/remote_config_personal.json5
+[2025-08-30T20:11:41.777] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:11:41.779] [INFO] core - 加载及合并远程配置完成
+[2025-08-30T20:15:49.469] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:15:49.471] [INFO] core - 保存 config.json 自定义配置文件成功: /home/xiaohan/.dev-sidecar/config.json
+[2025-08-30T20:15:49.471] [INFO] core - 配置文件不存在: /home/xiaohan/.dev-sidecar/remote_config_personal.json5
+[2025-08-30T20:15:49.474] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:15:49.477] [INFO] core - 加载及合并远程配置完成
+[2025-08-30T20:16:32.171] [INFO] core - [util.log-or-console.js] 日志系统已初始化完成，现开始将历史控制台信息记录到日志文件中：
+[2025-08-30T20:16:32.171] [INFO] core - [2025-08-30 20:16:32.149] console - 读取配置文件成功: /home/xiaohan/.dev-sidecar/config.json
+[2025-08-30T20:16:32.171] [INFO] core - [2025-08-30 20:16:32.149] console - 配置文件不存在: /home/xiaohan/.dev-sidecar/remote_config_personal.json5
+[2025-08-30T20:16:32.171] [INFO] core - [2025-08-30 20:16:32.155] console - 读取配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:16:32.171] [INFO] core - [2025-08-30 20:16:32.158] console - 加载及合并远程配置完成
+[2025-08-30T20:16:32.171] [INFO] core - 设置日志配置完成，进程ID: 30576，categories：[core,gui]，config: {"appenders":{"std":{"type":"stdout"},"core":{"type":"file","pattern":"yyyy-MM-dd","compress":true,"keepFileExt":true,"backups":15,"maxLogSize":1073741824,"filename":"/home/xiaohan/.dev-sidecar/logs/core.log"},"gui":{"type":"file","pattern":"yyyy-MM-dd","compress":true,"keepFileExt":true,"backups":15,"maxLogSize":1073741824,"filename":"/home/xiaohan/.dev-sidecar/logs/gui.log"}},"categories":{"default":{"appenders":["std"],"level":"info"},"core":{"appenders":["core","std"],"level":"info"},"gui":{"appenders":["gui","std"],"level":"info"}}}
+[2025-08-30T20:16:32.187] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/config.json
+[2025-08-30T20:16:32.187] [INFO] core - 配置文件不存在: /home/xiaohan/.dev-sidecar/remote_config_personal.json5
+[2025-08-30T20:16:32.191] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:16:32.194] [INFO] core - 加载及合并远程配置完成
+[2025-08-30T20:16:32.259] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/config.json
+[2025-08-30T20:16:32.259] [INFO] core - 配置文件不存在: /home/xiaohan/.dev-sidecar/remote_config_personal.json5
+[2025-08-30T20:16:32.262] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:16:32.265] [INFO] core - 加载及合并远程配置完成
+[2025-08-30T20:16:32.265] [INFO] core - 开始下载远程配置: https://gitee.com/wangliang181230/dev-sidecar/raw/docmirror2.x/packages/core/src/config/remote_config.json
+[2025-08-30T20:16:32.554] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/config.json
+[2025-08-30T20:16:32.554] [INFO] core - 配置文件不存在: /home/xiaohan/.dev-sidecar/remote_config_personal.json5
+[2025-08-30T20:16:32.560] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:16:32.564] [INFO] core - 加载及合并远程配置完成
+[2025-08-30T20:16:32.607] [INFO] core - 下载远程配置成功: https://gitee.com/wangliang181230/dev-sidecar/raw/docmirror2.x/packages/core/src/config/remote_config.json
+[2025-08-30T20:16:32.611] [INFO] core - 保存远程配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:16:32.612] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/config.json
+[2025-08-30T20:16:32.612] [INFO] core - 配置文件不存在: /home/xiaohan/.dev-sidecar/remote_config_personal.json5
+[2025-08-30T20:16:32.615] [INFO] core - 读取配置文件成功: /home/xiaohan/.dev-sidecar/remote_config.json5
+[2025-08-30T20:16:32.617] [INFO] core - 加载及合并远程配置完成
+[2025-08-30T20:16:32.619] [INFO] core - 保存 running.json 运行时配置文件成功: /home/xiaohan/.dev-sidecar/running.json
+[2025-08-30T20:16:32.625] [INFO] core - shell: gsettings set org.gnome.system.proxy mode manual
+[2025-08-30T20:16:32.632] [INFO] core - shell: gsettings set org.gnome.system.proxy.https host 127.0.0.1
+[2025-08-30T20:16:32.638] [INFO] core - shell: gsettings set org.gnome.system.proxy.https port 31181
+[2025-08-30T20:16:32.644] [INFO] core - shell: gsettings set org.gnome.system.proxy.http host ''
+[2025-08-30T20:16:32.650] [INFO] core - shell: gsettings set org.gnome.system.proxy.http port 0
+[2025-08-30T20:16:32.656] [INFO] core - shell: gsettings set org.gnome.system.proxy ignore-hosts "['objects-origin.githubusercontent.com', '*.ghproxy.net', '*.ghp.ci', '*.kkgithub.com', '*.dgithub.xyz', 'pages.github.com', 'help.github.com', 'docs.github.com', '*.github.blog', 'analytics.githubassets.com', 'ghcc.githubassets.com', 'www.docker.com', 'login.docker.com', 'api.dso.docker.com', 'desktop.docker.com', 'docs.docker.com', '*.s-microsoft.com', '*.xboxlive.com', '*.mihoyo.com', '*.elastic.co', '*.bilicomic.com', '[2049:8c54:813:10c::140]', '[2409:8a0c:a442:ff40:a51f:4b9c:8b41:25ea]', '[2606:2800:147:120f:30c:1ba0:fc6:265a]', '*.cmicapm.com', '*.cloudflare-cn.com', '*.microsoftonline.com', '*.msedge.net', '*kaspersky*.com', '*.upd.kaspersky.com', '*.lanhuapp.com', '*.soboten.com', '*.sandboxie-plus.com', '*.wuyou.net', '*.pyecharts.org', '*.bcloudlink.com', '*.qijishow.com', '*.z-lib.fo', '*.finalshell.com', '*.minebbs.com', '*.spigotmc.org', '*.virustotal.com', '*.gitlab.com', '*.deepseek.com', '*steaminventoryhelper.com', '*.youdemai.com', '*.casualthink.com', '44.239.165.12', '3.164.110.117', '*.cn', '*china*', '*.ghproxy.*', 'ssh.github.com', 'www.deepl.com', '*.csdn.net', '*.so.com', '*.baidu.com', '*.baiducontent.com', '*.bdimg.com', '*.bdstatic.com', '*.bdydns.com', '*.tencent.com', '*.qq.com', '*.weixin.com', '*.weixinbridge.com', '*.wechat.com', '*.idqqimg.com', '*.gtimg.com', '*.qpic.com', '*.qlogo.com', '*.myapp.com', '*.aliyun.com', '*.alipay.com', '*.taobao.com', '*.tmall.com', '*.alipayobjects.com', '*.dingtalk.com', '*.mmstat.com', '*.alicdn.com', '*.hdslb.com', 'gitee.com', '*.gitee.com', '*.gitee.io', '*.giteeusercontent.com', '*.mozilla.org', '*.mozilla.com', '*.mozilla.net', '*.firefox.com', '*.firefox.org', '*.mozillademos.org', '*.mozillians.org', '*.mozillians.net', '*.mozillians.com', '*.sonatype.org', '*.maven.org', '*.mvnrepository.com', '*.apple.com', '*.icloud.com', '*.microsoft.com', '*.windows.com', '*.office.com', '*.office.net', '*.live.com', '*.msn.com', '*.wps.com', '*.wps.net', '*.ksord.com', '*.qihoo.com', '*.qihucdn.com', '*.360.com', '*.360safe.com', '*.360buyimg.com', '*.360buy.com', '*.jd.com', '*.jcloud.com', '*.jcloudcs.com', '*.jcloudcache.com', '*.jcloudcdn.com', '*.jcloudlb.com', '*.bilibili.com', '*.bilivideo.com', '*.biliapi.net', '*.10086.com', '*.10086cloud.com', '*.139.com', '*.xunlei.com', '*.icpapi.com', '*.navicat.com', 'localhost', 'localhost.*', '127.*.*.*', 'test.*', '10.*.*.*', '172.16.*.*', '172.17.*.*', '172.18.*.*', '172.19.*.*', '172.20.*.*', '172.21.*.*', '172.22.*.*', '172.23.*.*', '172.24.*.*', '172.25.*.*', '172.26.*.*', '172.27.*.*', '172.28.*.*', '172.29.*.*', '172.30.*.*', '172.31.*.*', '192.168.*.*', '']"
+[2025-08-30T20:16:32.662] [INFO] core - 开启系统代理成功：127.0.0.1:31181
+[2025-08-30T20:16:32.662] [INFO] core - status changed: { key: 'proxy.enabled', value: true }
+[2025-08-30T20:16:32.799] [INFO] core - status changed: { key: 'server.enabled', value: true }
+[2025-08-30T20:16:32.800] [INFO] core - status changed: { key: 'server.enabled', value: true }
+[2025-08-30T20:16:42.496] [WARN] core - server process exit, code: 0, signal: null

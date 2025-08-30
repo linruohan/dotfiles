@@ -29,3 +29,134 @@
 [2025-08-30T19:51:28.316] [INFO] gui - 检查更新：没有新版本，最近发布的版本号为 '2.0.0'，而当前版本号为 '2.0.0.2'
 [2025-08-30T19:56:36.671] [INFO] gui - 保存 setting.json 配置文件成功: /home/xiaohan/.dev-sidecar/setting.json
 [2025-08-30T20:01:38.468] [INFO] gui - 保存 setting.json 配置文件成功: /home/xiaohan/.dev-sidecar/setting.json
+[2025-08-30T20:10:44.306] [INFO] gui - win close: {
+  preventDefault: [Function: preventDefault],
+  sender: BrowserWindow {
+    setBounds: [Function (anonymous)],
+    _events: [Object: null prototype] {
+      blur: [Function (anonymous)],
+      focus: [Function (anonymous)],
+      show: [Function: visibilityChanged],
+      hide: [Function: visibilityChanged],
+      minimize: [Function: visibilityChanged],
+      maximize: [Function: visibilityChanged],
+      restore: [Function: visibilityChanged],
+      closed: [AsyncFunction (anonymous)],
+      close: [Function (anonymous)],
+      'session-end': [AsyncFunction (anonymous)]
+    },
+    _eventsCount: 10,
+    devToolsWebContents: [Getter]
+  }
+}
+[2025-08-30T20:10:48.530] [INFO] gui - win ipc-message: close { key: 'selected', value: 2 }
+[2025-08-30T20:11:41.780] [INFO] gui - new app started, command: [
+  '/usr1/codehub/DevSidecar-2.0.0-x64/@docmirrordev-sidecar-gui',
+  '--enable-crashpad',
+  '--allow-file-access-from-files',
+  '--secure-schemes=app',
+  '--bypasscsp-schemes',
+  '--cors-schemes',
+  '--fetch-schemes',
+  '--service-worker-schemes',
+  '--standard-schemes=app',
+  '--streaming-schemes'
+]
+[2025-08-30T20:11:41.773] [INFO] gui - background.js start, platform is linux
+[2025-08-30T20:11:41.779] [INFO] gui - start args: {
+  _: [ '/usr1/codehub/DevSidecar-2.0.0-x64/@docmirrordev-sidecar-gui' ]
+}
+[2025-08-30T20:11:41.780] [INFO] gui - startHideWindow =  false , app.getLoginItemSettings() =  {"openAtLogin":false,"openAsHidden":false,"restoreState":false,"wasOpenedAtLogin":false,"wasOpenedAsHidden":false}
+[2025-08-30T20:11:41.782] [INFO] gui - app quit: is second instance（禁止双开）
+[2025-08-30T20:11:41.782] [INFO] gui - background.js finished
+[2025-08-30T20:11:41.824] [ERROR] gui - 注册快捷键失败: Alt + S
+[2025-08-30T20:11:42.785] [INFO] gui - app quit: 进程结束，退出app
+[2025-08-30T20:15:45.742] [INFO] gui - win close: {
+  preventDefault: [Function: preventDefault],
+  sender: BrowserWindow {
+    setBounds: [Function (anonymous)],
+    _events: [Object: null prototype] {
+      blur: [Function (anonymous)],
+      focus: [Function (anonymous)],
+      show: [Function: visibilityChanged],
+      hide: [Function: visibilityChanged],
+      minimize: [Function: visibilityChanged],
+      maximize: [Function: visibilityChanged],
+      restore: [Function: visibilityChanged],
+      closed: [AsyncFunction (anonymous)],
+      close: [Function (anonymous)],
+      'session-end': [AsyncFunction (anonymous)]
+    },
+    _eventsCount: 10,
+    devToolsWebContents: [Getter]
+  }
+}
+[2025-08-30T20:15:49.477] [INFO] gui - win ipc-message: close { key: 'selected', value: 2 }
+[2025-08-30T20:16:32.187] [INFO] gui - background.js start, platform is linux
+[2025-08-30T20:16:32.194] [INFO] gui - start args: { _: [ '/opt/DevSidecar-2.0.0-x64/@docmirrordev-sidecar-gui' ] }
+[2025-08-30T20:16:32.194] [INFO] gui - startHideWindow =  false , app.getLoginItemSettings() =  {"openAtLogin":false,"openAsHidden":false,"restoreState":false,"wasOpenedAtLogin":false,"wasOpenedAsHidden":false}
+[2025-08-30T20:16:32.195] [INFO] gui - background.js finished
+[2025-08-30T20:16:32.259] [INFO] gui - install module: api
+[2025-08-30T20:16:32.267] [INFO] gui - install module: fileSelector
+[2025-08-30T20:16:32.267] [INFO] gui - install module: tongji
+[2025-08-30T20:16:32.267] [INFO] gui - install module: update
+[2025-08-30T20:16:32.267] [INFO] gui - auto updater Deprecated. Do not use it.
+[2025-08-30T20:16:32.267] [INFO] gui - auto update inited
+[2025-08-30T20:16:32.268] [INFO] gui - install module: autoStart
+[2025-08-30T20:16:32.269] [INFO] gui - 注册快捷键成功: Alt + S
+[2025-08-30T20:16:32.454] [INFO] gui - win ipc-message: main.js start undefined
+[2025-08-30T20:16:32.463] [INFO] gui - win ipc-message: main.js finished undefined
+[2025-08-30T20:16:32.464] [INFO] gui - 读取 setting.json 成功: /home/xiaohan/.dev-sidecar/setting.json
+[2025-08-30T20:16:32.495] [INFO] gui - 读取 setting.json 成功: /home/xiaohan/.dev-sidecar/setting.json
+[2025-08-30T20:16:32.502] [INFO] gui - win ipc-message: electron-baidu-tongji-message f2d170ce560aef0005b689f28697f852
+[2025-08-30T20:16:32.579] [INFO] gui - win ipc-message: update { key: 'checkForUpdate', fromUser: false }
+[2025-08-30T20:16:32.580] [INFO] gui - autoUpdater checkForUpdates: false
+[2025-08-30T20:16:32.663] [INFO] gui - bridge on status, event: { key: 'proxy.enabled', value: true }
+[2025-08-30T20:16:32.800] [INFO] gui - bridge on status, event: { key: 'server.enabled', value: true }
+[2025-08-30T20:16:32.800] [INFO] gui - bridge on status, event: { key: 'server.enabled', value: true }
+[2025-08-30T20:16:38.851] [INFO] gui - 跳过预发布版本: v2.0.0.2
+[2025-08-30T20:16:38.851] [INFO] gui - 跳过预发布版本: v2.0.0.1
+[2025-08-30T20:16:38.851] [INFO] gui - 最近正式版本： v2.0.0
+[2025-08-30T20:16:38.852] [INFO] gui - 版本比对结果：isNewVersion('2.0.0', '2.0.0.2') = -4
+[2025-08-30T20:16:38.852] [INFO] gui - 检查更新：没有新版本，最近发布的版本号为 '2.0.0'，而当前版本号为 '2.0.0.2'
+[2025-08-30T20:16:41.016] [INFO] gui - win close: {
+  preventDefault: [Function: preventDefault],
+  sender: BrowserWindow {
+    setBounds: [Function (anonymous)],
+    _events: [Object: null prototype] {
+      blur: [Function (anonymous)],
+      focus: [Function (anonymous)],
+      show: [Function: visibilityChanged],
+      hide: [Function: visibilityChanged],
+      minimize: [Function: visibilityChanged],
+      maximize: [Function: visibilityChanged],
+      restore: [Function: visibilityChanged],
+      closed: [AsyncFunction (anonymous)],
+      close: [Function (anonymous)],
+      'session-end': [AsyncFunction (anonymous)]
+    },
+    _eventsCount: 10,
+    devToolsWebContents: [Getter]
+  }
+}
+[2025-08-30T20:16:42.489] [INFO] gui - before-quit
+[2025-08-30T20:16:42.489] [INFO] gui - win close: {
+  preventDefault: [Function: preventDefault],
+  sender: BrowserWindow {
+    setBounds: [Function (anonymous)],
+    _events: [Object: null prototype] {
+      blur: [Function (anonymous)],
+      focus: [Function (anonymous)],
+      show: [Function: visibilityChanged],
+      hide: [Function: visibilityChanged],
+      minimize: [Function: visibilityChanged],
+      maximize: [Function: visibilityChanged],
+      restore: [Function: visibilityChanged],
+      closed: [AsyncFunction (anonymous)],
+      close: [Function (anonymous)],
+      'session-end': [AsyncFunction (anonymous)]
+    },
+    _eventsCount: 10,
+    devToolsWebContents: [Getter]
+  }
+}
