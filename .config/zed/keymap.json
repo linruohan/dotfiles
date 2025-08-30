@@ -31,7 +31,14 @@
             "ctrl-alt-r": "task::Rerun",
             "ctrl-alt-o": "zed::OpenTasks", //"zed::OpenLocalTasks",
             "ctrl-\\": "workspace::NewCenterTerminal",
-            "ctrl-t": "terminal_panel::ToggleFocus"
+            "ctrl-`": "terminal_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            // 打开 / 关闭终端
+            "ctrl-`": "workspace::ToggleBottomDock"
         }
     },
     {
@@ -108,9 +115,45 @@
         }
     },
     {
-        "context": "Terminal",
+        "context": "KeymapEditor",
         "bindings": {
-            "ctrl-t": "workspace::ToggleBottomDock"
+            "ctrl-h": "search::FocusSearch"
+        }
+    },
+    {
+        "context": "BufferSearchBar",
+        "bindings": {
+            "ctrl-f": "search::ToggleReplace"
+        }
+    },
+    {
+        "context": "(Editor && mode == full)",
+        "bindings": {
+            "ctrl-f": "buffer_search::DeployReplace"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-t ctrl-t": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-shift-f": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-b": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-`": "workspace::ToggleBottomDock"
         }
     }
 ]

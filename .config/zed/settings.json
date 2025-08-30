@@ -26,7 +26,7 @@
     "theme": {
         "mode": "system",
         "light": "One Light",
-        "dark": "Catppuccin Latte"
+        "dark": "Catppuccin Mocha"
     },
     // The name of a base set of key bindings to use.
     // This setting can take four values, each named after another
@@ -45,7 +45,7 @@
         "edit_prediction_provider": "copilot"
     },
     // The name of a font to use for rendering text in the editor
-    "buffer_font_family": "FantasqueSansM Nerd Font", // "Zed Plex Mono",
+    "buffer_font_family": "Maple Mono Normal NF CN", // "Zed Plex Mono",
     // Set the buffer text's font fallbacks, this will be merged with
     // the platform's default fallbacks.
     "buffer_font_fallbacks": null,
@@ -71,7 +71,7 @@
     "buffer_line_height": "comfortable",
     // The name of a font to use for rendering text in the UI
     // You can set this to ".SystemUIFont" to use the system font
-    "ui_font_family": "霞鹜文楷 GB 屏幕阅读版", //"Zed Plex Sans",
+    "ui_font_family": "Maple Mono Normal NF CN", //"Zed Plex Sans",
     // Set the UI's font fallbacks, this will be merged with the platform's
     // default font fallbacks.
     "ui_font_fallbacks": null,
@@ -732,8 +732,12 @@
         //           "args": ["--login"]
         //         }
         //     }
-        "font_family": "FantasqueSansM Nerd Font",
+        "font_family": "Maple Mono Normal NF CN",
         "shell": {
+            "with_arguments": {
+                "program": "C:\\software\\Git\\bin\\bash.exe",
+                "args": ["--login", "-i"]
+            }
         },
         // Where to dock terminals panel. Can be `left`, `right`, `bottom`.
         "dock": "bottom",
@@ -1187,6 +1191,9 @@
             }
         },
         "rust-analyzer": {
+            "binary": {
+                "path": "C:\\Users\\Administrator\\.rustup\\toolchains\\nightly-x86_64-pc-windows-gnu\\bin\\rust-analyzer.exe"
+            },
             "initialization_options": {
                 "completion": {
                     "snippets": {

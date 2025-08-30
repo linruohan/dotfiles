@@ -1,0 +1,31 @@
+[2025-08-30T19:51:26.065] [INFO] gui - background.js start, platform is linux
+[2025-08-30T19:51:26.066] [INFO] gui - start args: {
+  _: [ '/usr1/codehub/DevSidecar-2.0.0-x64/@docmirrordev-sidecar-gui' ]
+}
+[2025-08-30T19:51:26.067] [INFO] gui - startHideWindow =  false , app.getLoginItemSettings() =  {"openAtLogin":false,"openAsHidden":false,"restoreState":false,"wasOpenedAtLogin":false,"wasOpenedAsHidden":false}
+[2025-08-30T19:51:26.067] [INFO] gui - background.js finished
+[2025-08-30T19:51:26.209] [INFO] gui - install module: api
+[2025-08-30T19:51:26.214] [INFO] gui - install module: fileSelector
+[2025-08-30T19:51:26.214] [INFO] gui - install module: tongji
+[2025-08-30T19:51:26.214] [INFO] gui - install module: update
+[2025-08-30T19:51:26.215] [INFO] gui - auto updater Deprecated. Do not use it.
+[2025-08-30T19:51:26.215] [INFO] gui - auto update inited
+[2025-08-30T19:51:26.215] [INFO] gui - install module: autoStart
+[2025-08-30T19:51:26.217] [INFO] gui - 注册快捷键成功: Alt + S
+[2025-08-30T19:51:26.394] [INFO] gui - win ipc-message: main.js start undefined
+[2025-08-30T19:51:26.403] [INFO] gui - win ipc-message: main.js finished undefined
+[2025-08-30T19:51:26.404] [INFO] gui - 保存 setting.json 配置文件成功: /home/xiaohan/.dev-sidecar/setting.json
+[2025-08-30T19:51:26.456] [INFO] gui - 读取 setting.json 成功: /home/xiaohan/.dev-sidecar/setting.json
+[2025-08-30T19:51:26.457] [INFO] gui - win ipc-message: electron-baidu-tongji-message f2d170ce560aef0005b689f28697f852
+[2025-08-30T19:51:26.540] [INFO] gui - bridge on status, event: { key: 'proxy.enabled', value: true }
+[2025-08-30T19:51:26.563] [INFO] gui - win ipc-message: update { key: 'checkForUpdate', fromUser: false }
+[2025-08-30T19:51:26.563] [INFO] gui - autoUpdater checkForUpdates: false
+[2025-08-30T19:51:26.769] [INFO] gui - bridge on status, event: { key: 'server.enabled', value: true }
+[2025-08-30T19:51:26.770] [INFO] gui - bridge on status, event: { key: 'server.enabled', value: true }
+[2025-08-30T19:51:28.315] [INFO] gui - 跳过预发布版本: v2.0.0.2
+[2025-08-30T19:51:28.315] [INFO] gui - 跳过预发布版本: v2.0.0.1
+[2025-08-30T19:51:28.316] [INFO] gui - 最近正式版本： v2.0.0
+[2025-08-30T19:51:28.316] [INFO] gui - 版本比对结果：isNewVersion('2.0.0', '2.0.0.2') = -4
+[2025-08-30T19:51:28.316] [INFO] gui - 检查更新：没有新版本，最近发布的版本号为 '2.0.0'，而当前版本号为 '2.0.0.2'
+[2025-08-30T19:56:36.671] [INFO] gui - 保存 setting.json 配置文件成功: /home/xiaohan/.dev-sidecar/setting.json
+[2025-08-30T20:01:38.468] [INFO] gui - 保存 setting.json 配置文件成功: /home/xiaohan/.dev-sidecar/setting.json
