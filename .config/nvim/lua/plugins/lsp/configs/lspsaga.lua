@@ -5,7 +5,6 @@ return {
   event = "LspAttach",
   -- commit = "898030df423a527c55a6fd85e85e58e840ff6e82",
   init = function()
-    -- vim.keymap.set("n", "<leader>la", "<cmd>Lspsaga code_action<cr>", { desc = "Lspsaga | Code Action", silent = true })
     vim.keymap.set("n", "<leader>lo", "<cmd>Lspsaga outline<cr>", { desc = "Lspsaga | Code Outline", silent = true })
     vim.keymap.set(
       "n",
@@ -33,7 +32,8 @@ return {
       { desc = "Lspsaga | Prev Diagnostic", silent = true }
     )
 
-    -- vim.keymap.set("v", "<leader>la", "<cmd>Lspsaga code_action<cr>", { desc = "Lspsaga | Code Action", silent = true })
+    vim.keymap.set("n", "<leader>la", "<cmd>Lspsaga code_action<cr>", { desc = "Lspsaga | Code Action", silent = true })
+    vim.keymap.set("v", "<leader>la", "<cmd>Lspsaga code_action<cr>", { desc = "Lspsaga | Code Action", silent = true })
   end,
   opts = {
     preview = {
@@ -56,17 +56,19 @@ return {
     request_timeout = 2000,
 
     lightbulb = {
-      enable = false,
+      enable = true,
       enable_in_insert = true,
       sign = true,
       sign_priority = 40,
-      virtual_text = true,
+      virtual_text = false,
     },
 
     rename = {
-      quit = ";",
-      exec = "<CR>",
-      in_select = false,
+      keys = {
+        quit = ";",
+        exec = "<CR>",
+        in_select = false,
+      },
     },
 
     finder = {
@@ -82,7 +84,7 @@ return {
       jump_num_shortcut = true,
       on_insert = false,
       on_insert_follow = false,
-      show_code_action = true,
+      show_code_action = false,
       show_source = true,
       custom_fix = nil,
       custom_msg = nil,
@@ -103,12 +105,14 @@ return {
     },
 
     definition = {
-      edit = "<C-c>o",
-      vsplit = "<C-c>v",
-      split = "<C-c>i",
-      tabe = "<C-c>t",
-      quit = ";",
-      close = "<Esc>",
+      keys = {
+        edit = "<C-c>o",
+        vsplit = "<C-c>v",
+        split = "<C-c>i",
+        tabe = "<C-c>t",
+        quit = ";",
+        close = "<Esc>",
+      },
     },
 
     ui = {

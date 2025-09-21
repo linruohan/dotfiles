@@ -30,14 +30,15 @@ local options = {
   numberwidth = 5, -- set number column width to 4 {default 4}
   signcolumn = "yes", -- always show the sign column, otherwise it would shift the text each time
   wrap = true, -- display lines as one long line
-  scrolloff = 8, -- minimal number of columns to scroll horizontally.
-  sidescrolloff = 8, -- minimal number of screen columns
+  scrolloff = 4, -- minimal number of columns to scroll horizontally.
+  sidescrolloff = 4, -- minimal number of screen columns
   lazyredraw = false, -- Won't be redrawn while executing macros, register and other commands.
   termguicolors = true, -- Enables 24-bit RGB color in the TUI
   fillchars = { eob = " ", fold = " ", foldopen = "", foldsep = " ", foldclose = "", lastline = " " }, -- make EndOfBuffer invisible
   ruler = false, -- show the line and column number of the cursor position``
   cmdheight = 0, -- height of the command line
   helpheight = 10, -- height of the help window
+  sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions",
   -- NOTE: Uncomment these options to enable pwsh for Windows
   -- shell = vim.fn.executable "pwsh" and "pwsh" or "powershell",
   -- shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",

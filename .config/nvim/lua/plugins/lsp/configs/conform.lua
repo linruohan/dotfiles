@@ -1,4 +1,6 @@
 local formatters_by_ft = {
+  php = { "pint" },
+  blade = { "blade-formatter" },
   lua = { "stylua" },
   python = { "autopep8" },
   cpp = { "clang_format" },

@@ -19,12 +19,13 @@ Before you dive in, ensure you have the following requirements installed:
 
 In windows, you can use [scoop](https://scoop.sh/) to install them.
 
-- **Git:**
+- **Docker:**
+  - [lazydocker](https://github.com/jesseduffield/lazydocker)
 
+- **Git:**
   - [lazygit](https://github.com/jesseduffield/lazygit)
 
 - **Telescope:**
-
   - [fd](https://github.com/sharkdp/fd)
   - [bat](https://github.com/sharkdp/bat)
   - [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -32,13 +33,11 @@ In windows, you can use [scoop](https://scoop.sh/) to install them.
   - [mingw-nuwen](https://nuwen.net/mingw.html)
 
 - **Nerd Font (For Icons):**
-
   - [JetBrainsMono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono)
   - [Other Fonts](https://www.nerdfonts.com/font-downloads)
 
 - **Neovim:**
-
-  - [Neovim 0.10+](https://github.com/neovim/neovim/releases)
+  - [Neovim 0.11+](https://github.com/neovim/neovim/releases)
   </details>
 
 ## 💻 Installation
@@ -46,12 +45,10 @@ In windows, you can use [scoop](https://scoop.sh/) to install them.
 Please follow these steps:
 
 1. **Preparation**:
-
    - Ensure that Neovim is not running.
    - Remove or move your current `nvim` directory (if it exists).
 
 2. **Installation**:
-
    - On Linux/MacOS:
 
      ```sh
@@ -66,8 +63,12 @@ Please follow these steps:
 ## ✨ Features
 
 - **Plugin Management**: Efficiently manage plugins with [lazy.nvim](https://github.com/folke/lazy.nvim).
+- **AI Assistant**: Use AI assistant with [avante.nvim](https://github.com/yetone/avante.nvim) and [superman.nvim](https://github.com/supermaven-inc/supermaven-nvim).
+- **Database**: Manage databases with [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui).
+- **Session Management**: Manage sessions with [auto-session](https://github.com/rmagatti/auto-session).
 - **Compiler**: Compile your code with [compiler.nvim](https://github.com/Zeioth/compiler.nvim).
 - **Debugging**: Debug issues with [nvim-dap](https://github.com/mfussenegger/nvim-dap) with [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui).
+- **Refractoring**: Refactor your code with [nvim-refactoring](https://github.com/ThePrimeagen/refactoring.nvim).
 - **Tests**: Run tests with [neotest](https://github.com/nvim-neotest/neotest).
 - **Project Management**: Simplify project handling with [project.nvim](https://github.com/ahmedkhalf/project.nvim).
 - **Diff Viewer**: Easily cycle through diffs with [diffview.nvim](https://github.com/sindrets/diffview.nvim).

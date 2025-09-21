@@ -62,7 +62,7 @@ M.ui = {
 }
 
 M.nvdash = {
-  load_on_startup = true,
+  load_on_startup = false,
   header = get_header "nvchad",
   buttons = {
     { txt = "  Find File", keys = "Spc f f", cmd = "Telescope find_files" },
@@ -137,9 +137,9 @@ M.mason = {
 M.lsp = { signature = false }
 
 M.base46 = {
-  theme = "mountain",
+  theme = "rxyhn",
   transparency = false,
-  theme_toggle = { "mountain", "one_light" },
+  theme_toggle = { "rxyhn", "one_light" },
   hl_override = highlights.override,
   hl_add = highlights.add,
   integrations = {
@@ -147,6 +147,10 @@ M.base46 = {
     "dap",
     "trouble",
   },
+}
+
+M.colorify = {
+  mode = "virtual",
 }
 
 -- M.lazy_nvim = require "core.lazy" -- config for lazy.nvim startup options

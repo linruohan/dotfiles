@@ -1,14 +1,32 @@
 local M = {}
 local keymap = vim.keymap.set
-local cmp_nvim_lsp = require "cmp_nvim_lsp"
+-- local cmp_nvim_lsp = require "cmp_nvim_lsp"
 
-M.capabilities = cmp_nvim_lsp.default_capabilities()
+M.capabilities = vim.lsp.protocol.make_client_capabilities()
+
+M.capabilities.textDocument.completion.completionItem = {
+  documentationFormat = { "markdown", "plaintext" },
+  snippetSupport = true,
+  preselectSupport = true,
+  insertReplaceSupport = true,
+  labelDetailsSupport = true,
+  deprecatedSupport = true,
+  commitCharactersSupport = true,
+  tagSupport = { valueSet = { 1 } },
+  resolveSupport = {
+    properties = {
+      "documentation",
+      "detail",
+      "additionalTextEdits",
+    },
+  },
+}
 
 M.lsp_keymaps = function(bufnr)
   -- keymap("n", "gD", vim.lsp.buf.declaration, { buffer = bufnr, silent = true })
   keymap("n", "gD", "<cmd>Lspsaga finder<cr>", { buffer = bufnr, silent = true })
   keymap("n", "gd", "<cmd>Lspsaga goto_definition<cr>", { buffer = bufnr, silent = true })
-  keymap("n", "<leader>la", vim.lsp.buf.code_action, { buffer = bufnr, desc = "LSP | Code Action", silent = true })
+  -- keymap("n", "<leader>la", vim.lsp.buf.code_action, { buffer = bufnr, desc = "LSP | Code Action", silent = true })
   -- keymap("n", "gd", vim.lsp.buf.definition, {buffer = bufnr, silent = true})
   keymap("n", "gl", "<cmd>Lspsaga show_line_diagnostics<cr>", { buffer = bufnr, silent = true })
   keymap("n", "gp", "<cmd>Lspsaga peek_definition<cr>", { buffer = bufnr, silent = true })
