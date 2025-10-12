@@ -131,7 +131,7 @@ autocmd("FileChangedRO", {
 autocmd({ "FocusLost", "BufLeave", "BufWinLeave", "InsertLeave" }, {
   -- nested = true, -- for format on save
   callback = function()
-    if vim.bo.filetype ~= "" and vim.bo.buftype == "" then
+    if vim.bo.filetype ~= "" and vim.bo.buftype == "" and vim.bo.modified then
       vim.cmd "silent! w"
     end
   end,
@@ -139,12 +139,12 @@ autocmd({ "FocusLost", "BufLeave", "BufWinLeave", "InsertLeave" }, {
   desc = "Auto Save",
 })
 
-autocmd("FocusGained", {
+autocmd("FileChangedShellPost", {
   callback = function()
-    vim.cmd "checktime"
+    vim.notify("File reloaded automatically", vim.log.levels.INFO, { title = "nvim" })
   end,
   group = general,
-  desc = "Update file when there are changes",
+  desc = "Notify when file is reloaded",
 })
 
 autocmd("VimResized", {
@@ -155,16 +155,30 @@ autocmd("VimResized", {
   desc = "Equalize Splits",
 })
 
+-- autocmd("ModeChanged", {
+--   callback = function()
+--     if fn.getcmdtype() == "/" or fn.getcmdtype() == "?" then
+--       vim.opt.hlsearch = true
+--     else
+--       vim.opt.hlsearch = false
+--     end
+--   end,
+--   group = general,
+--   desc = "Highlighting matched words when searching",
+-- })
+
 autocmd("ModeChanged", {
+  pattern = "*",
   callback = function()
-    if fn.getcmdtype() == "/" or fn.getcmdtype() == "?" then
-      vim.opt.hlsearch = true
+    local mode = vim.fn.mode()
+    if mode:match "i" then
+      vim.opt.hlsearch = false -- hide in insert mode
     else
-      vim.opt.hlsearch = false
+      vim.opt.hlsearch = true -- show in normal / visual / command modes
     end
   end,
   group = general,
-  desc = "Highlighting matched words when searching",
+  desc = "Show search highlights in normal mode, hide in insert mode",
 })
 
 autocmd("FileType", {
@@ -188,4 +202,43 @@ autocmd("FileType", {
   end,
   group = overseer,
   desc = "Enter Normal Mode In OverseerList",
+})
+
+-- Timer-based file reload for TUI
+local file_check_timer = nil
+local last_check = {}
+
+autocmd("VimEnter", {
+  callback = function()
+    file_check_timer = fn.timer_start(5000, function()
+      local bufnr = vim.api.nvim_get_current_buf()
+      local fname = vim.api.nvim_buf_get_name(bufnr)
+      if fname == "" then
+        return
+      end
+
+      local current_time = fn.getftime(fname)
+      if current_time == -1 then
+        return
+      end
+
+      if last_check[bufnr] and current_time > last_check[bufnr] then
+        vim.cmd "checktime"
+      end
+
+      last_check[bufnr] = current_time
+    end, { ["repeat"] = -1 })
+  end,
+  group = general,
+  desc = "Start timer for file reload",
+})
+
+autocmd("VimLeave", {
+  callback = function()
+    if file_check_timer then
+      fn.timer_stop(file_check_timer)
+    end
+  end,
+  group = general,
+  desc = "Stop timer on exit",
 })

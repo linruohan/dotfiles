@@ -8,7 +8,7 @@ return {
   },
   init = function()
     vim.keymap.set("n", "<leader>st", "<cmd>SessionToggleAutoSave<cr>", { desc = "Session | Toggle", silent = true })
-    vim.keymap.set("n", "<leader>sS", "<cmd>SessionSearch<cr>", { desc = "Session | Search", silent = true })
+    vim.keymap.set("n", "<leader>sS", "<cmd>Telescope session-lens<cr>", { desc = "Session | Search", silent = true })
     vim.keymap.set("n", "<leader>sd", "<cmd>SessionDelete<cr>", { desc = "Session | Delete", silent = true })
     vim.keymap.set("n", "<leader>sr", "<cmd>SessionRestore<cr>", { desc = "Session | Restore", silent = true })
     vim.keymap.set("n", "<leader>ss", "<cmd>SessionSave<cr>", { desc = "Session | Save", silent = true })
@@ -28,10 +28,6 @@ return {
   ---@module "auto-session"
   ---@type AutoSession.Config
   opts = {
-    auto_save = true, -- Enables/disables auto saving
-    auto_restore = true, --Enables/disables auto restoring
-    auto_create = true, -- Enables/disables auto creating new session files. Can be a function that returns true if a new session file should be allowed
-    git_use_branch_name = false, --Include git branch name in session name
     suppressed_dirs = {
       "/",
       "~/",
@@ -40,6 +36,10 @@ return {
     bypass_save_filetypes = {
       "NvimTree",
       "nvdash",
+    },
+    session_lens = {
+      picker = "telescope",
+      load_on_setup = true,
     },
   },
 }

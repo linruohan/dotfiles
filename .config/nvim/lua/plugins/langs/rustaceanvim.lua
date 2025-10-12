@@ -4,10 +4,7 @@
 return {
   "mrcjkb/rustaceanvim",
   version = "^6", -- Recommended
-  event = {
-    "BufReadPost",
-    "BufNewFile",
-  },
+  ft = { "rust" },
   dependencies = {
     {
       "saecki/crates.nvim",
@@ -45,6 +42,23 @@ return {
           -- rust-analyzer language server configuration
           ["rust-analyzer"] = {
             capabilities = capabilities,
+            assist = {
+              importEnforceGranularity = true,
+              importPrefix = "crate",
+            },
+            cargo = {
+              allFeatures = true,
+            },
+            checkOnSave = {
+              command = "clippy",
+            },
+            inlayHints = { locationLinks = false },
+            diagnostics = {
+              enable = true,
+              experimental = {
+                enable = true,
+              },
+            },
           },
         },
       },

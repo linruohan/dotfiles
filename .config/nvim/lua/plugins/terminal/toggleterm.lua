@@ -56,10 +56,6 @@ return {
     vim.keymap.set("n", "<leader>gg", function()
       utils.git()
     end, { desc = "ToggleTerm | Lazygit", silent = true })
-
-    vim.keymap.set("n", "<leader>td", function()
-      utils.docker()
-    end, { desc = "ToggleTerm | Docker", silent = true })
   end,
   cmd = {
     "ToggleTerm",
@@ -97,8 +93,8 @@ return {
     },
     float_opts = {
       border = "rounded",
-      height = math.ceil(vim.o.lines * 1.0 - 4),
-      width = math.ceil(vim.o.columns * 1.0),
+      height = math.ceil(vim.o.lines * 1.0 - 6),
+      width = math.ceil(vim.o.columns * 0.8),
       winblend = 0,
     },
   },

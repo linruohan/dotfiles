@@ -2,11 +2,9 @@
 
 ![Last commit](https://img.shields.io/github/last-commit/Alexis12119/nvim-config?style=for-the-badge&logo=git&color=000F10&logoColor=dark%20orange&labelColor=302D41)
 
-[![](https://img.shields.io/badge/Neovim-0.10+-blueviolet.svg?style=for-the-badge&color=000F10&logo=Neovim&logoColor=green&labelColor=302D41)](https://github.com/neovim/neovim)
+[![](https://img.shields.io/badge/Neovim-0.11.4+-blueviolet.svg?style=for-the-badge&color=000F10&logo=Neovim&logoColor=green&labelColor=302D41)](https://github.com/neovim/neovim)
 
-![241129_14h36m50s_screenshot](https://github.com/user-attachments/assets/3391b51c-118b-4827-8839-e3cc20f836eb)
-
-![241129_14h34m39s_screenshot](https://github.com/user-attachments/assets/ab981434-29ef-4a0d-9912-38da0a7886e9)
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b7ea1b11-e0bb-4b79-a74f-f236590e69af" />
 
 </div>
 
@@ -63,7 +61,8 @@ Please follow these steps:
 ## ✨ Features
 
 - **Plugin Management**: Efficiently manage plugins with [lazy.nvim](https://github.com/folke/lazy.nvim).
-- **AI Assistant**: Use AI assistant with [avante.nvim](https://github.com/yetone/avante.nvim) and [superman.nvim](https://github.com/supermaven-inc/supermaven-nvim).
+- **Plugin Store**: Easily install and manage plugins with [store.nvim](https://github.com/alex-popov-tech/store.nvim).
+- **AI Assistant**: Use AI assistant with [opencode.nvim](https://github.com/sudo-tee/opencode.nvim) and [superman.nvim](https://github.com/supermaven-inc/supermaven-nvim).
 - **Database**: Manage databases with [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui).
 - **Session Management**: Manage sessions with [auto-session](https://github.com/rmagatti/auto-session).
 - **Compiler**: Compile your code with [compiler.nvim](https://github.com/Zeioth/compiler.nvim).
@@ -73,7 +72,7 @@ Please follow these steps:
 - **Project Management**: Simplify project handling with [project.nvim](https://github.com/ahmedkhalf/project.nvim).
 - **Diff Viewer**: Easily cycle through diffs with [diffview.nvim](https://github.com/sindrets/diffview.nvim).
 - **Enhanced Searching**: Improve searching with [flash.nvim](https://github.com/folke/flash.nvim).
-- **Autocompletion**: Experience intelligent autocompletion with [nvim-cmp](https://github.com/hrsh7th/nvim-cmp).
+- **Autocompletion**: Experience intelligent autocompletion with [blink.cmp](https://github.com/Saghen/blink.cmp).
 - **Language Support**: Harness the power of Language Server Protocol with [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig).
 - **Formatting**: Keep your code clean with [conform.nvim](https://github.com/stevearc/conform.nvim).
 - **Syntax Highlighting**: Enjoy enhanced syntax highlighting with [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).

@@ -7,14 +7,6 @@
 				"remark": "注：上面所使用的脚本地址，为高速镜像地址。",
 				"desc": "油猴脚本：高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件 (公益加速)、项目列表单文件快捷下载、添加 git clone 命令"
 			},
-			"^(/[^/]+){2}/releases/download/.*$": {
-				"redirect": "ghproxy.net/https://github.com",
-				"desc": "release文件加速下载重定向地址"
-			},
-			"^(/[^/]+){2}/archive/.*\\.(zip|tar.gz)$": {
-				"redirect": "ghproxy.net/https://github.com",
-				"desc": "release源代码加速下载重定向地址"
-			},
 			"^((/[^/]+){2,})/raw((/[^/]+)+\\.(jpg|jpeg|png|gif))(\\?.*)?$": {
 				"cacheDays": 365,
 				"desc": "仓库内图片重定向，缓存1年。"
@@ -117,6 +109,15 @@
 				"sni": "baidu.com"
 			}
 		},
+		"fonts.googleapis.com": {
+			"true": {
+				"abort": true
+			},
+			".*": {
+				"proxy": "fonts.loli.net",
+				"test": "https://fonts.googleapis.com/css?family=Oswald"
+			}
+		},
 		"^.*(with)?google(apis|usercontent)?.com.*$": {
 			".*": {
 				"sni": "www.google.cn",
@@ -151,6 +152,11 @@
 		"download.docker.com": {
 			".*": {
 				"sni": "download.docker.com"
+			}
+		},
+		"*.docker.com": {
+			".*": {
+				"sni": "www.docker.com"
 			}
 		},
 		"*.pixiv.net": {
@@ -232,7 +238,7 @@
 				"sni": "baidu.com"
 			}
 		},
-		"huggingface.co": {
+		"*.huggingface.co": {
 			".*": {
 				"sni": "huggingface.cn"
 			}
@@ -409,11 +415,6 @@
 				"desc": "用户头像，缓存1年"
 			}
 		},
-		"*.docker.com": {
-			".*": {
-				"sni": "baidu.com"
-			}
-		},
 		"www.google.com": {
 			"/recaptcha/.*": {
 				"proxy": "www.recaptcha.net"
@@ -426,12 +427,6 @@
 					"gapis.geekzu.org"
 				],
 				"test": "ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-			}
-		},
-		"fonts.googleapis.com": {
-			".*": {
-				"proxy": "fonts.loli.net",
-				"test": "https://fonts.googleapis.com/css?family=Oswald"
 			}
 		},
 		"themes.googleapis.com": {
@@ -543,6 +538,9 @@
 		},
 		"*.fanbox.cc": {
 			"210.140.139.155": true
+		},
+		"(*account*|scholar).google.com": {
+			"172.217.204.206": true
 		},
 		"^.*(with)?google(apis|usercontent)?.com.*$": {
 			"8.137.102.117": {
@@ -792,13 +790,30 @@
 	},
 	"dns": {
 		"providers": {
-			"cloudflare": {
+			"cf-DoT": {
 				"server": "tls://1.1.1.1",
-				"sni": "baidu.com"
+				"sni": "baidu.com",
+				"cacheSize": 1000
+			},
+			"cf-DoH": {
+				"server": "https://cloudflare-dns.com/dns-query",
+				"sni": "baidu.com",
+				"cacheSize": 1000
+			},
+			"Google-DoH": {
+				"server": "https://dns.google/dns-query",
+				"sni": "www.google.cn",
+				"cacheSize": 1000,
+				"desc": "不可用"
 			},
 			"aliyun": {
 				"type": "https",
 				"server": "https://dns.alidns.com/dns-query",
+				"cacheSize": 1000
+			},
+			"cloudflare": {
+				"type": "https",
+				"server": "https://1.1.1.1/dns-query",
 				"cacheSize": 1000
 			},
 			"quad9": {
@@ -819,37 +834,48 @@
 			}
 		},
 		"mapping": {
-			"*.jetbrains.com": "safe360",
-			"*.azureedge.net": "safe360",
-			"*.stackoverflow.com": "safe360",
-			"*.github.com": "safe360",
-			"*github*.com": "safe360",
-			"*.github.io": "safe360",
-			"*.docker.com": "safe360",
-			"*.electronjs.org": "safe360",
-			"*.amazonaws.com": "safe360",
-			"*.yarnpkg.com": "safe360",
-			"*.cloudfront.net": "safe360",
-			"*.cloudflare.com": "safe360",
-			"img.shields.io": "safe360",
-			"*.vuepress.vuejs.org": "safe360",
-			"*.gh.docmirror.top": "safe360",
-			"*.v2ex.com": "safe360",
-			"*.pypi.org": "safe360",
-			"*.pixiv.org": "safe360",
-			"*.pximg.net": "safe360",
-			"*.onesignal.com": "safe360",
-			"*.iubenda.com": "safe360"
+			"*.jetbrains.com": "cf-DoT",
+			"*.azureedge.net": "cf-DoT",
+			"*.stackoverflow.com": "cf-DoT",
+			"*.github.com": "cf-DoT",
+			"*github*.com": "cf-DoT",
+			"*.github.io": "cf-DoT",
+			"*.docker.com": "cf-DoT",
+			"*.electronjs.org": "cf-DoT",
+			"*.amazonaws.com": "cf-DoT",
+			"*.yarnpkg.com": "cf-DoT",
+			"*.cloudfront.net": "cf-DoT",
+			"*.cloudflare.com": "cf-DoT",
+			"img.shields.io": "cf-DoT",
+			"*.vuepress.vuejs.org": "cf-DoT",
+			"*.gh.docmirror.top": "cf-DoT",
+			"*.v2ex.com": "cf-DoT",
+			"*.pypi.org": "cf-DoT",
+			"*.pixiv.org": "cf-DoT",
+			"*.pximg.net": "cf-DoT",
+			"*.onesignal.com": "cf-DoT",
+			"*.iubenda.com": "cf-DoT"
 		},
 		"speedTest": {
 			"interval": 60000,
-			"dnsProviders": [
-				"safe360"
-			],
-			"enabled": true,
 			"hostnameList": [
-				"github.com"
-			]
+				"google.com",
+				"zh.wikipedia.org",
+				"steamgames.com",
+				"epicgames-download1-1251447533.file.myqcloud.com",
+				"store.steampowered.com",
+				"community.akamai.steamstatic.com",
+				"cdn.akamai.steamstatic.com",
+				"steamcdn-a.akamaihd.net",
+				"store.akamai.steamstatic.com",
+				"steamcommunity.com",
+				"api.steampowered.com"
+			],
+			"dnsProviders": [
+				"cf-DoT",
+				"cf-DoH"
+			],
+			"enabled": true
 		}
 	},
 	"whiteList": {

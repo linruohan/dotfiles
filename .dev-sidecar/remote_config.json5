@@ -10,14 +10,6 @@
 					"desc": "油猴脚本：高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件 (公益加速)、项目列表单文件快捷下载、添加 git clone 命令"
 				},
 				"^(/[\\w-.]+){2,}/?(\\?.*)?$": null,
-				"^(/[^/]+){2}/releases/download/.*$": {
-					"redirect": "ghproxy.net/https://github.com",
-					"desc": "release文件加速下载重定向地址"
-				},
-				"^(/[^/]+){2}/archive/.*\\.(zip|tar.gz)$": {
-					"redirect": "ghproxy.net/https://github.com",
-					"desc": "release源代码加速下载重定向地址"
-				},
 				// 以下配置会导致私有(private)仓库中的图片无法加载，因为需要有一个token参数，无法在DS中生成，暂不配置
 				//"^((/[^/]+){2})/raw/(refs/heads/)?(.*)$": {
 				//	"proxy": "https://raw.githubusercontent.com${m[1]}/${m[4]}",
@@ -115,6 +107,11 @@
 			},
 
 			// google相关
+			"fonts.googleapis.com": { // 谷歌字体库很多时候加载不出来，直接拒绝请求
+				"true": {
+					"abort": true
+				}
+			},
 			"^.*(with)?google(apis|usercontent)?.com.*$": {
 				".*": {
 					"sni": "www.google.cn",
@@ -146,6 +143,11 @@
 			"download.docker.com": {
 				".*": {
 					"sni": "download.docker.com" // 配置它自己是为了覆盖 *.docker.com 中的SNI配置，此配置优先级更高
+				}
+			},
+			"*.docker.com": {
+				".*": {
+					"sni": "www.docker.com"
 				}
 			},
 
@@ -237,7 +239,7 @@
 			},
 
 			// huggingface：AI集成平台
-			"huggingface.co": {
+			"*.huggingface.co": {
 				".*": {
 					"sni": "huggingface.cn"
 				}
@@ -468,6 +470,9 @@
 			},
 
 			// Google
+			"(*account*|scholar).google.com": {
+				"172.217.204.206": true
+			},
 			"^.*(with)?google(apis|usercontent)?.com.*$":{
 				"8.137.102.117": {
 					"desc": "阿里云中转"
@@ -693,42 +698,68 @@
 		},
 		"dns": {
 			"providers": {
-				"cloudflare": {
-					"type": null,
+				"cf-DoT": {
 					"server": "tls://1.1.1.1",
 					"sni": "baidu.com",
-					"cacheSize": null
+					"cacheSize": 1000
+				},
+				"cf-DoH": {
+					"server": "https://cloudflare-dns.com/dns-query",
+					"sni": "baidu.com",
+					"cacheSize": 1000
+				},
+				"Google-DoH": {
+					"server": "https://dns.google/dns-query",
+					"sni": "www.google.cn",
+					"cacheSize": 1000,
+					"desc": "不可用"
 				}
 			},
 			"mapping": {
-				"*.jetbrains.com": "safe360",
-				"*.azureedge.net": "safe360",
-				"*.stackoverflow.com": "safe360",
-				"*.github.com": "safe360",
-				"*github*.com": "safe360",
-				"*.github.io": "safe360",
-				"*.docker.com": "safe360",
-				"*.electronjs.org": "safe360",
-				"*.amazonaws.com": "safe360",
-				"*.yarnpkg.com": "safe360",
-				"*.cloudfront.net": "safe360",
-				"*.cloudflare.com": "safe360",
-				"img.shields.io": "safe360",
-				"*.vuepress.vuejs.org": "safe360",
-				"*.gh.docmirror.top": "safe360",
-				"*.v2ex.com": "safe360",
-				"*.pypi.org": "safe360",
+				"*.jetbrains.com": "cf-DoT",
+				"*.azureedge.net": "cf-DoT",
+				"*.stackoverflow.com": "cf-DoT",
+				"*.github.com": "cf-DoT",
+				"*github*.com": "cf-DoT",
+				"*.github.io": "cf-DoT",
+				"*.docker.com": "cf-DoT",
+				"*.electronjs.org": "cf-DoT",
+				"*.amazonaws.com": "cf-DoT",
+				"*.yarnpkg.com": "cf-DoT",
+				"*.cloudfront.net": "cf-DoT",
+				"*.cloudflare.com": "cf-DoT",
+				"img.shields.io": "cf-DoT",
+				"*.vuepress.vuejs.org": "cf-DoT",
+				"*.gh.docmirror.top": "cf-DoT",
+				"*.v2ex.com": "cf-DoT",
+				"*.pypi.org": "cf-DoT",
 
 				// Pixiv站点相关
-				"*.pixiv.org": "safe360",
-				"*.pximg.net": "safe360",
-				"*.onesignal.com": "safe360",
+				"*.pixiv.org": "cf-DoT",
+				"*.pximg.net": "cf-DoT",
+				"*.onesignal.com": "cf-DoT",
 
-				"*.iubenda.com": "safe360"
+				"*.iubenda.com": "cf-DoT"
 			},
 			"speedTest": {
 				"interval": 60000,
-				"dnsProviders": ["safe360"]
+				"hostnameList": [
+					"google.com",
+					"zh.wikipedia.org",
+					"steamgames.com",
+					"epicgames-download1-1251447533.file.myqcloud.com",
+					"store.steampowered.com",
+					"community.akamai.steamstatic.com",
+					"cdn.akamai.steamstatic.com",
+					"steamcdn-a.akamaihd.net",
+					"store.akamai.steamstatic.com",
+					"steamcommunity.com",
+					"api.steampowered.com"
+				],
+				"dnsProviders": [
+					"cf-DoT",
+					"cf-DoH"
+				]
 			}
 		},
 		"whiteList": {

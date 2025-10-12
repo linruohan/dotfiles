@@ -22,8 +22,9 @@ return {
     require("which-key").setup(opts)
     require("which-key").add {
       {
+        { "<leader>S", group = "Spring Boot", icon = "" },
         { "<leader>s", group = "Sessions", icon = "󰔚" },
-        { "<leader>a", group = "Avante", icon = "" },
+        { "<leader>a", group = " A.I.", icon = "" },
         { "<leader>T", group = "Tests", icon = "󰙨" },
         { "<leader>d", group = "Debugging", icon = "" },
         { "<leader>D", group = "Database", icon = "󰆼" },

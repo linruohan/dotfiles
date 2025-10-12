@@ -266,9 +266,10 @@ pxon() {
     # sudo chmod +x /usr/bin/pigchacli
 
     # 设置git代理执行：
-    git config --global http.proxy http://127.0.0.1:15777 && git config --global https.proxy http://127.0.0.1:15777
+ #   git config --global http.proxy http://127.0.0.1:15777 && git config --global https.proxy http://127.0.0.1:15777
     # 设置代理执行：
-    export https_proxy=http://127.0.0.1:15777 http_proxy=http://127.0.0.1:15777
+  #  export https_proxy=http://127.0.0.1:15777 http_proxy=http://127.0.0.1:15777
+  return 0
 }
 
 pxoff() {
@@ -318,3 +319,4 @@ clone() {
 }
 alias zed="WAYLAND_DISPLAY='' zeditor"
 alias devsidecar="/opt/DevSidecar-2.0.0-x64/@docmirrordev-sidecar-gui &> /dev/null &"
+pgrep -a -f devsidecar || devsidecar &> /dev/null &
