@@ -319,4 +319,3 @@ clone() {
 }
 alias zed="WAYLAND_DISPLAY='' zeditor"
 alias devsidecar="/opt/DevSidecar-2.0.0-x64/@docmirrordev-sidecar-gui &> /dev/null &"
-
