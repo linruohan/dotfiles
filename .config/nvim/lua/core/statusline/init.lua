@@ -85,7 +85,7 @@ M.modules = {
     if theme == "default" then
       return "%#St_pos_sep#" .. sep_l .. "%#St_pos_icon# %#St_pos_text# %p %% "
     elseif theme == "vscode" or theme == "vscode_colored" then
-      return "%#StText# %L"
+      return "%#StText# %L "
     end
     return gen_block("", "%L", "%#St_Pos_sep#", "%#St_Pos_bg#", "%#St_Pos_txt#")
   end,
@@ -171,7 +171,10 @@ M.modules = {
     if conform_ok then
       local formatters = conform.list_formatters(0)
       for _, formatter in pairs(formatters) do
-        table.insert(clients, formatter.name)
+        -- Check if the formatter is already in the clients table
+        if not vim.tbl_contains(clients, formatter.name) then
+          table.insert(clients, formatter.name)
+        end
       end
     end
 

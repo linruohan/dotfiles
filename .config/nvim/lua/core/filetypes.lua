@@ -1,8 +1,8 @@
 -- NOTE: Additional Filetypes
 vim.filetype.add {
   extension = {
-    ["templ"] = "templ",
     ["axaml"] = "xml",
+    ["jinja"] = "htmldjango",
   },
   pattern = {
     [".*/%.github[%w/]+workflows[%w/]+.*%.ya?ml"] = "yaml.github",

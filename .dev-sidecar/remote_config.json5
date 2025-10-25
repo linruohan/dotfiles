@@ -470,6 +470,11 @@
 			},
 
 			// Google
+			"scholar.googleusercontent.com": {
+				"142.251.190.206": true,
+				"172.217.204.206": true,
+				"172.253.122.206": true
+			},
 			"(*account*|scholar).google.com": {
 				"172.217.204.206": true
 			},

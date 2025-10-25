@@ -17,13 +17,18 @@ return {
     },
     input = { enabled = false },
     picker = { enabled = true },
-    notifier = { enabled = true },
+    notifier = { enabled = false },
     quickfile = { enabled = true },
     scope = { enabled = false },
     scroll = { enabled = false },
     statuscolumn = { enabled = false },
     words = { enabled = false },
-    image = { enabled = true },
+    image = {
+      enabled = true,
+      convert = {
+        notify = false,
+      },
+    },
   },
   init = function()
     -- Snacks replacements for old Telescope mappings
@@ -90,10 +95,10 @@ return {
     --   Snacks.picker.lsp_workspace_symbols()
     -- end, { desc = "Snacks | Workspace Symbols", silent = true })
 
-    -- Notifications
-    vim.keymap.set("n", "<leader>fn", function()
-      Snacks.picker.notifications()
-    end, { desc = "Snacks | Notification History", silent = true })
+    -- -- Notifications
+    -- vim.keymap.set("n", "<leader>fn", function()
+    --   Snacks.picker.notifications()
+    -- end, { desc = "Snacks | Notification History", silent = true })
 
     -- Buffers / Scratch
     vim.keymap.set("n", "<leader>c", function()

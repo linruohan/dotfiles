@@ -48,7 +48,6 @@ return {
           vim.lsp.config("*", {
             capabilities = opts.capabilities,
             on_attach = opts.on_attach,
-            on_init = opts.on_init,
           })
 
           local excluded = { "ts_ls", "jdtls", "rust_analyzer" }
@@ -87,6 +86,19 @@ return {
             end
           end)
         end)
+      end,
+    },
+    {
+      "jay-babu/mason-nvim-dap.nvim",
+      config = function()
+        -- NOTE: Automatically handle debug adapters for you.
+        require("mason-nvim-dap").setup {
+          handlers = {
+            function(config)
+              require("mason-nvim-dap").default_setup(config)
+            end,
+          },
+        }
       end,
     },
   },

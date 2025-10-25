@@ -27,17 +27,16 @@ end
 M.ui = {
   telescope = { style = "borderless" }, -- borderless / bordered
   cmp = {
-    lspkind_text = true,
+    icons_left = true,
     style = "default", -- default/flat_light/flat_dark/atom/atom_colored
-    format_colors = {
-      tailwind = true,
-    },
+    -- for tailwind, css lsp etc
+    format_colors = { lsp = true, icon = "󱓻" },
   },
   statusline = {
-    theme = "minimal", -- default/vscode/vscode_colored/minimal
+    theme = "default", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
-    separator_style = "round",
+    separator_style = "default",
     order = {
       "mode",
       "file",
@@ -138,15 +137,16 @@ M.mason = {
 M.lsp = { signature = false }
 
 M.base46 = {
-  theme = "midnight_breeze",
+  theme = "github_dark_dimmed",
   transparency = false,
-  theme_toggle = { "midnight_breeze", "sunrise_breeze" },
+  theme_toggle = { "github_dark_dimmed", "sunrise_breeze" },
   hl_override = highlights.override,
   hl_add = highlights.add,
   integrations = {
     "notify",
     "dap",
     "trouble",
+    "flash",
   },
 }
 
