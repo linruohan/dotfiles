@@ -1,0 +1,11 @@
+# plugin: ColorHelper
+color_helper.palettes
+
+# plugin: OverrideAudit
+OverrideAudit.status
+
+# plugin: Package Control
+*.user-ca-bundle
+
+# plugin: ProjectManager
+/Projects/

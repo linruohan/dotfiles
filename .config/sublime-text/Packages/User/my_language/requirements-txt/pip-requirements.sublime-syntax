@@ -1,0 +1,68 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+# derived from "ms-python.python-2024.11.2024071901/syntaxes/pip-requirements.tmLanguage.json"
+name: pip requirements
+scope: source.pip-requirements
+version: 2
+
+file_extensions:
+  - requirements-dev.txt
+  - requirements-development.txt
+  - requirements-linux.txt
+  - requirements-mac.txt
+  - requirements-prod.txt
+  - requirements-production.txt
+  - requirements-win.txt
+  - requirements-windows.txt
+  - requirements.txt
+  - requirements-dev.in
+  - requirements-development.in
+  - requirements-linux.in
+  - requirements-mac.in
+  - requirements-prod.in
+  - requirements-production.in
+  - requirements-win.in
+  - requirements-windows.in
+  - requirements.in
+
+contexts:
+  main:
+    - match: \s*\\s*$
+      comment: explanation
+      scope: constant.character.escape
+    - match: '#.*'
+      scope: comment.line.number-sign
+    - match: "'"
+      push:
+        - meta_scope: string.quoted.single
+        - match: "'"
+          pop: 1
+    - match: '"'
+      push:
+        - meta_scope: string.quoted.double
+        - match: '"'
+          pop: 1
+    - match: /?(\S+/)+\S*
+      scope: string.path
+    - comment: project name
+      match: '^\s*([A-Za-z0-9][A-Za-z0-9._-]*[A-Za-z0-9]|[A-Za-z0-9])'
+      captures:
+        1: entity.name.class
+    - comment: extras
+      match: '\[([^\]]+)\]'
+      captures:
+        1: entity.name.tag
+    - comment: version specification
+      match: '(<|<=|!=|==|>=|>|~=|===)\s*([\w.*+!-]+)'
+      captures:
+        1: keyword.operator.comparison
+        2: constant.numeric
+    - comment: environment markers
+      match: ;\s*(python_version|python_full_version|os_name|sys_platform|platform_release|platform_system|platform_version|platform_machine|platform_python_implementation|implementation_name|implementation_version|extra)\s*(<|<=|!=|==|>=|>|~=|===)
+      captures:
+        1: entity.name.selector
+        2: keyword.operator.comparison
+    - comment: command-line options (e.g. `--no-links` or `-c`)
+      match: '(?:^|\s)-[^\s=]+'
+      scope: entity.other.attribute-name

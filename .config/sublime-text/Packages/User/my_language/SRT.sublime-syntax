@@ -1,0 +1,63 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: SRT Subtitles
+version: 2
+file_extensions:
+  - srt
+scope: text.srt
+contexts:
+  main:
+    - match: ^(\d+)\s*$
+      scope: constant.numeric.sequence.srt
+    - match: '^((?:\d{2}:)?\d{2}:\d{2}[,.]\d{3})\s*(-->)\s*((?:\d{2}:)?\d{2}:\d{2}[,.]\d{3})'
+      captures:
+        1: variable.parameter.srt
+        2: constant.character.srt
+        3: variable.parameter.srt
+      push:
+        - match: '([^: ]+)\s*(:)\s*([^: ]+)'
+          captures:
+            1: storage.type.srt
+        - match: $
+          pop: 1
+    - match: \<(b)\>
+      captures:
+        1: entity.name.tag.srt
+      push:
+        - match: \<\/(b)\>
+          captures:
+            1: entity.name.tag.srt
+          pop: 1
+        - include: main
+        - match: .
+          scope: markup.bold.srt
+    - match: \<(i)\>
+      captures:
+        1: entity.name.tag.srt
+      push:
+        - match: \<\/(i)\>
+          captures:
+            1: entity.name.tag.srt
+          pop: 1
+        - include: main
+        - match: .
+          scope: markup.italic.srt
+    - match: \<(u)\>
+      captures:
+        1: entity.name.tag.srt
+      push:
+        - match: \<\/(u)\>
+          captures:
+            1: entity.name.tag.srt
+          pop: 1
+        - include: main
+        - match: .
+          scope: markup.underline.srt
+    # unknown tags
+    - match: \</?([^<>]+)\>
+      captures:
+        0: comment.srt
+    # ASS-like position tags
+    - match: '\{\\an[1-9]{1}\}'
+      scope: entity.name.function.srt

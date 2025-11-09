@@ -1,0 +1,12 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: Markdown (License)
+version: 2
+hidden: true
+file_extensions:
+  - license.md
+scope: text.html.markdown.license
+contexts:
+  main:
+    - include: scope:text.html.markdown

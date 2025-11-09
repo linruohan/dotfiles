@@ -1,0 +1,68 @@
+{
+    // Show debug logging
+    "debug": false,
+
+    // Enables inline color previews found beside the identified color.
+    // Requires ST 3116+ and mdpopups 1.7.4
+    "inline_previews": true,
+
+    // Adjust the size of inline image previews by the offset given.
+    // Please use either a positive or negative number.
+    "inline_preview_offset": -2,
+
+    // Adjust the position of inline image previews.
+    // (left|right)
+    "inline_preview_position": "left",
+
+    // These are the color rules for a given view.
+    // Only one rule will apply to a given view.
+    //
+    // - `name`:           optional name that, if a user creates a rule in `user_color_rules`, and it
+    //                     it shares the same `name`, a shallow merge of the two rules will be made which
+    //                     will allow the user rule to override the values of top level keys.
+    //
+    // - `sytnax_files`:   target a view using a syntax from the given list. Defaults to an empty list.
+    //
+    // - `syntax_filter`:  specify whether `syntax_files` is an allowlist or blocklist. Can be either
+    //                     (blocklist|allowlist). Default's to `allowlist`.
+    //
+    // - `base_scopes`:    target a view whose base scope matches something from the list of scopes.
+    //                     Defaults to an empty list.
+    //
+    // - `extensions`:     target a view with an extension from the provided list. Defaults to an empty list.
+    //
+    // - `color_class`:    A string defining the name of a color class to use for the associated views. Color class
+    //                     name should be defined in `color_classes`.
+    //
+    //                     If needed, you can define multiple color classes with a list of dicitionaries. Each
+    //                     dictionary in the list should contain a `class` and `scopes`:
+    //
+    //                     - `scopes`:    A string that defines a base scope that the color class applies to.
+    //
+    //                     - `class`:     The name of the color class profile to use (defined in `color_classes`).
+    //
+    // - `scanning`:       A list containing scopes that should be scanned for colors.
+    //
+    // - color_trigger`.   It is slow to test the entire buffer with the color class, so do a quick search for
+    //                     tokens that should trigger a color check. That way we only test in places where we
+    //                     think we might have a valid color. For instance, the color class can translate colors
+    //                     in the form `rgb(1 1 1 / 1)`, so we can specify `rgb(` as a color trigger. If we find `rgb(`,
+    //                     we will test that spot's scope and attempt to read in a color at that location.
+    //                     Defaults to "(?i)(?:\b(?<![-#&])(?:color|hsla?|lch|lab|hwb|rgba?)\(|\b(?<![-#&])[\w]{3,}(?!\()\b|(?<![&])#)"
+    //
+    // - `allow_scanning`: This is an easy way to disable just scanning within a certain ruleset. Defaults to `true`.
+    //
+    //.- `enable`:         This can be used to disable a color rule entirely. Defaults to `true`.
+    "user_color_rules": [
+        {
+            "name": "XML",
+            "base_scopes": ["text.xml"],
+            "color_class": "css-level-4",
+            "scanning": [
+                "text.xml -meta.tag.xml -comment -string, string.unquoted.cdata.xml",
+                // C# application config files (jfcherng)
+                "text.xml.config string.quoted.double.xml",
+            ]
+        },
+    ],
+}

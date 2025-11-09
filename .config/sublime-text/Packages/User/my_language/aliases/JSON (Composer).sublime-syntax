@@ -1,0 +1,14 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: JSON (Composer)
+version: 2
+hidden: true
+file_extensions:
+  - composer.json
+  - composer.lock
+  - symfony.lock
+scope: source.json.composer
+contexts:
+  main:
+    - include: scope:source.json

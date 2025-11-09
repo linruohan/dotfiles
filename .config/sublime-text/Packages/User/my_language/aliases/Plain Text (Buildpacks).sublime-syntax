@@ -1,0 +1,12 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: Plain Text (Buildpacks)
+version: 2
+hidden: true
+file_extensions:
+  - .buildpacks
+scope: text.plain.buildpacks
+contexts:
+  main:
+    - include: scope:text.plain

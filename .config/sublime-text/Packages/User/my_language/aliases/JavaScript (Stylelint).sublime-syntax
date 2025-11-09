@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: JavaScript (Stylelint)
+version: 2
+hidden: true
+file_extensions:
+  - .stylelintrc.js
+  - stylelint.config.js
+scope: source.js.stylelint
+contexts:
+  main:
+    - include: scope:source.js

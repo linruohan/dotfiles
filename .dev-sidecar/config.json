@@ -1,5 +1,8 @@
 {
 	"app": {
-		"closeStrategy": 2
+		"closeStrategy": 2,
+		"autoStart": {
+			"enabled": true
+		}
 	}
 }

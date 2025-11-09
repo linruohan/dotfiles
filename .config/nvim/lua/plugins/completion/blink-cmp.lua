@@ -42,8 +42,23 @@ return {
       enabled = function()
         return not vim.tbl_contains({ "DressingInput", "sagarename" }, vim.bo.filetype) and vim.g.toggle_blink
       end,
+      completion = {
+        list = {
+          selection = {
+            preselect = false,
+            auto_insert = true,
+          },
+        },
+      },
       cmdline = {
         completion = {
+          list = {
+            selection = {
+              preselect = false,
+              auto_insert = true,
+            },
+          },
+
           menu = {
             auto_show = function(ctx)
               return vim.fn.getcmdtype() == ":"

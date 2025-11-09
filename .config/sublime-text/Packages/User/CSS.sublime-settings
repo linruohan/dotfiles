@@ -1,0 +1,10 @@
+{
+    "disable_default_completions": true,
+    "extensions":
+    [
+        "css.twig"
+    ],
+    // "-" is not a word breaker
+    "word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
+    "tab_size": 2,
+}

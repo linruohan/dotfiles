@@ -1,0 +1,1102 @@
+{
+    "name": "Wicked Rainbow",
+    "author": "Jack Cherng <jfcherng@gmail.com>",
+    "variables": {
+        //////////
+        // base //
+        //////////
+        "Black"           : "#1a1b26" ,
+        "BlackLight"      : "#1a1b24" ,
+        "BlackLighter"    : "#1a1b22" ,
+        "BlackLightest"   : "#1a1b20" ,
+        "BlueSaturated"   : "#7aa2f7" ,
+        "CyanSaturated"   : "#7dcfff" ,
+        "GreenSaturated"  : "#0F0" ,
+        "PinkSaturated"   : "#F0F" ,
+        "RedSaturated"    : "#f7768e" ,
+        "White"           : "#FFF" ,
+        "WhiteDark"       : "#EEE" ,
+        "WhiteDarker"     : "#DDD" ,
+        "WhiteDarkest"    : "#CCC" ,
+        "YellowSaturated" : "#FF0" ,
+        //////////////////////////////////////////////////////////////////////
+        // material colors: https://material.io/guidelines/style/color.html //
+        //////////////////////////////////////////////////////////////////////
+        // Red                     // Pink                     // Purple
+        "Red050"  : "#FFEBEE" , "Pink050"  : "#FCE4EC" , "Purple050"  : "#F3E5F5" ,
+        "Red100"  : "#FFCDD2" , "Pink100"  : "#F8BBD0" , "Purple100"  : "#E1BEE7" ,
+        "Red200"  : "#EF9A9A" , "Pink200"  : "#F48FB1" , "Purple200"  : "#CE93D8" ,
+        "Red300"  : "#E57373" , "Pink300"  : "#F06292" , "Purple300"  : "#BA68C8" ,
+        "Red400"  : "#EF5350" , "Pink400"  : "#EC407A" , "Purple400"  : "#AB47BC" ,
+        "Red500"  : "#F44336" , "Pink500"  : "#E91E63" , "Purple500"  : "#9C27B0" ,
+        "Red600"  : "#E53935" , "Pink600"  : "#D81B60" , "Purple600"  : "#8E24AA" ,
+        "Red700"  : "#D32F2F" , "Pink700"  : "#C2185B" , "Purple700"  : "#7B1FA2" ,
+        "Red800"  : "#C62828" , "Pink800"  : "#AD1457" , "Purple800"  : "#6A1B9A" ,
+        "Red900"  : "#B71C1C" , "Pink900"  : "#880E4F" , "Purple900"  : "#4A148C" ,
+        "RedA100" : "#FF8A80" , "PinkA100" : "#FF80AB" , "PurpleA100" : "#EA80FC" ,
+        "RedA200" : "#FF5252" , "PinkA200" : "#FF4081" , "PurpleA200" : "#E040FB" ,
+        "RedA400" : "#FF1744" , "PinkA400" : "#F50057" , "PurpleA400" : "#D500F9" ,
+        "RedA700" : "#D50000" , "PinkA700" : "#C51162" , "PurpleA700" : "#AA00FF" ,
+        // DeepPurple                     // Indigo                     // Blue
+        "DeepPurple050"  : "#EDE7F6" , "Indigo050"  : "#E8EAF6" , "Blue050"  : "#E3F2FD" ,
+        "DeepPurple100"  : "#D1C4E9" , "Indigo100"  : "#C5CAE9" , "Blue100"  : "#BBDEFB" ,
+        "DeepPurple200"  : "#B39DDB" , "Indigo200"  : "#9FA8DA" , "Blue200"  : "#90CAF9" ,
+        "DeepPurple300"  : "#9575CD" , "Indigo300"  : "#7986CB" , "Blue300"  : "#64B5F6" ,
+        "DeepPurple400"  : "#7E57C2" , "Indigo400"  : "#5C6BC0" , "Blue400"  : "#42A5F5" ,
+        "DeepPurple500"  : "#673AB7" , "Indigo500"  : "#3F51B5" , "Blue500"  : "#2196F3" ,
+        "DeepPurple600"  : "#5E35B1" , "Indigo600"  : "#3949AB" , "Blue600"  : "#1E88E5" ,
+        "DeepPurple700"  : "#512DA8" , "Indigo700"  : "#303F9F" , "Blue700"  : "#1976D2" ,
+        "DeepPurple800"  : "#4527A0" , "Indigo800"  : "#283593" , "Blue800"  : "#1565C0" ,
+        "DeepPurple900"  : "#311B92" , "Indigo900"  : "#1A237E" , "Blue900"  : "#0D47A1" ,
+        "DeepPurpleA100" : "#B388FF" , "IndigoA100" : "#8C9EFF" , "BlueA100" : "#82B1FF" ,
+        "DeepPurpleA200" : "#7C4DFF" , "IndigoA200" : "#536DFE" , "BlueA200" : "#448AFF" ,
+        "DeepPurpleA400" : "#651FFF" , "IndigoA400" : "#3D5AFE" , "BlueA400" : "#2979FF" ,
+        "DeepPurpleA700" : "#6200EA" , "IndigoA700" : "#304FFE" , "BlueA700" : "#2962FF" ,
+        // LightBlue                     // Cyan                     // Teal
+        "LightBlue050"  : "#E1F5FE" , "Cyan050"  : "#E0F7FA" , "Teal050"  : "#E0F2F1" ,
+        "LightBlue100"  : "#B3E5FC" , "Cyan100"  : "#B2EBF2" , "Teal100"  : "#B2DFDB" ,
+        "LightBlue200"  : "#81D4FA" , "Cyan200"  : "#80DEEA" , "Teal200"  : "#80CBC4" ,
+        "LightBlue300"  : "#4FC3F7" , "Cyan300"  : "#4DD0E1" , "Teal300"  : "#4DB6AC" ,
+        "LightBlue400"  : "#29B6F6" , "Cyan400"  : "#26C6DA" , "Teal400"  : "#26A69A" ,
+        "LightBlue500"  : "#03A9F4" , "Cyan500"  : "#00BCD4" , "Teal500"  : "#009688" ,
+        "LightBlue600"  : "#039BE5" , "Cyan600"  : "#00ACC1" , "Teal600"  : "#00897B" ,
+        "LightBlue700"  : "#0288D1" , "Cyan700"  : "#0097A7" , "Teal700"  : "#00796B" ,
+        "LightBlue800"  : "#0277BD" , "Cyan800"  : "#00838F" , "Teal800"  : "#00695C" ,
+        "LightBlue900"  : "#01579B" , "Cyan900"  : "#006064" , "Teal900"  : "#004D40" ,
+        "LightBlueA100" : "#80D8FF" , "CyanA100" : "#84FFFF" , "TealA100" : "#A7FFEB" ,
+        "LightBlueA200" : "#40C4FF" , "CyanA200" : "#18FFFF" , "TealA200" : "#64FFDA" ,
+        "LightBlueA400" : "#00B0FF" , "CyanA400" : "#00E5FF" , "TealA400" : "#1DE9B6" ,
+        "LightBlueA700" : "#0091EA" , "CyanA700" : "#00B8D4" , "TealA700" : "#00BFA5" ,
+        // Green                     // LightGreen                     // Lime
+        "Green050"  : "#E8F5E9" , "LightGreen050"  : "#F1F8E9" , "Lime050"  : "#F9FBE7" ,
+        "Green100"  : "#C8E6C9" , "LightGreen100"  : "#DCEDC8" , "Lime100"  : "#F0F4C3" ,
+        "Green200"  : "#A5D6A7" , "LightGreen200"  : "#C5E1A5" , "Lime200"  : "#E6EE9C" ,
+        "Green300"  : "#81C784" , "LightGreen300"  : "#AED581" , "Lime300"  : "#DCE775" ,
+        "Green400"  : "#66BB6A" , "LightGreen400"  : "#9CCC65" , "Lime400"  : "#D4E157" ,
+        "Green500"  : "#4CAF50" , "LightGreen500"  : "#8BC34A" , "Lime500"  : "#CDDC39" ,
+        "Green600"  : "#43A047" , "LightGreen600"  : "#7CB342" , "Lime600"  : "#C0CA33" ,
+        "Green700"  : "#388E3C" , "LightGreen700"  : "#689F38" , "Lime700"  : "#AFB42B" ,
+        "Green800"  : "#2E7D32" , "LightGreen800"  : "#558B2F" , "Lime800"  : "#9E9D24" ,
+        "Green900"  : "#1B5E20" , "LightGreen900"  : "#33691E" , "Lime900"  : "#827717" ,
+        "GreenA100" : "#B9F6CA" , "LightGreenA100" : "#CCFF90" , "LimeA100" : "#F4FF81" ,
+        "GreenA200" : "#69F0AE" , "LightGreenA200" : "#B2FF59" , "LimeA200" : "#EEFF41" ,
+        "GreenA400" : "#00E676" , "LightGreenA400" : "#76FF03" , "LimeA400" : "#C6FF00" ,
+        "GreenA700" : "#00C853" , "LightGreenA700" : "#64DD17" , "LimeA700" : "#AEEA00" ,
+        // Yellow                     // Amber                     // Orange
+        "Yellow050"  : "#FFFDE7" , "Amber050"  : "#FFF8E1" , "Orange050"  : "#FFF3E0" ,
+        "Yellow100"  : "#FFF9C4" , "Amber100"  : "#FFECB3" , "Orange100"  : "#FFE0B2" ,
+        "Yellow200"  : "#FFF59D" , "Amber200"  : "#FFE082" , "Orange200"  : "#FFCC80" ,
+        "Yellow300"  : "#FFF176" , "Amber300"  : "#FFD54F" , "Orange300"  : "#FFB74D" ,
+        "Yellow400"  : "#FFEE58" , "Amber400"  : "#FFCA28" , "Orange400"  : "#FFA726" ,
+        "Yellow500"  : "#FFEB3B" , "Amber500"  : "#FFC107" , "Orange500"  : "#FF9800" ,
+        "Yellow600"  : "#FDD835" , "Amber600"  : "#FFB300" , "Orange600"  : "#FB8C00" ,
+        "Yellow700"  : "#FBC02D" , "Amber700"  : "#FFA000" , "Orange700"  : "#F57C00" ,
+        "Yellow800"  : "#F9A825" , "Amber800"  : "#FF8F00" , "Orange800"  : "#EF6C00" ,
+        "Yellow900"  : "#F57F17" , "Amber900"  : "#FF6F00" , "Orange900"  : "#E65100" ,
+        "YellowA100" : "#FFFF8D" , "AmberA100" : "#FFE57F" , "OrangeA100" : "#FFD180" ,
+        "YellowA200" : "#FFFF00" , "AmberA200" : "#FFD740" , "OrangeA200" : "#FFAB40" ,
+        "YellowA400" : "#FFEA00" , "AmberA400" : "#FFC400" , "OrangeA400" : "#FF9100" ,
+        "YellowA700" : "#FFD600" , "AmberA700" : "#FFAB00" , "OrangeA700" : "#FF6D00" ,
+        // DeepOrange
+        "DeepOrange050"  : "#FBE9E7" ,
+        "DeepOrange100"  : "#FFCCBC" ,
+        "DeepOrange200"  : "#FFAB91" ,
+        "DeepOrange300"  : "#FF8A65" ,
+        "DeepOrange400"  : "#FF7043" ,
+        "DeepOrange500"  : "#FF5722" ,
+        "DeepOrange600"  : "#F4511E" ,
+        "DeepOrange700"  : "#E64A19" ,
+        "DeepOrange800"  : "#D84315" ,
+        "DeepOrange900"  : "#BF360C" ,
+        "DeepOrangeA100" : "#FF9E80" ,
+        "DeepOrangeA200" : "#FF6E40" ,
+        "DeepOrangeA400" : "#FF3D00" ,
+        "DeepOrangeA700" : "#DD2C00" ,
+        // Brown                    // Grey                    // BlueGrey
+        "Brown050" : "#EFEBE9" , "Grey050" : "#FAFAFA" , "BlueGrey050" : "#ECEFF1" ,
+        "Brown100" : "#D7CCC8" , "Grey100" : "#F5F5F5" , "BlueGrey100" : "#CFD8DC" ,
+        "Brown200" : "#BCAAA4" , "Grey200" : "#EEEEEE" , "BlueGrey200" : "#B0BEC5" ,
+        "Brown300" : "#A1887F" , "Grey300" : "#E0E0E0" , "BlueGrey300" : "#90A4AE" ,
+        "Brown400" : "#8D6E63" , "Grey400" : "#BDBDBD" , "BlueGrey400" : "#78909C" ,
+        "Brown500" : "#795548" , "Grey500" : "#9E9E9E" , "BlueGrey500" : "#607D8B" ,
+        "Brown600" : "#6D4C41" , "Grey600" : "#757575" , "BlueGrey600" : "#546E7A" ,
+        "Brown700" : "#5D4037" , "Grey700" : "#616161" , "BlueGrey700" : "#455A64" ,
+        "Brown800" : "#4E342E" , "Grey800" : "#424242" , "BlueGrey800" : "#37474F" ,
+        "Brown900" : "#3E2723" , "Grey900" : "#212121" , "BlueGrey900" : "#263238" ,
+        // aliases
+        "Red"        : "var(Red600)"        ,
+        "Pink"       : "var(Pink600)"       ,
+        "Purple"     : "var(Purple600)"     ,
+        "DeepPurple" : "var(DeepPurple600)" ,
+        "Indigo"     : "var(Indigo600)"     ,
+        "Blue"       : "var(Blue600)"       ,
+        "LightBlue"  : "var(LightBlue600)"  ,
+        "Cyan"       : "var(Cyan600)"       ,
+        "Teal"       : "var(Teal600)"       ,
+        "Green"      : "var(Green600)"      ,
+        "LightGreen" : "var(LightGreen600)" ,
+        "Lime"       : "var(Lime600)"       ,
+        "Yellow"     : "var(Yellow600)"     ,
+        "Amber"      : "var(Amber600)"      ,
+        "Orange"     : "var(Orange600)"     ,
+        "DeepOrange" : "var(DeepOrange600)" ,
+        "Brown"      : "var(Brown600)"      ,
+        "Grey"       : "var(Grey600)"       ,
+        "BlueGrey"   : "var(BlueGrey600)"   ,
+        // built-in
+        // do not use perfect black as it may be the same background color
+        // with the one used in "add_region()" and cause failing to
+        // change the foreground color
+        "--background": "var(Black)",
+        "--foreground": "var(White)",
+        // "--accent": "var(White)",
+        "--bluish": "var(Blue)",
+        "--greenish": "var(Green)",
+        "--orangish": "var(Orange)",
+        "--pinkish": "var(Pink)",
+        "--purplish": "var(Purple)",
+        "--cyanish": "var(Cyan)",
+        "--redish": "var(Red)",
+        "--yellowish": "var(Yellow)",
+        // custom
+        "DarkBlueBackground": "color(var(Blue) blend(var(--background) 15%))",
+        "DarkOrangeBackground": "color(var(Orange) blend(var(--background) 15%))",
+    },
+    "globals": {
+        ////////////
+        // Global //
+        ////////////
+        "background": "var(--background)",
+        "block_caret": "color(var(--foreground) blend(var(--background) 50%))",
+        "block_caret_border": "transparent",
+        "block_caret_corner_style": "square",
+        "caret": "var(--foreground)",
+        "foreground": "var(--foreground)",
+        "invisibles": "color(var(White) blend(var(Black) 25%))",
+        "line_highlight": "color(color(var(White) blend(var(Black) 30%)) alpha(50%))",
+        /////////////
+        // Accents //
+        /////////////
+        "fold_marker": "var(Yellow)",
+        "minimap_border": "var(Grey)",
+        "misspelling": "var(Pink300)",
+        "scroll_highlight": "var(--foreground)",
+        "scroll_selected_highlight": "var(Yellow)",
+        ///////////////
+        // Selection //
+        ///////////////
+        "implicit_selection_foreground": "true",
+        "inactive_selection": "color(var(White) alpha(0.2))",
+        "inactive_selection_border": "var(Cyan800)",
+        "selection": "color(var(White) alpha(0.18))",
+        "selection_border": "var(CyanSaturated)",
+        "selection_corner_radius": "0",
+        "selection_corner_style": "square",
+        "selection_foreground": "var(--foreground)",
+        //////////////
+        // Brackets //
+        //////////////
+        "bracket_contents_foreground": "var(LightBlue300)",
+        "bracket_contents_options": "underline",
+        "brackets_foreground": "var(LightBlue300)",
+        "brackets_options": "glow",
+        //////////
+        // Tags //
+        //////////
+        "tags_foreground": "var(LightGreen300)",
+        "tags_options": "glow",
+        ////////////
+        // Guides //
+        ////////////
+        "guide": "color(var(White) alpha(0.2))",
+        "active_guide": "color(var(White) alpha(0.3))",
+        "stack_guide": "color(var(White) alpha(0.2))",
+        ////////////
+        // Gutter //
+        ////////////
+        "gutter": "var(BlackLight)",
+        "gutter_foreground": "color(var(White) blend(var(Black) 40%))",
+        "gutter_foreground_highlight": "color(var(--foreground) blend(var(--background) 85%))",
+        //////////
+        // Diff //
+        //////////
+        "line_diff_width": "3",
+        "line_diff_added": "var(Green700)",
+        "line_diff_deleted": "var(Red700)",
+        "line_diff_modified": "var(Yellow700)",
+        //////////
+        // Find //
+        //////////
+        "find_highlight": "var(YellowSaturated)",
+        "find_highlight_foreground": "var(BlackLight)",
+        "highlight": "var(--foreground)",
+        /////////////
+        // Shadows //
+        /////////////
+        "shadow": "color(Black alpha(0.2))",
+        "shadow_width": "8",
+        /////////
+        // CSS //
+        /////////
+        "phantom_css": "html { color: var(--foreground); --yellowish: #FFC966; --background: #080808; --bluish: #75ADE6; --foreground: #E8E8E8; --greenish: #A9D274; --redish: #FF6673; --orangish: #FC9569; background-color: color(var(--background) blend(#FFF 95%)); --purplish: #BF94E6; } a { color: var(--bluish); }",
+        "popup_css": "html { color: var(--foreground); --yellowish: #FFC966; --background: #282828; --bluish: #75ADE6; --foreground: #E8E8E8; --greenish: #A9D274; --redish: #FF6673; --orangish: #FC9569; background-color: color(var(--background) blend(#FFF 95%)); --purplish: #BF94E6; } a { color: var(--bluish); } html.light { background-color: color(var(--background) blend(#000 95%)); } #show-scope a { font-size: 1rem; } #show-scope { padding: 0.5rem; }",
+        // sheet is like a view, need special fg/bg colors for it
+        "sheet_css": "html { color: var(--foreground); --yellowish: #FFC966; --background: #282828; --bluish: #75ADE6; --foreground: #E8E8E8; --greenish: #A9D274; --redish: #FF6673; --orangish: #FC9569; background-color: color(var(--background) blend(#FFF 95%)); --purplish: #BF94E6; } a { color: var(--bluish); } html.light { background-color: color(var(--background) blend(#000 95%)); } #show-scope a { font-size: 1rem; } #show-scope { padding: 0.5rem; }",
+    },
+    "rules": [
+        // hash style syntax highlight
+        /*
+        {
+            "scope": "source - comment - string - keyword - punctuation - storage - entity - source.css",
+            "foreground": ["var(BlueSaturated)", "var(GreenSaturated)", "var(RedSaturated)"],
+        },
+        */
+        {
+            "font_style": "bold",
+            "name": "Bold",
+            "scope": "markup.bold",
+        },
+        {
+            "font_style": "italic",
+            "name": "Italic",
+            "scope": "markup.italic",
+        },
+        {
+            "font_style": "underline",
+            "name": "Underline",
+            "scope": "markup.underline",
+        },
+        {
+            "foreground": "var(Grey700)",
+            "name": "Comment",
+            "scope": "comment",
+            "selection_foreground": "var(Grey600)",
+        },
+        {
+            "foreground": "var(Amber200)",
+            "name": "String",
+            "scope": "string",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "Embedded",
+            "scope": "meta.embedded",
+        },
+        {
+            "foreground": "var(DeepPurple300)",
+            "name": "Number",
+            "scope": "constant.numeric",
+        },
+        {
+            "foreground": "var(DeepPurple300)",
+            "name": "Built-in Constant",
+            "scope": "constant.language",
+        },
+        {
+            "foreground": "var(Cyan200)",
+            "name": "Constant - true",
+            "scope": "constant.language.boolean.true",
+        },
+        {
+            "foreground": "var(Pink200)",
+            "name": "Constant - false",
+            "scope": "constant.language.boolean.false",
+        },
+        {
+            "foreground": "var(DeepPurple300)",
+            "name": "User-defined Constant",
+            "scope": "constant.character | constant.other",
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Keyword",
+            "scope": "keyword",
+        },
+        {
+            "foreground": "var(Blue)",
+            "name": "Keyword - Declaration",
+            "scope": "keyword.declaration",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Storage",
+            "scope": "storage",
+        },
+        {
+            "font_style": "italic",
+            "foreground": "var(Blue)",
+            "name": "Storage type",
+            "scope": "storage.type",
+        },
+        {
+            "font_style": "italic",
+            "foreground": "var(Pink)",
+            "name": "Storage type annotation",
+            "scope": "storage.type.annotation",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "Class Name",
+            "scope": "entity.name.class",
+        },
+        {
+            "font_style": "italic",
+            "foreground": "var(--foreground)",
+            "name": "Inherited Class Name",
+            "scope": "entity.other.inherited-class",
+        },
+        {
+            "foreground": "var(LimeA700)",
+            "name": "Function name",
+            "scope": "entity.name.function",
+        },
+        {
+            "font_style": "italic",
+            "foreground": "var(Orange)",
+            "name": "Function Argument",
+            "scope": "variable.parameter",
+        },
+        {
+            "foreground": "var(Red200)",
+            "name": "Language Variables",
+            "scope": "variable.language",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Tag Name",
+            "scope": "entity.name.tag",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Tag Attribute",
+            "scope": "entity.other.attribute-name",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Library Function",
+            "scope": "support.function - entity.name",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Function Name",
+            "scope": "variable.function - entity.name",
+        },
+        {
+            "foreground": "var(Blue)",
+            "name": "Library Constant",
+            "scope": "support.constant",
+        },
+        {
+            "font_style": "italic",
+            "foreground": "var(Blue)",
+            "name": "Library Class/Type",
+            "scope": "support.type | support.class",
+        },
+        {
+            "name": "Library Variable",
+            "scope": "support.other.variable",
+        },
+        {
+            "background": "var(Pink)",
+            "font_style": "bold",
+            "foreground": "var(--foreground)",
+            "name": "Invalid",
+            "scope": "invalid",
+        },
+        {
+            "background": "var(DeepPurple300)",
+            "foreground": "var(--foreground)",
+            "name": "Invalid Deprecated",
+            "scope": "invalid.deprecated",
+        },
+        {
+            "foreground": "var(Orange)",
+            "name": "Escaped Character",
+            "scope": "constant.character.escape",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Access Operator",
+            "scope": "punctuation.accessor",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Annotation Punctuation",
+            "scope": "punctuation.definition.annotation",
+        },
+        ////////////
+        // Others //
+        ////////////
+        {
+            "foreground": "var(Pink)",
+            "background": "var(Indigo900)",
+            "name": "Keyword (async)",
+            "scope": "keyword.declaration.async | storage.modifier.async | keyword.other.await | keyword.control.flow.await",
+        },
+        {
+            "foreground": "var(DeepPurple300)",
+            "name": "Tcl - Variable",
+            "scope": "variable.other.tcl",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Python - Function Names",
+            "scope": "meta.function-call.generic.python",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Regex - Captured Group Name",
+            "scope": "entity.name.capture-group.regexp",
+        },
+        {
+            "font_style": "italic",
+            "foreground": "var(Orange)",
+            "name": "SCSS - Variable in Double Quotes",
+            "scope": "variable.scss",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "CSS - Unit",
+            "scope": "constant.numeric.suffix.css",
+        },
+        {
+            "foreground": "var(Orange)",
+            "name": "HTML - Other Tags",
+            "scope": "entity.name.tag.other.html",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Apache Conf - Tag",
+            "scope": "entity.tag.apacheconf",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Sublime Settings - YAML/JSON/INI Key",
+            "scope": "meta.mapping.key string | meta.mapping.key variable.other.readwrite.git.config",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Sublime Settings - JSON Key Namespace",
+            "scope": "keyword.other.namespace.sublime-settings",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "Sublime Settings - JSON Key Namespace Separator",
+            "scope": "punctuation.separator.namespace.sublime-settings",
+        },
+        //////////////
+        // Markdown //
+        //////////////
+        {
+            "font_style": "bold",
+            "foreground": "var(Green)",
+            "name": "Markdown - Bold",
+            "scope": "markup.bold.markdown",
+        },
+        {
+            "font_style": "italic",
+            "foreground": "var(Green)",
+            "name": "Markdown - Italic",
+            "scope": "markup.italic.markdown",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Markdown - Inline",
+            "scope": "markup.raw.inline.markdown",
+        },
+        {
+            "name": "Markdown - Heading 1",
+            "background": "color(var(Red) alpha(0.2))",
+            "foreground": "var(Red)",
+            "scope": "markup.heading.1",
+        },
+        {
+            "name": "Markdown - Heading 2",
+            "background": "color(var(Orange) alpha(0.2))",
+            "foreground": "var(Orange)",
+            "scope": "markup.heading.2",
+        },
+        {
+            "name": "Markdown - Heading 3",
+            "background": "color(var(Yellow) alpha(0.2))",
+            "foreground": "var(Yellow)",
+            "scope": "markup.heading.3",
+        },
+        {
+            "name": "Markdown - Heading 4",
+            "background": "color(var(Green) alpha(0.2))",
+            "foreground": "var(Green)",
+            "scope": "markup.heading.4",
+        },
+        {
+            "name": "Markdown - Heading 5",
+            "background": "color(var(Cyan) alpha(0.2))",
+            "foreground": "var(Cyan)",
+            "scope": "markup.heading.5",
+        },
+        {
+            "name": "Markdown - Heading 6",
+            "background": "color(var(Purple) alpha(0.2))",
+            "foreground": "var(Purple)",
+            "scope": "markup.heading.6",
+        },
+        {
+            "foreground": "var(Red)",
+            "name": "Markdown - List - Punctuation",
+            "scope": "markup.list.numbered.bullet | punctuation.definition.list_item",
+        },
+        {
+            "foreground": "var(Amber100)",
+            "name": "Markdown - List - Paragraph",
+            "scope": "meta.paragraph.list",
+        },
+        {
+            "foreground": "var(Blue)",
+            "name": "Markdown - Link - Description",
+            "scope": "meta.link.inline.description | meta.link.reference.description",
+        },
+        {
+            "foreground": "var(Teal300)",
+            "name": "Markdown - Image - Description",
+            "scope": "meta.image.inline.description | meta.image.reference.description",
+        },
+        {
+            "foreground": "var(Lime900)",
+            "name": "Markdown - Link - href",
+            "scope": "markup.underline.link",
+        },
+        {
+            "foreground": "var(Grey500)",
+            "name": "Markdown - Punctuation",
+            "scope": "punctuation.definition.image.begin | punctuation.definition.image.end | punctuation.definition.link.begin | punctuation.definition.link.end | punctuation.definition.metadata.begin | punctuation.definition.metadata.end | punctuation.definition.raw.begin | punctuation.definition.raw.end | punctuation.definition.raw.code-fence.begin | punctuation.definition.raw.code-fence.end",
+        },
+        {
+            "background": "color(var(White) alpha(0.02))",
+            "foreground": "var(White) ",
+            "name": "Markdown - Code-fence",
+            "scope": "markup.raw.code-fence",
+        },
+        {
+            "foreground": "var(Red)",
+            "name": "Markdown - Table Separator",
+            "scope": "punctuation.separator.table-cell | punctuation.section.table-header",
+        },
+        //////////////////////////
+        // Groovy / Jenkinsfile //
+        //////////////////////////
+        {
+            "foreground": "var(--foreground)",
+            "name": "Groovy - Interpolation",
+            "scope": "source.groovy.embedded.source",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Groovy - Method Name",
+            "scope": "meta.method.groovy",
+        },
+        {
+            "background": "var(BlackLighter)",
+            "name": "Groovy - Method Name",
+            "scope": "constant.other.key.groovy",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "Groovy - imported class name",
+            "scope": "storage.modifier.import.groovy",
+        },
+        {
+            "foreground": "var(Blue)",
+            "name": "Groovy - env variable",
+            "scope": "variable.language.env.groovy.jenkinsfile",
+        },
+        {
+            "foreground": "var(DeepPurple300)",
+            "background": "var(BlackLighter)",
+            "name": "Groovy - interpoloation variable",
+            "scope": "meta.variable.groovy",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "Groovy - interpoloation variable",
+            "scope": "string.quoted punctuation.definition.variable.begin | string.quoted punctuation.definition.variable.end",
+        },
+        {
+            "background": "var(BlackLighter)",
+            "name": "Groovy - Keywords",
+            "scope": "source.groovy.jenkinsfile keyword.context",
+        },
+        /////////
+        // C++ //
+        /////////
+        {
+            "background": "var(Indigo900)",
+            "foreground": "var(Orange)",
+            "name": "C/C++ - Preprocessor",
+            "scope": "meta.preprocessor",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "C/C++ - Function/Method Name",
+            "scope": "variable.function.c | variable.function.c++ | variable.function.member.c++",
+        },
+        {
+            "font_style": "italic",
+            "foreground": "var(Blue)",
+            "name": "C++ - Typedef Type",
+            "scope": "entity.name.type.typedef.c++",
+        },
+        /////////
+        // PHP //
+        /////////
+        {
+            "background": "var(DarkBlueBackground)",
+            "name": "PHP - Block Comment",
+            "scope": "source.php comment.block.documentation",
+        },
+        {
+            "foreground": "var(Pink300)",
+            "name": "PHP - PHPUnit Annotations",
+            "scope": "keyword.other.phpunit.php",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "PHP - Spread Operator",
+            "scope": "keyword.operator.spread.php",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "PHP - K/V Separator",
+            "scope": "punctuation.separator.key-value.php",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "PHP - Just be pink please",
+            "scope": "storage.type.nullable.php | punctuation.separator.type.union.php | punctuation.separator.type.intersection.php | keyword.declaration.php | keyword.declaration.namespace.php | keyword.declaration.use.php | keyword.declaration.function.arrow.php | keyword.declaration.constant.php",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "PHP - Variable in Double Quotes",
+            "scope": "(string.quoted.double.php | string.regexp.double-quoted.php | string.unquoted.heredoc.php | meta.string.php | meta.embedded.sql | meta.embedded.css | meta.embedded.js | meta.embedded.html) & (variable.other)",
+        },
+        {
+            "foreground": "var(Red200)",
+            "name": "PHP - Special Variable in Double Quotes",
+            "scope": "(string.quoted.double.php | string.regexp.double-quoted.php | string.unquoted.heredoc.php | meta.string.php | meta.embedded.sql | meta.embedded.css | meta.embedded.js | meta.embedded.html) & (variable.language.php)",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "PHP - Definition Punctuation in Double Quotes or Heredoc",
+            "scope": "string.quoted.double.php punctuation.definition.expression.php | string.unquoted.heredoc.php punctuation.definition.expression.php",
+        },
+        {
+            "foreground": "var(Blue)",
+            "name": "PHP - RegExp - Modifier",
+            "scope": "meta.regex.modifier.php",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "PHP - RegExp - Group Names",
+            "scope": "entity.name.other.group.regexp | punctuation.definition.group.capture.begin.regexp | punctuation.definition.group.capture.end.regexp",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "PHP - RegExp - Keyword Punctuations",
+            "scope": "punctuation.definition.group.begin.regexp | punctuation.definition.group.end.regexp | punctuation.definition.character-class.begin.regexp | punctuation.definition.character-class.end.regexp",
+        },
+        /////////
+        // Lua //
+        /////////
+        {
+            "foreground": "var(Pink)",
+            "name": "Lua - key-value separator",
+            "scope": "punctuation.separator.key-value.lua",
+        },
+        ///////////
+        // Shell //
+        ///////////
+        {
+            "font_style": "bold",
+            "foreground": "var(RedSaturated)",
+            "name": "Shell - su/sudo",
+            "scope": "support.function.su.shell | support.function.sudo.shell",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "Shell - Variable Assigned",
+            "scope": "meta.variable.shell variable.other.readwrite.shell",
+        },
+        {
+            "foreground": "var(DeepPurple300)",
+            "name": "Shell - Variable",
+            "scope": "(source.shell | source.groovy) & variable.other",
+        },
+        {
+            "foreground": "var(RedSaturated)",
+            "name": "Shell - Privilege Command",
+            "scope": "support.function.privilege.shell",
+        },
+        {
+            "foreground": "var(Blue400)",
+            "name": "Shell - Built-in Command",
+            "scope": "support.function.builtin.shell | meta.function-call.shell support.function",
+        },
+        {
+            "foreground": "var(Blue700)",
+            "name": "Shell - External Command",
+            "scope": "support.function.external.shell | meta.function-call.shell variable.function",
+        },
+        {
+            "foreground": "var(DeepPurple300)",
+            "name": "Shell - Punctuation Variable",
+            "scope": "punctuation.definition.variable.shell",
+        },
+        {
+            "foreground": "var(Amber200)",
+            "name": "Shell - Punctuation Definition",
+            "scope": "punctuation.definition.string",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Shell - Pipe-sign/Parentheses in `case`",
+            "scope": "punctuation.separator.pipe-sign.shell | punctuation.definition.case-pattern.shell",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Shell - `;;` in `case`",
+            "scope": "punctuation.terminator.case-clause.shell",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Shell - ${!varprefix＞*＜}",
+            "scope": "variable.language.shell",
+        },
+        {
+            "foreground": "var(Pink)",
+            "name": "Shell - ${foo/＞/＜bar/baz}",
+            "scope": "variable.parameter.switch.shell",
+        },
+        {
+            "font_style": "italic",
+            "name": "Shell - Command Switch",
+            "scope": "support.command-switch.shell",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "Shell - Meta",
+            "scope": "meta.group.expansion.parameter.shell",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "Shell - `test` Punctuation",
+            "scope": "support.function.test | support.function.double-brace",
+        },
+        {
+            "foreground": "var(DeepPurple300)",
+            "name": "Shell - Variable Punctuation",
+            "scope": "punctuation.definition.variable.shell | meta.group.expansion punctuation.section | meta.group.arithmetic.shell | meta.group.expansion.arithmetic.shell",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "Shell - variable interpolation",
+            "scope": "string.quoted punctuation.definition.variable.shell | string.quoted punctuation.section.interpolation.begin | string.quoted punctuation.section.interpolation.end",
+        },
+        //////////////////
+        // Jinja / Twig //
+        //////////////////
+        {
+            "background": "color(var(Brown700) alpha(0.7))",
+            "name": "Jinja - Placeholder",
+            "scope": "meta.placeholder.jinja | meta.embedded.expression.jinja | meta.placeholder.twig",
+        },
+        {
+            "background": "color(var(Indigo900) alpha(0.7))",
+            "name": "Jinja - Placeholder",
+            "scope": "meta.statement.jinja | meta.embedded.statement.jinja | meta.statement.twig",
+        },
+        ///////////////////
+        // Diff (syntax) //
+        ///////////////////
+        {
+            "foreground": "var(--foreground)",
+            "name": "Diff - Header",
+            "scope": "punctuation.definition.separator.diff",
+        },
+        {
+            "foreground": "var(Blue)",
+            "name": "Diff - Header",
+            "scope": "meta.diff | meta.diff.header",
+        },
+        {
+            "foreground": "var(Red)",
+            "name": "Diff - Deleted",
+            "scope": "markup.deleted | punctuation.definition.deleted.diff",
+        },
+        {
+            "foreground": "var(Green)",
+            "name": "Diff - Inserted",
+            "scope": "markup.inserted | punctuation.definition.inserted.diff",
+        },
+        {
+            "foreground": "var(Yellow)",
+            "name": "Diff - Changed",
+            "scope": "markup.changed | punctuation.definition.changed.diff",
+        },
+        {
+            "background": "var(Indigo900)",
+            "foreground": "var(Orange)",
+            "scope": "meta.diff.header.from-file | punctuation.definition.from-file | meta.diff.header.to-file | punctuation.definition.to-file",
+        },
+        {
+            "background": "var(Brown900)",
+            "scope": "meta.header.from-to-file.diff",
+        },
+        {
+            "foreground": "var(Grey700)",
+            "scope": "punctuation.separator.mapping.pair.change-list.git.commit",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "scope": "punctuation.separator.mapping.pair.path.git.commit",
+        },
+        //////////////////////
+        // Inline Diff (ST) //
+        //////////////////////
+        {
+            "background": "color(var(--background) blend(var(Green) 80%))",
+            "name": "ST Diff Inserted",
+            "scope": "diff.inserted",
+            "foreground_adjust": "l(- 10%)",
+        },
+        {
+            "background": "color(var(--background) blend(var(Green) 50%))",
+            "name": "ST Diff Inserted Char",
+            "scope": "diff.inserted.char",
+            "foreground_adjust": "l(+ 10%)",
+        },
+        {
+            "background": "color(var(--background) blend(var(Red) 80%))",
+            "name": "ST Diff Deleted",
+            "scope": "diff.deleted",
+            "foreground_adjust": "l(- 10%)",
+        },
+        {
+            "background": "color(var(--background) blend(var(Red) 50%))",
+            "name": "ST Diff Deleted Char",
+            "scope": "diff.deleted.char",
+            "foreground_adjust": "l(+ 10%)",
+        },
+        /////////////////
+        // NSIS Script //
+        /////////////////
+        {
+            "foreground": "var(Teal)",
+            "name": "NSIS Section",
+            "scope": "entity.name.section.nsis",
+        },
+        /////////
+        // INI //
+        /////////
+        {
+            "foreground": "var(--foreground)",
+            "name": "INI punctuation: Assign",
+            "scope": "punctuation.separator.mapping.key-value.ini",
+        },
+        ////////////////////
+        // Sublime Syntax //
+        ////////////////////
+        {
+            "foreground": "var(Yellow900)",
+            "name": "Sublime Syntax: scope separator",
+            "scope": "punctuation.separator.context-name.sublime-syntax",
+        },
+        /////////
+        // Log //
+        /////////
+        {
+            "background": "var(Red900)",
+            "scope": "markup.error.log",
+        },
+        {
+            "background": "var(Yellow900)",
+            "scope": "markup.warning.log",
+        },
+        {
+            "background": "var(Blue900)",
+            "scope": "markup.info.log",
+        },
+        {
+            "background": "var(Green900)",
+            "scope": "markup.debug.log",
+        },
+        //////////////////
+        // ASS Subitlte //
+        //////////////////
+        {
+            "foreground": "var(Blue200)",
+            "font_style": "italic",
+            "scope": "storage.type.comment.ass | storage.type.comment.template.ass | storage.type.comment.code.ass",
+        },
+        {
+            "foreground": "var(Orange600)",
+            "scope": "entity.name.style.ass | variable.parameter.style.ass",
+        },
+        {
+            "foreground": "var(PinkA100)",
+            "scope": "string.unquoted.font.ass",
+        },
+        /////////
+        // PEM //
+        /////////
+        {
+            "foreground": "var(Red)",
+            "scope": "entity.name.section.pem",
+        },
+        {
+            "background": "color(var(Green) alpha(0.2))",
+            "scope": "punctuation.definition.section.begin.pem",
+        },
+        {
+            "background": "color(var(Blue) alpha(0.2))",
+            "scope": "punctuation.definition.section.end.pem",
+        },
+        /////////////////////
+        // Special Section //
+        /////////////////////
+        {
+            "background": "var(Indigo900)",
+            "scope": "meta.section.ass | meta.section.ini | meta.section.header",
+        },
+        ////////////////////////
+        // BracketHighlighter //
+        ////////////////////////
+        {
+            "background": "#FFFFFF",
+            "foreground": "#777777",
+            "name": "Bracket Default",
+            "scope": "brackethighlighter.default",
+        },
+        {
+            "background": "#66CC66",
+            "foreground": "#993399",
+            "name": "Bracket Tag",
+            "scope": "brackethighlighter.tag",
+        },
+        {
+            "background": "#FFFFFF",
+            "foreground": "#777777",
+            "name": "Bracket C Define",
+            "scope": "brackethighlighter.c_define",
+        },
+        {
+            "background": "#DDA0DD",
+            "foreground": "#448F44",
+            "name": "Bracket Curly",
+            "scope": "brackethighlighter.curly",
+        },
+        {
+            "background": "#FFCC66",
+            "foreground": "#0099CC",
+            "name": "Bracket Round",
+            "scope": "brackethighlighter.round",
+        },
+        {
+            "background": "#75ADE6",
+            "foreground": "#A0522D",
+            "name": "Bracket Square",
+            "scope": "brackethighlighter.square",
+        },
+        {
+            "background": "#AA66AA",
+            "foreground": "#FFCC66",
+            "name": "Bracket Angle",
+            "scope": "brackethighlighter.angle",
+        },
+        {
+            "background": "#99CC99",
+            "foreground": "#AA66AA",
+            "name": "Bracket Quote",
+            "scope": "brackethighlighter.quote",
+        },
+        {
+            "background": "#0D8885",
+            "foreground": "#F2777A",
+            "name": "Bracket Unmatched",
+            "scope": "brackethighlighter.unmatched",
+        },
+        {
+            "foreground": "var(Grey700)",
+            "name": "PEM Comment",
+            "scope": "text.pem -meta.block.pem",
+            "selection_foreground": "var(Grey600)",
+        },
+        ///////////////////
+        // sublimelinter //
+        ///////////////////
+        {
+            "foreground": "var(Red)",
+            "name": "SublimeLinter Error",
+            "scope": "sublimelinter.mark.error",
+        },
+        {
+            "foreground": "var(Yellow)",
+            "name": "SublimeLinter Warning",
+            "scope": "sublimelinter.mark.warning",
+        },
+        {
+            "foreground": "var(--foreground)",
+            "name": "SublimeLinter Gutter Mark",
+            "scope": "sublimelinter.gutter-mark",
+        },
+        ///////////////////////////
+        // semantic highlihgting //
+        ///////////////////////////
+        {
+            // the background should be the same with color scheme's global background
+            "background": "#010101",
+            "name": "LSP semantic highlighting background color",
+            "scope": "meta.semantic-token",
+        },
+        {
+            "background": "var(Indigo900)",
+            "foreground": "var(Orange)",
+            "scope": "meta.semantic-token.macro",
+        },
+        ///////////////////
+        // RainbowIndent //
+        ///////////////////
+        {
+            "foreground": "color(var(Red) alpha(0.35))",
+            "background": "color(var(Red) alpha(0.2))",
+            "scope": "region.indent.0",
+        },
+        {
+            "foreground": "color(var(Green) alpha(0.35))",
+            "background": "color(var(Green) alpha(0.2))",
+            "scope": "region.indent.1",
+        },
+        {
+            "foreground": "color(var(Blue) alpha(0.35))",
+            "background": "color(var(Blue) alpha(0.2))",
+            "scope": "region.indent.2",
+        },
+        {
+            "foreground": "color(var(Orange) alpha(0.35))",
+            "background": "color(var(Orange) alpha(0.2))",
+            "scope": "region.indent.3",
+        },
+        {
+            "foreground": "color(var(Purple) alpha(0.35))",
+            "background": "color(var(Purple) alpha(0.2))",
+            "scope": "region.indent.4",
+        },
+        {
+            "foreground": "color(var(Cyan) alpha(0.35))",
+            "background": "color(var(Cyan) alpha(0.2))",
+            "scope": "region.indent.5",
+        },
+    ],
+}

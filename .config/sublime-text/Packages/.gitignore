@@ -1,0 +1,11 @@
+/AutomaticPackageReloader*/
+/CommandsBrowser33/
+/ConvertToUTF8/
+/JsPrettier/
+/LiveReload/
+/LSP-*/
+/SublimeLinter*/
+/UnitTesting/
+
+/Terminal/*
+!/Terminal/Terminal.py

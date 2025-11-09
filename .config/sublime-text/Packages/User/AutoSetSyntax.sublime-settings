@@ -1,0 +1,38 @@
+{
+    "run_on_startup_views": true,
+    "trim_suffixes_auto": true,
+    "user_syntax_rules": [
+        {
+            "syntaxes": ["scope:text.log"],
+            "selector": "text.plain",
+            "rules": [
+                {
+                    "constraint": "is_extension",
+                    "args": [".stderr", ".stdout"]
+                }
+            ]
+        },
+        {
+            "syntaxes": ["scope:text.html.markdown"],
+            "selector": "text.plain",
+            "rules": [
+                {
+                    "constraint": "is_name",
+                    "args": ["TODO", "README", "CHANGELOG"]
+                }
+            ]
+        },
+        {
+            "comment": "Singularity definition files",
+            "syntaxes": ["scope:source.singularity_definition"],
+            "selector": "text.plain | source.shell",
+            "rules": [
+                {
+                    "constraint": "name_contains_regex",
+                    "args": ["^Singularity[-_.@]"]
+                }
+            ]
+        },
+    ],
+    "magika.enabled": true,
+}

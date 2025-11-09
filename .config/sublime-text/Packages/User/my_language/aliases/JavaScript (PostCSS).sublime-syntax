@@ -1,0 +1,12 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: JavaScript (PostCSS)
+version: 2
+hidden: true
+file_extensions:
+  - postcss.config.js
+scope: source.js.postcss
+contexts:
+  main:
+    - include: scope:source.js

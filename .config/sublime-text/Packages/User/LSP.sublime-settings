@@ -1,0 +1,84 @@
+{
+    // LSP servers configurations
+    "clients": {
+        "diagnostic-ls": {
+            "enabled": false,
+            "command": [
+                "diagnostic-languageserver",
+                "--stdio",
+            ],
+            "selector": "source.python | source.shell",
+            "initializationOptions": {
+                "linters": {
+                    // REF: https://gist.github.com/rchl/1077151a7339b734c1678fc626b123a2
+                    "shellcheck": {
+                        "command": "shellcheck",
+                        "debounce": 100,
+                        "args": [
+                            "--enable=all",
+                            "--format=json",
+                            "-",
+                        ],
+                        "offsetLine": 0,
+                        "offsetColumn": 0,
+                        "sourceName": "shellcheck",
+                        "formatLines": 1,
+                        "parseJson": {
+                            "line": "line",
+                            "column": "column",
+                            "endLine": "endLine",
+                            "endColumn": "endColumn",
+                            "security": "level",
+                            "message": "\\${message} [\\${code}]",
+                        },
+                        "securities": {
+                            "error": "error",
+                            "warning": "warning",
+                            "note": "info",
+                            "info": "info",
+                            "style": "info",
+                        },
+                    },
+                },
+                "filetypes": {
+                    "python": [
+                        "flake8"
+                    ],
+                    "shellscript": "shellcheck",
+                },
+            },
+        },
+    },
+    // other settings
+    "semantic_highlighting": true,
+    "show_inlay_hints": true,
+    "show_diagnostics_panel_on_save": 0,
+    "diagnostics_gutter_marker": "sign",
+    "diagnostics_highlight_style": "box",
+    "document_highlight_style": "underline",
+    "hover_highlight_style": "stippled",
+    "inhibit_snippet_completions": false,
+    "inhibit_word_completions": false,
+    "show_diagnostics_count_in_view_status": true,
+    "show_diagnostics_in_view_status": true,
+    "show_diagnostics_severity_level": 4,
+    "show_references_in_quick_panel": false,
+    "show_symbol_action_links": true,
+    "show_view_status": true,
+    "log_debug": false,
+    "log_server": [
+        "panel",
+    ],
+    "lsp_code_actions_on_save": {
+        // "source.fixAll": true,
+        // "source.organizeImports": true,
+    },
+    "lsp_format_on_save": false,
+    // Controls if files that were part of a refactoring (e.g. rename) are saved automatically:
+    // "always" - save all affected files
+    // "preserve" - only save files that didn't have unsaved changes beforehand
+    // "preserve_opened" - only save opened files that didn't have unsaved changes beforehand
+    //                     and open other files that were affected by the refactoring
+    // "never" - never save files automatically
+    "refactoring_auto_save": "preserve",
+}

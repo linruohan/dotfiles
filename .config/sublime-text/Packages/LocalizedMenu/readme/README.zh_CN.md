@@ -8,9 +8,11 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3/4](ht
 - 支持自动生成新版本的英文菜单
 
 # README.md同时有以下语言的版本
+- de_DE [Deutsch](readme/README.de_DE.md)
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - fr_FR [Français](README.fr_FR.md)
+- hu [Magyar](readme/README.hu.md)
 - hy [Հայերեն](README.hy.md)
 - pt_BR [Português do Brasil](README.pt_BR.md)
 - ru [Русский](README.ru.md)
@@ -85,11 +87,14 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3/4](ht
 - 添加的语言翻译后提交pull request
 
 # 语言及贡献者
+- de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
+- es Español *by [Christopher](https://t.me/Azriel_7589)*
 - es_ES Español *by [Dastillero](https://github.com/dap39)*
 - fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
+- hu Magyar *by [Tamás Balog](https://github.com/picimako)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *by [JNylson](https://github.com/jnylson)*
-- ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
+- ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh) & [Maksim Arhipov](https://github.com/OSPanel)*
 - sv_SE Svenska *by [H2SO4JB](https://github.com/H2SO4JB)*
 - zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*
 - zh_TW 繁体中文 *by [Zam](https://github.com/zam1024t)*

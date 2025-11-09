@@ -1,0 +1,56 @@
+{
+    // This is where you initially define a new tag mode.
+    // This new tag_mode key must be used in all other settings in this file
+    // to set up its specific settings.
+    // Determine which style of tag-matching to use in which syntax.
+    "tag_mode": [
+        {"mode": "xml", "syntax": ["XML"]},
+        {
+            "mode": "xhtml",
+            "syntax": [
+                "HTML",
+                "HTML 5",
+                "PHP",
+                "Jinja",
+                "Twig",
+                "HTML (Jinja Templates)",
+                "HTML (Jinja2)",
+                "HTML (Rails)",
+                "HTML (Twig)",
+                "HTML (Django)",
+                "laravel-blade",
+                "blade",
+                "Handlebars",
+                "AngularJS",
+                "Java Server Pages (JSP)",
+                "Vue Component",
+            ],
+            "first_line": "^[ \\t]*<\\?xml",
+        },
+        {
+            "mode": "html",
+            "syntax": [
+                "HTML",
+                "HTML 5",
+                "PHP",
+                "Jinja",
+                "Twig",
+                "HTML (Jinja Templates)",
+                "HTML (Jinja2)",
+                "HTML (Rails)",
+                "HTML (Twig)",
+                "HTML (Django)",
+                "laravel-blade",
+                "blade",
+                "Handlebars",
+                "AngularJS",
+                "Java Server Pages (JSP)",
+                "Vue Component",
+            ],
+        },
+        {
+            "mode": "cfml",
+            "syntax": ["CFML", "HTML+CFML", "ColdFusion", "ColdFusionCFC"]
+        },
+    ],
+}

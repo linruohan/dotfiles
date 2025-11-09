@@ -1,0 +1,12 @@
+{
+    "initializationOptions": {
+        "provideFormatter": true,
+    },
+    "settings": {
+        "json.format.enable": true,
+    },
+    "disabled_capabilities": {
+        // prefer the ColorHelper plugin
+        "colorProvider": true,
+    },
+}

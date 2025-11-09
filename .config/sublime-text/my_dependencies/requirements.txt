@@ -1,0 +1,10 @@
+certifi
+compdb
+compiledb
+httpie
+ipython
+
+build
+pip-tools
+setuptools
+vendorize

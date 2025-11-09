@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: JavaScript (Gulpfile)
+version: 2
+hidden: true
+file_extensions:
+  - gulpfile.js
+  - gulpfile.babel.js
+scope: source.js.gulpfile
+contexts:
+  main:
+    - include: scope:source.js

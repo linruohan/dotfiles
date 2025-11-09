@@ -1,0 +1,21 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: Plain Text (Archive)
+version: 2
+hidden: true
+file_extensions:
+  - 7z
+  - 7zip
+  - gz
+  - pzip
+  - rar
+  - saz
+  - tar
+  - tgz
+  - wim
+  - zip
+scope: text.plain.archive
+contexts:
+  main:
+    - include: scope:text.plain

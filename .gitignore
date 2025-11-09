@@ -1,4 +1,5 @@
 .bash_*
+*tmp
 .cache/
 .cargo/
 .rustup/

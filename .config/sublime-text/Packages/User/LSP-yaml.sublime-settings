@@ -1,0 +1,14 @@
+{
+    "settings": {
+        "yaml.completion": true,
+        "yaml.format.bracketSpacing": true,
+        "yaml.format.enable": true,
+        "yaml.format.printWidth": 120,
+        "yaml.format.proseWrap": "always",
+        "yaml.format.singleQuote": true,
+        "yaml.hover": true,
+        "yaml.schemas": {},
+        "yaml.schemaStore.enable": true,
+        "yaml.validate": true,
+    },
+}

@@ -1,0 +1,111 @@
+{
+    "annotation_found_text": "→",
+    "annotation_not_found_text": "Ｘ",
+    "annotations_enabled": true,
+    "scopes": {
+        "source.js | source.jsx | source.ts | source.tsx": {
+            "regexes": [
+                "^import\\s+(?:.+?\\s+from\\s+)?['\"]([^'\"]+)['\"]",
+                "^from\\s+['\"]([^'\"]+)['\"]",
+                ".*require\\(['\"]([^'\"]+)['\"]",
+            ],
+            "extensions": [
+                "ts",
+                "js",
+                "tsx",
+                "jsx",
+                "vue",
+                "mjs",
+                "svelte",
+            ],
+            "vendor_dirs": [
+                "node_modules",
+            ],
+            "lookup_paths": [],
+            "aliases": {
+                "@assets": "assets",
+            },
+        },
+        "source.sass | source.scss": {
+            "regexes": [
+                "^@import\\s+['\"]([^'\"]+)['\"]",
+                "^@import\\s+url\\(['\"]([^'\"]+)['\"]",
+                "^@import\\s+\\(?.*\\)?\\s*['\"]([^'\"]+)['\"]",
+            ],
+            "extensions": [
+                "scss",
+                "sass",
+            ],
+            "vendor_dirs": [
+                "node_modules",
+            ],
+            "aliases": {
+                "@assets": "assets",
+            },
+        },
+        "source.css": {
+            "regexes": [
+                "^@import\\s+['\"]([^'\"]+)['\"]",
+                "^@import\\s+url\\(['\"]([^'\"]+)['\"]",
+            ],
+            "extensions": [
+                "css",
+            ],
+        },
+        "source.php": {
+            "regexes": [
+                // jfcherng
+                ".*\\b(?:include|require)(?:_once)?\\s*\\(?['\"]([^'\"]+)['\"]\\)?;?$",
+                // Symfony render Twig templates in PHP
+                ".*['\"]([^'\"]+\\.twig(?:\\.[^'\"]*)?)['\"]",
+            ],
+            "extensions": [
+                "php",
+                "php5",
+                "php7",
+                "php8",
+            ],
+            "lookup_paths": [
+                "templates",
+                "views",
+            ],
+        },
+        "text.jinja": {
+            "regexes": [
+                // jfcherng
+                "^{%\\s+(?:extends|include|import)\\s+['\"]([^'\"]+)['\"]",
+                "^{%\\s+from\\s+['\"]([^'\"]+)['\"]",
+            ],
+        },
+        "text.html.twig": {
+            "regexes": [
+                // jfcherng
+                "^{%\\s+(?:embed|extends|include|import|use)\\s+['\"]([^'\"]+)['\"]",
+                "^{%\\s+from\\s+['\"]([^'\"]+)['\"]",
+                "^{%\\s+.+?\\s+with\\s+['\"]([^'\"]+)['\"]",
+            ],
+            "extensions": [
+                "twig"
+            ],
+            "lookup_paths": [
+                "templates",
+                "views",
+            ],
+        },
+        // jfcherng
+        "text.html.basic": {
+            "regexes": [
+                ".*\\b(?:href|src)=['\"]([^'\"?]+)",
+            ],
+            "extensions": ["htm", "html"]
+        },
+        "text.restructuredtext": {
+            "regexes": [
+                "^\\s*\\.\\. include::\\s+(.+)$",
+            ],
+            "extensions": [
+                "rst",
+            ],
+        },
+    },
+}

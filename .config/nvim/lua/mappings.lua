@@ -286,6 +286,11 @@ vim.keymap.set("n", "<leader>nr", function()
   utils.run_code()
 end, { desc = "Neovim | Run Code", silent = true })
 
+-- Project Bootstrapper
+vim.keymap.set("n", "<leader>nb", function()
+  utils.bootstrap_project()
+end, { desc = "Neovim | Bootstrap Project", silent = true })
+
 -- Restart Neovim
 vim.keymap.set("n", "<leader>nR", function()
   -- check if the current version is the latesto
@@ -323,6 +328,7 @@ vim.keymap.set("n", "<leader>pH", "<cmd>Lazy help<cr>", { desc = "Lazy | Help", 
 -- Profile
 vim.keymap.set("n", "<leader>pp", "<cmd>Lazy profile<cr>", { desc = "Lazy | Profile", silent = true })
 
+vim.keymap.set("n", "<leader>lL", ":EslintRun<CR>", { desc = "LSP | Run ESLint", silent = true })
 -- Update
 vim.keymap.set("n", "<leader>pu", "<cmd>Lazy update<cr>", { desc = "Lazy | Update", silent = true })
 
