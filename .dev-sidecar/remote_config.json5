@@ -108,14 +108,14 @@
 
 			// google相关
 			"fonts.googleapis.com": { // 谷歌字体库很多时候加载不出来，直接拒绝请求
-				"true": {
+				".*": {
 					"abort": true
 				}
 			},
-			"^.*(with)?google(apis|usercontent)?.com.*$": {
+			"^(?!.*(translate-pa|apis|.*pa.clients6).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
 				".*": {
 					"sni": "www.google.cn",
-					"desc": "谷歌字体库不需调整sni"
+					"desc": "部分需要走其它代理的服务"
 				}
 			},
 			"^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com)$": {

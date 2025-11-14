@@ -248,7 +248,9 @@
             "uuid": "e2e5f14a-662e-48a5-b4eb-babda8099c57",
             "id": "xshm_input",
             "versioned_id": "xshm_input",
-            "settings": {},
+            "settings": {
+                "advanced": true
+            },
             "mixers": 0,
             "sync": 0,
             "flags": 0,
@@ -326,7 +328,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -1,
+    "scaling_level": -2,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "modules": {
