@@ -5,6 +5,9 @@
     // - "system": Use the theme that corresponds to the system's appearance
     // - "light": Use the theme indicated by the "light" field
     // - "dark": Use the theme indicated by the "dark" field
+    "disable_ai": false,
+    "on_last_window_closed": "platform_default",
+
     "edit_predictions": {
         "disabled_globs": [
             "**/.git/**",
@@ -23,11 +26,7 @@
     "lsp_highlight_debounce": 100,
     "hide_mouse": "on_typing",
     "icon_theme": "VSCode Great Icons Theme",
-    "theme": {
-        "mode": "system",
-        "light": "One Light",
-        "dark": "Catppuccin Mocha"
-    },
+    "theme": "Catppuccin Frappé",
     // The name of a base set of key bindings to use.
     // This setting can take four values, each named after another
     // text editor:
@@ -42,7 +41,7 @@
     // Features that can be globally enabled or disabled
     "features": {
         // Which inline completion provider to use.//  none/supermaven
-        "edit_prediction_provider": "copilot"
+        "edit_prediction_provider": "zed"
     },
     // The name of a font to use for rendering text in the editor
     "buffer_font_family": "Maple Mono Normal NF CN", // "Zed Plex Mono",
@@ -136,7 +135,7 @@
     // When set to false, Zed will use the built-in keyboard-first pickers.
     "use_system_path_prompts": true,
     // Whether the cursor blinks in the editor.
-    "cursor_blink": false,
+    "cursor_blink": true,
     // Cursor shape for the default editor.
     //  1. A vertical bar
     //     "bar"
@@ -212,7 +211,7 @@
     // happen only for auto-inserted characters.
     // Otherwise(when `true`), the closing characters are always skipped over and auto-removed
     // no matter how they were inserted.
-    "always_treat_brackets_as_autoclosed": false,
+    "always_treat_brackets_as_autoclosed": true,
     // Controls whether inline completions are shown immediately (true)
     // or manually by triggering `editor::ShowInlineCompletion` (false).
     // "show_inline_completions": true,
@@ -269,9 +268,7 @@
         }
     },
     "minimap": {
-        "show": "auto",
-        "thumb": "hover",
-        "thumb_border": "full"
+        "show": "always"
     },
     // Enable middle-click paste on Linux.
     "middle_click_paste": true,
@@ -315,7 +312,7 @@
         "background_coloring": "disabled"
     },
     // Whether the editor will scroll beyond the last line.
-    "scroll_beyond_last_line": "one_page",
+    "scroll_beyond_last_line": "off",
     // The number of lines to keep above/below the cursor when scrolling.
     "vertical_scroll_margin": 3,
     // Scroll sensitivity multiplier. This multiplier is applied
@@ -514,22 +511,13 @@
         "default_width": 380
     },
 
-    // "assistant": {
-    //   // Version of this setting.
-    //   "default_model": {
-    //     "provider": "openai",
-    //     "model": "gpt-4o-mini"
-    //   },
-    //   "version": "2",
-    //   // Whether the assistant is enabled.
-    //   "enabled": true,
-    //   // Whether to show the assistant panel button in the status bar.
-    //   "button": true,
-    //   // Where to dock the assistant panel. Can be 'left', 'right' or 'bottom'.
-    //   "dock": "right",
-    //   // AI provider.
-    //   "provider": null
-    // },
+    "agent": {
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-5-mini"
+        },
+        "model_parameters": []
+    },
     // The settings for slash commands.
     "slash_commands": {
         // Settings for the `/docs` slash command.

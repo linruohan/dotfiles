@@ -107,12 +107,12 @@
 			},
 
 			// google相关
-			"fonts.googleapis.com": { // 谷歌字体库很多时候加载不出来，直接拒绝请求
+			"fonts.(googleapis|gstatic).com": {
 				".*": {
-					"abort": true
+					"proxy": "fonts.googleapis.cn"
 				}
 			},
-			"^(?!.*(translate-pa|apis|.*pa.clients6).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
+			"^(?!.*(translate-pa).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
 				".*": {
 					"sni": "www.google.cn",
 					"desc": "部分需要走其它代理的服务"
@@ -143,6 +143,11 @@
 			"download.docker.com": {
 				".*": {
 					"sni": "download.docker.com" // 配置它自己是为了覆盖 *.docker.com 中的SNI配置，此配置优先级更高
+				}
+			},
+			"hub.docker.com": {
+				".*": {
+					"sni": "none"
 				}
 			},
 			"*.docker.com": {
@@ -426,11 +431,12 @@
 
 			// Docker Hub
 			"hub.docker.com": {
-				"54.156.14.194": true,
-				"54.208.73.48": true,
-				"100.29.167.200": true,
+				"52.4.183.149":true,
 
 				// 已失效的IP
+				"54.156.14.194": null,
+				"54.208.73.48": null,
+				"100.29.167.200": null,
 				"44.221.37.199": null,
 				"52.44.227.212": null,
 				"54.156.140.159": null
@@ -470,6 +476,18 @@
 			},
 
 			// Google
+			"fonts.googleapis.cn":{
+				"120.253.255.34": true,
+				"220.181.174.98": true,
+				"114.250.67.34": true,
+				"203.208.41.98": true,
+				"220.181.174.162": true
+			},
+			"^(aistudio|.*pa.clients6|apis).google.com$": {
+				"8.137.102.117": {
+					"desc": "AI Studio相关,阿里云,解锁地区限制"
+				}
+			},
 			"scholar.googleusercontent.com": {
 				"142.251.190.206": true,
 				"172.217.204.206": true,
@@ -611,23 +629,10 @@
 				"23.221.227.5": true
 			},
 			"*steamcommunity.com": {
-				"104.68.46.176": true,
-				"23.210.138.105": true,
-				"23.51.204.111": true,
-				"184.30.90.143": true,
-				"184.84.187.165": true,
-				"23.76.43.59": true,
-				"23.64.7.151": false,
 				"23.194.234.100": true,
-				"23.66.133.162": true,
-				"23.216.236.253": false,
-				"23.207.106.113": false,
-				"23.5.250.50": false,
-				"104.71.182.190": false,
-				"23.199.145.101": false,
-				"184.85.112.102": false,
-				"23.36.106.129": false,
-				"104.73.78.128": false
+				"23.76.43.59": true,
+				"184.84.187.165": true,
+				"23.51.204.111": true
 			},
 			"api.steampowered.com": {
 				"23.216.236.253": true,
@@ -964,15 +969,15 @@
 				"rowClass": "title1",
 				"children": [
 					{
-						"title": "1、解决Github访问不了或速度很慢的问题",
+						"title": "1、解决Github访问不了或速度很慢的问题（切换高速IP）",
 						"url": "https://gitee.com/wangliang181230/dev-sidecar/wikis/%E8%A7%A3%E5%86%B3Github%E8%AE%BF%E9%97%AE%E4%B8%8D%E4%BA%86%E6%88%96%E9%80%9F%E5%BA%A6%E5%BE%88%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98"
 					},
 					{
-						"title": "2、Linux安装证书失败的避坑",
+						"title": "2、Linux安装证书失败的避坑（Linux手动安装证书详细教程）",
 						"url": "https://github.com/docmirror/dev-sidecar/issues/238"
 					},
 					{
-						"title": "3、解决Linux（deb）系统下无法安装根证书的问题",
+						"title": "3、解决Linux（deb）系统下无法安装根证书的问题（如何以root启动dev-sidecar）",
 						"url": "https://github.com/docmirror/dev-sidecar/issues/135"
 					},
 					{
@@ -980,12 +985,16 @@
 						"url": "https://github.com/docmirror/dev-sidecar/issues/204"
 					},
 					{
-						"title": "5、在 WSL 中的使用方法",
+						"title": "5、在 WSL 中的使用方法（debian系Linux手动安装证书简明教程）",
 						"url": "https://github.com/docmirror/dev-sidecar/issues/73"
+					},
+                    {
+						"title": "6、macOS提示“dev-sidecar.app已损坏/不安全”",
+						"url": "https://github.com/docmirror/dev-sidecar/issues/471"
 					},
 					{
 						"title": "> 点击前往Issue区查找更多帮助信息",
-						"url": "https://github.com/docmirror/dev-sidecar/issues"
+						"url": "https://github.com/docmirror/dev-sidecar/issues?q=state%3Aclosed%20label%3A%22%E5%85%B6%E4%BB%96%E7%94%A8%E6%88%B7%E5%8F%AF%E5%8F%82%E8%80%83%22"
 					}
 				]
 			},

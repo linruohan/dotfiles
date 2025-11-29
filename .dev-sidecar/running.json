@@ -109,14 +109,12 @@
 				"sni": "baidu.com"
 			}
 		},
-		"fonts.googleapis.com": {
+		"fonts.(googleapis|gstatic).com": {
 			".*": {
-				"abort": true,
-				"proxy": "fonts.loli.net",
-				"test": "https://fonts.googleapis.com/css?family=Oswald"
+				"proxy": "fonts.googleapis.cn"
 			}
 		},
-		"^(?!.*(translate-pa|apis|.*pa.clients6).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
+		"^(?!.*(translate-pa).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
 			".*": {
 				"sni": "www.google.cn",
 				"desc": "部分需要走其它代理的服务"
@@ -150,6 +148,11 @@
 		"download.docker.com": {
 			".*": {
 				"sni": "download.docker.com"
+			}
+		},
+		"hub.docker.com": {
+			".*": {
+				"sni": "none"
 			}
 		},
 		"*.docker.com": {
@@ -427,6 +430,12 @@
 				"test": "ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
 			}
 		},
+		"fonts.googleapis.com": {
+			".*": {
+				"proxy": "fonts.loli.net",
+				"test": "https://fonts.googleapis.com/css?family=Oswald"
+			}
+		},
 		"themes.googleapis.com": {
 			".*": {
 				"proxy": "themes.loli.net",
@@ -507,9 +516,7 @@
 			"52.224.38.193": true
 		},
 		"hub.docker.com": {
-			"54.156.14.194": true,
-			"54.208.73.48": true,
-			"100.29.167.200": true
+			"52.4.183.149": true
 		},
 		"sessions-bugsnag.docker.com": {
 			"54.156.14.194": true,
@@ -536,6 +543,18 @@
 		},
 		"*.fanbox.cc": {
 			"210.140.139.155": true
+		},
+		"fonts.googleapis.cn": {
+			"120.253.255.34": true,
+			"220.181.174.98": true,
+			"114.250.67.34": true,
+			"203.208.41.98": true,
+			"220.181.174.162": true
+		},
+		"^(aistudio|.*pa.clients6|apis).google.com$": {
+			"8.137.102.117": {
+				"desc": "AI Studio相关,阿里云,解锁地区限制"
+			}
 		},
 		"scholar.googleusercontent.com": {
 			"142.251.190.206": true,
@@ -653,23 +672,10 @@
 			"23.221.227.5": true
 		},
 		"*steamcommunity.com": {
-			"104.68.46.176": true,
-			"23.210.138.105": true,
-			"23.51.204.111": true,
-			"184.30.90.143": true,
-			"184.84.187.165": true,
-			"23.76.43.59": true,
-			"23.64.7.151": false,
 			"23.194.234.100": true,
-			"23.66.133.162": true,
-			"23.216.236.253": false,
-			"23.207.106.113": false,
-			"23.5.250.50": false,
-			"104.71.182.190": false,
-			"23.199.145.101": false,
-			"184.85.112.102": false,
-			"23.36.106.129": false,
-			"104.73.78.128": false
+			"23.76.43.59": true,
+			"184.84.187.165": true,
+			"23.51.204.111": true
 		},
 		"api.steampowered.com": {
 			"23.216.236.253": true,
