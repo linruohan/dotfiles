@@ -27,7 +27,6 @@
 [gui]
 	encoding = utf-8
 [http]
-	sslVerify = false
 	sslBackend = openssl
 [init]
 	defaultBranch = master
@@ -41,4 +40,3 @@
 	quotepath = false
 [url "ssh://git@ssh.github.com:443"]
     insteadOf = https://github.com
-
