@@ -23,8 +23,8 @@
   <property name="Gtk" type="empty">
     <property name="CanChangeAccels" type="empty"/>
     <property name="ColorPalette" type="empty"/>
-    <property name="FontName" type="string" value="XiaoHanZhuanshu Heavy 18"/>
-    <property name="MonospaceFontName" type="string" value="FantasqueSansMono NFM 18"/>
+    <property name="FontName" type="string" value="PingFang SC 14"/>
+    <property name="MonospaceFontName" type="string" value="FantasqueSansMono NFM 13"/>
     <property name="IconSizes" type="empty"/>
     <property name="KeyThemeName" type="empty"/>
     <property name="MenuImages" type="empty"/>

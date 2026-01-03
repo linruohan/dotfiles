@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 536870913,
+        "prev_ver": 536870914,
         "name": "Desktop Audio",
         "uuid": "2e229baf-6124-4aa3-bf39-7001432d10d2",
         "id": "pulse_output_capture",
@@ -40,7 +40,7 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870914,
             "name": "Scene",
             "uuid": "a0944c61-2535-4eb7-9fae-d09820291af4",
             "id": "scene",
@@ -243,7 +243,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870914,
             "name": "屏幕采集 (XSHM)",
             "uuid": "e2e5f14a-662e-48a5-b4eb-babda8099c57",
             "id": "xshm_input",
@@ -269,7 +269,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870914,
             "name": "视频采集设备 (V4L2)",
             "uuid": "9518864c-aa80-4728-b6fb-5d73db841aca",
             "id": "v4l2_input",
@@ -293,7 +293,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870913,
+            "prev_ver": 536870914,
             "name": "屏幕采集(PipeWire)",
             "uuid": "1b132e7c-a025-46bf-8bd7-4fc332236e11",
             "id": "pipewire-screen-capture-source",

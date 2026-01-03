@@ -3,6 +3,7 @@
 		"closeStrategy": 2,
 		"autoStart": {
 			"enabled": true
-		}
+		},
+		"showShutdownTip": false
 	}
 }
