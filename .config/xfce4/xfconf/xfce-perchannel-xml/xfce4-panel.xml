@@ -23,7 +23,6 @@
         <value type="int" value="13"/>
         <value type="int" value="14"/>
         <value type="int" value="24"/>
-        <value type="int" value="26"/>
         <value type="int" value="12"/>
       </property>
     </property>
@@ -100,35 +99,5 @@
       </property>
     </property>
     <property name="plugin-24" type="string" value="separator"/>
-    <property name="plugin-26" type="string" value="weather">
-      <property name="msl" type="int" value="0"/>
-      <property name="timezone" type="string" value=""/>
-      <property name="offset" type="string" value="+08:00"/>
-      <property name="cache-max-age" type="int" value="172800"/>
-      <property name="power-saving" type="bool" value="true"/>
-      <property name="units" type="empty">
-        <property name="temperature" type="int" value="0"/>
-        <property name="pressure" type="int" value="0"/>
-        <property name="windspeed" type="int" value="0"/>
-        <property name="precipitation" type="int" value="0"/>
-        <property name="altitude" type="int" value="0"/>
-        <property name="apparent-temperature" type="int" value="2"/>
-      </property>
-      <property name="round" type="bool" value="true"/>
-      <property name="single-row" type="bool" value="true"/>
-      <property name="tooltip-style" type="int" value="1"/>
-      <property name="forecast" type="empty">
-        <property name="layout" type="int" value="1"/>
-        <property name="days" type="int" value="5"/>
-      </property>
-      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid"/>
-      <property name="scrollbox" type="empty">
-        <property name="show" type="bool" value="true"/>
-        <property name="animate" type="bool" value="true"/>
-        <property name="lines" type="int" value="1"/>
-        <property name="color" type="string" value="rgba(0,0,0,0)"/>
-        <property name="use-color" type="bool" value="false"/>
-      </property>
-    </property>
   </property>
 </channel>

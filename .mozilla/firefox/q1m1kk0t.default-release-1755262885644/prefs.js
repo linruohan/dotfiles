@@ -275,7 +275,7 @@ user_pref("services.sync.engine.creditcards", true);
 user_pref("services.sync.engine.prefs.modified", false);
 user_pref("services.sync.forms.lastSync", "1767412479.66");
 user_pref("services.sync.forms.syncID", "3hjnyF7QYgWc");
-user_pref("services.sync.globalScore", 0);
+user_pref("services.sync.globalScore", 3);
 user_pref("services.sync.lastPing", 1767358423);
 user_pref("services.sync.lastSync", "Sat Jan 03 2026 11:54:40 GMT+0800 (中国标准时间)");
 user_pref("services.sync.lastTabFetch", 1755265497);
