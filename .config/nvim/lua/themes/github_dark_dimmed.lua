@@ -32,7 +32,7 @@ M.base_30 = {
   statusline_bg = "#24292f",
   lightbg = "#2b3137",
   pmenu_bg = "#39c5cf",
-  folder_bg = "#768390",
+  folder_bg = "#8A97A3",
 }
 
 M.base_16 = {
@@ -71,6 +71,7 @@ local E = M.extras
 
 M.polish_hl = {
   defaults = {
+    Directory = { fg = C.folder_bg },
     LineNr = { fg = C.grey },
     CursorLineNr = { fg = C.blue, bold = true },
     Search = { fg = C.white, bg = C.one_bg3 },
@@ -105,7 +106,7 @@ M.polish_hl = {
 
     NeoTreeDirectoryIcon = { fg = C.light_grey },
     NeoTreeDirectoryName = { fg = C.light_grey },
-    SnacksNormal = { bg = C.darker_black },
+
     SnacksPickerPreviewTitle = {
       fg = C.black,
       bg = C.green,
@@ -114,12 +115,13 @@ M.polish_hl = {
       fg = C.black,
       bg = C.red,
     },
+    SnacksPickerDir = { fg = C.white },
+    SnacksPickerBorder = { fg = C.light_grey },
+    SnacksPicker = { fg = C.light_grey },
     -- SnacksPickerSelected = { bg = C.darker_black, fg = C.green },
     -- SnacksPickerMatch = { bg = C.one_bg, fg = C.blue },
     -- SnacksPickerBorder = { fg = C.darker_black, bg = C.darker_black },
     NoiceLspProgressTitle = { fg = C.light_grey },
-    SnacksPickerDir = { fg = C.white },
-    -- SnacksPickerBorder = { fg = C.light_grey },
   },
 
   treesitter = {

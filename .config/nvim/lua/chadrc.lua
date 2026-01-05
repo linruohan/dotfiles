@@ -8,7 +8,7 @@ local M = {}
 local highlights = require("highlights")
 
 M.base46 = {
-  theme = "github_dark_dimmed",
+  theme = "gruvchad",
   transparency = false,
   hl_override = highlights.override,
   hl_add = highlights.add,
@@ -40,6 +40,7 @@ M.ui = {
   tabufline = {
     enabled = vim.g.colorscheme == "nvchad",
     lazyload = true,
+    order = { "treeOffset", "buffers", "tabs", "btns" },
     modules = require("config.tabufline").modules,
   },
 }
