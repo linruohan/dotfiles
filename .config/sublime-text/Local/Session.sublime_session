@@ -16,11 +16,11 @@
 	"last_version": 4200,
 	"last_window_id": 5,
 	"log_indexing": false,
-	"next_update_check": 1762770931,
+	"next_update_check": 1767703385,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 1440.0,
+		"new_window_height": 1424.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -70,6 +70,8 @@
 			},
 			"file_history":
 			[
+				"/home/xiaohan/.bashrc",
+				"/run/media/xiaohan/4A9809FF9809EA71/Users/Administrator/.bashrc",
 				"/usr1/codehub/typora_book/Planify TODOist工具.md",
 				"/usr1/codehub/dotfiles/.config/sublime-text/Packages/User/imagepaste.sublime-settings",
 				"/usr1/codehub/dotfiles/.config/sublime-text/Packages/imagepaste/imagepaste.sublime-settings",
@@ -179,7 +181,7 @@
 			{
 			}
 		},
-		"new_window_width": 2560.0
+		"new_window_width": 1272.0
 	},
 	"windows":
 	[
@@ -193,11 +195,87 @@
 			"buffers":
 			[
 				{
-					"file": "/usr1/codehub/typora_book/Planify TODOist工具.md",
+					"contents": "Package Control Messages\n========================\n\n\nAdvanced Substation Alpha (ASS)\n-------------------------------\n\n  # ST-ASS\n  \n  [![Required ST Build](https://img.shields.io/badge/ST-4105+-orange.svg?style=flat-square&logo=sublime-text)](https://www.sublimetext.com)\n  [![GitHub Actions](https://img.shields.io/github/workflow/status/jfcherng-sublime/ST-ASS/Python?style=flat-square)](https://github.com/jfcherng-sublime/ST-ASS/actions)\n  [![Package Control](https://img.shields.io/packagecontrol/dt/Advanced%20Substation%20Alpha%20%28ASS%29?style=flat-square)](https://packagecontrol.io/packages/Advanced%20Substation%20Alpha%20%28ASS%29)\n  [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jfcherng-sublime/ST-ASS?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-ASS/tags)\n  [![Project license](https://img.shields.io/github/license/jfcherng-sublime/ST-ASS?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-ASS/blob/st4/LICENSE)\n  [![GitHub stars](https://img.shields.io/github/stars/jfcherng-sublime/ST-ASS?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-ASS/stargazers)\n  [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-blue.svg?style=flat-square&logo=paypal)](https://www.paypal.me/jfcherng/5usd)\n  \n  ASS/SSA subtitles syntax highlight for Sublime Text.\n  \n  ![screenshot](https://raw.githubusercontent.com/jfcherng-sublime/ST-ASS/st4/docs/images/screenshot.png)\n  \n  ## Color Codes Visualization\n  \n  The color codes visualization is provided by the [ColorHelper][colorhelper] plugin.\n  It will work automatically if you have the ColorHelper plugin installed.\n  \n  ## Specs\n  \n  - [SSA/ASS Subtitles](http://www.matroska.org/technical/specs/subtitles/ssa.html)\n  - [ASS Tags](http://docs.aegisub.org/3.2/ASS_Tags/)\n  \n  ## Contributors\n  \n  - Jack Cherng ([@jfcherng](https://github.com/jfcherng)): the author of the 1st version syntax\n  - FichteFoll ([@FichteFoll](https://github.com/FichteFoll)): the author of the 2nd rewritten version syntax\n  \n  [colorhelper]: https://packagecontrol.io/packages/ColorHelper\n\n\nAutoSetSyntax\n-------------\n\n  # ST-AutoSetSyntax\n  \n  [![Required ST Build](https://img.shields.io/badge/ST-4114+-orange.svg?style=flat-square&logo=sublime-text)](https://www.sublimetext.com)\n  [![GitHub Actions](https://img.shields.io/github/actions/workflow/status/jfcherng-sublime/ST-AutoSetSyntax/python.yml?branch=st4&style=flat-square)](https://github.com/jfcherng-sublime/ST-AutoSetSyntax/actions)\n  [![Package Control](https://img.shields.io/packagecontrol/dt/AutoSetSyntax?style=flat-square)](https://packagecontrol.io/packages/AutoSetSyntax)\n  [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/jfcherng-sublime/ST-AutoSetSyntax?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-AutoSetSyntax/tags)\n  [![Project license](https://img.shields.io/github/license/jfcherng-sublime/ST-AutoSetSyntax?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-AutoSetSyntax/blob/st4/LICENSE)\n  [![GitHub stars](https://img.shields.io/github/stars/jfcherng-sublime/ST-AutoSetSyntax?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-AutoSetSyntax/stargazers)\n  [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-blue.svg?style=flat-square&logo=paypal)](https://www.paypal.me/jfcherng/5usd)\n  \n  AutoSetSyntax helps you set the syntax for a view automatically in various ways:\n  \n  - Default syntax for new files and build outputs.\n  - Detecting the syntax when modifying the file.\n  - Trimming unimportant suffixes from the filename.\n  - Assigning syntax for Sublime Text syntax test files.\n  - Assigning syntax by the first line.\n  - User-defined rules.\n  - (Experimental) Deep learning based syntax detection. ([Magika][google-magika])\n  \n  ## Installation\n  \n  This package is available on [Package Control][package-control] by the name of [AutoSetSyntax][autosetsyntax].\n  \n  ## Documents\n  \n  - https://jfcherng-sublime.github.io/ST-AutoSetSyntax/\n  \n  [autosetsyntax]: https://packagecontrol.io/packages/AutoSetSyntax\n  [google-magika]: https://github.com/google/magika\n  [package-control]: https://packagecontrol.io\n\n\nBootstrapAutocomplete\n---------------------\n\n  Report an issue: https://github.com/jfcherng-sublime/ST-BootstrapAutocomplete/issues\n\n\nBracketHighlighter\n------------------\n\n  # BracketHighlighter\n  \n  Welcome to BracketHighlighter!\n  \n  A restart of Sublime Text is recommended to ensure all dependencies get  \n  loaded properly.\n  \n  For a quick start guide, please go to  \n  `Preferences->Package Settings->BracketHighlighter->Quick Start Guide`.\n\n\nCMake\n-----\n\n  Thanks for installing. This package provides:\n  \n  - Syntax highlighting for .cmake and CMakeLists.txt files\n  - CMakeCache.txt syntax highlighting\n  - CMake \"config\" header syntax (*.h.in and *.hpp.in files)\n  - Various static completions for built-in cmake functions\n\n\nColorHelper\n-----------\n\n  # ColorHelper\n  \n  Welcome to ColorHelper!  To learn how to get started, check out\n  the documentation at https://facelessuser.github.io/ColorHelper/.\n  \n  A restart of Sublime Text may be required.\n",
 					"settings":
 					{
-						"buffer_size": 4698,
-						"encoding": "UTF-8",
+						"buffer_size": 5234,
+						"line_ending": "Unix",
+						"name": "Package Control Messages",
+						"read_only": true,
+						"scratch": true
+					},
+					"undo_stack":
+					[
+						[
+							1,
+							1,
+							"package_control_message",
+							{
+								"message": "\n\nAdvanced Substation Alpha (ASS)\n-------------------------------\n\n  # ST-ASS\n  \n  [![Required ST Build](https://img.shields.io/badge/ST-4105+-orange.svg?style=flat-square&logo=sublime-text)](https://www.sublimetext.com)\n  [![GitHub Actions](https://img.shields.io/github/workflow/status/jfcherng-sublime/ST-ASS/Python?style=flat-square)](https://github.com/jfcherng-sublime/ST-ASS/actions)\n  [![Package Control](https://img.shields.io/packagecontrol/dt/Advanced%20Substation%20Alpha%20%28ASS%29?style=flat-square)](https://packagecontrol.io/packages/Advanced%20Substation%20Alpha%20%28ASS%29)\n  [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jfcherng-sublime/ST-ASS?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-ASS/tags)\n  [![Project license](https://img.shields.io/github/license/jfcherng-sublime/ST-ASS?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-ASS/blob/st4/LICENSE)\n  [![GitHub stars](https://img.shields.io/github/stars/jfcherng-sublime/ST-ASS?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-ASS/stargazers)\n  [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-blue.svg?style=flat-square&logo=paypal)](https://www.paypal.me/jfcherng/5usd)\n  \n  ASS/SSA subtitles syntax highlight for Sublime Text.\n  \n  ![screenshot](https://raw.githubusercontent.com/jfcherng-sublime/ST-ASS/st4/docs/images/screenshot.png)\n  \n  ## Color Codes Visualization\n  \n  The color codes visualization is provided by the [ColorHelper][colorhelper] plugin.\n  It will work automatically if you have the ColorHelper plugin installed.\n  \n  ## Specs\n  \n  - [SSA/ASS Subtitles](http://www.matroska.org/technical/specs/subtitles/ssa.html)\n  - [ASS Tags](http://docs.aegisub.org/3.2/ASS_Tags/)\n  \n  ## Contributors\n  \n  - Jack Cherng ([@jfcherng](https://github.com/jfcherng)): the author of the 1st version syntax\n  - FichteFoll ([@FichteFoll](https://github.com/FichteFoll)): the author of the 2nd rewritten version syntax\n  \n  [colorhelper]: https://packagecontrol.io/packages/ColorHelper\n"
+							},
+							"AQAAAAAAAAAAAAAAXAgAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							2,
+							1,
+							"package_control_message",
+							{
+								"message": "\n\nAutoSetSyntax\n-------------\n\n  # ST-AutoSetSyntax\n  \n  [![Required ST Build](https://img.shields.io/badge/ST-4114+-orange.svg?style=flat-square&logo=sublime-text)](https://www.sublimetext.com)\n  [![GitHub Actions](https://img.shields.io/github/actions/workflow/status/jfcherng-sublime/ST-AutoSetSyntax/python.yml?branch=st4&style=flat-square)](https://github.com/jfcherng-sublime/ST-AutoSetSyntax/actions)\n  [![Package Control](https://img.shields.io/packagecontrol/dt/AutoSetSyntax?style=flat-square)](https://packagecontrol.io/packages/AutoSetSyntax)\n  [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/jfcherng-sublime/ST-AutoSetSyntax?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-AutoSetSyntax/tags)\n  [![Project license](https://img.shields.io/github/license/jfcherng-sublime/ST-AutoSetSyntax?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-AutoSetSyntax/blob/st4/LICENSE)\n  [![GitHub stars](https://img.shields.io/github/stars/jfcherng-sublime/ST-AutoSetSyntax?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-AutoSetSyntax/stargazers)\n  [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-blue.svg?style=flat-square&logo=paypal)](https://www.paypal.me/jfcherng/5usd)\n  \n  AutoSetSyntax helps you set the syntax for a view automatically in various ways:\n  \n  - Default syntax for new files and build outputs.\n  - Detecting the syntax when modifying the file.\n  - Trimming unimportant suffixes from the filename.\n  - Assigning syntax for Sublime Text syntax test files.\n  - Assigning syntax by the first line.\n  - User-defined rules.\n  - (Experimental) Deep learning based syntax detection. ([Magika][google-magika])\n  \n  ## Installation\n  \n  This package is available on [Package Control][package-control] by the name of [AutoSetSyntax][autosetsyntax].\n  \n  ## Documents\n  \n  - https://jfcherng-sublime.github.io/ST-AutoSetSyntax/\n  \n  [autosetsyntax]: https://packagecontrol.io/packages/AutoSetSyntax\n  [google-magika]: https://github.com/google/magika\n  [package-control]: https://packagecontrol.io\n"
+							},
+							"AQAAAFwIAAAAAAAArRAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAXAgAAAAAAABcCAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							3,
+							1,
+							"package_control_message",
+							{
+								"message": "\n\nBootstrapAutocomplete\n---------------------\n\n  Report an issue: https://github.com/jfcherng-sublime/ST-BootstrapAutocomplete/issues\n"
+							},
+							"AQAAAK0QAAAAAAAAMxEAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAArRAAAAAAAACtEAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							4,
+							1,
+							"package_control_message",
+							{
+								"message": "\n\nBracketHighlighter\n------------------\n\n  # BracketHighlighter\n  \n  Welcome to BracketHighlighter!\n  \n  A restart of Sublime Text is recommended to ensure all dependencies get  \n  loaded properly.\n  \n  For a quick start guide, please go to  \n  `Preferences->Package Settings->BracketHighlighter->Quick Start Guide`.\n"
+							},
+							"AQAAADMRAAAAAAAAcBIAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAMxEAAAAAAAAzEQAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							5,
+							1,
+							"package_control_message",
+							{
+								"message": "\n\nCMake\n-----\n\n  Thanks for installing. This package provides:\n  \n  - Syntax highlighting for .cmake and CMakeLists.txt files\n  - CMakeCache.txt syntax highlighting\n  - CMake \"config\" header syntax (*.h.in and *.hpp.in files)\n  - Various static completions for built-in cmake functions\n"
+							},
+							"AQAAAHASAAAAAAAAjhMAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAcBIAAAAAAABwEgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							6,
+							1,
+							"package_control_message",
+							{
+								"message": "\n\nColorHelper\n-----------\n\n  # ColorHelper\n  \n  Welcome to ColorHelper!  To learn how to get started, check out\n  the documentation at https://facelessuser.github.io/ColorHelper/.\n  \n  A restart of Sublime Text may be required.\n"
+							},
+							"AQAAAI4TAAAAAAAAchQAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAjhMAAAAAAACOEwAAAAAAAAAAAAAAAPC/"
+						]
+					]
+				},
+				{
+					"contents": "",
+					"file": "/usr1/codehub/typora_book/Planify TODOist工具.md",
+					"file_size": -1,
+					"file_write_time": -1,
+					"settings":
+					{
+						"buffer_size": 0,
 						"line_ending": "Unix"
 					},
 					"undo_stack":
@@ -210,7 +288,7 @@
 								"characters": "\n"
 							},
 							"AQAAANMRAAAAAAAA1BEAAAAAAAAAAAAA",
-							"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADTEQAAAAAAANMRAAAAAAAAAAAAAAAA8L8"
+							"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA0xEAAAAAAADTEQAAAAAAAAAAAAAAAPC/"
 						],
 						[
 							6,
@@ -218,17 +296,37 @@
 							"revert",
 							null,
 							"AgAAAAAAAAAAAAAAAAAAAAAAAABtEwAAIyBwbGFuaWZ5IHRvZG/lt6XlhbcKClt0b2NdCgojIyAxIOmmlumhtQoKIVtpbWFnZS0yMDI0MDEyNzEyMTIxMjE5MV0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMTIxMjE5MS5wbmcpCgojIyAyIGluYm945Luj5Yqe5pS25Lu2566xCgohW2ltYWdlLTIwMjQwMTI3MTIxMzE5MDM0XShpbWdzL2ltYWdlLTIwMjQwMTI3MTIxMzE5MDM0LnBuZykKCiMjIDMgdG9kYXkKCiFbaW1hZ2UtMjAyNDAxMjcxMzE0MTc2MTBdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzE0MTc2MTAucG5nKQoKIyMgNCBzY2hlZHVsZWTorqHliJIKCiFbaW1hZ2UtMjAyNDAxMjcxMzM3MzEzNTRdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzM3MzEzNTQucG5nKQoKIyMjIDQuMSBhZGQgdG9kbwoKIVtpbWFnZS0yMDI0MDEyNzEyMTUxMzgxOF0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMTUxMzgxOC5wbmcpCgoKCuaUtue8qei1t+adpQoKIVtpbWFnZS0yMDI0MDEyNzEyMjMzNzI5Nl0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMjMzNzI5Ni5wbmcpCgrlsZXlvIAKCiFbaW1hZ2UtMjAyNDAxMjcxMjI0MTk5MDNdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMjI0MTk5MDMucG5nKQoKIVtpbWFnZS0yMDI0MDEyNzEyMjcyMTk4NF0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMjcyMTk4NC5wbmcpCgpgYGBiYXNoClRvbW9ycm93CglUb2RheSAgU2F0CglUb21tb3JvdyBTdW4KCU5leHQgV2VlayBGZWIgMwoJTm8gRGF0ZQoJQ2hvb3NlIGEgRGF0ZQoKYWRkIGxhYmVscwpgYGAKCiMjIyA0LjIgYWRkIHN1YiB0YXNrCgohW2ltYWdlLTIwMjQwMTI3MTMxMTQxNzM2XShpbWdzL2ltYWdlLTIwMjQwMTI3MTMxMTQxNzM2LnBuZykKCiFbaW1hZ2UtMjAyNDAxMjcxMjMxMjIyMjldKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMjMxMjIyMjkucG5nKQoKIyMjIDQuMyBBZGQgbGFiZWwocykKCmBgYGJhc2gKU2VhcmNoIG9yIGNyZWF0ZQrlj6/ku6XlpJrpgIkK5LiN5a2Y5Zyo55qE54K55Ye75Zue6L2m5Lya5paw5aKeCmBgYAoKCgojIyMgNC40IFNldCB0aGUgcHJpb3JpdHkKCuiuvue9ruWQjuiuoeWIkuWQjeWtl+WJjeWvueW6lOminOiJsgoKIVtpbWFnZS0yMDI0MDEyNzEyNDYzMDM1OF0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyNDYzMDM1OC5wbmcpCgpgYGBiYXNoCue6ouaXl+WtkPCfmqkgUHJpb3JpdHkgMe+8mmhpZ2gK6buE5peX5a2Q8J+aqSBQcmlvcml0eSAy77yabWVkaXVtCuiTneaXl+WtkPCfmqkgUHJpb3JpdHkgM++8mmxvdwrnmb3ml5fluJzwn4+zIFByaW9yaXR5IDTvvJpub25lCmBgYAoKIyMjIDQuNSBBZGQgUmVtaW5kZXIocykKClJlbWluZGVycyAgICAgICAgICAgICAgICAgICsKCmBgYApZb3VyIGxpc3QgcmVtaW5kZXJzIHdpbGwgc2hvdyB1cCBoZXJlLCBBZGQgb25lIGJ5IGNsaWNrIHRoZSAnKycgYnV0dG9uCmBgYAoKIyMjIyA0LjUuMSBhZGQgcmVtaW5kZXIKCkphbnVhcnkgMjAyNCAgICAgPCAgID4KCnwgTW8gICB8IFR1ICAgfCBXZSAgIHwgVGggICB8IEZyICAgfCBTYSAgICAgfCBTdSAgIHwKfCAtLS0tIHwgLS0tLSB8IC0tLS0gfCAtLS0tIHwgLS0tLSB8IC0tLS0tLSB8IC0tLS0gfAp8IDEgICAgfCAyICAgIHwgMyAgICB8IDQgICAgfCA1ICAgIHwgNiAgICAgIHwgNyAgICB8CnwgOCAgICB8IDkgICAgfCAxMCAgIHwgMTEgICB8IDEyICAgfCAxMyAgICAgfCAxNCAgIHwKfCAxNSAgIHwgMTYgICB8IDE3ICAgfCAxOCAgIHwgMTkgICB8IDIwICAgICB8IDIxICAgfAp8IDIyICAgfCAyMyAgIHwgMjQgICB8IDI1ICAgfCAyNiAgIHwgKioyNyoqIHwgMjggICB8CnwgMjkgICB8IDMwICAgfCAzMSAgIHwgICAgICB8ICAgICAgfCAgICAgICAgfCAgICAgIHwKClRpbWUgOiAgMjA6MzMKCkFkZCBSZW1pbmRlciDmjInpkq4KCiMjIyMgNC41LjIgcmVtaW5kZXLmmL7npLoKCiFbaW1hZ2UtMjAyNDAxMjcxMjU0NTk4MDNdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMjU0NTk4MDMucG5nKQoK54K55Ye78J+UlOWQjuaYvuekuu+8mgoKUmVtaW5kZXJzICAgICsKCvCflJQgVG9kYXkgMjA6MzQgICAgICDinY7vvIjlnIbmoYbnmoTvvIkKCiMjIyA0LjYg572u6aG2Cgrngrnlh7vlkI7lj5jkuLrnuqLoibLwn5OMCgohW2ltYWdlLTIwMjQwMTI3MTI1NzIzMTkxXShpbWdzL2ltYWdlLTIwMjQwMTI3MTI1NzIzMTkxLnBuZykKCiMjIyMgNC42LjEg5pu05aSa5LiJ5Liq54K5CgpgYGBiYXNoCkNvcHkgdG8gY2xpcGJvYXJkCkR1bXBsaWNhdGUKTW92ZSAgICAgICAgICAgICAgICAgIOenu+WIsOWFtuS7lueahHByb2plY3QKUmVwZWF0ICAgICAgICAgICAgICAg6YeN5aSN6K6+572u77yaRGFpbHkgV2Vla2x5IE1vbnRobHkgWWVhcmx5IC0tIE5vbmUgQ3VzdG9t77yIRXZlcnnvvIkKLS0tLS0tCkRlbGV0ZSB0YXNrCi0tLS0tCkFkZGVkIGF0OiBUb2RheSAyMDozNgpVcGRhdGVkIGF0OiBUb2RheSAyMTozNwpgYGAKCumHjeWkjeiuvue9rgoKYGBgIApSZXBlYXQKRXZlcnkgMiBkYXlzCjIgLSArIFtEYXkocykpIFdlZWsocykgTW9udGgocykgWWVhcihzKV0KCldlZWsocyk6IE1vbmRheSBUdWVzZGF5IFdlZG5lc2RheSBUaHVzZGF5IEZyaWRheSBTYXR1cmRheSBTdW5kYXkKRG9uZSDmjInpkq4KYGBgCgoKCiMjIyA0LjcgbGFiZWxzCgohW2ltYWdlLTIwMjQwMTI3MTMxMjMwODQ1XShpbWdzL2ltYWdlLTIwMjQwMTI3MTMxMjMwODQ1LnBuZykKCiMjIyMgNC43LjEgdXBkYXRlIGxhYmVsCgohW2ltYWdlLTIwMjQwMTI3MTIyMTE0MDE3XShpbWdzL2ltYWdlLTIwMjQwMTI3MTIyMTE0MDE3LnBuZykKCiMjIyMgNC43LjIgZGVsZXRlIGxhYmVsCgohW2ltYWdlLTIwMjQwMTI3MTIyMTQ5MzYzXShpbWdzL2ltYWdlLTIwMjQwMTI3MTIyMTQ5MzYzLnBuZykKCiMjIyMgNC43LjMgYWRkIGxhYmVsCgohW2ltYWdlLTIwMjQwMTI3MTIyMjM2MTU0XShpbWdzL2ltYWdlLTIwMjQwMTI3MTIyMjM2MTU0LnBuZykKCiMjIDUgcHJvamVjdAoKaW5kZXgg5ZKMcHJvamVjdOS4remDvWtleea3u+WKoHNlY3Rpb24KCmFkZCBwcm9qZWN0CgohW2ltYWdlLTIwMjQwMTI3MTMxNzQ0NDc5XShpbWdzL2ltYWdlLTIwMjQwMTI3MTMxNzQ0NDc5LnBuZykKCiFbaW1hZ2UtMjAyNDAxMjcxMzE5MzAxNTVdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzE5MzAxNTUucG5nKQoKbGlzdCB8IGJvYXJkCgpPcmRlcmVkIGJ5ICAg77yaY3VzdG9tIHNvcnQgb3JkZXIgfCBhbHBoYWJldGljYWxseSB8RHVlIGRhdGUgfERhdGUgQWRkZWQgfFByaW9yaXR5CgpTaG93IENvbXBsZXRlZCBUYXNrcyB8SGlkZSBDb21wbGV0ZCBUYXNrcwoKIyMjIDUuMSBib2FyZOinhuWbvgoKIVtpbWFnZS0yMDI0MDEyNzEzMjQwOTg2MV0oaW1ncy9pbWFnZS0yMDI0MDEyNzEzMjQwOTg2MS5wbmcpCgojIyMgNS4yIOabtOWkmgoKIyMjIyA1LjIuMSBlZGl0IHByb2plY3QKCiFbaW1hZ2UtMjAyNDAxMjcxMzI0NTc0OTBdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzI0NTc0OTAucG5nKQoKIyMjIyA1LjIuMiBXaGVuPwoK6K6+572u6aG555uu55qE5oiq5q2i5pel5pyfCgohW2ltYWdlLTIwMjQwMTI3MTMyNjQ1MTEyXShpbWdzL2ltYWdlLTIwMjQwMTI3MTMyNjQ1MTEyLnBuZykKCiMjIyMgNS4yLjMgQWRkIFNlY3Rpb24KCua3u+WKoOmhueebrumYtuautSAKCiFbaW1hZ2UtMjAyNDAxMjcxMzI4MTU5MzhdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzI4MTU5MzgucG5nKQoKc2VjdGlvbuS4rea3u+WKoHRvZG/vvIznhLblkI7ngrnlh7vlkI7vvIxrZXnnnIvliLDlrZBzdWLvvIzngrnlh7vlrZBzdWLlj6/ku6XnnIvliLDlrZBzdWLnmoRzdWLvvIzkvJrmmL7npLrlrZBzdWLnmoTmlbDph4/lkozlrozmiJDmg4XlhrUKCiFbaW1hZ2UtMjAyNDAxMjcxMzI5MDMzNDldKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzI5MDMzNDkucG5nKQoKIVtpbWFnZS0yMDI0MDEyNzEzMzMyMzA5MV0oaW1ncy9pbWFnZS0yMDI0MDEyNzEzMzMyMzA5MS5wbmcpCgojIyMjIDUuMi40IFNlbGVjdAoK6YCJ5oup5LiA5LiqdG9kbyAKCiFbaW1hZ2UtMjAyNDAxMjcxMzM0NTkwNzVdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzM0NTkwNzUucG5nKQoKIyMjIyA1LjIuNSBQYXN0ZQoK5Yqf6IO95LiN5piOCgojIyMjIDUuMi42IERlbGV0ZSBQcm9qZWN0Cgo+ICFbaW1hZ2UtMjAyNDAxMjcxMzM1MjMwODRdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzM1MjMwODQucG5nKQoKIyMgNiBxdWljayBmaW5kCgohW2ltYWdlLTIwMjQwMTI3MTM0MDQ5OTU0XShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0MDQ5OTU0LnBuZykKCiMjIDcg5pu05aSaCgojIyMgNy4xIFByZWZlcmVuY2Xns7vnu5/orr7nva4KCiFbaW1hZ2UtMjAyNDAxMjcxMzQxNTA1NThdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQxNTA1NTgucG5nKQoKIyMjIyA3LjEuMSBpbnRlZ3JhdGlvbgoKIVtpbWFnZS0yMDI0MDEyNzEzNDIyNzkxNl0oaW1ncy9pbWFnZS0yMDI0MDEyNzEzNDIyNzkxNi5wbmcpCgojIyMjIDcuMS4yIGdlbmVyYWwKCiFbaW1hZ2UtMjAyNDAxMjcxMzQzMDE4NzNdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQzMDE4NzMucG5nKQoKIyMjIyA3LjEuMyBzaWRiYXIKCiFbaW1hZ2UtMjAyNDAxMjcxMzQzMTkwMTldKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQzMTkwMTkucG5nKQoKIyMjIyA3LjEuNCBhcHBlYXJlbmNlCgohW2ltYWdlLTIwMjQwMTI3MTM0MzQ1ODAxXShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0MzQ1ODAxLnBuZykKCiMjIyMgNy4xLjUgUXVpY2sgQWRkCgohW2ltYWdlLTIwMjQwMTI3MTM0NDAxMTE3XShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0NDAxMTE3LnBuZykKCiMjIyMgNy4xLjYgYmFja3VwCgohW2ltYWdlLTIwMjQwMTI3MTM0NDE2MjIwXShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0NDE2MjIwLnBuZykKCiMjIyMgNy4xLjcgRGVsZXRlIFBsYW5pZnkgRGF0YSDmuIXpmaTmlbDmja4KCiFbaW1hZ2UtMjAyNDAxMjcxMzQ1MTI3NDVdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQ1MTI3NDUucG5nKQoKYGBgYmFzaAphc2RmYXNkCgoKYGBgCgoKYGBgYmFzaArllYrnmoTmkpLml6blj5HnlJ/nmoQKYGBgCgoAAAAAAAAAANMRAAAAAAAAAAAAAA",
-							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAxhEAAAAAAADGEQAAAAAAAAAAAAAAAPC/"
+							"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMYRAAAAAAAAxhEAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							10,
 							1,
 							"revert",
 							null,
-							"BQAAAAAAAAAAAAAAAAAAAAAAAABsEwAAIyBwbGFuaWZ5IHRvZG/lt6XlhbcKClt0b2NdCgojIyAxIOmmlumhtQoKIVtpbWFnZS0yMDI0MDEyNzEyMTIxMjE5MV0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMTIxMjE5MS5wbmcpCgojIyAyIGluYm945Luj5Yqe5pS25Lu2566xCgohW2ltYWdlLTIwMjQwMTI3MTIxMzE5MDM0XShpbWdzL2ltYWdlLTIwMjQwMTI3MTIxMzE5MDM0LnBuZykKCiMjIDMgdG9kYXkKCiFbaW1hZ2UtMjAyNDAxMjcxMzE0MTc2MTBdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzE0MTc2MTAucG5nKQoKIyMgNCBzY2hlZHVsZWTorqHliJIKCiFbaW1hZ2UtMjAyNDAxMjcxMzM3MzEzNTRdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzM3MzEzNTQucG5nKQoKIyMjIDQuMSBhZGQgdG9kbwoKIVtpbWFnZS0yMDI0MDEyNzEyMTUxMzgxOF0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMTUxMzgxOC5wbmcpCgoKCuaUtue8qei1t+adpQoKIVtpbWFnZS0yMDI0MDEyNzEyMjMzNzI5Nl0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMjMzNzI5Ni5wbmcpCgrlsZXlvIAKCiFbaW1hZ2UtMjAyNDAxMjcxMjI0MTk5MDNdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMjI0MTk5MDMucG5nKQoKIVtpbWFnZS0yMDI0MDEyNzEyMjcyMTk4NF0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMjcyMTk4NC5wbmcpCgpgYGBiYXNoClRvbW9ycm93CglUb2RheSAgU2F0CglUb21tb3JvdyBTdW4KCU5leHQgV2VlayBGZWIgMwoJTm8gRGF0ZQoJQ2hvb3NlIGEgRGF0ZQoKYWRkIGxhYmVscwpgYGAKCiMjIyA0LjIgYWRkIHN1YiB0YXNrCgohW2ltYWdlLTIwMjQwMTI3MTMxMTQxNzM2XShpbWdzL2ltYWdlLTIwMjQwMTI3MTMxMTQxNzM2LnBuZykKCiFbaW1hZ2UtMjAyNDAxMjcxMjMxMjIyMjldKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMjMxMjIyMjkucG5nKQoKIyMjIDQuMyBBZGQgbGFiZWwocykKCmBgYGJhc2gKU2VhcmNoIG9yIGNyZWF0ZQrlj6/ku6XlpJrpgIkK5LiN5a2Y5Zyo55qE54K55Ye75Zue6L2m5Lya5paw5aKeCmBgYAoKCgojIyMgNC40IFNldCB0aGUgcHJpb3JpdHkKCuiuvue9ruWQjuiuoeWIkuWQjeWtl+WJjeWvueW6lOminOiJsgoKIVtpbWFnZS0yMDI0MDEyNzEyNDYzMDM1OF0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyNDYzMDM1OC5wbmcpCgpgYGBiYXNoCue6ouaXl+WtkPCfmqkgUHJpb3JpdHkgMe+8mmhpZ2gK6buE5peX5a2Q8J+aqSBQcmlvcml0eSAy77yabWVkaXVtCuiTneaXl+WtkPCfmqkgUHJpb3JpdHkgM++8mmxvdwrnmb3ml5fluJzwn4+zIFByaW9yaXR5IDTvvJpub25lCmBgYAoKIyMjIDQuNSBBZGQgUmVtaW5kZXIocykKClJlbWluZGVycyAgICAgICAgICAgICAgICAgICsKCmBgYApZb3VyIGxpc3QgcmVtaW5kZXJzIHdpbGwgc2hvdyB1cCBoZXJlLCBBZGQgb25lIGJ5IGNsaWNrIHRoZSAnKycgYnV0dG9uCmBgYAoKIyMjIyA0LjUuMSBhZGQgcmVtaW5kZXIKCkphbnVhcnkgMjAyNCAgICAgPCAgID4KCnwgTW8gICB8IFR1ICAgfCBXZSAgIHwgVGggICB8IEZyICAgfCBTYSAgICAgfCBTdSAgIHwKfCAtLS0tIHwgLS0tLSB8IC0tLS0gfCAtLS0tIHwgLS0tLSB8IC0tLS0tLSB8IC0tLS0gfAp8IDEgICAgfCAyICAgIHwgMyAgICB8IDQgICAgfCA1ICAgIHwgNiAgICAgIHwgNyAgICB8CnwgOCAgICB8IDkgICAgfCAxMCAgIHwgMTEgICB8IDEyICAgfCAxMyAgICAgfCAxNCAgIHwKfCAxNSAgIHwgMTYgICB8IDE3ICAgfCAxOCAgIHwgMTkgICB8IDIwICAgICB8IDIxICAgfAp8IDIyICAgfCAyMyAgIHwgMjQgICB8IDI1ICAgfCAyNiAgIHwgKioyNyoqIHwgMjggICB8CnwgMjkgICB8IDMwICAgfCAzMSAgIHwgICAgICB8ICAgICAgfCAgICAgICAgfCAgICAgIHwKClRpbWUgOiAgMjA6MzMKCkFkZCBSZW1pbmRlciDmjInpkq4KCiMjIyMgNC41LjIgcmVtaW5kZXLmmL7npLoKCiFbaW1hZ2UtMjAyNDAxMjcxMjU0NTk4MDNdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMjU0NTk4MDMucG5nKQoK54K55Ye78J+UlOWQjuaYvuekuu+8mgoKUmVtaW5kZXJzICAgICsKCvCflJQgVG9kYXkgMjA6MzQgICAgICDinY7vvIjlnIbmoYbnmoTvvIkKCiMjIyA0LjYg572u6aG2Cgrngrnlh7vlkI7lj5jkuLrnuqLoibLwn5OMCgohW2ltYWdlLTIwMjQwMTI3MTI1NzIzMTkxXShpbWdzL2ltYWdlLTIwMjQwMTI3MTI1NzIzMTkxLnBuZykKCiMjIyMgNC42LjEg5pu05aSa5LiJ5Liq54K5CgpgYGBiYXNoCkNvcHkgdG8gY2xpcGJvYXJkCkR1bXBsaWNhdGUKTW92ZSAgICAgICAgICAgICAgICAgIOenu+WIsOWFtuS7lueahHByb2plY3QKUmVwZWF0ICAgICAgICAgICAgICAg6YeN5aSN6K6+572u77yaRGFpbHkgV2Vla2x5IE1vbnRobHkgWWVhcmx5IC0tIE5vbmUgQ3VzdG9t77yIRXZlcnnvvIkKLS0tLS0tCkRlbGV0ZSB0YXNrCi0tLS0tCkFkZGVkIGF0OiBUb2RheSAyMDozNgpVcGRhdGVkIGF0OiBUb2RheSAyMTozNwpgYGAKCumHjeWkjeiuvue9rgoKYGBgIApSZXBlYXQKRXZlcnkgMiBkYXlzCjIgLSArIFtEYXkocykpIFdlZWsocykgTW9udGgocykgWWVhcihzKV0KCldlZWsocyk6IE1vbmRheSBUdWVzZGF5IFdlZG5lc2RheSBUaHVzZGF5IEZyaWRheSBTYXR1cmRheSBTdW5kYXkKRG9uZSDmjInpkq4KYGBgCgoKCiMjIyA0LjcgbGFiZWxzCgohW2ltYWdlLTIwMjQwMTI3MTMxMjMwODQ1XShpbWdzL2ltYWdlLTIwMjQwMTI3MTMxMjMwODQ1LnBuZykKCiMjIyMgNC43LjEgdXBkYXRlIGxhYmVsCgohW2ltYWdlLTIwMjQwMTI3MTIyMTE0MDE3XShpbWdzL2ltYWdlLTIwMjQwMTI3MTIyMTE0MDE3LnBuZykKCiMjIyMgNC43LjIgZGVsZXRlIGxhYmVsCgohW2ltYWdlLTIwMjQwMTI3MTIyMTQ5MzYzXShpbWdzL2ltYWdlLTIwMjQwMTI3MTIyMTQ5MzYzLnBuZykKCiMjIyMgNC43LjMgYWRkIGxhYmVsCgohW2ltYWdlLTIwMjQwMTI3MTIyMjM2MTU0XShpbWdzL2ltYWdlLTIwMjQwMTI3MTIyMjM2MTU0LnBuZykKCiMjIDUgcHJvamVjdAoKaW5kZXgg5ZKMcHJvamVjdOS4remDvWtleea3u+WKoHNlY3Rpb24KCmFkZCBwcm9qZWN0CgohW2ltYWdlLTIwMjQwMTI3MTMxNzQ0NDc5XShpbWdzL2ltYWdlLTIwMjQwMTI3MTMxNzQ0NDc5LnBuZykKCiFbaW1hZ2UtMjAyNDAxMjcxMzE5MzAxNTVdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzE5MzAxNTUucG5nKQoKbGlzdCB8IGJvYXJkCgpPcmRlcmVkIGJ5ICAg77yaY3VzdG9tIHNvcnQgb3JkZXIgfCBhbHBoYWJldGljYWxseSB8RHVlIGRhdGUgfERhdGUgQWRkZWQgfFByaW9yaXR5CgpTaG93IENvbXBsZXRlZCBUYXNrcyB8SGlkZSBDb21wbGV0ZCBUYXNrcwoKIyMjIDUuMSBib2FyZOinhuWbvgoKIVtpbWFnZS0yMDI0MDEyNzEzMjQwOTg2MV0oaW1ncy9pbWFnZS0yMDI0MDEyNzEzMjQwOTg2MS5wbmcpCgojIyMgNS4yIOabtOWkmgoKIyMjIyA1LjIuMSBlZGl0IHByb2plY3QKCiFbaW1hZ2UtMjAyNDAxMjcxMzI0NTc0OTBdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzI0NTc0OTAucG5nKQoKIyMjIyA1LjIuMiBXaGVuPwoK6K6+572u6aG555uu55qE5oiq5q2i5pel5pyfCgohW2ltYWdlLTIwMjQwMTI3MTMyNjQ1MTEyXShpbWdzL2ltYWdlLTIwMjQwMTI3MTMyNjQ1MTEyLnBuZykKCiMjIyMgNS4yLjMgQWRkIFNlY3Rpb24KCua3u+WKoOmhueebrumYtuautSAKCiFbaW1hZ2UtMjAyNDAxMjcxMzI4MTU5MzhdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzI4MTU5MzgucG5nKQoKc2VjdGlvbuS4rea3u+WKoHRvZG/vvIznhLblkI7ngrnlh7vlkI7vvIxrZXnnnIvliLDlrZBzdWLvvIzngrnlh7vlrZBzdWLlj6/ku6XnnIvliLDlrZBzdWLnmoRzdWLvvIzkvJrmmL7npLrlrZBzdWLnmoTmlbDph4/lkozlrozmiJDmg4XlhrUKCiFbaW1hZ2UtMjAyNDAxMjcxMzI5MDMzNDldKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzI5MDMzNDkucG5nKQoKIVtpbWFnZS0yMDI0MDEyNzEzMzMyMzA5MV0oaW1ncy9pbWFnZS0yMDI0MDEyNzEzMzMyMzA5MS5wbmcpCgojIyMjIDUuMi40IFNlbGVjdAoK6YCJ5oup5LiA5LiqdG9kbyAKCiFbaW1hZ2UtMjAyNDAxMjcxMzM0NTkwNzVdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzM0NTkwNzUucG5nKQoKIyMjIyA1LjIuNSBQYXN0ZQoK5Yqf6IO95LiN5piOCgojIyMjIDUuMi42IERlbGV0ZSBQcm9qZWN0Cgo+ICFbaW1hZ2UtMjAyNDAxMjcxMzM1MjMwODRdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzM1MjMwODQucG5nKQoKIyMgNiBxdWljayBmaW5kCgohW2ltYWdlLTIwMjQwMTI3MTM0MDQ5OTU0XShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0MDQ5OTU0LnBuZykKCiMjIDcg5pu05aSaCgojIyMgNy4xIFByZWZlcmVuY2Xns7vnu5/orr7nva4KCiFbaW1hZ2UtMjAyNDAxMjcxMzQxNTA1NThdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQxNTA1NTgucG5nKQoKIyMjIyA3LjEuMSBpbnRlZ3JhdGlvbgoKIVtpbWFnZS0yMDI0MDEyNzEzNDIyNzkxNl0oaW1ncy9pbWFnZS0yMDI0MDEyNzEzNDIyNzkxNi5wbmcpCgojIyMjIDcuMS4yIGdlbmVyYWwKCiFbaW1hZ2UtMjAyNDAxMjcxMzQzMDE4NzNdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQzMDE4NzMucG5nKQoKIyMjIyA3LjEuMyBzaWRiYXIKCiFbaW1hZ2UtMjAyNDAxMjcxMzQzMTkwMTldKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQzMTkwMTkucG5nKQoKIyMjIyA3LjEuNCBhcHBlYXJlbmNlCgohW2ltYWdlLTIwMjQwMTI3MTM0MzQ1ODAxXShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0MzQ1ODAxLnBuZykKCiMjIyMgNy4xLjUgUXVpY2sgQWRkCgohW2ltYWdlLTIwMjQwMTI3MTM0NDAxMTE3XShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0NDAxMTE3LnBuZykKCiMjIyMgNy4xLjYgYmFja3VwCgohW2ltYWdlLTIwMjQwMTI3MTM0NDE2MjIwXShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0NDE2MjIwLnBuZykKCiMjIyMgNy4xLjcgRGVsZXRlIFBsYW5pZnkgRGF0YSDmuIXpmaTmlbDmja4KCiFbaW1hZ2UtMjAyNDAxMjcxMzQ1MTI3NDVdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQ1MTI3NDUucG5nKQoKYGBgYmFzaAphc2RmYXNkCgoKYGBgCgoKYGBgYmFzaArllYrnmoTmkpLml6blj5HnlJ/nmoQKYGBgCgAAAAAAAAAAWhIAAAAAAAAAAAAAAAAAAAAAAABaEgAAAAAAAAAAAAAAAAAAAAAAAFoSAAAAAAAAAAAAAAAAAAAAAAAAWhIAAAAAAAAAAAAA",
-							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAxhEAAAAAAADGEQAAAAAAAAAAAAAAAPC/"
+							"BwAAAAAAAAAAAAAAAAAAAAAAAABsEwAAIyBwbGFuaWZ5IHRvZG/lt6XlhbcKClt0b2NdCgojIyAxIOmmlumhtQoKIVtpbWFnZS0yMDI0MDEyNzEyMTIxMjE5MV0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMTIxMjE5MS5wbmcpCgojIyAyIGluYm945Luj5Yqe5pS25Lu2566xCgohW2ltYWdlLTIwMjQwMTI3MTIxMzE5MDM0XShpbWdzL2ltYWdlLTIwMjQwMTI3MTIxMzE5MDM0LnBuZykKCiMjIDMgdG9kYXkKCiFbaW1hZ2UtMjAyNDAxMjcxMzE0MTc2MTBdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzE0MTc2MTAucG5nKQoKIyMgNCBzY2hlZHVsZWTorqHliJIKCiFbaW1hZ2UtMjAyNDAxMjcxMzM3MzEzNTRdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzM3MzEzNTQucG5nKQoKIyMjIDQuMSBhZGQgdG9kbwoKIVtpbWFnZS0yMDI0MDEyNzEyMTUxMzgxOF0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMTUxMzgxOC5wbmcpCgoKCuaUtue8qei1t+adpQoKIVtpbWFnZS0yMDI0MDEyNzEyMjMzNzI5Nl0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMjMzNzI5Ni5wbmcpCgrlsZXlvIAKCiFbaW1hZ2UtMjAyNDAxMjcxMjI0MTk5MDNdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMjI0MTk5MDMucG5nKQoKIVtpbWFnZS0yMDI0MDEyNzEyMjcyMTk4NF0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyMjcyMTk4NC5wbmcpCgpgYGBiYXNoClRvbW9ycm93CglUb2RheSAgU2F0CglUb21tb3JvdyBTdW4KCU5leHQgV2VlayBGZWIgMwoJTm8gRGF0ZQoJQ2hvb3NlIGEgRGF0ZQoKYWRkIGxhYmVscwpgYGAKCiMjIyA0LjIgYWRkIHN1YiB0YXNrCgohW2ltYWdlLTIwMjQwMTI3MTMxMTQxNzM2XShpbWdzL2ltYWdlLTIwMjQwMTI3MTMxMTQxNzM2LnBuZykKCiFbaW1hZ2UtMjAyNDAxMjcxMjMxMjIyMjldKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMjMxMjIyMjkucG5nKQoKIyMjIDQuMyBBZGQgbGFiZWwocykKCmBgYGJhc2gKU2VhcmNoIG9yIGNyZWF0ZQrlj6/ku6XlpJrpgIkK5LiN5a2Y5Zyo55qE54K55Ye75Zue6L2m5Lya5paw5aKeCmBgYAoKCgojIyMgNC40IFNldCB0aGUgcHJpb3JpdHkKCuiuvue9ruWQjuiuoeWIkuWQjeWtl+WJjeWvueW6lOminOiJsgoKIVtpbWFnZS0yMDI0MDEyNzEyNDYzMDM1OF0oaW1ncy9pbWFnZS0yMDI0MDEyNzEyNDYzMDM1OC5wbmcpCgpgYGBiYXNoCue6ouaXl+WtkPCfmqkgUHJpb3JpdHkgMe+8mmhpZ2gK6buE5peX5a2Q8J+aqSBQcmlvcml0eSAy77yabWVkaXVtCuiTneaXl+WtkPCfmqkgUHJpb3JpdHkgM++8mmxvdwrnmb3ml5fluJzwn4+zIFByaW9yaXR5IDTvvJpub25lCmBgYAoKIyMjIDQuNSBBZGQgUmVtaW5kZXIocykKClJlbWluZGVycyAgICAgICAgICAgICAgICAgICsKCmBgYApZb3VyIGxpc3QgcmVtaW5kZXJzIHdpbGwgc2hvdyB1cCBoZXJlLCBBZGQgb25lIGJ5IGNsaWNrIHRoZSAnKycgYnV0dG9uCmBgYAoKIyMjIyA0LjUuMSBhZGQgcmVtaW5kZXIKCkphbnVhcnkgMjAyNCAgICAgPCAgID4KCnwgTW8gICB8IFR1ICAgfCBXZSAgIHwgVGggICB8IEZyICAgfCBTYSAgICAgfCBTdSAgIHwKfCAtLS0tIHwgLS0tLSB8IC0tLS0gfCAtLS0tIHwgLS0tLSB8IC0tLS0tLSB8IC0tLS0gfAp8IDEgICAgfCAyICAgIHwgMyAgICB8IDQgICAgfCA1ICAgIHwgNiAgICAgIHwgNyAgICB8CnwgOCAgICB8IDkgICAgfCAxMCAgIHwgMTEgICB8IDEyICAgfCAxMyAgICAgfCAxNCAgIHwKfCAxNSAgIHwgMTYgICB8IDE3ICAgfCAxOCAgIHwgMTkgICB8IDIwICAgICB8IDIxICAgfAp8IDIyICAgfCAyMyAgIHwgMjQgICB8IDI1ICAgfCAyNiAgIHwgKioyNyoqIHwgMjggICB8CnwgMjkgICB8IDMwICAgfCAzMSAgIHwgICAgICB8ICAgICAgfCAgICAgICAgfCAgICAgIHwKClRpbWUgOiAgMjA6MzMKCkFkZCBSZW1pbmRlciDmjInpkq4KCiMjIyMgNC41LjIgcmVtaW5kZXLmmL7npLoKCiFbaW1hZ2UtMjAyNDAxMjcxMjU0NTk4MDNdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMjU0NTk4MDMucG5nKQoK54K55Ye78J+UlOWQjuaYvuekuu+8mgoKUmVtaW5kZXJzICAgICsKCvCflJQgVG9kYXkgMjA6MzQgICAgICDinY7vvIjlnIbmoYbnmoTvvIkKCiMjIyA0LjYg572u6aG2Cgrngrnlh7vlkI7lj5jkuLrnuqLoibLwn5OMCgohW2ltYWdlLTIwMjQwMTI3MTI1NzIzMTkxXShpbWdzL2ltYWdlLTIwMjQwMTI3MTI1NzIzMTkxLnBuZykKCiMjIyMgNC42LjEg5pu05aSa5LiJ5Liq54K5CgpgYGBiYXNoCkNvcHkgdG8gY2xpcGJvYXJkCkR1bXBsaWNhdGUKTW92ZSAgICAgICAgICAgICAgICAgIOenu+WIsOWFtuS7lueahHByb2plY3QKUmVwZWF0ICAgICAgICAgICAgICAg6YeN5aSN6K6+572u77yaRGFpbHkgV2Vla2x5IE1vbnRobHkgWWVhcmx5IC0tIE5vbmUgQ3VzdG9t77yIRXZlcnnvvIkKLS0tLS0tCkRlbGV0ZSB0YXNrCi0tLS0tCkFkZGVkIGF0OiBUb2RheSAyMDozNgpVcGRhdGVkIGF0OiBUb2RheSAyMTozNwpgYGAKCumHjeWkjeiuvue9rgoKYGBgIApSZXBlYXQKRXZlcnkgMiBkYXlzCjIgLSArIFtEYXkocykpIFdlZWsocykgTW9udGgocykgWWVhcihzKV0KCldlZWsocyk6IE1vbmRheSBUdWVzZGF5IFdlZG5lc2RheSBUaHVzZGF5IEZyaWRheSBTYXR1cmRheSBTdW5kYXkKRG9uZSDmjInpkq4KYGBgCgoKCiMjIyA0LjcgbGFiZWxzCgohW2ltYWdlLTIwMjQwMTI3MTMxMjMwODQ1XShpbWdzL2ltYWdlLTIwMjQwMTI3MTMxMjMwODQ1LnBuZykKCiMjIyMgNC43LjEgdXBkYXRlIGxhYmVsCgohW2ltYWdlLTIwMjQwMTI3MTIyMTE0MDE3XShpbWdzL2ltYWdlLTIwMjQwMTI3MTIyMTE0MDE3LnBuZykKCiMjIyMgNC43LjIgZGVsZXRlIGxhYmVsCgohW2ltYWdlLTIwMjQwMTI3MTIyMTQ5MzYzXShpbWdzL2ltYWdlLTIwMjQwMTI3MTIyMTQ5MzYzLnBuZykKCiMjIyMgNC43LjMgYWRkIGxhYmVsCgohW2ltYWdlLTIwMjQwMTI3MTIyMjM2MTU0XShpbWdzL2ltYWdlLTIwMjQwMTI3MTIyMjM2MTU0LnBuZykKCiMjIDUgcHJvamVjdAoKaW5kZXgg5ZKMcHJvamVjdOS4remDvWtleea3u+WKoHNlY3Rpb24KCmFkZCBwcm9qZWN0CgohW2ltYWdlLTIwMjQwMTI3MTMxNzQ0NDc5XShpbWdzL2ltYWdlLTIwMjQwMTI3MTMxNzQ0NDc5LnBuZykKCiFbaW1hZ2UtMjAyNDAxMjcxMzE5MzAxNTVdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzE5MzAxNTUucG5nKQoKbGlzdCB8IGJvYXJkCgpPcmRlcmVkIGJ5ICAg77yaY3VzdG9tIHNvcnQgb3JkZXIgfCBhbHBoYWJldGljYWxseSB8RHVlIGRhdGUgfERhdGUgQWRkZWQgfFByaW9yaXR5CgpTaG93IENvbXBsZXRlZCBUYXNrcyB8SGlkZSBDb21wbGV0ZCBUYXNrcwoKIyMjIDUuMSBib2FyZOinhuWbvgoKIVtpbWFnZS0yMDI0MDEyNzEzMjQwOTg2MV0oaW1ncy9pbWFnZS0yMDI0MDEyNzEzMjQwOTg2MS5wbmcpCgojIyMgNS4yIOabtOWkmgoKIyMjIyA1LjIuMSBlZGl0IHByb2plY3QKCiFbaW1hZ2UtMjAyNDAxMjcxMzI0NTc0OTBdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzI0NTc0OTAucG5nKQoKIyMjIyA1LjIuMiBXaGVuPwoK6K6+572u6aG555uu55qE5oiq5q2i5pel5pyfCgohW2ltYWdlLTIwMjQwMTI3MTMyNjQ1MTEyXShpbWdzL2ltYWdlLTIwMjQwMTI3MTMyNjQ1MTEyLnBuZykKCiMjIyMgNS4yLjMgQWRkIFNlY3Rpb24KCua3u+WKoOmhueebrumYtuautSAKCiFbaW1hZ2UtMjAyNDAxMjcxMzI4MTU5MzhdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzI4MTU5MzgucG5nKQoKc2VjdGlvbuS4rea3u+WKoHRvZG/vvIznhLblkI7ngrnlh7vlkI7vvIxrZXnnnIvliLDlrZBzdWLvvIzngrnlh7vlrZBzdWLlj6/ku6XnnIvliLDlrZBzdWLnmoRzdWLvvIzkvJrmmL7npLrlrZBzdWLnmoTmlbDph4/lkozlrozmiJDmg4XlhrUKCiFbaW1hZ2UtMjAyNDAxMjcxMzI5MDMzNDldKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzI5MDMzNDkucG5nKQoKIVtpbWFnZS0yMDI0MDEyNzEzMzMyMzA5MV0oaW1ncy9pbWFnZS0yMDI0MDEyNzEzMzMyMzA5MS5wbmcpCgojIyMjIDUuMi40IFNlbGVjdAoK6YCJ5oup5LiA5LiqdG9kbyAKCiFbaW1hZ2UtMjAyNDAxMjcxMzM0NTkwNzVdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzM0NTkwNzUucG5nKQoKIyMjIyA1LjIuNSBQYXN0ZQoK5Yqf6IO95LiN5piOCgojIyMjIDUuMi42IERlbGV0ZSBQcm9qZWN0Cgo+ICFbaW1hZ2UtMjAyNDAxMjcxMzM1MjMwODRdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzM1MjMwODQucG5nKQoKIyMgNiBxdWljayBmaW5kCgohW2ltYWdlLTIwMjQwMTI3MTM0MDQ5OTU0XShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0MDQ5OTU0LnBuZykKCiMjIDcg5pu05aSaCgojIyMgNy4xIFByZWZlcmVuY2Xns7vnu5/orr7nva4KCiFbaW1hZ2UtMjAyNDAxMjcxMzQxNTA1NThdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQxNTA1NTgucG5nKQoKIyMjIyA3LjEuMSBpbnRlZ3JhdGlvbgoKIVtpbWFnZS0yMDI0MDEyNzEzNDIyNzkxNl0oaW1ncy9pbWFnZS0yMDI0MDEyNzEzNDIyNzkxNi5wbmcpCgojIyMjIDcuMS4yIGdlbmVyYWwKCiFbaW1hZ2UtMjAyNDAxMjcxMzQzMDE4NzNdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQzMDE4NzMucG5nKQoKIyMjIyA3LjEuMyBzaWRiYXIKCiFbaW1hZ2UtMjAyNDAxMjcxMzQzMTkwMTldKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQzMTkwMTkucG5nKQoKIyMjIyA3LjEuNCBhcHBlYXJlbmNlCgohW2ltYWdlLTIwMjQwMTI3MTM0MzQ1ODAxXShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0MzQ1ODAxLnBuZykKCiMjIyMgNy4xLjUgUXVpY2sgQWRkCgohW2ltYWdlLTIwMjQwMTI3MTM0NDAxMTE3XShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0NDAxMTE3LnBuZykKCiMjIyMgNy4xLjYgYmFja3VwCgohW2ltYWdlLTIwMjQwMTI3MTM0NDE2MjIwXShpbWdzL2ltYWdlLTIwMjQwMTI3MTM0NDE2MjIwLnBuZykKCiMjIyMgNy4xLjcgRGVsZXRlIFBsYW5pZnkgRGF0YSDmuIXpmaTmlbDmja4KCiFbaW1hZ2UtMjAyNDAxMjcxMzQ1MTI3NDVdKGltZ3MvaW1hZ2UtMjAyNDAxMjcxMzQ1MTI3NDUucG5nKQoKYGBgYmFzaAphc2RmYXNkCgoKYGBgCgoKYGBgYmFzaArllYrnmoTmkpLml6blj5HnlJ/nmoQKYGBgCgAAAAAAAAAAWhIAAAAAAAAAAAAAAAAAAAAAAABaEgAAAAAAAAAAAAAAAAAAAAAAAFoSAAAAAAAAAAAAAAAAAAAAAAAAWhIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+							"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMYRAAAAAAAAxhEAAAAAAAAAAAAAAADwvw"
 						]
 					]
+				},
+				{
+					"file": "/run/media/xiaohan/4A9809FF9809EA71/Users/Administrator/.bashrc",
+					"settings":
+					{
+						"buffer_size": 12158,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+					]
+				},
+				{
+					"file": "/home/xiaohan/.bashrc",
+					"settings":
+					{
+						"buffer_size": 768,
+						"line_ending": "Unix"
+					}
 				},
 				{
 					"file": "/usr1/codehub/typora_book/.~牛客华为OD机试.md",
@@ -331,20 +429,53 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/usr1/codehub/typora_book/Planify TODOist工具.md",
-							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 4698,
+								"buffer_size": 5234,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										4079,
-										4079
+										5234,
+										5234
+									]
+								],
+								"settings":
+								{
+									"auto_complete": false,
+									"auto_indent": false,
+									"default_dir": "/home/xiaohan",
+									"gutter": false,
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_width": 2,
+									"word_wrap": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/usr1/codehub/typora_book/Planify TODOist工具.md",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
 									]
 								],
 								"settings":
@@ -356,7 +487,40 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 8063.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/run/media/xiaohan/4A9809FF9809EA71/Users/Administrator/.bashrc",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 12158,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										9321,
+										10027
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "UTF-8",
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 9169.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -364,7 +528,39 @@
 							"type": "text"
 						},
 						{
-							"buffer": 1,
+							"buffer": 3,
+							"file": "/home/xiaohan/.bashrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 768,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 4,
 							"file": "/usr1/codehub/typora_book/.~牛客华为OD机试.md",
 							"semi_transient": true,
 							"settings":
@@ -392,7 +588,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 4,
 							"stack_multiselect": false,
 							"type": "text"
 						}
@@ -438,7 +634,7 @@
 				]
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,2540,1378,2560,1440,0",
+			"position": "0,1,0,0,0,0,0,1265,1420,2560,1440,0",
 			"project": "",
 			"replace":
 			{

@@ -322,3 +322,15 @@ alias devsidecar="/opt/DevSidecar-2.0.0-x64/@docmirrordev-sidecar-gui &> /dev/nu
 export GOPATH=/home/xiaohan/gowork
 export GOBIN=$GOPATH/bin
 export PATH=$GOPATH:$GOBIN:$GOROOT/bin:$PATH
+export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+alias cargo="RUSTFLAGS='-Z threads=16' cargo +nightly"
+alias dep_del="cargo install cargo-machete && cargo machete"
+alias cr="cargo run --offline"
+alias cc="cargo check --offline"
+alias cb="cargo build --offline --release"
+alias cf="RUSTFLAGS='-Z threads=16' cargo fmt --all && cargo clippy --fix --allow-dirty --allow-staged"
+alias cfg="git diff --name-only --diff-filter=ACM | grep '\.rs$' | xargs cargo clippy --fix"
+alias cfc="RUSTFLAGS='-Z threads=16' cargo clippy -- -D clippy::correctness"
+alias cfs="RUSTFLAGS='-Z threads=16' cargo clippy -- -W clippy::style"
+

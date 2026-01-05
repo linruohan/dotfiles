@@ -27,7 +27,7 @@
       </property>
       <property name="monitorHDMI-0" type="empty">
         <property name="workspace0" type="empty">
-          <property name="last-image" type="string" value="/home/xiaohan/Pictures/guidao/guidao/d3fc245eb7f19b7d7dc31c975ca4361e53781bff.jpg"/>
+          <property name="last-image" type="string" value="/home/xiaohan/Pictures/guidao/guidao/lowpoly_street.png"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
