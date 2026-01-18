@@ -299,7 +299,7 @@ export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig:"
 pgrep -a -f fcitx5 || fcitx5 &>/dev/null &
-pgrep -a -f hydebar-app || hydebar-app &>/dev/null &
+#pgrep -a -f hydebar-app || hydebar-app &>/dev/null &
 git_d() {
     local url="$1"
     local url_no_http="${url//https:\/\//}"

@@ -11,14 +11,14 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/alias vi=
+~MSle0~/fci
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1767437414,,"wq"
+|2,0,1768704266,,"wq"
 :q
 |2,0,1767435975,,"q"
 :q!
@@ -27,6 +27,8 @@ $
 |2,0,1737192924,,"set number"
 
 # Search String History (newest to oldest):
+?/fci
+|2,1,1768704257,47,"fci"
 ?/alias vi=
 |2,1,1767437409,47,"alias vi="
 ? @$
@@ -55,34 +57,52 @@ $
 |3,0,36,0,1,0,1718445900,"r"
 
 # File marks:
-'0  150  0  ~/.zshrc
-|4,48,150,0,1767437414,"~/.zshrc"
-'1  294  0  ~/.zshrc
-|4,49,294,0,1767435975,"~/.zshrc"
-'2  294  0  ~/.zshrc
-|4,50,294,0,1767435975,"~/.zshrc"
-'3  2  3  ~/.gitignore
-|4,51,2,3,1762686113,"~/.gitignore"
-'4  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
-|4,52,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
-'5  1  0  ~/.zshrc
-|4,53,1,0,1737986985,"~/.zshrc"
-'6  1  0  ~/.zshrc
-|4,54,1,0,1737986985,"~/.zshrc"
-'7  1  0  ~/.zshrc
-|4,55,1,0,1737986985,"~/.zshrc"
-'8  1  0  ~/.zshrc
-|4,56,1,0,1737986985,"~/.zshrc"
-'9  18  1  ~/.gitconfig
-|4,57,18,1,1737986889,"~/.gitconfig"
+'0  302  0  ~/.zshrc
+|4,48,302,0,1768704266,"~/.zshrc"
+'1  150  0  ~/.zshrc
+|4,49,150,0,1767437414,"~/.zshrc"
+'2  150  0  ~/.zshrc
+|4,50,150,0,1767437414,"~/.zshrc"
+'3  294  0  ~/.zshrc
+|4,51,294,0,1767435975,"~/.zshrc"
+'4  294  0  ~/.zshrc
+|4,52,294,0,1767435975,"~/.zshrc"
+'5  294  0  ~/.zshrc
+|4,53,294,0,1767435975,"~/.zshrc"
+'6  294  0  ~/.zshrc
+|4,54,294,0,1767435975,"~/.zshrc"
+'7  2  3  ~/.gitignore
+|4,55,2,3,1762686113,"~/.gitignore"
+'8  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,56,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+'9  1  0  ~/.zshrc
+|4,57,1,0,1737986985,"~/.zshrc"
 
 # Jumplist (newest first):
+-'  302  0  ~/.zshrc
+|4,39,302,0,1768704266,"~/.zshrc"
+-'  30  19  ~/.zshrc
+|4,39,30,19,1768704259,"~/.zshrc"
+-'  29  11  ~/.zshrc
+|4,39,29,11,1768704258,"~/.zshrc"
+-'  28  23  ~/.zshrc
+|4,39,28,23,1768704258,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1768704257,"~/.zshrc"
+-'  306  0  ~/.zshrc
+|4,39,306,0,1768704250,"~/.zshrc"
+-'  150  0  ~/.zshrc
+|4,39,150,0,1767437414,"~/.zshrc"
 -'  150  0  ~/.zshrc
 |4,39,150,0,1767437414,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1767437409,"~/.zshrc"
 -'  298  0  ~/.zshrc
 |4,39,298,0,1767437405,"~/.zshrc"
+-'  298  0  ~/.zshrc
+|4,39,298,0,1767437405,"~/.zshrc"
+-'  294  0  ~/.zshrc
+|4,39,294,0,1767435975,"~/.zshrc"
 -'  294  0  ~/.zshrc
 |4,39,294,0,1767435975,"~/.zshrc"
 -'  294  0  ~/.zshrc
@@ -97,6 +117,22 @@ $
 |4,39,2,3,1762686113,"~/.gitignore"
 -'  2  3  ~/.gitignore
 |4,39,2,3,1762686113,"~/.gitignore"
+-'  2  3  ~/.gitignore
+|4,39,2,3,1762686113,"~/.gitignore"
+-'  2  3  ~/.gitignore
+|4,39,2,3,1762686113,"~/.gitignore"
+-'  2  3  ~/.gitignore
+|4,39,2,3,1762686113,"~/.gitignore"
+-'  2  3  ~/.gitignore
+|4,39,2,3,1762686113,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1762686102,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1762686102,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1762686102,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1762686102,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1762686102,"~/.gitignore"
 -'  1  0  ~/.gitignore
@@ -121,6 +157,22 @@ $
 |4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
 -'  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
 |4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  179  6  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,179,6,1738041106,"/usr1/codehub/rime-ice/weasel.custom.yaml"
 -'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
 |4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
 -'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
@@ -137,6 +189,38 @@ $
 |4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
 -'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
 |4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  2  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,2,0,1738041104,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,1,0,1738041102,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,1,0,1738041102,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,1,0,1738041102,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,1,0,1738041102,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,1,0,1738041102,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,1,0,1738041102,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,1,0,1738041102,"/usr1/codehub/rime-ice/weasel.custom.yaml"
+-'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
+|4,39,1,0,1738041102,"/usr1/codehub/rime-ice/weasel.custom.yaml"
 -'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
 |4,39,1,0,1738041102,"/usr1/codehub/rime-ice/weasel.custom.yaml"
 -'  1  0  /usr1/codehub/rime-ice/weasel.custom.yaml
@@ -195,98 +279,18 @@ $
 |4,39,18,1,1737986889,"~/.gitconfig"
 -'  18  1  ~/.gitconfig
 |4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  18  1  ~/.gitconfig
-|4,39,18,1,1737986889,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1737986873,"~/.gitconfig"
 
 # History of marks within files (newest to oldest):
 
 > ~/.zshrc
-	*	1767437414	0
-	"	150	0
-	.	1	0
+	*	1768704266	0
+	"	302	0
+	^	302	1
+	.	302	0
 	+	1	0
 	+	301	0
 	+	1	0
+	+	302	0
 
 > ~/.gitignore
 	*	1762686112	0
