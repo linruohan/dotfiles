@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: ph5Hxd5PoY8jV+4Hqa5RfQ
+! Checksum: NjmzIGVOsvApYF16NQbQuQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 05 Jan 2026 02:04:33 +0000
+! Last Modified: Tue, 20 Jan 2026 12:11:50 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -875,7 +875,8 @@ bloomberg.de
 .ftchinese.com
 ||ftchinese.com
 !!---Google---
-||issues.chromium.org 
+||ai.studio
+||chromium.org
 ||goog
 ||gle
 ||google
@@ -1544,6 +1545,9 @@ taiwannation.50webs.com
 ||aljazeera.com
 ||akinator.com
 ||annas-archive.org
+||annas-archive.in
+||annas-archive.li
+||annas-archive.pm
 ||av01.tv
 ||acg.rip
 ||annas-archive.se
@@ -6573,10 +6577,11 @@ tuitwit.com
 .tv.com
 |http://tv.com
 tvants.com
-||forum.tvb.com
+||mytvsuper.com
+||tvbanywhere.com
+||akamai.tvb.com
 ||inews-api.tvb.com
-news.tvbs.com.tw
-.tvboxnow.com
+||news.tvbs.com.tw
 ||tvboxnow.com
 tvider.com
 .tvmost.com.hk
@@ -6971,6 +6976,7 @@ vraiesagesse.net
 ||vtunnel.com
 ||vuku.cc
 !--------------------WW-------------------------
+||weights.com
 ||wikiunblocked.org
 ||websdr.org
 ||wikipedia.com
@@ -7262,6 +7268,7 @@ xvideo.cc
 xys.org
 xysblogs.org
 !--------------------YY-------------------------
+||youmind.com
 ||yangzhi.org
 ||storage.yandex.net
 ||y2mate.com

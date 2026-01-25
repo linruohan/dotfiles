@@ -1,5 +1,10 @@
 {
 	"intercepts": {
+		"metaInfo": {
+			"version": 202601232103,
+			"updateLog": "固定配置元信息的格式",
+			"id": "official"
+		},
 		"github.com": {
 			"^(/[^/]+){2,}/?(\\?.*)?$": {
 				"tampermonkeyScript": "https://gitee.com/wangliang181230/dev-sidecar/raw/scripts/tampermonkey.js",
@@ -551,7 +556,7 @@
 			"203.208.41.98": true,
 			"220.181.174.162": true
 		},
-		"^(aistudio|.*pa.clients6|apis|gemini).google.com$": {
+		"^(aistudio|.*pa.clients6|apis|gemini|console.cloud).google.com$": {
 			"8.137.102.117": {
 				"desc": "AI Studio相关,阿里云,解锁地区限制,新加坡,仅大陆访问"
 			},
@@ -1014,7 +1019,8 @@
 				"*.fanbox.cc": true,
 				"*.onesignal.com": true,
 				"*.greasyfork.org": true,
-				"*.cn-greasyfork.org": true
+				"*.cn-greasyfork.org": true,
+				"*.notepad-plus-plus.org": true
 			},
 			"pac": {
 				"pacFileUpdateUrl": "https://xget.xi-xu.me/gh/gfwlist/gfwlist/raw/master/gfwlist.txt",
