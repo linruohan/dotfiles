@@ -1,8 +1,8 @@
 {
 	"intercepts": {
 		"metaInfo": {
-			"version": 202602022150,
-			"updateLog": "适配2.0.0.3的新配置，快速结束假文件的加载",
+			"version": 202602161130,
+			"updateLog": "更新hub.docker.com steamcommunity.com规则,恢复onedrive.live.com规则,在帮助页面新增远程配置说明",
 			"id": "official"
 		},
 		"github.com": {
@@ -524,7 +524,7 @@
 			"52.224.38.193": true
 		},
 		"hub.docker.com": {
-			"52.4.183.149": true
+			"8.218.75.61": true
 		},
 		"sessions-bugsnag.docker.com": {
 			"54.156.14.194": true,
@@ -668,11 +668,7 @@
 			"23.221.227.5": true
 		},
 		"*.steamcommunity.com": {
-			"23.2.191.232": true,
-			"23.42.14.90": true,
-			"104.82.234.109": true,
-			"184.25.197.212": true,
-			"23.194.234.100": true
+			"184.50.187.66": true
 		},
 		"^(store|checkout).steampowered.com$": {
 			"72.246.28.155": true,
@@ -1226,7 +1222,6 @@
 			"*.windows.com": true,
 			"*.office.com": true,
 			"*.office.net": true,
-			"*.live.com": true,
 			"*.msn.com": true,
 			"*.wps.com": true,
 			"*.wps.net": true,
