@@ -4,8 +4,8 @@
       //配置编辑时间、版本信息
       "metaInfo": {
         // 从语义上说，元信息不该插在这里，但是好像放在这里容易debug；所幸不会有网站叫metaInfo
-        "version": 202602161130, // 格式是GMT+8的开始编辑时间，固定位数为年月日+时分;一天有1440分钟，够用了；这就是个number,可以用来比较，别加引号
-        "updateLog": "更新hub.docker.com steamcommunity.com规则,恢复onedrive.live.com规则,在帮助页面新增远程配置说明", // 我真的不觉得这个字段有多大必要
+        "version": 202602231340, // 格式是GMT+8的开始编辑时间，固定位数为年月日+时分;一天有1440分钟，够用了；这就是个number,可以用来比较，别加引号
+        "updateLog": "更新ms-sso.copilot.microsoft.com规则,防止微软登录卡登录", // 我真的不觉得这个字段有多大必要
         "id": "official" // 配置id：id区分大小写，只能带有大小写字母、数字、点号与横杠，应当具有说明作用（所以不许用一串数字/乱码代替）
         // dev-sidecar从2.0.2开始内置的配置是internal，这里是official
         // 第三方配置应使用Java风格id,即发布网站域名的倒序，但严禁使用com.example之类的烂大街id（com.example保留为示范用途）
@@ -62,7 +62,8 @@
       },
       "github.githubassets.com": {
         "/assets/fakefile.js": {
-          "abort": true
+          "abort": true,
+          "cacheDays": 365
         },
         "^(/[^/]+)*/[^./]+\\.(svg|png|gif|jpg|jpeg|ico|js|css)(\\?.*)?$": {
           "cacheDays": 365,
@@ -149,6 +150,12 @@
       "www.gstatic.com": {
         "/recaptcha/.*": {
           "proxy": "www.recaptcha.net"
+        }
+      },
+      // 微软相关配置
+      "ms-sso.copilot.microsoft.com": {
+        ".*": {
+          "sni": "microsoft.com" // 微软登录会奇怪跳转至此站点中转，防止卡登录
         }
       },
       // Docker Hub站点所需配置
@@ -451,7 +458,10 @@
       },
       // Docker Hub
       "hub.docker.com": {
-        "8.218.75.61": true,
+        "144.34.172.106": false,
+        "69.63.207.139":false,
+        // 疑似源站IP
+        "47.236.233.96":true,
         // 已失效的IP
         "54.156.14.194": null,
         "54.208.73.48": null,
@@ -874,6 +884,7 @@
         "*.jsdelivr.net": true,
         "*.z-library.sk": true,
         "*.zlibrary*.se": true,
+        "*.discord.com": true,
         // 维基百科
         "*.wikipedia-on-ipfs.org": true,
         // ChatGPT
@@ -943,13 +954,19 @@
         "rowClass": "title1",
         "children": [
           {
-            "title": "1、官方远程配置版本:202602161130",
+            "title": "1、官方远程配置版本:202602231340",
             "rowClass":"title2"
           },
           {
             "title": "2、官方远程配置更新日志",
             "rowClass":"title2",
             "children":[
+              {
+                "title": "更新ms-sso.copilot.microsoft.com规则,防止微软登录卡登录"
+              },
+              {
+                "title": "更新hub.docker.com规则"
+              },
               {
                 "title": "更新hub.docker.com steamcommunity.com规则,恢复onedrive.live.com规则,在帮助页面新增远程配置说明"
               }

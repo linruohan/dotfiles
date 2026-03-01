@@ -1,8 +1,8 @@
 {
 	"intercepts": {
 		"metaInfo": {
-			"version": 202602161130,
-			"updateLog": "更新hub.docker.com steamcommunity.com规则,恢复onedrive.live.com规则,在帮助页面新增远程配置说明",
+			"version": 202602231340,
+			"updateLog": "更新ms-sso.copilot.microsoft.com规则,防止微软登录卡登录",
 			"id": "official"
 		},
 		"github.com": {
@@ -47,7 +47,8 @@
 		},
 		"github.githubassets.com": {
 			"/assets/fakefile.js": {
-				"abort": true
+				"abort": true,
+				"cacheDays": 365
 			},
 			"^(/[^/]+)*/[^./]+\\.(svg|png|gif|jpg|jpeg|ico|js|css)(\\?.*)?$": {
 				"cacheDays": 365,
@@ -136,6 +137,11 @@
 		"www.gstatic.com": {
 			"/recaptcha/.*": {
 				"proxy": "www.recaptcha.net"
+			}
+		},
+		"ms-sso.copilot.microsoft.com": {
+			".*": {
+				"sni": "microsoft.com"
 			}
 		},
 		"www.docker.com": {
@@ -524,7 +530,9 @@
 			"52.224.38.193": true
 		},
 		"hub.docker.com": {
-			"8.218.75.61": true
+			"144.34.172.106": false,
+			"69.63.207.139": false,
+			"47.236.233.96": true
 		},
 		"sessions-bugsnag.docker.com": {
 			"54.156.14.194": true,
@@ -972,6 +980,7 @@
 				"*.jsdelivr.net": true,
 				"*.z-library.sk": true,
 				"*.zlibrary*.se": true,
+				"*.discord.com": true,
 				"*.wikipedia-on-ipfs.org": true,
 				"*.chatgpt.com": false,
 				"*.oaiusercontent.com": true,

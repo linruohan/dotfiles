@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: SZb9Z3+DMQuOYwT3Ng+NHQ
+! Checksum: NATLXZfBt1fETn1BbuudEA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 16 Feb 2026 11:10:32 +0000
+! Last Modified: Tue, 24 Feb 2026 13:37:10 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -933,7 +933,7 @@ www.aolnews.com
 ||googleweblight.com
 ||googlezip.net
 ||gstatic.com
-||gvt1.com]
+||gvt1.com
 ||gvt3.com
 ||gwtproject.org
 ||html5rocks.com
@@ -1191,6 +1191,7 @@ iipdigital.usembassy.gov
 ||9bis.net
 ||9news.com.au
 !--------------------AA-------------------------
+||akile.io
 ||aljazeera.net
 ||anuneko.com
 ||ai.dev
@@ -1518,6 +1519,7 @@ iipdigital.usembassy.gov
 ||bwh1.net
 ||bypasscensorship.org
 !--------------------CC-------------------------
+||www.clashverge.dev
 ||clementine-player.org
 ||backend-v2.crixet.com
 ||cchostvps.xyz
@@ -1943,6 +1945,7 @@ iipdigital.usembassy.gov
 ||eyevio.jp
 ||eyny.com
 !--------------------FF-------------------------
+||freedom.gov
 ||hyperbeam.com
 ||flowgpt.com
 ||forefront.ai
@@ -2668,6 +2671,8 @@ iipdigital.usembassy.gov
 ||lzjscript.com
 ||lzmtnews.org
 !--------------------MM-------------------------
+||meee.com.tw
+||mosavi.io
 ||dcs-spotify.megaphone.fm
 ||mij.rip
 ||mji.rip
@@ -2825,6 +2830,7 @@ iipdigital.usembassy.gov
 ||mypopescu.com
 ||myspacecdn.com
 !--------------------NN-------------------------
+||assets.nxtrace.org
 ||nephobox.com
 ||namu.wiki
 ||nirsoft.net
@@ -2928,6 +2934,7 @@ iipdigital.usembassy.gov
 ||nybooks.com
 ||nypost.com
 !--------------------OO-------------------------
+||opencritic.com
 ||ooni.io
 ||ooni.org
 ||files.oaiusercontent.com
@@ -3522,6 +3529,7 @@ iipdigital.usembassy.gov
 ||sylfoundation.org
 ||syncback.com
 !--------------------TT-------------------------
+||tor.eff.org
 ||tails.net
 ||bbc.pdn.tritondigital.com
 ||terobox.com
@@ -3817,6 +3825,7 @@ iipdigital.usembassy.gov
 ||contests.twilio.com
 ||typora.io
 !--------------------UU-------------------------
+||uniswap.org
 ||up.audio
 ||udomain.hk
 ||upbit.com
