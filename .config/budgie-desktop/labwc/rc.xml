@@ -375,7 +375,7 @@
 		<policy>center</policy>
 	</placement>
 	<focus>
-		<followMouse>yes</followMouse>
+		<followMouse>no</followMouse>
 		<raiseOnFocus>no</raiseOnFocus>
 	</focus>
 	<snapping>
