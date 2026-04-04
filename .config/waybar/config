@@ -3,7 +3,7 @@
     "name": "bottom",
     "layer": "top",
     "margin": "0px 0px 0px 0px",
-    "position": "top",
+    "position": "left",
     "modules-right": ["custom/bluetooth", "pulseaudio", "clock", "backlight", "battery", "memory", "cpu", "disk", "temperature", "tray"],
     "modules-left": ["wlr/taskbar"],
     "battery": {
@@ -21,7 +21,7 @@
     },
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 25,
+        "icon-size": 15,
         "icon-theme": "Arc",
         "tooltip-format": "{title}",
         "on-click": "activate",

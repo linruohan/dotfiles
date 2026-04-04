@@ -9,14 +9,14 @@ primary_output = "P9L00769019"
 
 [[group.output]]
 identifier = "P9L00769019"
-width = 0
-height = 0
-refresh = 0
+width = 2560
+height = 1440
+refresh = 59951
 x = 0
 y = 0
 scale = 1.0
 rotation = 0
 adaptive_sync = 0
-primary = false
+primary = true
 disabled = false
 

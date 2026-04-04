@@ -381,7 +381,7 @@
 	<snapping>
 		<range inner="10" outer="10">10</range>
 	</snapping>
-	<windowSwitcher style="thumbnail" allWorkspaces="yes" />
+	<windowSwitcher style="thumbnail" allWorkspaces="no" />
 	<mouse>
 		<doubleClickTime>400</doubleClickTime>
 	</mouse>
