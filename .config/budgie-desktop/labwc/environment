@@ -1,0 +1,12 @@
+# Budgie Desktop - labwc environment configuration
+# Variables fully managed by budgie: XKB_DEFAULT_LAYOUT, XKB_DEFAULT_OPTIONS, XCURSOR_*, LC_*, LANG
+# Use dconf key xkb-options to add user defined values
+# Other user customizations are preserved
+
+XKB_DEFAULT_LAYOUT=us
+XKB_DEFAULT_OPTIONS=
+
+XCURSOR_SIZE=24
+XCURSOR_THEME=default
+
+LANG=en_US.UTF-8

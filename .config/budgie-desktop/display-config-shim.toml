@@ -1,0 +1,22 @@
+[preferences]
+automatic_attach_outputs_relative_position = "none"
+
+[[group]]
+name = "P9L00769019 (Auto Generated)"
+preferred = false
+identifiers = ["P9L00769019"]
+primary_output = "P9L00769019"
+
+[[group.output]]
+identifier = "P9L00769019"
+width = 0
+height = 0
+refresh = 0
+x = 0
+y = 0
+scale = 1.0
+rotation = 0
+adaptive_sync = 0
+primary = false
+disabled = false
+
