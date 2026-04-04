@@ -6,7 +6,7 @@
   "spacing": 10,
   "border-size": 1,
   "padding": 1,
-  "include": ["$XDG_CONFIG_HOME/waybar/includes/includes.json"],
+  // "include": ["$XDG_CONFIG_HOME/waybar/includes/includes.json"],
   // Modules configuration
   "modules-left": [
     "custom/launcher",
@@ -14,17 +14,17 @@
     "custom/text#two",
     "custom/text#three",
     "custom/text#four",
-    "custom/help#macos"
+    "custom/help#macos",
   ],
   "modules-right": ["image#wallpaper", "clock#date", "clock"],
   // Module-specific configurations
   "clock#12": {
     "format": "{:%H:%M %p}",
-    "tooltip-format": "{:%A, %B %d, %Y}"
+    "tooltip-format": "{:%A, %B %d, %Y}",
   },
   "clock": {
     "format": "{:%H:%M}",
-    "tooltip-format": "{:%A, %B %d, %Y}"
+    "tooltip-format": "{:%A, %B %d, %Y}",
   },
   "clock#date": {
     "format": "{:%a %b %d}",
@@ -39,45 +39,45 @@
       "format": {
         "months": "<span color='#ffead3'><b>{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b>{}</b></span>"
-      }
+        "today": "<span color='#ff6699'><b>{}</b></span>",
+      },
     },
     "actions": {
       "on-click-right": "mode",
       "on-click-forward": "tz_up",
       "on-click-backward": "tz_down",
       "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
-    }
+      "on-scroll-down": "shift_down",
+    },
   },
   "hyprland/window": {
     "format": "{class}",
     "max-length": 20,
     "rewrite": {
       // if any window is focused display Finder
-      "^(?!.*\\S).*": "Finder"
-    }
+      "^(?!.*\\S).*": "Finder",
+    },
   },
   "custom/launcher": {
     "format": "",
-    "on-click": "hyde-shell rofilaunch"
+    "on-click": "hyde-shell rofilaunch",
   },
   "custom/text#two": {
     "format": "File",
     "interval": 60,
     "return-type": "plain",
-    "on-click": "hyde-shell open --fall dolphin file-manager" //or you favorite Filer Explorer
+    "on-click": "hyde-shell open --fall dolphin file-manager", //or you favorite Filer Explorer
   },
   "custom/text#three": {
     "format": "Edit",
     "interval": 60,
     "return-type": "plain",
-    "on-click": "krita" // or you favorite Image editor
+    "on-click": "krita", // or you favorite Image editor
   },
   "custom/text#four": {
     "format": "View",
     "interval": 60,
-    "return-type": "plain"
+    "return-type": "plain",
   },
   "custom/help#macos": {
     "format": "Help",
@@ -106,7 +106,7 @@
       "workflows-select": "hyde-shell workflows --select;pkill -RTMIN+19 waybar",
       "shaders-select": "hyde-shell shaders --select;pkill -RTMIN+19 waybar",
       "keybinds-hint": "hyde-shell keybinds_hint",
-      "about-hyde": "xdg-open https://hydeproject.pages.dev"
-    }
-  }
+      "about-hyde": "xdg-open https://hydeproject.pages.dev",
+    },
+  },
 }
