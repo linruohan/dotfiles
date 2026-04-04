@@ -1,17 +1,20 @@
 [Default Applications]
 inode/directory=org.kde.dolphin.desktop
 x-scheme-handler/trash=xfce4-file-manager.desktop
-text/html=google-chrome.desktop
+text/html=firefox.desktop
 x-scheme-handler/http=xfce4-web-browser.desktop
-x-scheme-handler/https=xfce4-web-browser.desktop
+x-scheme-handler/https=firefox.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 text/plain=sublime_text.desktop
+application/xhtml+xml=firefox.desktop
 
 [Added Associations]
 inode/directory=xfce4-file-manager.desktop;
 x-scheme-handler/trash=xfce4-file-manager.desktop;
 video/mp4=vlc.desktop;
-x-scheme-handler/http=xfce4-web-browser.desktop;
-x-scheme-handler/https=xfce4-web-browser.desktop;
+x-scheme-handler/http=xfce4-web-browser.desktop;firefox.desktop;
+x-scheme-handler/https=xfce4-web-browser.desktop;firefox.desktop;
 text/plain=sublime_text.desktop;
+application/xhtml+xml=firefox.desktop;
+text/html=firefox.desktop;

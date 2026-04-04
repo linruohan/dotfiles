@@ -1,9 +1,9 @@
 <openbox_menu>
 	<menu id="root-menu">
-		<item label="Budgie Desktop Settings" original="Budgie Desktop Settings">
+		<item label="Budgie&#26700;&#38754;&#35774;&#32622;" original="Budgie Desktop Settings">
 			<action name="Execute" command="budgie-desktop-settings" />
 		</item>
-		<item label="System Settings" original="System Settings">
+		<item label="&#31995;&#32479;&#35774;&#32622;" original="System Settings">
 			<action name="Execute" command="budgie-control-center" />
 		</item>
 	</menu>

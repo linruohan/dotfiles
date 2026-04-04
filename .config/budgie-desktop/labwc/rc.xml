@@ -70,25 +70,25 @@
 		<keybind bridge="wm.keybindings/move-to-workspace-left" key="W-S-Page_Up">
 			<action name="SendToDesktop" to="left" wrap="no" />
 		</keybind>
-		<keybind bridge="wm.keybindings/move-to-workspace-left" key="C-S-A-Left">
+		<keybind bridge="wm.keybindings/move-to-workspace-left" key="W-S-KP_Prior">
 			<action name="SendToDesktop" to="left" wrap="no" />
 		</keybind>
 		<keybind bridge="wm.keybindings/move-to-workspace-left" key="W-S-A-Left">
 			<action name="SendToDesktop" to="left" wrap="no" />
 		</keybind>
-		<keybind bridge="wm.keybindings/move-to-workspace-left" key="W-S-KP_Prior">
+		<keybind bridge="wm.keybindings/move-to-workspace-left" key="C-S-A-Left">
 			<action name="SendToDesktop" to="left" wrap="no" />
 		</keybind>
 		<keybind bridge="wm.keybindings/move-to-workspace-right" key="W-S-Page_Down">
 			<action name="SendToDesktop" to="right" wrap="no" />
 		</keybind>
-		<keybind bridge="wm.keybindings/move-to-workspace-right" key="C-S-A-Right">
+		<keybind bridge="wm.keybindings/move-to-workspace-right" key="W-S-KP_Next">
 			<action name="SendToDesktop" to="right" wrap="no" />
 		</keybind>
 		<keybind bridge="wm.keybindings/move-to-workspace-right" key="W-S-A-Right">
 			<action name="SendToDesktop" to="right" wrap="no" />
 		</keybind>
-		<keybind bridge="wm.keybindings/move-to-workspace-right" key="W-S-KP_Next">
+		<keybind bridge="wm.keybindings/move-to-workspace-right" key="C-S-A-Right">
 			<action name="SendToDesktop" to="right" wrap="no" />
 		</keybind>
 		<keybind bridge="wm.keybindings/move-to-workspace-last" key="W-S-End">
@@ -124,25 +124,25 @@
 		<keybind bridge="wm.keybindings/switch-to-workspace-left" key="W-Page_Up">
 			<action name="GoToDesktop" to="left" wrap="no" />
 		</keybind>
-		<keybind bridge="wm.keybindings/switch-to-workspace-left" key="C-A-Left">
+		<keybind bridge="wm.keybindings/switch-to-workspace-left" key="W-KP_Prior">
 			<action name="GoToDesktop" to="left" wrap="no" />
 		</keybind>
 		<keybind bridge="wm.keybindings/switch-to-workspace-left" key="W-A-Left">
 			<action name="GoToDesktop" to="left" wrap="no" />
 		</keybind>
-		<keybind bridge="wm.keybindings/switch-to-workspace-left" key="W-KP_Prior">
+		<keybind bridge="wm.keybindings/switch-to-workspace-left" key="C-A-Left">
 			<action name="GoToDesktop" to="left" wrap="no" />
 		</keybind>
 		<keybind bridge="wm.keybindings/switch-to-workspace-right" key="W-Page_Down">
 			<action name="GoToDesktop" to="right" wrap="no" />
 		</keybind>
-		<keybind bridge="wm.keybindings/switch-to-workspace-right" key="C-A-Right">
+		<keybind bridge="wm.keybindings/switch-to-workspace-right" key="W-KP_Next">
 			<action name="GoToDesktop" to="right" wrap="no" />
 		</keybind>
 		<keybind bridge="wm.keybindings/switch-to-workspace-right" key="W-A-Right">
 			<action name="GoToDesktop" to="right" wrap="no" />
 		</keybind>
-		<keybind bridge="wm.keybindings/switch-to-workspace-right" key="W-KP_Next">
+		<keybind bridge="wm.keybindings/switch-to-workspace-right" key="C-A-Right">
 			<action name="GoToDesktop" to="right" wrap="no" />
 		</keybind>
 		<keybind bridge="wm.keybindings/switch-applications-backward" key="S-W-Tab">
@@ -277,10 +277,10 @@
 		<keybind bridge="wm.keybindings/switch-input-source" key="A-Shift_L">
 			<action name="" command="" />
 		</keybind>
-		<keybind bridge="wm.keybindings/switch-input-source" key="XF86Keyboard">
+		<keybind bridge="wm.keybindings/switch-input-source" key="W-space">
 			<action name="" command="" />
 		</keybind>
-		<keybind bridge="wm.keybindings/switch-input-source" key="W-space">
+		<keybind bridge="wm.keybindings/switch-input-source" key="XF86Keyboard">
 			<action name="" command="" />
 		</keybind>
 		<keybind bridge="wm.keybindings/switch-input-source-backward" key="W-S-space">
@@ -348,14 +348,14 @@
 		</keybind>
 	</keyboard>
 	<theme>
-		<name>Wallbash-Gtk</name>
+		<name>WhiteSur-Dark</name>
 		<dropShadows>yes</dropShadows>
 		<font place="ActiveWindow" name="Adwaita Sans" weight="Bold" size="11" slant="Normal" />
 		<font place="InactiveWindow" name="Adwaita Sans" weight="Bold" size="11" slant="Normal" />
 		<titlebar>
 			<layout>:iconify,max,close:</layout>
 		</titlebar>
-		<icon>Tela-circle-dracula</icon>
+		<icon>WhiteSur-dark</icon>
 	</theme>
 	<windowRules>
 		<windowRule identifier="Nemo-desktop" title="Desktop" skipTaskbar="yes" skipWindowSwitcher="yes">
@@ -375,13 +375,13 @@
 		<policy>center</policy>
 	</placement>
 	<focus>
-		<followMouse>no</followMouse>
+		<followMouse>yes</followMouse>
 		<raiseOnFocus>no</raiseOnFocus>
 	</focus>
 	<snapping>
 		<range inner="10" outer="10">10</range>
 	</snapping>
-	<windowSwitcher style="thumbnail" allWorkspaces="no" />
+	<windowSwitcher style="thumbnail" allWorkspaces="yes" />
 	<mouse>
 		<doubleClickTime>400</doubleClickTime>
 	</mouse>
