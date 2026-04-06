@@ -127,6 +127,10 @@ Invoke-Expression
 
 ### 🌐 Language Support
 
+#### CSV/TSV
+
+- **csvview.nvim** - CSV/TSV file editing
+
 #### Web Development
 
 - **TypeScript/JavaScript** - Full TS/JS support with Volar/VTSLS
@@ -151,7 +155,7 @@ Invoke-Expression
 
 #### Data & DevOps
 
-- **SQL** - Database queries with vim-dadbod suite
+- **SQL** - Database queries with dadbod-grip suite
 - **Docker** - Container support
 - **Git** - Version control with Diffview integration
 - **Prisma** - Database ORM
@@ -191,7 +195,7 @@ Invoke-Expression
 
 #### Real-time Collaboration
 
-- **Nomad.nvim**: Live pair programming with cursor synchronization
+- **live-share.nvim**: Live pair programming with cursor synchronization
 - **Team Type**: You can use it for pair programming or note-taking
 
 #### Performance & Utilities
@@ -325,7 +329,7 @@ The following plugins are intentionally disabled to avoid conflicts:
 ### Custom Additions
 
 - **Compiler.nvim** - Code compilation and task management
-- **Nomad** - Real-time collaboration for pair programming
+- **Live Share** - Real-time collaboration for pair programming
 - **Database Tools** - vim-dadbod suite for database management
 - **Framework Support** - Laravel, Spring Boot, Flutter-tools, .NET Framework
 - **Competitive Programming** - cphelper.nvim
