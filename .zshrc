@@ -335,3 +335,4 @@ alias cfg="git diff --name-only --diff-filter=ACM | grep '\.rs$' | xargs cargo c
 alias cfc="RUSTFLAGS='-Z threads=16' cargo clippy -- -D clippy::correctness"
 alias cfs="RUSTFLAGS='-Z threads=16' cargo clippy -- -W clippy::style"
 #alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
+eval "$(zoxide init zsh)"
