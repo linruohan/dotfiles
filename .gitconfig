@@ -28,6 +28,8 @@
 	encoding = utf-8
 [http]
 	sslBackend = openssl
+	proxy = http://127.0.0.1:31180
+	sslVerify = false
 [init]
 	defaultBranch = master
 [gui]  
@@ -40,3 +42,11 @@
 	quotepath = false
 [url "ssh://git@ssh.github.com:443"]
     insteadOf = https://github.com
+[https]
+	proxy = http://127.0.0.1:31181
+[http "https://gitee.com"]
+	proxy = 
+[http "https://e.coding.net"]
+	proxy = 
+[http "https://codeup.aliyun.com"]
+	proxy = 

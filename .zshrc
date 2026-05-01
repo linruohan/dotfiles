@@ -319,7 +319,7 @@ clone() {
     git clone ssh://git@ssh.github.com:443/$1
 }
 alias zed="WAYLAND_DISPLAY='' zeditor"
-alias devsidecar="/opt/DevSidecar-2.0.0-x64/@docmirrordev-sidecar-gui &> /dev/null &"
+alias devsidecar="/opt/DevSidecar-2.0.2-x64/@docmirrordev-sidecar-gui &> /dev/null &"
 export GOPATH=/home/xiaohan/gowork
 export GOBIN=$GOPATH/bin
 export PATH=$GOPATH:$GOBIN:$GOROOT/bin:$PATH

@@ -1,5 +1,5 @@
 [Colors:View]
-BackgroundNormal=#130E13FF
+BackgroundNormal=#00000000
 
 [General]
 TerminalApplication=kitty
