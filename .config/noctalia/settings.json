@@ -224,15 +224,78 @@
                     "useDistroLogo": false
                 },
                 {
+                    "defaultSettings": {
+                        "enableCross": true,
+                        "enableWindowsSelection": true,
+                        "keepSourceScreenshot": false,
+                        "recordingNotifications": true,
+                        "recordingSavePath": "~/Videos",
+                        "savePath": "~/Pictures/Screenshots",
+                        "screenshotEditor": "swappy"
+                    },
                     "id": "plugin:screen-shot-and-record"
                 },
                 {
+                    "defaultSettings": {
+                        "completedCount": 0,
+                        "count": 0,
+                        "current_page_id": 0,
+                        "exportEmptySections": false,
+                        "exportFormat": "markdown",
+                        "exportPath": "~/Documents",
+                        "isExpanded": false,
+                        "pages": [
+                            {
+                                "id": 0,
+                                "name": "General"
+                            }
+                        ],
+                        "priorityColors": {
+                            "high": "#f44336",
+                            "low": "#9e9e9e",
+                            "medium": "#2196f3"
+                        },
+                        "showBackground": true,
+                        "showCompleted": true,
+                        "todos": [
+                        ],
+                        "useCustomColors": false
+                    },
                     "id": "plugin:todo"
                 },
                 {
+                    "defaultSettings": {
+                        "aurCmd": "paru -Qua 2>/dev/null",
+                        "boldText": true,
+                        "boldVer": true,
+                        "boldVerDesktop": true,
+                        "boldVerPanel": true,
+                        "closeButton": false,
+                        "customIconPath": "",
+                        "desktopTip": true,
+                        "enableColorization": false,
+                        "flatpak": true,
+                        "hideOnEmpty": false,
+                        "hoverTip": true,
+                        "iconColor": "none",
+                        "iconName": "arrow-big-down-lines",
+                        "noctalia": true,
+                        "refreshInterval": 120,
+                        "refreshTimer": true,
+                        "systemCmd": "checkupdates 2>/dev/null",
+                        "toast": true,
+                        "tooltip": true,
+                        "updateCmd": "ghostty -e bash -c 'echo \"Updating System...\";paru; flatpak update; read -n 1 -p \"Press any key to exit...\"'",
+                        "useDistroLogo": false
+                    },
                     "id": "plugin:arch-updater"
                 },
                 {
+                    "defaultSettings": {
+                        "density": "comfortable",
+                        "maxHistorySize": 100,
+                        "showImagePreviews": true
+                    },
                     "id": "plugin:clipboard"
                 }
             ]
