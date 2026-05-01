@@ -17,12 +17,14 @@
 $
 
 # 命令行 历史记录 (从新到旧):
+:q!
+|2,0,1777602440,,"q!"
+:w!
+|2,0,1777602437,,"w!"
+:wq
+|2,0,1777602434,,"wq"
 :q
 |2,0,1775824214,,"q"
-:wq
-|2,0,1775823802,,"wq"
-:q!
-|2,0,1737192948,,"q!"
 :set number
 |2,0,1737192924,,"set number"
 
@@ -48,45 +50,66 @@ $
 "0	CHAR	0
 	r
 |3,0,0,0,1,0,1725217496,"r"
+""1	LINE	0
+	cn.ntp.org.cn ntp1.nim.ac.cn
+|3,1,1,1,1,0,1777602433,"cn.ntp.org.cn ntp1.nim.ac.cn"
 "2	LINE	0
-	>>>>>>> 9b9af09 (add)
-|3,0,2,1,1,0,1737986952,">>>>>>> 9b9af09 (add)"
+	
+|3,0,2,1,1,0,1777602432,""
 "3	LINE	0
 	<<<<<<< HEAD
 |3,0,3,1,1,0,1737986932,"<<<<<<< HEAD"
-""-	CHAR	0
+"4	LINE	0
+	>>>>>>> 9b9af09 (add)
+|3,0,4,1,1,0,1737986952,">>>>>>> 9b9af09 (add)"
+"5	LINE	0
+	<<<<<<< HEAD
+|3,0,5,1,1,0,1737986932,"<<<<<<< HEAD"
+"-	CHAR	0
 	 
-|3,1,36,0,1,0,1775823795," "
+|3,0,36,0,1,0,1775823795," "
 
 # 文件标记:
-'0  14  0  ~/.config/zsh/.zshenv
-|4,48,14,0,1775824214,"~/.config/zsh/.zshenv"
+'0  20  0  /etc/systemd/timesyncd.conf
+|4,48,20,0,1777602440,"/etc/systemd/timesyncd.conf"
 '1  14  0  ~/.config/zsh/.zshenv
-|4,49,14,0,1775823814,"~/.config/zsh/.zshenv"
-'2  39  0  ~/.config/zsh/.zshrc
-|4,50,39,0,1775823802,"~/.config/zsh/.zshrc"
-'3  20  0  ~/.config/zsh/user.zsh
-|4,51,20,0,1775823751,"~/.config/zsh/user.zsh"
-'4  70  11  ~/.config/foot/foot.ini
-|4,52,70,11,1775823645,"~/.config/foot/foot.ini"
-'5  16  0  ~/.config/hypr/pyprland.toml
-|4,53,16,0,1768704763,"~/.config/hypr/pyprland.toml"
-'6  1  0  ~/.config/hyde/config.toml
-|4,54,1,0,1768704730,"~/.config/hyde/config.toml"
-'7  1  0  ~/.config/hyde/hyde.conf
-|4,55,1,0,1768704705,"~/.config/hyde/hyde.conf"
-'8  302  0  ~/.zshrc
-|4,56,302,0,1768704266,"~/.zshrc"
-'9  150  0  ~/.zshrc
-|4,57,150,0,1767437414,"~/.zshrc"
+|4,49,14,0,1775824214,"~/.config/zsh/.zshenv"
+'2  14  0  ~/.config/zsh/.zshenv
+|4,50,14,0,1775823814,"~/.config/zsh/.zshenv"
+'3  39  0  ~/.config/zsh/.zshrc
+|4,51,39,0,1775823802,"~/.config/zsh/.zshrc"
+'4  20  0  ~/.config/zsh/user.zsh
+|4,52,20,0,1775823751,"~/.config/zsh/user.zsh"
+'5  70  11  ~/.config/foot/foot.ini
+|4,53,70,11,1775823645,"~/.config/foot/foot.ini"
+'6  16  0  ~/.config/hypr/pyprland.toml
+|4,54,16,0,1768704763,"~/.config/hypr/pyprland.toml"
+'7  1  0  ~/.config/hyde/config.toml
+|4,55,1,0,1768704730,"~/.config/hyde/config.toml"
+'8  1  0  ~/.config/hyde/hyde.conf
+|4,56,1,0,1768704705,"~/.config/hyde/hyde.conf"
+'9  302  0  ~/.zshrc
+|4,57,302,0,1768704266,"~/.zshrc"
 
 # 跳转列表 (从新到旧):
+-'  20  0  /etc/systemd/timesyncd.conf
+|4,39,20,0,1777602440,"/etc/systemd/timesyncd.conf"
+-'  1  0  /etc/systemd/timesyncd.conf
+|4,39,1,0,1777602403,"/etc/systemd/timesyncd.conf"
+-'  14  0  ~/.config/zsh/.zshenv
+|4,39,14,0,1775824214,"~/.config/zsh/.zshenv"
 -'  14  0  ~/.config/zsh/.zshenv
 |4,39,14,0,1775824214,"~/.config/zsh/.zshenv"
 -'  1  0  ~/.config/zsh/.zshenv
 |4,39,1,0,1775824203,"~/.config/zsh/.zshenv"
+-'  1  0  ~/.config/zsh/.zshenv
+|4,39,1,0,1775824203,"~/.config/zsh/.zshenv"
 -'  14  0  ~/.config/zsh/.zshenv
 |4,39,14,0,1775823814,"~/.config/zsh/.zshenv"
+-'  14  0  ~/.config/zsh/.zshenv
+|4,39,14,0,1775823814,"~/.config/zsh/.zshenv"
+-'  1  0  ~/.config/zsh/.zshenv
+|4,39,1,0,1775823809,"~/.config/zsh/.zshenv"
 -'  1  0  ~/.config/zsh/.zshenv
 |4,39,1,0,1775823809,"~/.config/zsh/.zshenv"
 -'  39  0  ~/.config/zsh/.zshrc
@@ -97,6 +120,22 @@ $
 |4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
 -'  39  0  ~/.config/zsh/.zshrc
 |4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
 -'  1  0  ~/.config/zsh/.zshrc
 |4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
 -'  1  0  ~/.config/zsh/.zshrc
@@ -121,6 +160,38 @@ $
 |4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
 -'  20  0  ~/.config/zsh/user.zsh
 |4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  1  0  ~/.config/zsh/user.zsh
+|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
+-'  1  0  ~/.config/zsh/user.zsh
+|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
+-'  1  0  ~/.config/zsh/user.zsh
+|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
+-'  1  0  ~/.config/zsh/user.zsh
+|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
+-'  1  0  ~/.config/zsh/user.zsh
+|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
+-'  1  0  ~/.config/zsh/user.zsh
+|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
+-'  1  0  ~/.config/zsh/user.zsh
+|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
+-'  1  0  ~/.config/zsh/user.zsh
+|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
 -'  1  0  ~/.config/zsh/user.zsh
 |4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
 -'  1  0  ~/.config/zsh/user.zsh
@@ -169,6 +240,38 @@ $
 |4,39,70,11,1775823645,"~/.config/foot/foot.ini"
 -'  70  11  ~/.config/foot/foot.ini
 |4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
+-'  70  11  ~/.config/foot/foot.ini
+|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
 -'  1  0  ~/.config/foot/foot.ini
 |4,39,1,0,1775823618,"~/.config/foot/foot.ini"
 -'  1  0  ~/.config/foot/foot.ini
@@ -189,100 +292,17 @@ $
 |4,39,1,0,1775823618,"~/.config/foot/foot.ini"
 -'  1  0  ~/.config/foot/foot.ini
 |4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  16  0  ~/.config/hypr/pyprland.toml
-|4,39,16,0,1768704763,"~/.config/hypr/pyprland.toml"
--'  1  0  ~/.config/hypr/pyprland.toml
-|4,39,1,0,1768704753,"~/.config/hypr/pyprland.toml"
--'  1  0  ~/.config/hypr/pyprland.toml
-|4,39,1,0,1768704753,"~/.config/hypr/pyprland.toml"
--'  1  0  ~/.config/hypr/pyprland.toml
-|4,39,1,0,1768704753,"~/.config/hypr/pyprland.toml"
--'  1  0  ~/.config/hypr/pyprland.toml
-|4,39,1,0,1768704753,"~/.config/hypr/pyprland.toml"
--'  1  0  ~/.config/hypr/pyprland.toml
-|4,39,1,0,1768704753,"~/.config/hypr/pyprland.toml"
--'  1  0  ~/.config/hypr/pyprland.toml
-|4,39,1,0,1768704753,"~/.config/hypr/pyprland.toml"
--'  1  0  ~/.config/hypr/pyprland.toml
-|4,39,1,0,1768704753,"~/.config/hypr/pyprland.toml"
--'  1  0  ~/.config/hypr/pyprland.toml
-|4,39,1,0,1768704753,"~/.config/hypr/pyprland.toml"
 
 # 文件内的标记历史记录 (从新到旧):
+
+> /etc/systemd/timesyncd.conf
+	*	1777602439	0
+	"	20	0
+	.	20	0
+	+	20	27
+	+	20	32
+	+	21	0
+	+	20	0
 
 > ~/.config/zsh/.zshenv
 	*	1775824213	0
