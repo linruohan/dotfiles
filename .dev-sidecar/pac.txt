@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: mXjV7BDZyJY5tDH1GYLiIA
+! Checksum: sBqG5o1WL8DhkdTYrj3aVA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Thu, 09 Apr 2026 11:10:05 +0000
+! Last Modified: Tue, 28 Apr 2026 14:37:01 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -224,7 +224,6 @@
 ||shiksha.com
 ||slacker.com
 ||sm-miracle.com
-||soylentnews.org
 ||spotify.com
 ||spreadshirt.es
 ||springboardplatform.com
@@ -563,15 +562,7 @@
 !!---Amazon---
 ||payments-jp.amazon.com
 ||amazon.co.jp
-||s3-ap-*.amazonaws.com
-||s3.eu-central-1.amazonaws.com
-||s3-eu-central-1.amazonaws.com
-||s3.us-east-1.amazonaws.com
-||s3-ap-northeast-2.amazonaws.com
-||s3.ap-northeast-2.amazonaws.com
 ||s3-ap-northeast-1.amazonaws.com
-||s3-ap-southeast-1.amazonaws.com
-||s3-ap-southeast-2.amazonaws.com
 !!---AOL---
 ||video.aol.com
 ||search.aol.com
@@ -638,7 +629,7 @@ www.aolnews.com
 !!---Google---
 ||google.dev
 ||ai.studio
-||chromium.org
+||issues.chromium.org
 ||goog
 ||gle
 ||google
@@ -1194,6 +1185,8 @@ iipdigital.usembassy.gov
 ||9bis.net
 ||9news.com.au
 !--------------------AA-------------------------
+||asiasociety.org
+||avistaz.to
 ||annas-archive.gd
 ||annas-archive.gl
 ||annas-archive.pk
@@ -1244,7 +1237,6 @@ iipdigital.usembassy.gov
 ||aiosearch.com
 ||aiph.net
 ||airconsole.com
-|http://download.aircrack-ng.org
 ||airvpn.org
 ||ait.org.tw
 ||aiweiweiblog.com
@@ -1364,6 +1356,7 @@ iipdigital.usembassy.gov
 !--boxun.azurewebsites.net doesn't exist.
 ||boxun*.azurewebsites.net
 !--------------------BB-------------------------
+||bellingcat.com
 ||bittorrent.com
 ||help.byspotify.com
 ||bitbaby.com
@@ -1876,6 +1869,7 @@ iipdigital.usembassy.gov
 ||dynawebinc.com
 ||dysfz.cc
 !--------------------EE-------------------------
+||app.element.io
 ||economist.com
 ||e621.net
 ||edx-cdn.org
@@ -2304,8 +2298,6 @@ iipdigital.usembassy.gov
 |http://hitomi.la
 |http://hk-pub.com
 ||hk01.com
-||hkacg.com
-||hkacg.net
 ||hkbookcity.com
 ||hkchronicles.com
 ||hkcnews.com
@@ -2598,6 +2590,7 @@ iipdigital.usembassy.gov
 ||kzaobao.com
 ||kzeng.info
 !--------------------LL-------------------------
+||lantern.io
 ||lovart.ai
 ||library-access.sk
 ||linux.do
@@ -2829,7 +2822,6 @@ iipdigital.usembassy.gov
 ||mullvad.net
 ||muzi.com
 ||muzi.net
-||mx981.com
 ||my-private-network.co.uk
 ||myaudiocast.com
 ||bbs.mychat.to
@@ -2947,6 +2939,7 @@ iipdigital.usembassy.gov
 ||nybooks.com
 ||nypost.com
 !--------------------OO-------------------------
+||openart.ai
 ||osmand.net
 ||oklink.com
 ||okcoin.com
@@ -3221,6 +3214,9 @@ iipdigital.usembassy.gov
 ||quitccp.org
 |http://quran.com
 !--------------------RR-------------------------
+||rawstory.com
+||recordedfuture.com
+||roblox.com
 ||radiojar.com
 ||radio.co
 ||rustdesk.com
@@ -3546,6 +3542,8 @@ iipdigital.usembassy.gov
 ||sylfoundation.org
 ||syncback.com
 !--------------------TT-------------------------
+||techbang.com
+||thinkchina.sg
 ||tor.eff.org
 ||tails.net
 ||bbc.pdn.tritondigital.com
@@ -3840,6 +3838,8 @@ iipdigital.usembassy.gov
 ||contests.twilio.com
 ||typora.io
 !--------------------UU-------------------------
+||upsangel.com
+||sbti.unun.dev
 ||uniswap.org
 ||up.audio
 ||udomain.hk
@@ -3980,7 +3980,6 @@ iipdigital.usembassy.gov
 ||vrchat.com
 ||vrporn.com
 ||vtunnel.com
-||vuku.cc
 !--------------------WW-------------------------
 ||wispbyte.com
 ||walletconnect.org
@@ -4144,7 +4143,6 @@ iipdigital.usembassy.gov
 |http://xing.com
 ||xinjiangpolicefiles.org
 ||xinmiao.com.hk
-||xjp.cc
 ||xjtravelguide.com
 ||xml-training-guide.com
 ||xnxx.com
