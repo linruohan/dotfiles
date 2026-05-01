@@ -1,42 +1,46 @@
 {
+  "app": {
+    "remoteConfig": {
+      "url": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/remote_config.json"
+    },
+    //配置编辑时间、版本信息
+    "metaInfo": {
+      // 元数据就放在这里了
+      "id": "official", // 配置id：id区分大小写，只能带有大小写字母、数字、点号与横杠，应当具有说明作用（所以不许用一串数字/乱码代替）
+      "version": 202604291516, // 格式是GMT+8的开始编辑时间，固定位数为年月日+时分;一天有1440分钟，够用了；这就是个number,可以用来比较，别加引号
+      "updateLog": "远程配置和油猴脚本的域名改为 https://raw.giteeusercontent.com" // 我真的不觉得这个字段有多大必要
+      // dev-sidecar从2.0.2开始内置的配置是internal，这里是official
+      // 第三方配置应使用Java风格id,即发布网站域名的倒序，但严禁使用com.example之类的烂大街id（com.example保留为示范用途）
+      // 同理禁止使用com.github/com.gitee/com.gitcode/io.github等大概率托管多个配置的网站域名倒序
+      // 托管在github的均推荐在个人的自定义github.io域名上发布；其他易重复网站，可在域名的最后一部分加上自定义名称用来区分，如com.gitee.alice
+      // user/local/test保留给不会公开发布的本地配置使用；以防万一，所有不带点号的id都被保留使用
+      // 只有**等价**的配置出现在不同URL时（比如不同镜像之间）、一份配置的更新迭代之间可以使用相同的id；一份配置变更发布地址时可以保留原有id
+      // 定义**等价**的配置为结构相同、字段完全相同且同一字段的内容完全相同，
+      // 也就是说配置规约为JSON格式后，所有平级字段之间按ASCII增序排列，删除所有不在字符串中的空白字符得到的内容相同
+      // （所有配置都可以通过补全字段字符串引号、删除尾随逗号及所有注释规约为标准JSON；配置中的字段只能是7位ASCII中的可见字符）
+    }
+  },
   "server": {
     "intercepts": {
-      //配置编辑时间、版本信息
-      "metaInfo": {
-        // 从语义上说，元信息不该插在这里，但是好像放在这里容易debug；所幸不会有网站叫metaInfo
-        "version": 202602231340, // 格式是GMT+8的开始编辑时间，固定位数为年月日+时分;一天有1440分钟，够用了；这就是个number,可以用来比较，别加引号
-        "updateLog": "更新ms-sso.copilot.microsoft.com规则,防止微软登录卡登录", // 我真的不觉得这个字段有多大必要
-        "id": "official" // 配置id：id区分大小写，只能带有大小写字母、数字、点号与横杠，应当具有说明作用（所以不许用一串数字/乱码代替）
-        // dev-sidecar从2.0.2开始内置的配置是internal，这里是official
-        // 第三方配置应使用Java风格id,即发布网站域名的倒序，但严禁使用com.example之类的烂大街id（com.example保留为示范用途）
-        // 同理禁止使用com.github/com.gitee/com.gitcode/io.github等大概率托管多个配置的网站域名倒序
-        // 托管在github的均推荐在个人的自定义github.io域名上发布；其他易重复网站，可在域名的最后一部分加上自定义名称用来区分，如com.gitee.alice
-        // user/local/test保留给不会公开发布的本地配置使用；以防万一，所有不带点号的id都被保留使用
-        // 只有**等价**的配置出现在不同URL时（比如不同镜像之间）、一份配置的更新迭代之间可以使用相同的id；一份配置变更发布地址时可以保留原有id
-        // 定义**等价**的配置为结构相同、字段完全相同且同一字段的内容完全相同，
-        // 也就是说配置规约为JSON格式后，所有平级字段之间按ASCII增序排列，删除所有不在字符串中的空白字符得到的内容相同
-        // （所有配置都可以通过补全字段字符串引号、删除尾随逗号及所有注释规约为标准JSON；配置中的字段只能是7位ASCII中的可见字符）
-      },
-
       // github相关
       "github.com": {
         "^(/[^/]+){2,}/?(\\?.*)?$": {
-          "tampermonkeyScript": "https://gitee.com/wangliang181230/dev-sidecar/raw/scripts/tampermonkey.js",
-          "script": "https://gitee.com/wangliang181230/dev-sidecar/raw/scripts/GithubEnhanced-High-Speed-Download.user.js",
+          "tampermonkeyScript": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/tampermonkey.js",
+          "script": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/GithubEnhanced-High-Speed-Download.user.js",
           "remark": "注：上面所使用的脚本地址，为高速镜像地址。",
           "desc": "油猴脚本：高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件 (公益加速)、项目列表单文件快捷下载、添加 git clone 命令"
         },
         "^(/[\\w-.]+){2,}/?(\\?.*)?$": null,
         // 以下配置会导致私有(private)仓库中的图片无法加载，因为需要有一个token参数，无法在DS中生成，暂不配置
         //"^((/[^/]+){2})/raw/(refs/heads/)?(.*)$": {
-        //	"proxy": "https://raw.githubusercontent.com${m[1]}/${m[4]}",
-        //	"sni": "baidu.com",
-        //	"requestReplace": {
-        //		"headers": {
-        //			"cookie": "[remove]",
-        //			"user-agent": "[remove]"
-        //		}
-        //	}
+        //  "proxy": "https://raw.githubusercontent.com${m[1]}/${m[4]}",
+        //  "sni": "baidu.com",
+        //  "requestReplace": {
+        //    "headers": {
+        //      "cookie": "[remove]",
+        //      "user-agent": "[remove]"
+        //    }
+        //  }
         //},
         "^((/[^/]+){2,})/raw((/[^/]+)+\\.(jpg|jpeg|png|gif))(\\?.*)?$": {
           "proxy": null,
@@ -62,7 +66,9 @@
       },
       "github.githubassets.com": {
         "/assets/fakefile.js": {
-          "abort": true,
+          "success": {
+            "script": ";"
+          },
           "cacheDays": 365
         },
         "^(/[^/]+)*/[^./]+\\.(svg|png|gif|jpg|jpeg|ico|js|css)(\\?.*)?$": {
@@ -136,6 +142,17 @@
           "proxy": "fonts.googleapis.cn"
         }
       },
+      "ajax.googleapis.com": {
+        ".*": {
+          "proxy": "ajax.proxy.ustclug.org",
+          "desc": "根据2026年4月24日时访问https://mirrors.ustc.edu.cn 的说明，修正internal v202604122348中指向ajax.lug.ustc.edu.cn的配置"
+        }
+      },
+      "kubernetes-charts.storage.googleapis.com": {
+        ".*": {
+          "proxy": "kubernetes-charts.proxy.ustclug.org"
+        }
+      },
       "^(?!.*(translate-pa).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
         ".*": {
           "sni": "www.google.cn",
@@ -145,6 +162,21 @@
       "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com)$": {
         ".*": {
           "sni": "www.google.cn"
+        }
+      },
+      "^.*\\.google\\.com(\\.\\w+)?$": {
+        ".*": {
+          "sni": "www.google.cn"
+        }
+      },
+      "^(?<pre>.*).googlevideo.com$": {
+        "*": {
+          "proxy_backup": "${pre}.gvt1.com",
+          "sni": "g.cn",
+          "options": true
+        },
+        "/generate_204": {
+          "success": true
         }
       },
       "www.gstatic.com": {
@@ -251,7 +283,9 @@
       "cdn.jsdelivr.net": {
         "^/.*\\.(js|css|png|jpg|jpeg|gif|json)(\\?.*)?$": {
           "proxy": "fastly.jsdelivr.net",
-          "backup": ["gcore.jsdelivr.net"]
+          "backup": [
+            "gcore.jsdelivr.net"
+          ]
         }
       },
       // 油猴脚本站
@@ -399,6 +433,32 @@
         }
       },
       // 其它站点
+      "packages.elastic.co": {
+        ".*": {
+          "proxy": "elastic.proxy.ustclug.org"
+        }
+      },
+      "ppa.launchpad.net": {
+        ".*": {
+          "proxy": "launchpad.proxy.ustclug.org"
+        }
+      },
+      "downloads.openwrt.org": {
+        ".*": {
+          "proxy": "openwrt.proxy.ustclug.org"
+        }
+      },
+      "registry.npmjs.org": {
+        ".*": {
+          // "proxy": "npmreg.proxy.ustclug.org"
+          "desc": "既然ds有NPM镜像了，这个就没什么必要了，先不配置了"
+        }
+      },
+      "repo1.maven.org": {
+        ".*": {
+          "proxy": "maven.proxy.ustclug.org"
+        }
+      },
       "*.msecnd.net": {
         ".*": {
           "sni": "baidu.com"
@@ -458,10 +518,10 @@
       },
       // Docker Hub
       "hub.docker.com": {
-        "144.34.172.106": false,
-        "69.63.207.139":false,
+        "144.34.172.106": true,
+        "69.63.207.139": false,
         // 疑似源站IP
-        "47.236.233.96":true,
+        "47.236.233.96": false,
         // 已失效的IP
         "54.156.14.194": null,
         "54.208.73.48": null,
@@ -509,7 +569,7 @@
         "203.208.41.98": true,
         "220.181.174.162": true
       },
-      "^(aistudio|.*pa.clients6|apis|gemini|console.cloud).google.com$": {
+      "^(aistudio|.*pa.clients6|apis|gemini|console.cloud|notebooklm|mail).google.com$": {
         "8.137.102.117": {
           "desc": "AI Studio相关,阿里云,解锁地区限制,新加坡,仅大陆访问"
         },
@@ -532,54 +592,66 @@
         "172.217.204.206": true
       },
       "^.*(with)?google(apis|usercontent)?.com.*$": {
-        "8.137.102.117": {
-          "desc": "阿里云中转"
-        },
+        "8.137.102.117": false, // 阿里云中转
         "142.251.189.206": {
           "desc": "自动地区官方"
         }
       },
       "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com|antigravity.google)$": {
-        "8.137.102.117": {
-          "desc": "阿里云中转"
-        },
+        "8.137.102.117": false, // 阿里云中转
         "142.251.189.206": {
           "desc": "自动地区官方"
         }
       },
       // "_google_backup":{
-      // 	"8.137.102.117": {
-      // 		"desc": "阿里云中转"
-      // 	},
-      // 	"47.102.115.14":"true",
-      // 	"194.87.31.227":"true",
-      // 	"136.124.0.28":"true",
-      // 	"136.124.0.29":"true",
-      // 	"34.49.133.3":"true",
-      // 	"142.251.189.206":"true",
-      // 	"142.251.190.206":"true",
-      // 	"172.217.204.206":"true",
-      // 	"172.253.122.206":"true",
-      // 	"38.180.33.93":"true"
+      //   "8.137.102.117": flase, // 阿里云中转
+      //   "47.102.115.14":"true",
+      //   "194.87.31.227":"true",
+      //   "136.124.0.28":"true",
+      //   "136.124.0.29":"true",
+      //   "34.49.133.3":"true",
+      //   "142.251.189.206":"true",
+      //   "142.251.190.206":"true",
+      //   "172.217.204.206":"true",
+      //   "172.253.122.206":"true",
+      //   "38.180.33.93":"true"
       // },
       // YouTube
       "*.youtube.com": {
-        "8.137.102.117": true
+        "8.137.102.117": false, // 阿里云中转
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        }
       },
       "*.youtu.be": {
-        "8.137.102.117": true
+        "8.137.102.117": false, // 阿里云中转
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        }
       },
       "*.youtube-nocookie.com": {
-        "8.137.102.117": true
+        "8.137.102.117": false, // 阿里云中转
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        }
       },
       "*.ggpht.com": {
-        "8.137.102.117": true
+        "8.137.102.117": false, // 阿里云中转
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        }
       },
       "i.ytimg.com": {
-        "8.137.102.117": true
+        "8.137.102.117": false, // 阿里云中转
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        }
       },
       "*.gstatic.com": {
-        "8.137.102.117": true
+        "8.137.102.117": false, // 阿里云中转
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        }
       },
       // Hugging Face
       "*.huggingface.co": {
@@ -639,7 +711,7 @@
       "cdn.steamcommunity.com": {
         "23.221.227.5": true
       },
-	  "*.steamcommunity.com": {
+      "*.steamcommunity.com": {
         "184.50.187.66": true
       },
       "^(store|checkout).steampowered.com$": {
@@ -691,22 +763,25 @@
       "providers": {
         "cf-DoT": {
           "server": "tls://1.1.1.1",
-          "sni": "baidu.com",
-          "cacheSize": 1000
+          "sni": "baidu.com"
+        },
+        "bebasid": {
+          "server": "tls://dns.bebasid.com",
+          "sni": "baidu.com"
         },
         "cf-DoH": {
           "server": "https://cloudflare-dns.com/dns-query",
-          "sni": "baidu.com",
-          "cacheSize": 1000
-        },
+          "sni": "baidu.com"
+        } /*,
         "Google-DoH": {
           "server": "https://dns.google/dns-query",
           "sni": "www.google.cn",
-          "cacheSize": 1000,
           "desc": "不可用"
-        }
+        }*/
       },
       "mapping": {
+        "*.googlevideo.com": "bebasid",
+        "*.gvt1.com": "bebasid",
         "*.jetbrains.com": "cf-DoT",
         "*.azureedge.net": "cf-DoT",
         "*.stackoverflow.com": "cf-DoT",
@@ -730,6 +805,33 @@
         "*.onesignal.com": "cf-DoT",
         "*.iubenda.com": "cf-DoT"
       },
+      // @since v2.0.2
+      "familyMapping": {
+        "*.googlevideo.com": "6",
+        "*.gvt1.com": "6",
+        "*.jetbrains.com": "4",
+        "*.azureedge.net": "4",
+        "*.stackoverflow.com": "4",
+        "*.github.com": "4",
+        "*github*.com": "4",
+        "*.github.io": "4",
+        "*.docker.com": "4",
+        "*.electronjs.org": "4",
+        "*.amazonaws.com": "4",
+        "*.yarnpkg.com": "4",
+        "*.cloudfront.net": "4",
+        "*.cloudflare.com": "4",
+        "img.shields.io": "4",
+        "*.vuepress.vuejs.org": "4",
+        "*.gh.docmirror.top": "4",
+        "*.v2ex.com": "4",
+        "*.pypi.org": "4",
+        // Pixiv站点相关
+        "*.pixiv.org": "4",
+        "*.pximg.net": "4",
+        "*.onesignal.com": "4",
+        "*.iubenda.com": "4"
+      },
       "speedTest": {
         "interval": 60000,
         "hostnameList": [
@@ -745,7 +847,10 @@
           "steamcommunity.com",
           "api.steampowered.com"
         ],
-        "dnsProviders": ["cf-DoT", "cf-DoH"]
+        "dnsProviders": [
+          "cf-DoT",
+          "safe360"
+        ]
       }
     },
     "whiteList": {
@@ -793,7 +898,7 @@
       // 米哈游
       "*.mihoyo.com": true,
       // Elastic相关
-      "*.elastic.co": true,
+      "*.elastic.co": false,
       // bilibili相关
       "*.bilicomic.com": true,
       // 中国移动云盘登录API
@@ -917,22 +1022,45 @@
       },
       "DNS": {
         "timeout": 3,
-        "allow": ["baidu.cn", "taobao.com", "www.gov.cn"],
-        "block": ["wikipedia.org", "youtube.com", "facebook.com"]
+        "allow": [
+          "baidu.cn",
+          "taobao.com",
+          "www.gov.cn"
+        ],
+        "block": [
+          "wikipedia.org",
+          "youtube.com",
+          "facebook.com"
+        ]
       },
       "TCP": {
         "timeout": 3,
         "addrs": {
           "IPv4": {
-            "allow": ["114.114.114.114", "223.6.6.6"],
-            "block": ["8.8.8.8", "1.1.1.1"]
+            "allow": [
+              "114.114.114.114",
+              "223.6.6.6"
+            ],
+            "block": [
+              "8.8.8.8",
+              "1.1.1.1"
+            ]
           },
           "IPv6": {
-            "allow": ["2402:4e00::", "2400:3200:baba::1"],
-            "block": ["2001:4860:4860::8888", "2606:4700:4700::1111"]
+            "allow": [
+              "2402:4e00::",
+              "2400:3200:baba::1"
+            ],
+            "block": [
+              "2001:4860:4860::8888",
+              "2606:4700:4700::1111"
+            ]
           }
         },
-        "ports": [80, 443]
+        "ports": [
+          80,
+          443
+        ]
       },
       "TLS": {
         "timeout": 3,
@@ -954,21 +1082,15 @@
         "rowClass": "title1",
         "children": [
           {
-            "title": "1、官方远程配置版本:202602231340",
-            "rowClass":"title2"
+            "title": "1、官方远程配置版本:202604241421",
+            "rowClass": "title2"
           },
           {
             "title": "2、官方远程配置更新日志",
-            "rowClass":"title2",
-            "children":[
+            "rowClass": "title2",
+            "children": [
               {
-                "title": "更新ms-sso.copilot.microsoft.com规则,防止微软登录卡登录"
-              },
-              {
-                "title": "更新hub.docker.com规则"
-              },
-              {
-                "title": "更新hub.docker.com steamcommunity.com规则,恢复onedrive.live.com规则,在帮助页面新增远程配置说明"
+                "title": "狠狠薅了一波mirrors.ustc.edu.cn的反代羊毛"
               }
             ]
           }
@@ -1035,11 +1157,11 @@
             "url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=zRkm0eHUhRmWWJA5O35C7BOKPZ4_gmrz&authKey=X9JHezR1BOalcEmvV6If04TN%2BIbzjAayBDaOSiuOg1SPpPguA7RqoLSHVEeo7A4e&noverify=0&group_code=419807815"
           },
           {
-            "title": "QQ 4群：438148299，人数：540 / 1000",
+            "title": "QQ 4群：438148299，人数：1012 / 2000（推荐）",
             "url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=i_NCBB5f_Bkm2JsEV1tLs2TkQ79UlCID&authKey=nMsVJbJ6P%2FGNO7Q6vsVUadXRKnULUURwR8zvUZJnP3IgzhHYPhYdcBCHvoOh8vYr&noverify=0&group_code=438148299"
           },
           {
-            "title": "QQ 5群：767622917，人数：200 / 200（满）",
+            "title": "QQ 5群：767622917，人数：200 / 500",
             "url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=nAWi_Rxj7mM4Unp5LMiatmUWhGimtbcB&authKey=aswmlWGjbt3GIWXtvjB2GJqqAKuv7hWjk6UBs3MTb%2Biyvr%2Fsbb1kA9CjF6sK7Hgg&noverify=0&group_code=767622917"
           }
         ]
@@ -1056,6 +1178,14 @@
               {
                 "title": "待办事项",
                 "url": "https://github.com/docmirror/dev-sidecar/milestone/9"
+              },
+              {
+                "title": "[ 2026-04-18 ] v2.0.2（支持IPv6、性能和稳定性提升）",
+                "url": "https://github.com/docmirror/dev-sidecar/releases/tag/v2.0.2"
+              },
+              {
+                "title": "[ 2026-04-12 ] v2.0.1（可在支持IPv6网络直连看YouTube视频了）",
+                "url": "https://github.com/docmirror/dev-sidecar/releases/tag/v2.0.1"
               },
               {
                 "title": "[ 2025-05-15 ] v2.0.0.2",

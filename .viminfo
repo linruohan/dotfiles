@@ -17,14 +17,14 @@
 $
 
 # 命令行 历史记录 (从新到旧):
+:q
+|2,0,1777605464,,"q"
 :q!
 |2,0,1777602440,,"q!"
 :w!
 |2,0,1777602437,,"w!"
 :wq
 |2,0,1777602434,,"wq"
-:q
-|2,0,1775824214,,"q"
 :set number
 |2,0,1737192924,,"set number"
 
@@ -70,36 +70,52 @@ $
 |3,0,36,0,1,0,1775823795," "
 
 # 文件标记:
-'0  20  0  /etc/systemd/timesyncd.conf
-|4,48,20,0,1777602440,"/etc/systemd/timesyncd.conf"
-'1  14  0  ~/.config/zsh/.zshenv
-|4,49,14,0,1775824214,"~/.config/zsh/.zshenv"
+'0  48  0  /usr1/codehub/shorin-arch-setup-1.3.0/scripts/00-utils.sh
+|4,48,48,0,1777605464,"/usr1/codehub/shorin-arch-setup-1.3.0/scripts/00-utils.sh"
+'1  20  0  /etc/systemd/timesyncd.conf
+|4,49,20,0,1777602440,"/etc/systemd/timesyncd.conf"
 '2  14  0  ~/.config/zsh/.zshenv
-|4,50,14,0,1775823814,"~/.config/zsh/.zshenv"
-'3  39  0  ~/.config/zsh/.zshrc
-|4,51,39,0,1775823802,"~/.config/zsh/.zshrc"
-'4  20  0  ~/.config/zsh/user.zsh
-|4,52,20,0,1775823751,"~/.config/zsh/user.zsh"
-'5  70  11  ~/.config/foot/foot.ini
-|4,53,70,11,1775823645,"~/.config/foot/foot.ini"
-'6  16  0  ~/.config/hypr/pyprland.toml
-|4,54,16,0,1768704763,"~/.config/hypr/pyprland.toml"
-'7  1  0  ~/.config/hyde/config.toml
-|4,55,1,0,1768704730,"~/.config/hyde/config.toml"
-'8  1  0  ~/.config/hyde/hyde.conf
-|4,56,1,0,1768704705,"~/.config/hyde/hyde.conf"
-'9  302  0  ~/.zshrc
-|4,57,302,0,1768704266,"~/.zshrc"
+|4,50,14,0,1775824214,"~/.config/zsh/.zshenv"
+'3  14  0  ~/.config/zsh/.zshenv
+|4,51,14,0,1775823814,"~/.config/zsh/.zshenv"
+'4  39  0  ~/.config/zsh/.zshrc
+|4,52,39,0,1775823802,"~/.config/zsh/.zshrc"
+'5  20  0  ~/.config/zsh/user.zsh
+|4,53,20,0,1775823751,"~/.config/zsh/user.zsh"
+'6  70  11  ~/.config/foot/foot.ini
+|4,54,70,11,1775823645,"~/.config/foot/foot.ini"
+'7  16  0  ~/.config/hypr/pyprland.toml
+|4,55,16,0,1768704763,"~/.config/hypr/pyprland.toml"
+'8  1  0  ~/.config/hyde/config.toml
+|4,56,1,0,1768704730,"~/.config/hyde/config.toml"
+'9  1  0  ~/.config/hyde/hyde.conf
+|4,57,1,0,1768704705,"~/.config/hyde/hyde.conf"
 
 # 跳转列表 (从新到旧):
+-'  48  0  /usr1/codehub/shorin-arch-setup-1.3.0/scripts/00-utils.sh
+|4,39,48,0,1777605464,"/usr1/codehub/shorin-arch-setup-1.3.0/scripts/00-utils.sh"
+-'  1  0  /usr1/codehub/shorin-arch-setup-1.3.0/scripts/00-utils.sh
+|4,39,1,0,1777605458,"/usr1/codehub/shorin-arch-setup-1.3.0/scripts/00-utils.sh"
 -'  20  0  /etc/systemd/timesyncd.conf
 |4,39,20,0,1777602440,"/etc/systemd/timesyncd.conf"
+-'  20  0  /etc/systemd/timesyncd.conf
+|4,39,20,0,1777602440,"/etc/systemd/timesyncd.conf"
+-'  1  0  /etc/systemd/timesyncd.conf
+|4,39,1,0,1777602403,"/etc/systemd/timesyncd.conf"
 -'  1  0  /etc/systemd/timesyncd.conf
 |4,39,1,0,1777602403,"/etc/systemd/timesyncd.conf"
 -'  14  0  ~/.config/zsh/.zshenv
 |4,39,14,0,1775824214,"~/.config/zsh/.zshenv"
 -'  14  0  ~/.config/zsh/.zshenv
 |4,39,14,0,1775824214,"~/.config/zsh/.zshenv"
+-'  14  0  ~/.config/zsh/.zshenv
+|4,39,14,0,1775824214,"~/.config/zsh/.zshenv"
+-'  14  0  ~/.config/zsh/.zshenv
+|4,39,14,0,1775824214,"~/.config/zsh/.zshenv"
+-'  1  0  ~/.config/zsh/.zshenv
+|4,39,1,0,1775824203,"~/.config/zsh/.zshenv"
+-'  1  0  ~/.config/zsh/.zshenv
+|4,39,1,0,1775824203,"~/.config/zsh/.zshenv"
 -'  1  0  ~/.config/zsh/.zshenv
 |4,39,1,0,1775824203,"~/.config/zsh/.zshenv"
 -'  1  0  ~/.config/zsh/.zshenv
@@ -108,6 +124,14 @@ $
 |4,39,14,0,1775823814,"~/.config/zsh/.zshenv"
 -'  14  0  ~/.config/zsh/.zshenv
 |4,39,14,0,1775823814,"~/.config/zsh/.zshenv"
+-'  14  0  ~/.config/zsh/.zshenv
+|4,39,14,0,1775823814,"~/.config/zsh/.zshenv"
+-'  14  0  ~/.config/zsh/.zshenv
+|4,39,14,0,1775823814,"~/.config/zsh/.zshenv"
+-'  1  0  ~/.config/zsh/.zshenv
+|4,39,1,0,1775823809,"~/.config/zsh/.zshenv"
+-'  1  0  ~/.config/zsh/.zshenv
+|4,39,1,0,1775823809,"~/.config/zsh/.zshenv"
 -'  1  0  ~/.config/zsh/.zshenv
 |4,39,1,0,1775823809,"~/.config/zsh/.zshenv"
 -'  1  0  ~/.config/zsh/.zshenv
@@ -128,6 +152,38 @@ $
 |4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
 -'  39  0  ~/.config/zsh/.zshrc
 |4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  39  0  ~/.config/zsh/.zshrc
+|4,39,39,0,1775823802,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
 -'  1  0  ~/.config/zsh/.zshrc
 |4,39,1,0,1775823788,"~/.config/zsh/.zshrc"
 -'  1  0  ~/.config/zsh/.zshrc
@@ -176,6 +232,38 @@ $
 |4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
 -'  20  0  ~/.config/zsh/user.zsh
 |4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
+-'  20  0  ~/.config/zsh/user.zsh
+|4,39,20,0,1775823751,"~/.config/zsh/user.zsh"
 -'  1  0  ~/.config/zsh/user.zsh
 |4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
 -'  1  0  ~/.config/zsh/user.zsh
@@ -204,96 +292,12 @@ $
 |4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
 -'  1  0  ~/.config/zsh/user.zsh
 |4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
--'  1  0  ~/.config/zsh/user.zsh
-|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
--'  1  0  ~/.config/zsh/user.zsh
-|4,39,1,0,1775823709,"~/.config/zsh/user.zsh"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  70  11  ~/.config/foot/foot.ini
-|4,39,70,11,1775823645,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
--'  1  0  ~/.config/foot/foot.ini
-|4,39,1,0,1775823618,"~/.config/foot/foot.ini"
 
 # 文件内的标记历史记录 (从新到旧):
+
+> /usr1/codehub/shorin-arch-setup-1.3.0/scripts/00-utils.sh
+	*	1777605463	0
+	"	48	0
 
 > /etc/systemd/timesyncd.conf
 	*	1777602439	0

@@ -1,14 +1,9 @@
 {
 	"intercepts": {
-		"metaInfo": {
-			"version": 202602231340,
-			"updateLog": "更新ms-sso.copilot.microsoft.com规则,防止微软登录卡登录",
-			"id": "official"
-		},
 		"github.com": {
 			"^(/[^/]+){2,}/?(\\?.*)?$": {
-				"tampermonkeyScript": "https://gitee.com/wangliang181230/dev-sidecar/raw/scripts/tampermonkey.js",
-				"script": "https://gitee.com/wangliang181230/dev-sidecar/raw/scripts/GithubEnhanced-High-Speed-Download.user.js",
+				"tampermonkeyScript": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/tampermonkey.js",
+				"script": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/GithubEnhanced-High-Speed-Download.user.js",
 				"remark": "注：上面所使用的脚本地址，为高速镜像地址。",
 				"desc": "油猴脚本：高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件 (公益加速)、项目列表单文件快捷下载、添加 git clone 命令"
 			},
@@ -47,7 +42,9 @@
 		},
 		"github.githubassets.com": {
 			"/assets/fakefile.js": {
-				"abort": true,
+				"success": {
+					"script": ";"
+				},
 				"cacheDays": 365
 			},
 			"^(/[^/]+)*/[^./]+\\.(svg|png|gif|jpg|jpeg|ico|js|css)(\\?.*)?$": {
@@ -123,6 +120,21 @@
 				"proxy": "fonts.googleapis.cn"
 			}
 		},
+		"ajax.googleapis.com": {
+			".*": {
+				"proxy": "ajax.proxy.ustclug.org",
+				"desc": "根据2026年4月24日时访问https://mirrors.ustc.edu.cn 的说明，修正internal v202604122348中指向ajax.lug.ustc.edu.cn的配置",
+				"backup": [
+					"gapis.geekzu.org"
+				],
+				"test": "ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+			}
+		},
+		"kubernetes-charts.storage.googleapis.com": {
+			".*": {
+				"proxy": "kubernetes-charts.proxy.ustclug.org"
+			}
+		},
 		"^(?!.*(translate-pa).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
 			".*": {
 				"sni": "www.google.cn",
@@ -132,6 +144,21 @@
 		"^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com)$": {
 			".*": {
 				"sni": "www.google.cn"
+			}
+		},
+		"^.*\\.google\\.com(\\.\\w+)?$": {
+			".*": {
+				"sni": "www.google.cn"
+			}
+		},
+		"^(?<pre>.*).googlevideo.com$": {
+			"*": {
+				"proxy_backup": "${pre}.gvt1.com",
+				"sni": "g.cn",
+				"options": true
+			},
+			"/generate_204": {
+				"success": true
 			}
 		},
 		"www.gstatic.com": {
@@ -376,6 +403,31 @@
 				}
 			}
 		},
+		"packages.elastic.co": {
+			".*": {
+				"proxy": "elastic.proxy.ustclug.org"
+			}
+		},
+		"ppa.launchpad.net": {
+			".*": {
+				"proxy": "launchpad.proxy.ustclug.org"
+			}
+		},
+		"downloads.openwrt.org": {
+			".*": {
+				"proxy": "openwrt.proxy.ustclug.org"
+			}
+		},
+		"registry.npmjs.org": {
+			".*": {
+				"desc": "既然ds有NPM镜像了，这个就没什么必要了，先不配置了"
+			}
+		},
+		"repo1.maven.org": {
+			".*": {
+				"proxy": "maven.proxy.ustclug.org"
+			}
+		},
 		"*.msecnd.net": {
 			".*": {
 				"sni": "baidu.com"
@@ -433,15 +485,6 @@
 		"www.google.com": {
 			"/recaptcha/.*": {
 				"proxy": "www.recaptcha.net"
-			}
-		},
-		"ajax.googleapis.com": {
-			".*": {
-				"proxy": "ajax.lug.ustc.edu.cn",
-				"backup": [
-					"gapis.geekzu.org"
-				],
-				"test": "ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
 			}
 		},
 		"fonts.googleapis.com": {
@@ -530,9 +573,9 @@
 			"52.224.38.193": true
 		},
 		"hub.docker.com": {
-			"144.34.172.106": false,
+			"144.34.172.106": true,
 			"69.63.207.139": false,
-			"47.236.233.96": true
+			"47.236.233.96": false
 		},
 		"sessions-bugsnag.docker.com": {
 			"54.156.14.194": true,
@@ -567,7 +610,7 @@
 			"203.208.41.98": true,
 			"220.181.174.162": true
 		},
-		"^(aistudio|.*pa.clients6|apis|gemini|console.cloud).google.com$": {
+		"^(aistudio|.*pa.clients6|apis|gemini|console.cloud|notebooklm|mail).google.com$": {
 			"8.137.102.117": {
 				"desc": "AI Studio相关,阿里云,解锁地区限制,新加坡,仅大陆访问"
 			},
@@ -588,38 +631,52 @@
 			"172.217.204.206": true
 		},
 		"^.*(with)?google(apis|usercontent)?.com.*$": {
-			"8.137.102.117": {
-				"desc": "阿里云中转"
-			},
+			"8.137.102.117": false,
 			"142.251.189.206": {
 				"desc": "自动地区官方"
 			}
 		},
 		"^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com|antigravity.google)$": {
-			"8.137.102.117": {
-				"desc": "阿里云中转"
-			},
+			"8.137.102.117": false,
 			"142.251.189.206": {
 				"desc": "自动地区官方"
 			}
 		},
 		"*.youtube.com": {
-			"8.137.102.117": true
+			"8.137.102.117": false,
+			"142.251.189.206": {
+				"desc": "自动地区官方"
+			}
 		},
 		"*.youtu.be": {
-			"8.137.102.117": true
+			"8.137.102.117": false,
+			"142.251.189.206": {
+				"desc": "自动地区官方"
+			}
 		},
 		"*.youtube-nocookie.com": {
-			"8.137.102.117": true
+			"8.137.102.117": false,
+			"142.251.189.206": {
+				"desc": "自动地区官方"
+			}
 		},
 		"*.ggpht.com": {
-			"8.137.102.117": true
+			"8.137.102.117": false,
+			"142.251.189.206": {
+				"desc": "自动地区官方"
+			}
 		},
 		"i.ytimg.com": {
-			"8.137.102.117": true
+			"8.137.102.117": false,
+			"142.251.189.206": {
+				"desc": "自动地区官方"
+			}
 		},
 		"*.gstatic.com": {
-			"8.137.102.117": true
+			"8.137.102.117": false,
+			"142.251.189.206": {
+				"desc": "自动地区官方"
+			}
 		},
 		"*.huggingface.co": {
 			"3.167.200.113": true
@@ -782,48 +839,36 @@
 		"providers": {
 			"cf-DoT": {
 				"server": "tls://1.1.1.1",
-				"sni": "baidu.com",
-				"cacheSize": 1000
+				"sni": "baidu.com"
+			},
+			"bebasid": {
+				"server": "tls://dns.bebasid.com",
+				"sni": "baidu.com"
 			},
 			"cf-DoH": {
 				"server": "https://cloudflare-dns.com/dns-query",
-				"sni": "baidu.com",
-				"cacheSize": 1000
-			},
-			"Google-DoH": {
-				"server": "https://dns.google/dns-query",
-				"sni": "www.google.cn",
-				"cacheSize": 1000,
-				"desc": "不可用"
-			},
-			"aliyun": {
-				"type": "https",
-				"server": "https://dns.alidns.com/dns-query",
-				"cacheSize": 1000
-			},
-			"cloudflare": {
-				"type": "https",
-				"server": "https://1.1.1.1/dns-query",
-				"cacheSize": 1000
-			},
-			"quad9": {
-				"type": "https",
-				"server": "https://9.9.9.9/dns-query",
-				"cacheSize": 1000
+				"sni": "baidu.com"
 			},
 			"safe360": {
-				"type": "https",
-				"server": "https://doh.360.cn/dns-query",
-				"cacheSize": 1000,
+				"server": "tls://dot.360.cn",
 				"forSNI": true
 			},
+			"aliyun": {
+				"server": "tls://dns.alidns.com"
+			},
+			"cloudflare": {
+				"server": "https://1.1.1.1/dns-query"
+			},
+			"quad9": {
+				"server": "https://9.9.9.9/dns-query"
+			},
 			"rubyfish": {
-				"type": "https",
-				"server": "https://rubyfish.cn/dns-query",
-				"cacheSize": 1000
+				"server": "https://rubyfish.cn/dns-query"
 			}
 		},
 		"mapping": {
+			"*.googlevideo.com": "bebasid",
+			"*.gvt1.com": "bebasid",
 			"*.jetbrains.com": "cf-DoT",
 			"*.azureedge.net": "cf-DoT",
 			"*.stackoverflow.com": "cf-DoT",
@@ -846,6 +891,31 @@
 			"*.onesignal.com": "cf-DoT",
 			"*.iubenda.com": "cf-DoT"
 		},
+		"familyMapping": {
+			"*.googlevideo.com": "6",
+			"*.gvt1.com": "6",
+			"*.jetbrains.com": "4",
+			"*.azureedge.net": "4",
+			"*.stackoverflow.com": "4",
+			"*.github.com": "4",
+			"*github*.com": "4",
+			"*.github.io": "4",
+			"*.docker.com": "4",
+			"*.electronjs.org": "4",
+			"*.amazonaws.com": "4",
+			"*.yarnpkg.com": "4",
+			"*.cloudfront.net": "4",
+			"*.cloudflare.com": "4",
+			"img.shields.io": "4",
+			"*.vuepress.vuejs.org": "4",
+			"*.gh.docmirror.top": "4",
+			"*.v2ex.com": "4",
+			"*.pypi.org": "4",
+			"*.pixiv.org": "4",
+			"*.pximg.net": "4",
+			"*.onesignal.com": "4",
+			"*.iubenda.com": "4"
+		},
 		"speedTest": {
 			"interval": 60000,
 			"hostnameList": [
@@ -863,7 +933,7 @@
 			],
 			"dnsProviders": [
 				"cf-DoT",
-				"cf-DoH"
+				"safe360"
 			],
 			"enabled": true
 		}
@@ -886,6 +956,7 @@
 	"enabled": true,
 	"host": "127.0.0.1",
 	"port": 31181,
+	"fakeServerMaxLength": 100,
 	"setting": {
 		"NODE_TLS_REJECT_UNAUTHORIZED": true,
 		"verifySsl": true,
@@ -921,12 +992,17 @@
 			"enabled": true
 		},
 		"showShutdownTip": false,
-		"mode": "default",
 		"remoteConfig": {
+			"url": "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/remote_config.json",
 			"enabled": true,
-			"url": "https://gitee.com/wangliang181230/dev-sidecar/raw/docmirror2.x/packages/core/src/config/remote_config.json",
 			"personalUrl": ""
 		},
+		"metaInfo": {
+			"id": "official",
+			"version": 202604291516,
+			"updateLog": "远程配置和油猴脚本的域名改为 https://raw.giteeusercontent.com"
+		},
+		"mode": "default",
 		"startShowWindow": true,
 		"needCheckHideWindow": true,
 		"showHideShortcut": "Alt + S",
@@ -1085,8 +1161,24 @@
 				"cafile": false,
 				"NODE_EXTRA_CA_CERTS": false,
 				"NODE_TLS_REJECT_UNAUTHORIZED": false,
+				"registry": "https://registry.npmjs.org",
+				"registryList": {
+					"taobao": {
+						"name": "taobao镜像",
+						"value": "https://registry.npmmirror.com"
+					},
+					"ustclug": {
+						"name": "中国科学技术大学镜像",
+						"value": "https://npmreg.proxy.ustclug.org"
+					}
+				},
 				"yarnRegistry": "default",
-				"registry": "https://registry.npmjs.org"
+				"yarnRegistryList": {
+					"taobao": {
+						"name": "taobao镜像",
+						"value": "https://registry.npmmirror.com"
+					}
+				}
 			},
 			"variables": {
 				"phantomjs_cdnurl": "https://npmmirror.com/mirrors/phantomjs",
@@ -1121,7 +1213,49 @@
 			"setting": {
 				"command": "pip",
 				"trustedHost": "pypi.org",
-				"registry": "https://pypi.org/simple/"
+				"registry": "https://pypi.org/simple/",
+				"registryList": {
+					"aliyun": {
+						"name": "阿里镜像",
+						"value": "https://mirrors.aliyun.com/pypi/simple/"
+					},
+					"baidu": {
+						"name": "百度镜像",
+						"value": "https://mirror.baidu.com/pypi/simple/"
+					},
+					"douban": {
+						"name": "豆瓣镜像",
+						"value": "http://pypi.douban.com/simple/"
+					},
+					"sohu": {
+						"name": "搜狐镜像",
+						"value": "http://mirrors.sohu.com/Python/"
+					},
+					"ustclug": {
+						"name": "中科大镜像",
+						"value": "https://pypi.mirrors.ustc.edu.cn/simple/"
+					},
+					"bfsu": {
+						"name": "北京外国语大学镜像",
+						"value": "https://mirrors.bfsu.edu.cn/pypi/web/simple/"
+					},
+					"nju": {
+						"name": "南京大学镜像",
+						"value": "https://mirror.nju.edu.cn/pypi/web/simple/"
+					},
+					"tsinghua": {
+						"name": "清华大学镜像",
+						"value": "https://pypi.tuna.tsinghua.edu.cn/simple/"
+					},
+					"hust": {
+						"name": "华中科大镜像",
+						"value": "https://mirrors.hust.edu.cn/pypi/web/simple/"
+					},
+					"sdut": {
+						"name": "山东理工大学镜像",
+						"value": "http://pypi.sdutlinux.org/"
+					}
+				}
 			}
 		}
 	},
@@ -1148,7 +1282,7 @@
 			"*.s-microsoft.com": true,
 			"*.xboxlive.com": true,
 			"*.mihoyo.com": true,
-			"*.elastic.co": true,
+			"*.elastic.co": false,
 			"*.bilicomic.com": true,
 			"[2049:8c54:813:10c::140]": true,
 			"[2409:8a0c:a442:ff40:a51f:4b9c:8b41:25ea]": true,

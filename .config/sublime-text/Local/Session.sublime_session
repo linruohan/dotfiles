@@ -1,6 +1,8 @@
 {
 	"file_history":
 	[
+		"/usr1/codehub/dotfiles/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/usr1/codehub/dotfiles/.config/sublime-text/Packages/User/Preferences.sublime-settings",
 		"/home/xiaohan/.bashrc",
 		"/usr1/codehub/typora_book/Planify TODOist工具.md",
 		"/run/media/xiaohan/4A9809FF9809EA71/Users/Administrator/.bashrc",
@@ -17,13 +19,13 @@
 		"/home/xiaohan/codehub/typora_book"
 	],
 	"last_version": 4200,
-	"last_window_id": 5,
+	"last_window_id": 6,
 	"log_indexing": false,
 	"next_update_check": 1777688119,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 1440.0,
+		"new_window_height": 1380.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -123,6 +125,13 @@
 				"height": 0.0
 			},
 			"menu_visible": false,
+			"output.AutoSetSyntax":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
 			"output.SublimeLinter":
 			{
 				"height": 0.0,
@@ -196,7 +205,7 @@
 			{
 			}
 		},
-		"new_window_width": 2560.0
+		"new_window_width": 1272.0
 	},
 	"windows":
 	[
@@ -229,7 +238,7 @@
 								"message": "\n\nEmmet\n-----\n\n  Emmet plugin installed\n  \n  Emmet is a web-developer’s toolkit for boosting HTML & CSS code writing.\n  \n  With Emmet, you can type expressions (abbreviations) similar to CSS selectors and convert them into code fragment with a single keystroke. For example, this abbreviation:\n  \n  ul#nav>li.item$*4>a{Item $}\n  \n  ...can be expanded into:\n  \n  <ul id=\"nav\">\n      <li class=\"item1\"><a href=\"\">Item 1</a></li>\n      <li class=\"item2\"><a href=\"\">Item 2</a></li>\n      <li class=\"item3\"><a href=\"\">Item 3</a></li>\n      <li class=\"item4\"><a href=\"\">Item 4</a></li>\n  </ul>\n  \n  Read more about Emmet for Sublime Text:\n  https://github.com/emmetio/sublime-text-plugin#readme\n"
 							},
 							"AQAAAAAAAAAAAAAA4wIAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							2,
@@ -239,7 +248,7 @@
 								"message": "\n\nFanhuaji\n--------\n\n  # Sublime-Fanhuaji （繁化姬）\n  \n  [![Required ST Build](https://img.shields.io/badge/ST-4105+-orange.svg?style=flat-square&logo=sublime-text)](https://www.sublimetext.com)\n  [![GitHub Actions](https://img.shields.io/github/actions/workflow/status/Fanhuaji/Sublime-Fanhuaji/python.yml?branch=st4&style=flat-square)](https://github.com/Fanhuaji/Sublime-Fanhuaji/actions)\n  [![Package Control](https://img.shields.io/packagecontrol/dt/Fanhuaji?style=flat-square)](https://packagecontrol.io/packages/Fanhuaji)\n  [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/Fanhuaji/Sublime-Fanhuaji?style=flat-square&logo=github)](https://github.com/Fanhuaji/Sublime-Fanhuaji/tags)\n  [![Project license](https://img.shields.io/github/license/Fanhuaji/Sublime-Fanhuaji?style=flat-square&logo=github)](https://github.com/Fanhuaji/Sublime-Fanhuaji/blob/st4/LICENSE)\n  [![GitHub stars](https://img.shields.io/github/stars/Fanhuaji/Sublime-Fanhuaji?style=flat-square&logo=github)](https://github.com/Fanhuaji/Sublime-Fanhuaji/stargazers)\n  [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-blue.svg?style=flat-square&logo=paypal)](https://www.paypal.me/jfcherng/5usd)\n  \n  本倉庫為[繁化姬](https://zhconvert.org)的 [Sublime Text](https://www.sublimetext.com) 插件。\n  \n  ## 安裝方式\n  \n  - 使用 Package Control ：\n    在 `Package Control` 中搜尋 `Fanhuaji` 安裝即可。\n  \n  ## 轉換模式\n  \n  - 简体化：将文字转换为简体。\n  - 繁體化：將文字轉換為繁體。\n  - 中国化：将文字转换为简体，并使用中国地区的词语修正。\n  - 香港化：將文字轉換為繁體，並使用香港地區的詞語修正。\n  - 台灣化：將文字轉換為繁體，並使用台灣地區的詞語修正。\n  - 拼音化：將文字轉為拼音。\n  - 注音化：將文字轉為注音。\n  - 火星化：將文字轉換為繁體火星文。\n  - 维基简体化：只使用维基百科的词库将文字转换为简体。\n  - 維基繁體化：只使用維基百科的詞庫將文字轉換為繁體。\n  \n  ## 功能範例\n  \n  ![screenshot](https://raw.githubusercontent.com/Fanhuaji/Sublime-Fanhuaji/master/docs/images/convert_taiwan.gif)\n  \n  ## 快捷鍵 (keybindings)\n  \n  - 彈出 Quick Panel 選單，按下 Enter 選擇轉換模式後，轉換所選的文字：\n  \n    ![screenshot](https://raw.githubusercontent.com/Fanhuaji/Sublime-Fanhuaji/master/docs/images/quick_panel_list.png)\n  \n    ```js\n    {\n        \"keys\": [\"alt+f\", \"alt+h\", \"alt+j\"],\n        \"command\": \"fanhuaji_convert_panel\",\n    },\n    ```\n  \n  - 使用預先定義的參數，直接轉換所選的文字：\n  \n    ```js\n    {\n        \"keys\": [\"你想要使用的快捷鍵\"],\n        \"command\": \"fanhuaji_convert\",\n        \"args\": {\n            \"args\": {\n                \"converter\": \"Simplified\", // 简体化\n                // 更多參數...\n            },\n        },\n    },\n    ```\n  \n  ## 插件設定\n  \n  ```js\n  {\n      // 除錯模式\n      \"debug\": false,\n      // 驗證 API 伺服器的 SSL 證書\n      \"ssl_cert_verification\": true,\n      // API 伺服器位址\n      \"api_server\": \"https://api.zhconvert.org\",\n      // API 金鑰（若無請留空）\n      \"api_key\": \"\",\n      // 將在 /convert API 端點使用的參數，請參考繁化姬說明文件 https://docs.zhconvert.org\n      \"convert_params\": {/*\n          \"modules\": {\n              // 不要使用 \"GanToZuo\" 模組\n              \"GanToZuo\": 0,\n          },\n          \"userPostReplace\": {\n              // 轉換完成後再將 \"哦\" 轉換為 \"喔\"\n              \"哦\": \"喔\",\n          },\n          \"userProtectReplace\": [\n              // 保護 \"內存\" 不被轉換\n              \"內存\",\n          ],\n      */},\n  }\n  ```\n  \n  ## 商業使用\n  \n  繁化姬的文字轉換服務在一般使用下為免費，但若是商業使用將酌收費用。\n  詳情請見[繁化姬商業使用](https://docs.zhconvert.org/commercial)。\n  \n  ## 錯誤回報\n  \n  本插件僅使用繁化姬的網路 API ，並不實作文字轉換。\n  因此，如果您發現有「轉換錯誤」，請回報至以下任一位置。\n  \n  - [繁化姬](https://zhconvert.org)\n  - [繁化姬 GitHub 討論頁](https://github.com/Fanhuaji/discussion/issues)\n  - [繁化姬 Telegram 群組](https://t.me/fanhuaji)\n  \n  ## 相關連結\n  \n  - [繁化姬](https://zhconvert.org)\n  - [繁化姬 說明文件](https://docs.zhconvert.org)\n"
 							},
 							"AQAAAOMCAAAAAAAAbRAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA4wIAAAAAAADjAgAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADjAgAAAAAAAOMCAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							3,
@@ -249,7 +258,7 @@
 								"message": "\n\nFileManager\n-----------\n\n  ______ _ _     ___  ___\n  |  ___(_) |    |  \\/  |\n  | |_   _| | ___| .  . | __ _ _ __   __ _  __ _  ___ _ __\n  |  _| | | |/ _ \\ |\\/| |/ _` | '_ \\ / _` |/ _` |/ _ \\ '__|\n  | |   | | |  __/ |  | | (_| | | | | (_| | (_| |  __/ |\n  \\_|   |_|_|\\___\\_|  |_/\\__,_|_| |_|\\__,_|\\__, |\\___|_|\n                                            __/ |\n                                           |___/\n  \n  Thanks for installing FileManger! I hope you'll like using it!\n  \n  Presentation:\n  ~~~~~~~~~~~~~\n  \n  FileManager is a package that propose you different *optimized* commands for\n  managing your files from Sublime Text, such as creating, opening, renaming,\n  moving, duplicating, etc...\n  \n  First, you can have a look around at the options it added to your sidebar's\n  context menu and the command palette, but you really should have a look at the\n  GitHub's wiki really get 100% of FileManager.\n  \n  Quick Start Tips:\n  ~~~~~~~~~~~~~~~~~\n  \n  - When you're creating something (pressed alt+n for example), if your path ends\n  up with a '/', it'll create a folder instead of a file.\n  - Try to create a folder that already exists ;)\n  - Have a quick look in here: 'Preferences → Packages Settings → FileManager'\n  \n  Say thanks:\n  ~~~~~~~~~~~\n  \n  Just letting me know you're enjoying this package's a great way to say thanks!\n  \n  To do so, you can star the GitHub repository, or send me a tweet\n  (@_math2001)\n  \n  Troubles?\n  ~~~~~~~~~\n  \n  If you have any trouble with FileManager, don't hesitate to let me know by\n  raising an issue here:\n  \n  https://github.com/math2001/FileManager/issues\n  \n  Credits:\n  ~~~~~~~~\n  \n  The ASCII FileManager has been generated using the ASCII Decorator.\n  \n  https://github.com/viisual/ASCII-Decorator\n  \n  Tip of the day: You can bind commands to modifiers-free key combination:\n  \n      {\n          \"keys\": [\"-\", \">\"],\n          \"command\": \"insert_snippet\",\n          \"args\": {\n              \"contents\": \"→ \"\n          }\n      }\n  \n  Once set, each time you'll type '->', it'll insert this '→ '\n  \n  If you don't know how to set up shortcuts, don't worry, it's\n  explained here:\n  \n  http://docs.sublimetext.info/en/latest/reference/key_bindings.html\n"
 							},
 							"AQAAAG0QAAAAAAAADxkAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAbRAAAAAAAABtEAAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABtEAAAAAAAAG0QAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							4,
@@ -259,7 +268,7 @@
 								"message": "\n\nFmt\n---\n\n  ## Fmt Setup\n  \n  (More in the readme: https://github.com/mitranim/sublime-fmt)\n  \n  Fmt has NO DEFAULT FORMATTERS. It invokes CLI programs installed globally on your system. You must specify them in the plugin settings:\n  \n      menu → Preferences → Package Settings → Fmt → Settings\n  \n  Example for Go:\n  \n      {\n        \"rules\": [\n          {\n            \"selector\": \"source.go\",\n            \"cmd\": [\"goimports\"],\n            \"format_on_save\": true,\n            \"merge_type\": \"diff\",\n          },\n        ],\n      }\n  \n  To understand Sublime scopes and selector matching, read this short official doc: https://www.sublimetext.com/docs/selectors.html.\n  \n  HOW TO GET SCOPE NAME:\n  \n  Option 1: menu → Tools → Developer → Show Scope Name.\n  \n  Option 2: run the command `Fmt: Format Buffer`, and if not configured for the current scope, it will tell you!\n"
 							},
 							"AQAAAA8ZAAAAAAAAeBwAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAADxkAAAAAAAAPGQAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAPGQAAAAAAAA8ZAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							5,
@@ -269,7 +278,7 @@
 								"message": "\n\nFollowLnk\n---------\n\n  # ST-FollowLnk\n  \n  [![Required ST Build](https://img.shields.io/badge/ST-4105+-orange.svg?style=flat-square&logo=sublime-text)](https://www.sublimetext.com)\n  [![GitHub Actions](https://img.shields.io/github/actions/workflow/status/jfcherng-sublime/ST-FollowLnk/python.yml?branch=main&style=flat-square)](https://github.com/jfcherng-sublime/ST-FollowLnk/actions)\n  [![Package Control](https://img.shields.io/packagecontrol/dt/FollowLnk?style=flat-square)](https://packagecontrol.io/packages/FollowLnk)\n  [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jfcherng-sublime/ST-FollowLnk?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-FollowLnk/tags)\n  [![Project license](https://img.shields.io/github/license/jfcherng-sublime/ST-FollowLnk?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-FollowLnk/blob/main/LICENSE)\n  [![GitHub stars](https://img.shields.io/github/stars/jfcherng-sublime/ST-FollowLnk?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-FollowLnk/stargazers)\n  [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-blue.svg?style=flat-square&logo=paypal)](https://www.paypal.me/jfcherng/5usd)\n  \n  `FollowLnk` is a Sublime Text plugin which opens the target file of a `.lnk` (Windows shortcut) file\n  instead of the `.lnk` file itself.\n  \n  ## Installation\n  \n  This plugin is available on [Package Control][package-control] by the name of [FollowLnk][followlnk].\n  \n  [followlnk]: https://packagecontrol.io/packages/FollowLnk\n  [package-control]: https://packagecontrol.io\n  \n  ## Implementation Details\n  \n  Actually, Sublime Text will still open the `.lnk` file first.\n  And then this plugin opens the target file and closes the `.lnk` file.\n"
 							},
 							"AQAAAHgcAAAAAAAAeyMAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAeBwAAAAAAAB4HAAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB4HAAAAAAAAHgcAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							6,
@@ -279,7 +288,7 @@
 								"message": "\n\nJinja2\n------\n\n        _ _       _       ___\n       | (_)     (_)     |__ \\\n       | |_ _ __  _  __ _   ) |\n   _   | | | '_ \\| |/ _` | / /\n  | |__| | | | | | | (_| |/ /_\n   \\____/|_|_| |_| |\\__,_|____|\n                _/ |\n               |__/                                    by Ashwin Shenoy\n  ======================================================================\n  \n  Jinja2 package provides syntax definitions, snippets and completions\n  for Jinja and Django templates in Sublime Text.\n  \n  Supported languages are:\n      CSS, C++, JavaScript, JSON, HTML, Markdown, Text, XML and YAML.\n  \n  Quick start\n  -----------\n  \n  Each syntax definition is assigned to a default set of file extensions,\n  following the schema of:\n  \n    - .<lang>.jinja\n    - .jinja.<lang>\n    - .<lang>.jinja2\n    - .jinja2.<lang>\n    - .<lang>.j2\n    - .j2.<lang>\n  \n  Default templating language is HTML with following file extensions:\n  \n    - .j2\n    - .jinja\n    - .jinja2\n    - .htm.j2\n    - .htm.jinja\n    - .htm.jinja2\n    - .html.j2\n    - .html.jinja\n    - .html.jinja2\n    - .djt\n    - .djhtml\n    - .dj.html\n    - .html.djt\n  \n  Having Problems ?\n  -----------------\n  \n  If you encounter any problems with Jinja2, or you think that it\n  can be improved to make your work easier, please log an issue with the \n  issue tracker:\n  \n      https://github.com/Sublime-Instincts/BetterJinja/issues\n"
 							},
 							"AQAAAHsjAAAAAAAA5SgAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAeyMAAAAAAAB7IwAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB7IwAAAAAAAHsjAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							7,
@@ -289,7 +298,7 @@
 								"message": "\n\nJsPrettier\n----------\n\n  ┌────────────────────────────────────────────────────────────────────────────┐\n  │                     _     ____           _   _   _                         │\n  │                    | |___|  _ \\ _ __ ___| |_| |_(_) ___ _ __               │\n  │                 _  | / __| |_) | '__/ _ \\ __| __| |/ _ \\ '__|              │\n  │                | |_| \\__ \\  __/| | |  __/ |_| |_| |  __/ |                 │\n  │                 \\___/|___/_|   |_|  \\___|\\__|\\__|_|\\___|_|                 │\n  │                                                                            │\n  │     Sublime Text Plugin for Prettier, the opinionated code formatter.     │\n  └────────────────────────────────────────────────────────────────────────────┘\n  \n  ## Getting started\n  \n  ### Install Prettier\n  \n  If you've already installed Prettier, you're all set... otherwise:\n  \n      # npm (local)\n      npm install --save-dev prettier\n  \n      # npm (globally)\n      npm install --global prettier\n  \n      # or\n  \n      # pnpm (local)\n      pnpm add -D prettier\n  \n      # pnpm (globally)\n      pnpm add -g prettier\n  \n      # or\n  \n      # yarn (local)\n      yarn add prettier --dev\n  \n      # yarn (globally)\n      yarn global add prettier\n  \n  ### Usage\n  \n  There are three ways to format code...\n  \n  1. Command Palette\n  \n      \"Ctrl/Cmd + Shift + P\", then type \"JsPrettier Format Code\".\n  \n  2. Context Menu\n  \n      Right-click the file view and select \"JsPrettier Format Code\".\n  \n  3. Key Binding\n  \n      There is no default key binding for this plugin.\n  \n      To add a key binding, navigate to \"Preferences\" -> \"Key Bindings...\", and\n      add an entry for \"js_prettier\". For example...\n  \n          { \"keys\": [\"shift+alt+f\"], \"command\": \"js_prettier\" }\n  \n      Change \"shift+alt+f\" with your preferred key combination.\n  \n  ## Issues\n  \n  For additional help, including reporting issues, please visit the JsPrettier\n  home page at https://github.com/jonlabelle/SublimeJsPrettier.\n  \n  ## License\n  \n  The MIT License (MIT)\n  Copyright (c) Jon LaBelle\n"
 							},
 							"AQAAAOUoAAAAAAAA+TAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA5SgAAAAAAADlKAAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADlKAAAAAAAAOUoAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							8,
@@ -299,7 +308,7 @@
 								"message": "\n\nKDL\n---\n\n  # KDL\n  \n  Thank you for installing __KDL__!\n  (switch to Markdown via Command Palette's `Set Syntax: Markdown` for better reading experience and upvote this Package Control package's [issue](https://github.com/wbond/package_control/issues/238) to make Markdown rendering the default)\n  \n  This package adds support for the [KDL](https://kdl.dev) document language both v1 and v2 (for files with `.kdl` extension, but also with a fallback support of `.kdl1` and `.kdl2`)\n  \n  To test it you can open any `KDL` file, for example, [syntax_example_screen.KDL](https://github.com/eugenesvk/sublime-kdl/blob/main/test/syntax_example_screen2.kdl)[^1], and verify that the selected syntax is `KDL` and KDL-specific contexts are properly scoped and highlighted, maybe like so (depending on your color scheme)[^2]:\n  \n  ![KDL syntax screenshot solarized](https://github.com/eugenesvk/sublime-KDL/blob/main/doc/KDL2_syntax_dark.png?raw=true \"Custom solarized scheme\")\n  \n  ![KDL syntax screenshot default](https://github.com/eugenesvk/sublime-KDL/blob/main/doc/KDL2_syntax_light.png?raw=true \"Default color scheme\")\n  \n  A more detailed overview is available at the [GitHub package page](https://github.com/eugenesvk/sublime-kdl), where you can also report 🐞bugs or provide any other feedback via [GitHub issues](https://github.com/eugenesvk/sublime-kdl/issues)\n  \n  [^1]: this example file is also included in this package locally, but you'd need to install [PackageResourceViewer](https://packagecontrol.io/packages/PackageResourceViewer) to conveniently extract it\n  [^2]: you can install the [Markdown Images](https://github.com/xsleonard/sublime-MarkdownImages) package to render images inside this file via Command Palette's `MarkdownImages: Show Remote Images`\n"
 							},
 							"AQAAAPkwAAAAAAAA5DcAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA+TAAAAAAAAD5MAAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD5MAAAAAAAAPkwAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							9,
@@ -309,7 +318,7 @@
 								"message": "\n\nLiveReload\n----------\n\n  Changelog:\n  \n  Please be sure to restart Sublime Text to start using this new version. For more information or how to use this plugin visit https://github.com/alepez/LiveReload-sublimetext3\n"
 							},
 							"AQAAAOQ3AAAAAAAAvjgAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA5DcAAAAAAADkNwAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADkNwAAAAAAAOQ3AAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							10,
@@ -319,7 +328,7 @@
 								"message": "\n\nLSP-clangd\n----------\n\n  ## Installation\n  - Install LSP and LSP-clangd from Package Control\n  - Install clangd using your package manager or let this plugin install clangd for you\n  \n  ## Usage\n  \n  By default, clangd will assume your code is built as clang some_file.cc, and you’ll probably get errors about missing #included files, etc. \n  \n  For complex projects clangd needs to know your build flags. This can be done using a `compile_commands.json` or `compile_flags.txt` file.\n  \n  See https://clangd.llvm.org/installation#project-setup\n"
 							},
 							"AQAAAL44AAAAAAAA4DoAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAvjgAAAAAAAC+OAAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC+OAAAAAAAAL44AAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							11,
@@ -329,7 +338,7 @@
 								"message": "\n\nMarkdown Images\n---------------\n\n  # Markdown Images\n  \n  This is a Sublime Text 3 plugin to render images inside of markdown files.\n  \n  ![Example](https://user-images.githubusercontent.com/1879136/73363560-ef6b0880-42e3-11ea-8b25-de885166a3b0.png)\n  \n  ## Usage\n  \n  Images in markdown use the `![alt text](uri)` markup. Wherever this appears, this plugin can render the image specified by the URI below the line.\n  \n  You can configure an image's dimensions by adding HTML `<img>` properties after the image markup: `![alt text](uri){width=\"200\", height=\"200\"}`. Everything between the `{}` will be copied to the `<img>` element that renders the image.\n  \n  If the URI points to a file on disk, it is called a \"local\" image, and renders by default. If the URI points to an external (http, https, etc) resource, it is called a \"remote\" image, and does not render by default.\n  \n  You can choose to show local, show remote or show all images from the [command palette](#commands) and with the [configuration](#configuration) settings.\n  \n  ## Installation\n  \n  You can install this package using [Package Control](https://packagecontrol.io/installation) using the name “Markdown Images”.\n  \n  For development, you will want to clone the repository into “Markdown Images” directory in the Sublime Text’s `Packages` directory (`Preferences` → `Browse Packages…`):\n  \n  ```\n  git clone git@github.com:xsleonard/sublime-MarkdownImages.git 'Markdown Images'\n  ```\n  \n  (Or create a symlink with such name from your projects directory.)\n  \n  ## Configuration\n  \n  By default, images are rendered when the file is first loaded. This can be configured with the `show_local_images_on_load` and `show_remote_images_on_load` settings.\n  \n  Images can rendered on save with the `show_local_images_on_post_save` and `show_remote_images_on_post_save` settings.\n  \n  Go to `Sublime Text -> Packages -> Package Settings -> MarkdownImages` (macOS menu) to edit your configuration.\n  \n  Refer to the [default configuration file](./MarkdownImages.sublime-settings).\n  \n  ## Commands\n  \n  * `markdown_images_show(show_local: bool, show_remote: bool)` - Show images from the local filesystem and/or remote URLs\n  * `markdown_images_hide()` - Removes all rendered images from the view\n  \n  These can be activated with the command palette (`cmd+shift+p`):\n  \n  * `MarkdownImages: Hide Images`\n  * `MarkdownImages: Show All Images`\n  * `MarkdownImages: Show Local Images`\n  * `MarkdownImages: Show Remote Images`\n  \n  ## Keybindings\n  \n  This plugin adds no keybindings. You can set your own keybindings to the [commands](#commands).\n  \n  ## Notes\n  \n  Only PNG, JPG and GIF images are supported. \n  \n  SVG does not render inside of ST3 Phantom objects, unfortunately. \n  \n  Remote image loading runs in the main thread so it will stall ST3. Remote image loading is disabled\n  \n  ## Credits \n  \n  The image rendering code was seeded by [sublime_zk](https://github.com/renerocksai/sublime_zk)\n"
 							},
 							"AQAAAOA6AAAAAAAAe0YAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA4DoAAAAAAADgOgAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADgOgAAAAAAAOA6AAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							12,
@@ -339,7 +348,7 @@
 								"message": "\n\nOpenUri\n-------\n\n  # ST-OpenUri\n  \n  [![Required ST Build](https://img.shields.io/badge/ST-4152+-orange.svg?style=flat-square&logo=sublime-text)](https://www.sublimetext.com)\n  [![GitHub Actions](https://img.shields.io/github/actions/workflow/status/jfcherng-sublime/ST-OpenUri/python.yml?branch=st4&style=flat-square)](https://github.com/jfcherng-sublime/ST-OpenUri/actions)\n  [![Package Control](https://img.shields.io/packagecontrol/dt/OpenUri?style=flat-square)](https://packagecontrol.io/packages/OpenUri)\n  [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jfcherng-sublime/ST-OpenUri?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-OpenUri/tags)\n  [![Project license](https://img.shields.io/github/license/jfcherng-sublime/ST-OpenUri?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-OpenUri/blob/st4/LICENSE)\n  [![GitHub stars](https://img.shields.io/github/stars/jfcherng-sublime/ST-OpenUri?style=flat-square&logo=github)](https://github.com/jfcherng-sublime/ST-OpenUri/stargazers)\n  [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-blue.svg?style=flat-square&logo=paypal)](https://www.paypal.me/jfcherng/5usd)\n  \n  Finally! A performant and highly customizable URI-opening plugin comes.\n  \n  ![screenshot](https://raw.githubusercontent.com/jfcherng-sublime/ST-OpenUri/st4/docs/screenshot.png)\n  \n  `OpenUri` is a Sublime Text plugin which provides an easy access to URIs (mostly URLs)\n  in a file by clicking on a phantom, the popup or key/mouse bindings.\n  \n  ## Installation\n  \n  This plugin is available on [Package Control][package-control] by the name of [OpenUri][openuri].\n  \n  ## Settings\n  \n  To edit settings, go to `Preferences` » `Package Settings` » `OpenUri` » `Settings`.\n  \n  I try to make the [settings file][settings-file] self-explanatory.\n  But if you still have questions, feel free to open an issue.\n  \n  ## Bindings\n  \n  ### Key Bindings\n  \n  - Open URIs from (multiple) cursors:\n    <kbd>Alt + o</kbd>, <kbd>Alt + u</kbd>\n    (`o, u` is mnemonic for `Open, URI`)\n  \n  ### Mouse Bindings\n  \n  There is no mouse binding but you can add one if you need.\n  \n  Create `Packages/OpenUri/Default.sublime-mousemap` with the following content.\n  \n  ```js\n  [\n      // open URL via: alt + right click\n      {\n          button: 'button2',\n          modifiers: ['alt'],\n          command: 'open_context_url',\n      },\n  ]\n  ```\n  \n  ## Commands\n  \n  These commands are always available no matter what `show_open_button` is or how large the file is.\n  \n  | Command                 | Functionality                     |\n  | ----------------------- | --------------------------------- |\n  | open_uri_from_cursors   | Open URIs from cursors            |\n  | open_uri_from_view      | Open URIs from the current view   |\n  | copy_uri_from_cursors   | Copy URIs from cursors            |\n  | copy_uri_from_view      | Copy URIs from the current view   |\n  | select_uri_from_cursors | Select URIs from cursors          |\n  | select_uri_from_view    | Select URIs from the current view |\n  \n  [openuri]: https://packagecontrol.io/packages/OpenUri\n  [package-control]: https://packagecontrol.io\n  [settings-file]: https://github.com/jfcherng-sublime/ST-OpenUri/blob/st4/OpenUri.sublime-settings\n"
 							},
 							"AQAAAHtGAAAAAAAAYlMAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAe0YAAAAAAAB7RgAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB7RgAAAAAAAHtGAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							13,
@@ -349,7 +358,7 @@
 								"message": "\n\nOverrideAudit\n-------------\n\n  OverrideAudit is the missing tool for working with and managing your\n  package overrides in Sublime Text 3. From simply helping you remember\n  what files you've overridden to warning you of potential problems,\n  OverrideAudit has you covered.\n  \n  Quick Start\n  -----------\n  \n  All commands are available in the command palette or in the menu under\n  OverrideAudit. OverrideAudit also makes heavy use of context sensitive\n  commands; try Right Clicking (Control+Click on MacOS) on the names of\n  Packages, Override files, and inside of views to see what options are\n  available.\n  \n  To get started, try viewing a Package Report to get a sense of the\n  packages you have installed. If you see any packages in the report\n  that have more than one of the [S], [I] or [U] marks at the same time,\n  context click on its name and diff it to see if you have any overrides\n  and what they are.\n  \n  See the README for more information on all of the commands and\n  configuration options available. You can find a command to view it in\n  the command palette.\n  \n  What's this \"Expired Override Report\" thing?\n  --------------------------------------------\n  \n  In the immortal words of Douglas Adams, \"Don't Panic!\".\n  \n  One of the core features of OverrideAudit is the ability to tell you\n  when a package author has updated a package file that you have\n  overridden, so you can tell if you need to incorporate any changes.\n  \n  One of these checks is performed every time you upgrade Sublime Text\n  or a package. If you're seeing one of those reports right now, it\n  means that this has already happened to you and you didn't know about\n  it.\n  \n  Using the tools that OverrideAudit provides, you can get a better\n  picture of what's happened so you can resolve the issue quickly and\n  easily.\n  \n  Having Problems?\n  ----------------\n  \n  If you encounter any problems with OverrideAudit, or think that it can\n  be improved to make your work easier, please log an issue with the\n  OverrideAudit issue tracker:\n  \n      https://github.com/OdatNurd/OverrideAudit\n  \n  Get in Touch\n  ------------\n  \n  OverrideAudit is developed by Terence Martin, a.k.a @OdatNurd on\n  twitter and the official Sublime Text forum. Please feel free to ping\n  me with any comments and thoughts!\n"
 							},
 							"AQAAAGJTAAAAAAAAYFwAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAYlMAAAAAAABiUwAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABiUwAAAAAAAGJTAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							14,
@@ -359,7 +368,7 @@
 								"message": "\n\nSublimeLinter\n-------------\n\n  \n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n  \n  \n  *** As of April 2024, the current stable version of Sublime Text, Build 4169,\n  has a bug and cannot install SublimeLinter without a restart.  You're fine\n  if you have a later dev build, e.g. build 4173 has a better experience. ***\n  \n  \n  Welcome to SublimeLinter, a linter framework for Sublime Text.\n  \n  Linters are not included, they must be installed separately.\n  Get them from Package Control: https://packagecontrol.io/search/SublimeLinter\n  \n  *** We're in a transition phase to the newer ST4 plugin host.  Unless we have\n  more experience for the process, it _may_ be necessary to restart Sublime Text\n  after installing or upgrading helper packages.  Just check if everything works\n  or if the console shows permanent errors.  On my machine, no restarts were\n  necessary. ***\n  \n  \n  For complete documentation on how to use and configure SublimeLinter,\n  please see: http://www.sublimelinter.com\n  \n  To report issues: https://github.com/SublimeLinter/SublimeLinter\n"
 							},
 							"AQAAAGBcAAAAAAAApGEAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAYFwAAAAAAABgXAAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABgXAAAAAAAAGBcAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							15,
@@ -369,7 +378,7 @@
 								"message": "\n\nSublimeLinter-contrib-markdownlint\n----------------------------------\n\n  # SublimeLinter-contrib-markdownlint\n  \n      This linter plugin for SublimeLinter provides an interface to\n      markdownlint.\n  \n  ** IMPORTANT! **\n  \n      Before this plugin will activate, you *must* follow the installation\n      instructions here:\n  \n      https://github.com/jonlabelle/SublimeLinter-contrib-markdownlint\n"
 							},
 							"AQAAAKRhAAAAAAAANmMAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAApGEAAAAAAACkYQAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACkYQAAAAAAAKRhAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							16,
@@ -379,7 +388,7 @@
 								"message": "\n\nSublimeLinter-php\n-----------------\n\n  SublimeLinter-php\n  -------------------------------\n  This linter plugin for SublimeLinter provides an interface to php -l.\n  \n  Please read the installation instructions at:\n  \n  https://github.com/SublimeLinter/SublimeLinter-php\n"
 							},
 							"AQAAADZjAAAAAAAARmQAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAANmMAAAAAAAA2YwAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA2YwAAAAAAADZjAAAAAAAAAAAAAAAA8L8"
 						],
 						[
 							17,
@@ -389,7 +398,7 @@
 								"message": "\n\nTwig\n----\n\n   ____       _   _         _______       _\n  |  _ \\     | | | |       |__   __|     (_)\n  | |_) | ___| |_| |_ ___ _ __| |_      ___  __ _\n  |  _ < / _ \\ __| __/ _ \\ '__| \\ \\ /\\ / / |/ _` |\n  | |_) |  __/ |_| ||  __/ |  | |\\ V  V /| | (_| |\n  |____/ \\___|\\__|\\__\\___|_|  |_| \\_/\\_/ |_|\\__, |\n                                              _/ |\n                                            |___/\n  ======================================================================\n  \n  Twig is a syntax highlighting package for PHP Twig templates for Sublime Text.\n  It also provides snippets, completions, automatic indentation\n  for Twig code blocks and more !\n  \n  Quick start\n  -----------\n  \n  If you are seeing this messages, that means you have already installed Twig,\n  which means your twig files will already be receiving syntax highlighting.\n  \n  The following file extensions are supported:\n  \t- .twig\n  \t- .htm.twig\n  \t- .html.twig\n  \n  Having Problems, Reaching Out\n  -----------------------------\n  \n  If you encounter any problems with Twig,\n  or you think that it can be improved to make your work easier,\n  or you just want to get in touch with the maintainsers of this package ...\n  \n  ... please log an issue on the issue tracker:\n  \n      https://github.com/Sublime-Instincts/BetterTwig/issues\n"
 							},
 							"AQAAAEZkAAAAAAAAamkAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAARmQAAAAAAABGZAAAAAAAAAAAAAAAAPC/"
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABGZAAAAAAAAEZkAAAAAAAAAAAAAAAA8L8"
 						]
 					]
 				},
@@ -516,6 +525,7 @@
 								],
 								"settings":
 								{
+									"AutoSetSyntax/is_assigned": true,
 									"OUIB_is_dirty": true,
 									"OUIB_last_update_timestamp": 0,
 									"auto_complete": false,
@@ -523,8 +533,10 @@
 									"default_dir": "/usr1/codehub/typora_book",
 									"gutter": false,
 									"is_init_dirty_state": false,
-									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+									"tab_size": 2,
 									"tab_width": 2,
+									"translate_tabs_to_spaces": true,
 									"word_wrap": true
 								},
 								"translation.x": 0.0,
@@ -549,8 +561,8 @@
 								"selection":
 								[
 									[
-										7870,
-										7870
+										17662,
+										17749
 									]
 								],
 								"settings":
@@ -562,7 +574,7 @@
 									"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 9792.0,
+								"translation.y": 21072.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -603,6 +615,13 @@
 				]
 			},
 			"menu_visible": false,
+			"output.AutoSetSyntax":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
 			"output.SublimeLinter":
 			{
 				"height": 0.0,
@@ -618,7 +637,7 @@
 				]
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1265,1376,2560,1440,0",
+			"position": "0,1,0,0,0,0,0,2540,1376,2560,1440,0",
 			"project": "",
 			"replace":
 			{
