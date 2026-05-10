@@ -115,9 +115,29 @@
 				"sni": "baidu.com"
 			}
 		},
-		"fonts.(googleapis|gstatic).com": {
+		"fonts.googleapis.com": {
 			".*": {
-				"proxy": "fonts.googleapis.cn"
+				"proxy": "fonts.googleapis.cn",
+				"backup": [
+					"gstatic.loli.net",
+					"fonts-gstatic.proxy.ustclug.org"
+				],
+				"test": "https://fonts.googleapis.com/css?family=Oswald"
+			}
+		},
+		"fonts.gstatic.com": {
+			".*": {
+				"proxy": "fonts.googleapis.cn",
+				"backup": [
+					"gstatic.loli.net",
+					"fonts-gstatic.proxy.ustclug.org"
+				],
+				"test": "https://fonts.googleapis.com/css?family=Oswald"
+			}
+		},
+		"*.googleapis.com": {
+			".*": {
+				"sni": "www.google.cn"
 			}
 		},
 		"ajax.googleapis.com": {
@@ -485,12 +505,6 @@
 		"www.google.com": {
 			"/recaptcha/.*": {
 				"proxy": "www.recaptcha.net"
-			}
-		},
-		"fonts.googleapis.com": {
-			".*": {
-				"proxy": "fonts.loli.net",
-				"test": "https://fonts.googleapis.com/css?family=Oswald"
 			}
 		},
 		"themes.googleapis.com": {
@@ -999,8 +1013,8 @@
 		},
 		"metaInfo": {
 			"id": "official",
-			"version": 202604291516,
-			"updateLog": "远程配置和油猴脚本的域名改为 https://raw.giteeusercontent.com"
+			"version": 202605070336,
+			"updateLog": "修复了谷歌相关样式和图标无法正常加载的问题"
 		},
 		"mode": "default",
 		"startShowWindow": true,
