@@ -1,5 +1,5 @@
 return {
-  { import = "plugins.ai" },
+  --  { import = "plugins.ai" },
   { import = "plugins.collaboration" },
   { import = "plugins.colorscheme" },
   { import = "plugins.dap" },
