@@ -8,7 +8,7 @@ local M = {}
 local highlights = require("highlights")
 
 M.base46 = {
-  theme = "catppuccin",
+  theme = "mountain",
   transparency = false,
   hl_override = highlights.override,
   hl_add = highlights.add,
@@ -27,20 +27,21 @@ M.ui = {
       "file",
       "git",
       "%=",
-      -- "lsp_msg",
+      "lsp_msg",
       "python_venv",
       "diagnostics",
       "debug_status",
       "command",
       "lazy_updates",
-      -- "clients",
+      "clients",
       "cwd",
       "total_lines",
     },
     modules = require("config.statusline").modules,
   },
   tabufline = {
-    enabled = vim.g.colorscheme == "nvchad",
+    -- enabled = vim.g.colorscheme == "nvchad",
+    enabled = false,
     lazyload = true,
     order = { "treeOffset", "buffers", "tabs", "btns" },
     modules = require("config.tabufline").modules,

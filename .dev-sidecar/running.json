@@ -473,6 +473,11 @@
 				"sni": "www.baidu.com"
 			}
 		},
+		"*.brave.com": {
+			".*": {
+				"sni": "www.baidu.com"
+			}
+		},
 		"camo.githubusercontent.com": {
 			"^[a-zA-Z0-9/]+(\\?.*)?$": {
 				"cacheDays": 365,
@@ -585,6 +590,16 @@
 			"20.99.227.183": true,
 			"51.137.3.17": true,
 			"52.224.38.193": true
+		},
+		"github.githubassets.com": {
+			"2606:50c0:8000::154": true,
+			"2606:50c0:8001::154": true,
+			"2606:50c0:8002::154": true,
+			"2606:50c0:8003::154": true,
+			"185.199.108.154": true,
+			"185.199.109.154": true,
+			"185.199.110.154": true,
+			"185.199.111.154": true
 		},
 		"hub.docker.com": {
 			"144.34.172.106": true,
@@ -903,7 +918,9 @@
 			"*.pixiv.org": "cf-DoT",
 			"*.pximg.net": "cf-DoT",
 			"*.onesignal.com": "cf-DoT",
-			"*.iubenda.com": "cf-DoT"
+			"*.iubenda.com": "cf-DoT",
+			"*.brave.com": "cf-DoT",
+			"*duckduckgo.com": "cf-DoT"
 		},
 		"familyMapping": {
 			"*.googlevideo.com": "6",
@@ -928,7 +945,9 @@
 			"*.pixiv.org": "4",
 			"*.pximg.net": "4",
 			"*.onesignal.com": "4",
-			"*.iubenda.com": "4"
+			"*.iubenda.com": "4",
+			"*.brave.com": "4",
+			"*duckduckgo.com": "4"
 		},
 		"speedTest": {
 			"interval": 60000,
@@ -1013,8 +1032,8 @@
 		},
 		"metaInfo": {
 			"id": "official",
-			"version": 202605140908,
-			"updateLog": "修复了谷歌相关样式和图标无法正常加载的问题"
+			"version": 202606171055,
+			"updateLog": "为github.githubassets.com预设IP"
 		},
 		"mode": "default",
 		"startShowWindow": true,
