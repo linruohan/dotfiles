@@ -34,14 +34,14 @@ M.bootstrap_project = function()
       },
     },
     {
-      name = "  Rust Ecosystem",
+      name = "  Rust",
       items = {
         { name = "󰣆  Plain Binary (Application)", cmd = "cargo new --bin $project_name" },
         { name = "  Plain Library", cmd = "cargo new --lib $project_name" },
       },
     },
     {
-      name = "󰟓  Go Ecosystem",
+      name = "󰟓  Go",
       items = {
         {
           name = "󰟓  Go Module (CLI/App)",
@@ -50,7 +50,7 @@ M.bootstrap_project = function()
       },
     },
     {
-      name = "  C/C++ Ecosystem",
+      name = "  C/C++",
       items = {
         {
           name = "  Plain C (Makefile)",
@@ -63,7 +63,7 @@ M.bootstrap_project = function()
       },
     },
     {
-      name = "  Java Ecosystem",
+      name = "  Java",
       items = {
         {
           name = "  Plain Java (Maven)",
@@ -321,7 +321,7 @@ M.bootstrap_project = function()
       end
 
       -- Clear layouts / wipe any existing Alpha dashboards out before jumping to your code
-      vim.cmd("only")
+      pcall(function() vim.cmd("only") end)
 
       if target_entry then
         vim.cmd("edit " .. vim.fn.fnameescape(target_entry))
@@ -357,7 +357,7 @@ M.bootstrap_project = function()
     end
 
     -- Rust Custom Handling
-    if category.name:find("Rust Ecosystem") then
+    if category.name:find("Rust") then
       run_in_terminal(
         dir,
         selected.cmd:gsub("$project_name", name),
@@ -368,7 +368,7 @@ M.bootstrap_project = function()
     end
 
     -- Go Custom Handling
-    if category.name:find("Go Ecosystem") then
+    if category.name:find("Go") then
       run_in_terminal(
         dir,
         selected.cmd:gsub("$project_name", name),
@@ -379,7 +379,7 @@ M.bootstrap_project = function()
     end
 
     -- C / C++ Custom Handling
-    if category.name:find("C/C++ Ecosystem") then
+    if category.name:find("C/C++") then
       run_in_terminal(
         dir,
         selected.cmd:gsub("$project_name", name),
@@ -389,8 +389,8 @@ M.bootstrap_project = function()
       return
     end
 
-    -- Java Ecosystem Custom Handling
-    if category.name:find("Java Ecosystem") and not selected.name:find("Spring Boot") then
+    -- Java Custom Handling
+    if category.name:find("Java") and not selected.name:find("Spring Boot") then
       run_in_terminal(
         dir,
         selected.cmd:gsub("$project_name", name),
@@ -414,7 +414,7 @@ M.bootstrap_project = function()
           if build_tool == "Maven" then
             type_flag = "-d type=maven-project"
           elseif build_tool == "Gradle (Kotlin)" then
-            type_flag = "-d type=gradle-kotlin-dsl"
+            type_flag = "-d type=gradle-project-kotlin"
           elseif build_tool == "Gradle (Groovy)" then
             type_flag = "-d type=gradle-project"
           end
@@ -435,6 +435,26 @@ M.bootstrap_project = function()
             return
           end
 
+          local packaging_options = {}
+          if metadata.packaging and metadata.packaging.values then
+            for _, v in ipairs(metadata.packaging.values) do
+              table.insert(packaging_options, v.id)
+            end
+          end
+          if #packaging_options == 0 then
+            packaging_options = { "jar", "war" }
+          end
+
+          local language_options = {}
+          if metadata.language and metadata.language.values then
+            for _, v in ipairs(metadata.language.values) do
+              table.insert(language_options, v.id)
+            end
+          end
+          if #language_options == 0 then
+            language_options = { "java", "kotlin", "groovy" }
+          end
+
           local java_versions = {}
           if metadata.javaVersion and metadata.javaVersion.values then
             for _, v in ipairs(metadata.javaVersion.values) do
@@ -445,80 +465,124 @@ M.bootstrap_project = function()
             java_versions = { "21", "17" }
           end
 
-          vim.ui.select(java_versions, { prompt = "  Select Java Version:" }, function(java_version)
-            if not java_version then
-              return
-            end
-            local java_flag = "-d javaVersion=" .. java_version
+          vim.ui.select(packaging_options, { prompt = "  Select Packaging:" }, function(packaging)
+            if not packaging then return end
+            local packaging_flag = "-d packaging=" .. packaging
 
-            vim.notify("  Selected " .. build_tool .. " with Java " .. java_version, vim.log.levels.INFO)
+            vim.ui.select(language_options, { prompt = "  Select Language:" }, function(language)
+              if not language then return end
+              local language_flag = "-d language=" .. language
 
-            local spring_deps = require("config.utils.spring_deps")
+              vim.notify("  Selected " .. packaging .. " / " .. language, vim.log.levels.INFO)
 
-            local all_deps = spring_deps.list_dependencies(metadata)
-            if #all_deps == 0 then
-              vim.notify("  No dependencies found from Spring Initializr!", vim.log.levels.WARN)
-              return
-            end
-
-            local selected_ids = {}
-
-            local function proceed()
-              local deps_str = table.concat(selected_ids, ",")
-              local cmd = string.format(
-                "mkdir %s && cd %s && curl -sf https://start.spring.io/starter.zip %s %s -d dependencies=%s -d name=%s -d packageName=com.%s -o %s.zip && unzip %s.zip && rm %s.zip",
-                name,
-                name,
-                type_flag,
-                java_flag,
-                deps_str ~= "" and deps_str or "web",
-                name,
-                name,
-                name,
-                name,
-                name
-              )
-              run_in_terminal(dir, cmd, "  Creating Spring Boot project '" .. name .. "'...")
-              finalize_project(target_path, selected.name, name)
-
-              if #selected_ids > 0 then
-                vim.defer_fn(function()
-                  spring_deps.save_project_deps(selected_ids, all_deps, target_path)
-                end, 5000)
-              end
-            end
-
-            local function pick()
-              local remaining = vim.tbl_filter(function(d)
-                return not vim.tbl_contains(selected_ids, d.id)
-              end, all_deps)
-              if #remaining == 0 then
-                proceed()
-                return
-              end
-              local count = #selected_ids
-              local prompt = count > 0
-                and string.format("  Dependencies (%d selected) — pick another or ESC to finish", count)
-                or "  Select dependencies (pick one, ESC when done)"
-              vim.ui.select(remaining, {
-                prompt = prompt,
-                format_item = function(d)
-                  return string.format("%-25s — %s", d.id, d.description ~= "" and d.description or d.name)
-                end,
-              }, function(choice)
-                if choice then
-                  table.insert(selected_ids, choice.id)
-                  pick()
-                else
-                  proceed()
+              local java_label = language == "kotlin" and "JVM target version:" or "Java version:"
+              vim.ui.select(java_versions, { prompt = "  Select " .. java_label }, function(java_version)
+                if not java_version then
+                  return
                 end
-              end)
-            end
+                local java_flag = "-d javaVersion=" .. java_version
 
-            pick()
-          end)
-        end
-      )
+                vim.notify("  Selected " .. build_tool .. " / " .. language .. " / Java " .. java_version, vim.log.levels.INFO)
+
+                local spring_deps = require("config.utils.spring_deps")
+
+                local all_deps = spring_deps.list_dependencies(metadata)
+                if #all_deps == 0 then
+                  vim.notify("  No dependencies found from Spring Initializr!", vim.log.levels.WARN)
+                  return
+                end
+
+                local group_id = "com."
+                local artifact_id = name
+                local package_name = group_id .. "." .. name
+                local use_yaml = false
+
+                vim.ui.select({ "properties", "yaml" }, { prompt = "  Config format:" }, function(config_fmt)
+                  if not config_fmt then return end
+                  use_yaml = config_fmt == "yaml"
+
+                  vim.ui.input({ prompt = "Group ID:", default = group_id }, function(gid)
+                    if not gid or gid == "" then return end
+                    group_id = gid:gsub("%.+$", "")
+                    package_name = group_id .. "." .. name
+
+                    local selected_ids = {}
+
+                    local function proceed()
+                      local deps_str = table.concat(selected_ids, ",")
+                      local cmd = string.format(
+                        "mkdir %s && cd %s && curl -sf https://start.spring.io/starter.zip %s %s %s %s -d dependencies=%s -d name=%s -d groupId=%s -d artifactId=%s -d packageName=%s -o %s.zip && unzip %s.zip && rm %s.zip",
+                        name,
+                        name,
+                        type_flag,
+                        packaging_flag,
+                        language_flag,
+                        java_flag,
+                        deps_str ~= "" and deps_str or "web",
+                        name,
+                        group_id,
+                        artifact_id,
+                        package_name,
+                        name,
+                        name,
+                        name
+                      )
+                      run_in_terminal(dir, cmd, "  Creating Spring Boot project '" .. name .. "'...")
+
+                      if use_yaml then
+                        vim.defer_fn(function()
+                          local props = target_path .. "/src/main/resources/application.properties"
+                          local yml = target_path .. "/src/main/resources/application.yml"
+                          if vim.fn.filereadable(props) == 1 and vim.fn.filereadable(yml) == 0 then
+                            os.rename(props, yml)
+                          end
+                        end, 6000)
+                      end
+
+                      finalize_project(target_path, selected.name, name)
+
+                      if #selected_ids > 0 then
+                        vim.defer_fn(function()
+                          spring_deps.save_project_deps(selected_ids, all_deps, target_path)
+                        end, 5000)
+                      end
+                    end
+
+                    local function pick()
+                      local remaining = vim.tbl_filter(function(d)
+                        return not vim.tbl_contains(selected_ids, d.id)
+                      end, all_deps)
+                      if #remaining == 0 then
+                        proceed()
+                        return
+                      end
+                      local count = #selected_ids
+                      local prompt = count > 0
+                        and string.format("  Dependencies (%d selected) — pick another or ESC to finish", count)
+                        or "  Select dependencies (pick one, ESC when done)"
+                      vim.ui.select(remaining, {
+                        prompt = prompt,
+                        format_item = function(d)
+                          return string.format("%-25s — %s", d.id, d.description ~= "" and d.description or d.name)
+                        end,
+                      }, function(choice)
+                        if choice then
+                          table.insert(selected_ids, choice.id)
+                          pick()
+                        else
+                          proceed()
+                        end
+                      end)
+                    end
+
+                    pick()
+                  end) -- group id input
+                end) -- config format input
+              end) -- java version select
+            end) -- language select
+          end) -- packaging select
+        end -- build_tool function
+      ) -- build_tool vim.ui.select
       return
     end
 
